@@ -1,0 +1,645 @@
+{"code":"1","name":"Conturi de capitaluri, provizioane, împrumuturi și datorii asimilate","level":"class","parent":null,"function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"10","name":"Capital și rezerve","level":"group","parent":"1","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"101","name":"Capital","level":"account","parent":"10","function":null,"role":null,"notes":["În funcție de forma juridică a entității se înscrie: capital social, patrimoniul regiei etc."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"1011","name":"Capital subscris nevărsat","level":"subaccount","parent":"101","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1012","name":"Capital subscris vărsat","level":"subaccount","parent":"101","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1015","name":"Patrimoniul regiei","level":"subaccount","parent":"101","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1016","name":"Patrimoniul public","level":"subaccount","parent":"101","function":"P","role":null,"notes":["Acest cont mai apare doar la entitățile care nu au finalizat procedurile legale de transfer al bunurilor de natura patrimoniului public."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"1017","name":"Patrimoniul privat","level":"subaccount","parent":"101","function":"P","role":null,"notes":["Acest cont apare doar la entitățile care dețin, potrivit legii, bunuri de natura patrimoniului privat."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"1018","name":"Patrimoniul institutelor naționale de cercetare-dezvoltare","level":"subaccount","parent":"101","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"103","name":"Alte elemente de capitaluri proprii","level":"account","parent":"10","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1031","name":"Beneficii acordate angajaților sub forma instrumentelor de capitaluri proprii","level":"subaccount","parent":"103","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1033","name":"Diferențe de curs valutar în relație cu investiția netă într-o entitate străină","level":"subaccount","parent":"103","function":"A/P","role":null,"notes":["Acest cont apare numai în situațiile financiare anuale consolidate."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"1038","name":"Diferențe din modificarea valorii juste a activelor financiare disponibile în vederea vânzării și alte elemente de capitaluri proprii","level":"subaccount","parent":"103","function":"A/P","role":null,"notes":["Acest cont apare numai în situațiile financiare anuale consolidate."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"104","name":"Prime de capital","level":"account","parent":"10","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1041","name":"Prime de emisiune","level":"subaccount","parent":"104","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1042","name":"Prime de fuziune/divizare","level":"subaccount","parent":"104","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1043","name":"Prime de aport","level":"subaccount","parent":"104","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1044","name":"Prime de conversie a obligațiunilor în acțiuni","level":"subaccount","parent":"104","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"105","name":"Rezerve din reevaluare","level":"account","parent":"10","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"106","name":"Rezerve","level":"account","parent":"10","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1061","name":"Rezerve legale","level":"subaccount","parent":"106","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1063","name":"Rezerve statutare sau contractuale","level":"subaccount","parent":"106","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1068","name":"Alte rezerve","level":"subaccount","parent":"106","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"107","name":"Diferențe de curs valutar din conversie","level":"account","parent":"10","function":"A/P","role":null,"notes":["Acest cont apare numai în situațiile financiare anuale consolidate."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"108","name":"Interese care nu controlează","level":"account","parent":"10","function":null,"role":null,"notes":["Acest cont apare numai în situațiile financiare anuale consolidate."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"1081","name":"Interese care nu controlează - rezultatul exercițiului financiar","level":"subaccount","parent":"108","function":"A/P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1082","name":"Interese care nu controlează - alte capitaluri proprii","level":"subaccount","parent":"108","function":"A/P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"109","name":"Acțiuni proprii","level":"account","parent":"10","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1091","name":"Acțiuni proprii deținute pe termen scurt","level":"subaccount","parent":"109","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1092","name":"Acțiuni proprii deținute pe termen lung","level":"subaccount","parent":"109","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1095","name":"Acțiuni proprii reprezentând titluri deținute de societatea absorbită la societatea absorbantă","level":"subaccount","parent":"109","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"11","name":"Rezultatul reportat","level":"group","parent":"1","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"117","name":"Rezultatul reportat","level":"account","parent":"11","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1171","name":"Rezultatul reportat reprezentând profitul nerepartizat sau pierderea neacoperită","level":"subaccount","parent":"117","function":"A/P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1172","name":"Rezultatul reportat provenit din adoptarea pentru prima dată a IAS, mai puțin IAS 29","level":"subaccount","parent":"117","function":"A/P","role":null,"notes":["Acest cont apare doar la entitățile care au aplicat Reglementările contabile aprobate prin Ordinul ministrului finanțelor publice nr. 94/2001 și până la închiderea soldului acestui cont."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"1173","name":"Rezultatul reportat provenit din modificările politicilor contabile","level":"subaccount","parent":"117","function":"A/P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1174","name":"Rezultatul reportat provenit din corectarea erorilor contabile","level":"subaccount","parent":"117","function":"A/P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1175","name":"Rezultatul reportat reprezentând surplusul realizat din rezerve din reevaluare","level":"subaccount","parent":"117","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1176","name":"Rezultatul reportat provenit din trecerea la aplicarea reglementărilor contabile conforme cu directivele europene","level":"subaccount","parent":"117","function":"A/P","role":null,"notes":["În acest cont se evidențiază eventualele diferențe rezultate din dispozițiile tranzitorii cuprinse în prezentele reglementări, în condițiile prevăzute de acestea."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"12","name":"Rezultatul exercițiului financiar","level":"group","parent":"1","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"121","name":"Profit sau pierdere","level":"account","parent":"12","function":"A/P","role":"result","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"129","name":"Repartizarea profitului","level":"account","parent":"12","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"14","name":"Câștiguri sau pierderi legate de emiterea, răscumpărarea, vânzarea, cedarea cu titlu gratuit sau anularea instrumentelor de capitaluri proprii","level":"group","parent":"1","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"141","name":"Câștiguri legate de vânzarea sau anularea instrumentelor de capitaluri proprii","level":"account","parent":"14","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1411","name":"Câștiguri legate de vânzarea instrumentelor de capitaluri proprii","level":"subaccount","parent":"141","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1412","name":"Câștiguri legate de anularea instrumentelor de capitaluri proprii","level":"subaccount","parent":"141","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"149","name":"Pierderi legate de emiterea, răscumpărarea, vânzarea, cedarea cu titlu gratuit sau anularea instrumentelor de capitaluri proprii","level":"account","parent":"14","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1491","name":"Pierderi rezultate din vânzarea instrumentelor de capitaluri proprii","level":"subaccount","parent":"149","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1495","name":"Pierderi rezultate din reorganizări, care sunt determinate de anularea titlurilor deținute","level":"subaccount","parent":"149","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1496","name":"Pierderi rezultate din reorganizări de societăți, corespunzătoare activului net negativ al societății absorbite","level":"subaccount","parent":"149","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1498","name":"Alte pierderi legate de instrumentele de capitaluri proprii","level":"subaccount","parent":"149","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"15","name":"Provizioane","level":"group","parent":"1","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"151","name":"Provizioane","level":"account","parent":"15","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1511","name":"Provizioane pentru litigii","level":"subaccount","parent":"151","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1512","name":"Provizioane pentru garanții acordate clienților","level":"subaccount","parent":"151","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1513","name":"Provizioane pentru dezafectare imobilizări corporale și alte acțiuni similare legate de acestea","level":"subaccount","parent":"151","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1514","name":"Provizioane pentru restructurare","level":"subaccount","parent":"151","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1515","name":"Provizioane pentru pensii și obligații similare","level":"subaccount","parent":"151","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1516","name":"Provizioane pentru impozite","level":"subaccount","parent":"151","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1517","name":"Provizioane pentru terminarea contractului de muncă","level":"subaccount","parent":"151","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1518","name":"Alte provizioane","level":"subaccount","parent":"151","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"16","name":"Împrumuturi și datorii asimilate","level":"group","parent":"1","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"161","name":"Împrumuturi din emisiuni de obligațiuni","level":"account","parent":"16","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1614","name":"Împrumuturi externe din emisiuni de obligațiuni garantate de stat","level":"subaccount","parent":"161","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1615","name":"Împrumuturi externe din emisiuni de obligațiuni garantate de bănci","level":"subaccount","parent":"161","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1617","name":"Împrumuturi interne din emisiuni de obligațiuni garantate de stat","level":"subaccount","parent":"161","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1618","name":"Alte împrumuturi din emisiuni de obligațiuni","level":"subaccount","parent":"161","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"162","name":"Credite bancare pe termen lung","level":"account","parent":"16","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1621","name":"Credite bancare pe termen lung","level":"subaccount","parent":"162","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1622","name":"Credite bancare pe termen lung nerambursate la scadență","level":"subaccount","parent":"162","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1623","name":"Credite externe guvernamentale","level":"subaccount","parent":"162","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1624","name":"Credite bancare externe garantate de stat","level":"subaccount","parent":"162","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1625","name":"Credite bancare externe garantate de bănci","level":"subaccount","parent":"162","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1626","name":"Credite de la trezoreria statului","level":"subaccount","parent":"162","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1627","name":"Credite bancare interne garantate de stat","level":"subaccount","parent":"162","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"166","name":"Datorii care privesc imobilizările financiare","level":"account","parent":"16","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1661","name":"Datorii față de entitățile afiliate","level":"subaccount","parent":"166","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1663","name":"Datorii față de entitățile asociate și entitățile controlate în comun","level":"subaccount","parent":"166","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"167","name":"Alte împrumuturi și datorii asimilate","level":"account","parent":"16","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"168","name":"Dobânzi aferente împrumuturilor și datoriilor asimilate","level":"account","parent":"16","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1681","name":"Dobânzi aferente împrumuturilor din emisiuni de obligațiuni","level":"subaccount","parent":"168","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1682","name":"Dobânzi aferente creditelor bancare pe termen lung","level":"subaccount","parent":"168","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1685","name":"Dobânzi aferente datoriilor față de entitățile afiliate","level":"subaccount","parent":"168","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1686","name":"Dobânzi aferente datoriilor față de entitățile asociate și entitățile controlate în comun","level":"subaccount","parent":"168","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1687","name":"Dobânzi aferente altor împrumuturi și datorii asimilate","level":"subaccount","parent":"168","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"169","name":"Prime privind rambursarea obligațiunilor și a altor datorii","level":"account","parent":"16","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1691","name":"Prime privind rambursarea obligațiunilor","level":"subaccount","parent":"169","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"1692","name":"Prime privind rambursarea altor datorii","level":"subaccount","parent":"169","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2","name":"Conturi de imobilizări","level":"class","parent":null,"function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"20","name":"IMOBILIZĂRI NECORPORALE","level":"group","parent":"2","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"201","name":"Cheltuieli de constituire","level":"account","parent":"20","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"203","name":"Cheltuieli de dezvoltare","level":"account","parent":"20","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"205","name":"Concesiuni, brevete, licențe, mărci comerciale, drepturi și active similare","level":"account","parent":"20","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"206","name":"Active necorporale de explorare și evaluare a resurselor minerale","level":"account","parent":"20","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"207","name":"Fond comercial","level":"account","parent":"20","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2071","name":"Fond comercial pozitiv","level":"subaccount","parent":"207","function":"A","role":null,"notes":["Acest cont apare, de regulă, în situațiile financiare anuale consolidate."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"2075","name":"Fond comercial negativ","level":"subaccount","parent":"207","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"208","name":"Alte imobilizări necorporale","level":"account","parent":"20","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"21","name":"Imobilizări corporale","level":"group","parent":"2","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"211","name":"Terenuri și amenajări de terenuri","level":"account","parent":"21","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2111","name":"Terenuri","level":"subaccount","parent":"211","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2112","name":"Amenajări de terenuri","level":"subaccount","parent":"211","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"212","name":"Construcții","level":"account","parent":"21","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"213","name":"Instalații tehnice și mijloace de transport","level":"account","parent":"21","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2131","name":"Echipamente tehnologice (mașini, utilaje și instalații de lucru)","level":"subaccount","parent":"213","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2132","name":"Aparate și instalații de măsurare, control și reglare","level":"subaccount","parent":"213","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2133","name":"Mijloace de transport","level":"subaccount","parent":"213","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"214","name":"Mobilier, aparatură birotică, echipamente de protecție a valorilor umane și materiale și alte active corporale","level":"account","parent":"21","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"215","name":"Investiții imobiliare","level":"account","parent":"21","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"216","name":"Active corporale de explorare și evaluare a resurselor minerale","level":"account","parent":"21","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"217","name":"Active biologice productive","level":"account","parent":"21","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"22","name":"Imobilizări corporale în curs de aprovizionare","level":"group","parent":"2","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"223","name":"Instalații tehnice și mijloace de transport în curs de aprovizionare","level":"account","parent":"22","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"224","name":"Mobilier, aparatură birotică, echipamente de protecție a valorilor umane și materiale și alte active corporale în curs de aprovizionare","level":"account","parent":"22","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"227","name":"Active biologice productive în curs de aprovizionare","level":"account","parent":"22","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"23","name":"Imobilizări în curs","level":"group","parent":"2","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"231","name":"Imobilizări corporale în curs de execuție","level":"account","parent":"23","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"235","name":"Investiții imobiliare în curs de execuție","level":"account","parent":"23","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"26","name":"Imobilizări financiare","level":"group","parent":"2","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"261","name":"Acțiuni deținute la entitățile afiliate","level":"account","parent":"26","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"262","name":"Acțiuni deținute la entități asociate","level":"account","parent":"26","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"263","name":"Acțiuni deținute la entități controlate în comun","level":"account","parent":"26","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"264","name":"Titluri puse în echivalență","level":"account","parent":"26","function":"A","role":null,"notes":["Acest cont apare numai în situațiile financiare anuale consolidate."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"265","name":"Alte titluri imobilizate","level":"account","parent":"26","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"266","name":"Certificate verzi amânate","level":"account","parent":"26","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"267","name":"Creanțe imobilizate","level":"account","parent":"26","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2671","name":"Sume de încasat de la entitățile afiliate","level":"subaccount","parent":"267","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2672","name":"Dobânda aferentă sumelor de încasat de la entitățile afiliate","level":"subaccount","parent":"267","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2673","name":"Creanțe față de entitățile asociate și entitățile controlate în comun","level":"subaccount","parent":"267","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2674","name":"Dobânda aferentă creanțelor față de entitățile asociate și entitățile controlate în comun","level":"subaccount","parent":"267","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2675","name":"Împrumuturi acordate pe termen lung","level":"subaccount","parent":"267","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2676","name":"Dobânda aferentă împrumuturilor acordate pe termen lung","level":"subaccount","parent":"267","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2677","name":"Obligațiuni achiziționate cu ocazia emisiunilor efectuate de terți","level":"subaccount","parent":"267","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2678","name":"Alte creanțe imobilizate","level":"subaccount","parent":"267","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2679","name":"Dobânzi aferente altor creanțe imobilizate","level":"subaccount","parent":"267","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"269","name":"Vărsăminte de efectuat pentru imobilizări financiare","level":"account","parent":"26","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2691","name":"Vărsăminte de efectuat privind acțiunile deținute la entitățile afiliate","level":"subaccount","parent":"269","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2692","name":"Vărsăminte de efectuat privind acțiunile deținute la entități asociate","level":"subaccount","parent":"269","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2693","name":"Vărsăminte de efectuat privind acțiunile deținute la entități controlate în comun","level":"subaccount","parent":"269","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2695","name":"Vărsăminte de efectuat pentru alte imobilizări financiare","level":"subaccount","parent":"269","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"28","name":"Amortizări privind imobilizările","level":"group","parent":"2","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"280","name":"Amortizări privind imobilizările necorporale","level":"account","parent":"28","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2801","name":"Amortizarea cheltuielilor de constituire","level":"subaccount","parent":"280","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2803","name":"Amortizarea cheltuielilor de dezvoltare","level":"subaccount","parent":"280","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2805","name":"Amortizarea concesiunilor, brevetelor, licențelor, mărcilor comerciale, drepturilor și activelor similare","level":"subaccount","parent":"280","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2806","name":"Amortizarea activelor necorporale de explorare și evaluare a resurselor minerale","level":"subaccount","parent":"280","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2807","name":"Amortizarea fondului comercial","level":"subaccount","parent":"280","function":"P","role":null,"notes":["Acest cont apare, de regulă, în situațiile financiare anuale consolidate."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"2808","name":"Amortizarea altor imobilizări necorporale","level":"subaccount","parent":"280","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"281","name":"Amortizări privind imobilizările corporale","level":"account","parent":"28","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2811","name":"Amortizarea amenajărilor de terenuri","level":"subaccount","parent":"281","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2812","name":"Amortizarea construcțiilor","level":"subaccount","parent":"281","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2813","name":"Amortizarea instalațiilor și mijloacelor de transport","level":"subaccount","parent":"281","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2814","name":"Amortizarea altor imobilizări corporale","level":"subaccount","parent":"281","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2815","name":"Amortizarea investițiilor imobiliare","level":"subaccount","parent":"281","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2816","name":"Amortizarea activelor corporale de explorare și evaluare a resurselor minerale","level":"subaccount","parent":"281","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2817","name":"Amortizarea activelor biologice productive","level":"subaccount","parent":"281","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"29","name":"Ajustări pentru deprecierea sau pierderea de valoare a imobilizărilor","level":"group","parent":"2","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"290","name":"Ajustări pentru deprecierea imobilizărilor necorporale","level":"account","parent":"29","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2903","name":"Ajustări pentru deprecierea cheltuielilor de dezvoltare","level":"subaccount","parent":"290","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2905","name":"Ajustări pentru deprecierea concesiunilor, brevetelor, licențelor, mărcilor comerciale, drepturilor și activelor similare","level":"subaccount","parent":"290","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2906","name":"Ajustări pentru deprecierea activelor necorporale de explorare și evaluare a resurselor minerale","level":"subaccount","parent":"290","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2908","name":"Ajustări pentru deprecierea altor imobilizări necorporale","level":"subaccount","parent":"290","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"291","name":"Ajustări pentru deprecierea imobilizărilor corporale","level":"account","parent":"29","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2911","name":"Ajustări pentru deprecierea terenurilor și amenajărilor de terenuri","level":"subaccount","parent":"291","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2912","name":"Ajustări pentru deprecierea construcțiilor","level":"subaccount","parent":"291","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2913","name":"Ajustări pentru deprecierea instalațiilor și mijloacelor de transport","level":"subaccount","parent":"291","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2914","name":"Ajustări pentru deprecierea altor imobilizări corporale","level":"subaccount","parent":"291","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2915","name":"Ajustări pentru deprecierea investițiilor imobiliare","level":"subaccount","parent":"291","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2916","name":"Ajustări pentru deprecierea activelor corporale de explorare și evaluare a resurselor minerale","level":"subaccount","parent":"291","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2917","name":"Ajustări pentru deprecierea activelor biologice productive","level":"subaccount","parent":"291","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"293","name":"Ajustări pentru deprecierea imobilizărilor în curs de execuție","level":"account","parent":"29","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2931","name":"Ajustări pentru deprecierea imobilizărilor corporale în curs de execuție","level":"subaccount","parent":"293","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2935","name":"Ajustări pentru deprecierea investițiilor imobiliare în curs de execuție","level":"subaccount","parent":"293","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"296","name":"Ajustări pentru pierderea de valoare a imobilizărilor financiare","level":"account","parent":"29","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2961","name":"Ajustări pentru pierderea de valoare a acțiunilor deținute la entitățile afiliate","level":"subaccount","parent":"296","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2962","name":"Ajustări pentru pierderea de valoare a acțiunilor deținute la entități asociate și entități controlate în comun","level":"subaccount","parent":"296","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2963","name":"Ajustări pentru pierderea de valoare a altor titluri imobilizate","level":"subaccount","parent":"296","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2964","name":"Ajustări pentru pierderea de valoare a sumelor de încasat de la entitățile afiliate","level":"subaccount","parent":"296","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2965","name":"Ajustări pentru pierderea de valoare a creanțelor față de entitățile asociate și entitățile controlate în comun","level":"subaccount","parent":"296","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2966","name":"Ajustări pentru pierderea de valoare a împrumuturilor acordate pe termen lung","level":"subaccount","parent":"296","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"2968","name":"Ajustări pentru pierderea de valoare a altor creanțe imobilizate","level":"subaccount","parent":"296","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3","name":"Conturi de stocuri și producție în curs de execuție","level":"class","parent":null,"function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"30","name":"Stocuri de materii prime și materiale","level":"group","parent":"3","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"301","name":"Materii prime","level":"account","parent":"30","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"302","name":"Materiale consumabile","level":"account","parent":"30","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3021","name":"Materiale auxiliare","level":"subaccount","parent":"302","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3022","name":"Combustibili","level":"subaccount","parent":"302","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3023","name":"Materiale pentru ambalat","level":"subaccount","parent":"302","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3024","name":"Piese de schimb","level":"subaccount","parent":"302","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3025","name":"Semințe și materiale de plantat","level":"subaccount","parent":"302","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3026","name":"Furaje","level":"subaccount","parent":"302","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3028","name":"Alte materiale consumabile","level":"subaccount","parent":"302","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"303","name":"Materiale de natura obiectelor de inventar","level":"account","parent":"30","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"308","name":"Diferențe de preț la materii prime și materiale","level":"account","parent":"30","function":"A/P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"32","name":"Stocuri în curs de aprovizionare","level":"group","parent":"3","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"321","name":"Materii prime în curs de aprovizionare","level":"account","parent":"32","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"322","name":"Materiale consumabile în curs de aprovizionare","level":"account","parent":"32","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"323","name":"Materiale de natura obiectelor de inventar în curs de aprovizionare","level":"account","parent":"32","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"326","name":"Active biologice de natura stocurilor în curs de aprovizionare","level":"account","parent":"32","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"327","name":"Mărfuri în curs de aprovizionare","level":"account","parent":"32","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"328","name":"Ambalaje în curs de aprovizionare","level":"account","parent":"32","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"33","name":"Producție în curs de execuție","level":"group","parent":"3","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"331","name":"Produse în curs de execuție","level":"account","parent":"33","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"332","name":"Servicii în curs de execuție","level":"account","parent":"33","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"34","name":"PRODUSE","level":"group","parent":"3","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"341","name":"Semifabricate","level":"account","parent":"34","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"345","name":"Produse finite","level":"account","parent":"34","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"346","name":"Produse reziduale","level":"account","parent":"34","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"347","name":"Produse agricole","level":"account","parent":"34","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"348","name":"Diferențe de preț la produse","level":"account","parent":"34","function":"A/P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"35","name":"STOCURI AFLATE LA TERȚI","level":"group","parent":"3","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"351","name":"Materii și materiale aflate la terți","level":"account","parent":"35","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"354","name":"Produse aflate la terți","level":"account","parent":"35","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"356","name":"Active biologice de natura stocurilor aflate la terți","level":"account","parent":"35","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"357","name":"Mărfuri aflate la terți","level":"account","parent":"35","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"358","name":"Ambalaje aflate la terți","level":"account","parent":"35","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"36","name":"Active biologice de natura stocurilor","level":"group","parent":"3","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"361","name":"Active biologice de natura stocurilor","level":"account","parent":"36","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"368","name":"Diferențe de preț la active biologice de natura stocurilor","level":"account","parent":"36","function":"A/P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"37","name":"MĂRFURI","level":"group","parent":"3","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"371","name":"Mărfuri","level":"account","parent":"37","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"378","name":"Diferențe de preț la mărfuri","level":"account","parent":"37","function":"A/P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"38","name":"Ambalaje","level":"group","parent":"3","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"381","name":"Ambalaje","level":"account","parent":"38","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"388","name":"Diferențe de preț la ambalaje","level":"account","parent":"38","function":"A/P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"39","name":"Ajustări pentru deprecierea stocurilor și producției în curs de execuție","level":"group","parent":"3","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"391","name":"Ajustări pentru deprecierea materiilor prime","level":"account","parent":"39","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"392","name":"Ajustări pentru deprecierea materialelor","level":"account","parent":"39","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3921","name":"Ajustări pentru deprecierea materialelor consumabile","level":"subaccount","parent":"392","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3922","name":"Ajustări pentru deprecierea materialelor de natura obiectelor de inventar","level":"subaccount","parent":"392","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"393","name":"Ajustări pentru deprecierea producției în curs de execuție","level":"account","parent":"39","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"394","name":"Ajustări pentru deprecierea produselor","level":"account","parent":"39","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3941","name":"Ajustări pentru deprecierea semifabricatelor","level":"subaccount","parent":"394","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3945","name":"Ajustări pentru deprecierea produselor finite","level":"subaccount","parent":"394","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3946","name":"Ajustări pentru deprecierea produselor reziduale","level":"subaccount","parent":"394","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3947","name":"Ajustări pentru deprecierea produselor agricole","level":"subaccount","parent":"394","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"395","name":"Ajustări pentru deprecierea stocurilor aflate la terți","level":"account","parent":"39","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3951","name":"Ajustări pentru deprecierea materiilor și materialelor aflate la terți","level":"subaccount","parent":"395","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3952","name":"Ajustări pentru deprecierea semifabricatelor aflate la terți","level":"subaccount","parent":"395","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3953","name":"Ajustări pentru deprecierea produselor finite aflate la terți","level":"subaccount","parent":"395","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3954","name":"Ajustări pentru deprecierea produselor reziduale aflate la terți","level":"subaccount","parent":"395","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3955","name":"Ajustări pentru deprecierea produselor agricole aflate la terți","level":"subaccount","parent":"395","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3956","name":"Ajustări pentru deprecierea activelor biologice de natura stocurilor aflate la terți","level":"subaccount","parent":"395","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3957","name":"Ajustări pentru deprecierea mărfurilor aflate la terți","level":"subaccount","parent":"395","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"3958","name":"Ajustări pentru deprecierea ambalajelor aflate la terți","level":"subaccount","parent":"395","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"396","name":"Ajustări pentru deprecierea activelor biologice de natura stocurilor","level":"account","parent":"39","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"397","name":"Ajustări pentru deprecierea mărfurilor","level":"account","parent":"39","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"398","name":"Ajustări pentru deprecierea ambalajelor","level":"account","parent":"39","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4","name":"Conturi de terți","level":"class","parent":null,"function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"40","name":"Furnizori și conturi asimilate","level":"group","parent":"4","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"401","name":"Furnizori","level":"account","parent":"40","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"403","name":"Efecte de plătit","level":"account","parent":"40","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"404","name":"Furnizori de imobilizări","level":"account","parent":"40","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"405","name":"Efecte de plătit pentru imobilizări","level":"account","parent":"40","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"408","name":"Furnizori - facturi nesosite","level":"account","parent":"40","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"409","name":"Furnizori - debitori","level":"account","parent":"40","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4091","name":"Furnizori - debitori pentru cumpărări de bunuri de natura stocurilor","level":"subaccount","parent":"409","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4092","name":"Furnizori - debitori pentru prestări de servicii","level":"subaccount","parent":"409","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4093","name":"Avansuri acordate pentru imobilizări corporale","level":"subaccount","parent":"409","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4094","name":"Avansuri acordate pentru imobilizări necorporale","level":"subaccount","parent":"409","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"41","name":"Clienți și conturi asimilate","level":"group","parent":"4","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"411","name":"Clienți","level":"account","parent":"41","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4111","name":"Clienți","level":"subaccount","parent":"411","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4118","name":"Clienți incerți sau în litigiu","level":"subaccount","parent":"411","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"413","name":"Efecte de primit de la clienți","level":"account","parent":"41","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"418","name":"Clienți - facturi de întocmit","level":"account","parent":"41","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"419","name":"Clienți - creditori","level":"account","parent":"41","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"42","name":"Personal și conturi asimilate","level":"group","parent":"4","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"421","name":"Personal - salarii datorate","level":"account","parent":"42","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"423","name":"Personal - ajutoare materiale datorate","level":"account","parent":"42","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"424","name":"Prime reprezentând participarea personalului la profit","level":"account","parent":"42","function":"P","role":null,"notes":["Se utilizează atunci când există bază legală pentru acordarea acestora."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"425","name":"Avansuri acordate personalului","level":"account","parent":"42","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"426","name":"Drepturi de personal neridicate","level":"account","parent":"42","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"427","name":"Rețineri din salarii datorate terților","level":"account","parent":"42","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"428","name":"Alte datorii și creanțe în legătură cu personalul","level":"account","parent":"42","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4281","name":"Alte datorii în legătură cu personalul","level":"subaccount","parent":"428","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4282","name":"Alte creanțe în legătură cu personalul","level":"subaccount","parent":"428","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"43","name":"Asigurări sociale, protecția socială și conturi asimilate","level":"group","parent":"4","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"431","name":"Asigurări sociale","level":"account","parent":"43","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4311","name":"Contribuția unității la asigurările sociale","level":"subaccount","parent":"431","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4312","name":"Contribuția personalului la asigurările sociale","level":"subaccount","parent":"431","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4313","name":"Contribuția angajatorului pentru asigurările sociale de sănătate","level":"subaccount","parent":"431","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4314","name":"Contribuția angajaților pentru asigurările sociale de sănătate","level":"subaccount","parent":"431","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4315","name":"Contribuția de asigurări sociale","level":"subaccount","parent":"431","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4316","name":"Contribuția de asigurări sociale de sănătate","level":"subaccount","parent":"431","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4318","name":"Alte contribuții pentru asigurările sociale de sănătate","level":"subaccount","parent":"431","function":null,"role":null,"notes":["În acest cont se înregistrează contribuția datorată, potrivit legii, de alte persoane decât angajații, pentru asigurările sociale de sănătate."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"436","name":"Contribuția asiguratorie pentru muncă","level":"account","parent":"43","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"437","name":"Ajutor de șomaj","level":"account","parent":"43","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4371","name":"Contribuția unității la fondul de șomaj","level":"subaccount","parent":"437","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4372","name":"Contribuția personalului la fondul de șomaj","level":"subaccount","parent":"437","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"438","name":"Alte datorii și creanțe sociale","level":"account","parent":"43","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4381","name":"Alte datorii sociale","level":"subaccount","parent":"438","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4382","name":"Alte creanțe sociale","level":"subaccount","parent":"438","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"44","name":"Bugetul statului, fonduri speciale și conturi asimilate","level":"group","parent":"4","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"441","name":"Impozitul pe profit și alte impozite","level":"account","parent":"44","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4411","name":"Impozitul pe profit","level":"subaccount","parent":"441","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4415","name":"Impozitul specific unor activități","level":"subaccount","parent":"441","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4417","name":"Impozitul pe profit la nivelul impozitului minim pe cifra de afaceri","level":"subaccount","parent":"441","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4418","name":"Impozitul pe venit","level":"subaccount","parent":"441","function":"P","role":null,"notes":["Se utilizează pentru evidențierea impozitului pe venitul microîntreprinderilor, definite conform legii."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"442","name":"Taxa pe valoarea adăugată","level":"account","parent":"44","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4423","name":"TVA de plată","level":"subaccount","parent":"442","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4424","name":"TVA de recuperat","level":"subaccount","parent":"442","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4426","name":"TVA deductibilă","level":"subaccount","parent":"442","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4427","name":"TVA colectată","level":"subaccount","parent":"442","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4428","name":"TVA neexigibilă","level":"subaccount","parent":"442","function":"A/P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"444","name":"Impozitul pe venituri de natura salariilor","level":"account","parent":"44","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"445","name":"Subvenții","level":"account","parent":"44","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4451","name":"Subvenții guvernamentale","level":"subaccount","parent":"445","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4452","name":"Împrumuturi nerambursabile cu caracter de subvenții","level":"subaccount","parent":"445","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4458","name":"Alte sume primite cu caracter de subvenții","level":"subaccount","parent":"445","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"446","name":"Alte impozite, taxe și vărsăminte asimilate","level":"account","parent":"44","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"447","name":"Fonduri speciale - taxe și vărsăminte asimilate","level":"account","parent":"44","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"448","name":"Alte datorii și creanțe cu bugetul statului","level":"account","parent":"44","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4481","name":"Alte datorii față de bugetul statului","level":"subaccount","parent":"448","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4482","name":"Alte creanțe privind bugetul statului","level":"subaccount","parent":"448","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"45","name":"Grup și acționari/asociați","level":"group","parent":"4","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"451","name":"Decontări între entitățile afiliate","level":"account","parent":"45","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4511","name":"Decontări între entitățile afiliate","level":"subaccount","parent":"451","function":"A/P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4518","name":"Dobânzi aferente decontărilor între entitățile afiliate","level":"subaccount","parent":"451","function":"A/P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"453","name":"Decontări cu entitățile asociate și entitățile controlate în comun","level":"account","parent":"45","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4531","name":"Decontări cu entitățile asociate și entitățile controlate","level":"subaccount","parent":"453","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4538","name":"Dobânzi aferente decontărilor cu entitățile asociate și entitățile controlate în comun","level":"subaccount","parent":"453","function":"A/P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"455","name":"Sume datorate acționarilor/asociaților","level":"account","parent":"45","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4551","name":"Acționari/Asociați - conturi curente","level":"subaccount","parent":"455","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4558","name":"Acționari/Asociați - dobânzi la conturi curente","level":"subaccount","parent":"455","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"456","name":"Decontări cu acționarii/asociații privind capitalul","level":"account","parent":"45","function":"A/P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"457","name":"Dividende de plată","level":"account","parent":"45","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"458","name":"Decontări din operațiuni în participație","level":"account","parent":"45","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4581","name":"Decontări din operațiuni în participație - pasiv","level":"subaccount","parent":"458","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4582","name":"Decontări din operațiuni în participație - activ","level":"subaccount","parent":"458","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"46","name":"Debitori și creditori diverși","level":"group","parent":"4","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"461","name":"Debitori diverși","level":"account","parent":"46","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"462","name":"Creditori diverși","level":"account","parent":"46","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"463","name":"Creanțe reprezentând dividende repartizate în cursul exercițiului financiar","level":"account","parent":"46","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"466","name":"Decontări din operațiuni de fiducie","level":"account","parent":"46","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4661","name":"Datorii din operațiuni de fiducie","level":"subaccount","parent":"466","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4662","name":"Creanțe din operațiuni de fiducie","level":"subaccount","parent":"466","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"467","name":"Datorii aferente distribuirilor interimare de dividende","level":"account","parent":"46","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"47","name":"Conturi de subvenții, regularizare și asimilate","level":"group","parent":"4","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"471","name":"Cheltuieli înregistrate în avans","level":"account","parent":"47","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"472","name":"Venituri înregistrate în avans","level":"account","parent":"47","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"473","name":"Decontări din operațiuni în curs de clarificare","level":"account","parent":"47","function":"A/P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"475","name":"Subvenții pentru investiții","level":"account","parent":"47","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4751","name":"Subvenții guvernamentale pentru investiții","level":"subaccount","parent":"475","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4752","name":"Împrumuturi nerambursabile cu caracter de subvenții pentru investiții","level":"subaccount","parent":"475","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4753","name":"Donații pentru investiții","level":"subaccount","parent":"475","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4754","name":"Plusuri de inventar de natura imobilizărilor","level":"subaccount","parent":"475","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4758","name":"Alte sume primite cu caracter de subvenții pentru investiții","level":"subaccount","parent":"475","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"478","name":"Venituri în avans aferente activelor primite prin transfer de la clienți","level":"account","parent":"47","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"48","name":"Decontări în cadrul unității","level":"group","parent":"4","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"481","name":"Decontări între unitate și subunități","level":"account","parent":"48","function":"A/P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"482","name":"Decontări între subunități","level":"account","parent":"48","function":"A/P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"49","name":"Ajustări pentru deprecierea creanțelor","level":"group","parent":"4","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"490","name":"Ajustări pentru deprecierea creanțelor reprezentând avansuri acordate furnizorilor","level":"account","parent":"49","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4901","name":"Ajustări pentru deprecierea creanțelor aferente cumpărărilor de bunuri de natura stocurilor","level":"subaccount","parent":"490","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4902","name":"Ajustări pentru deprecierea creanțelor aferente prestărilor de servicii","level":"subaccount","parent":"490","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4903","name":"Ajustări pentru deprecierea creanțelor aferente imobilizărilor corporale","level":"subaccount","parent":"490","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"4904","name":"Ajustări pentru deprecierea creanțelor aferente imobilizărilor necorporale","level":"subaccount","parent":"490","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"491","name":"Ajustări pentru deprecierea creanțelor - clienți","level":"account","parent":"49","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"495","name":"Ajustări pentru deprecierea creanțelor - decontări în cadrul grupului și cu acționarii/asociații","level":"account","parent":"49","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"496","name":"Ajustări pentru deprecierea creanțelor - debitori diverși","level":"account","parent":"49","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5","name":"Conturi de trezorerie","level":"class","parent":null,"function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"50","name":"Investiții pe termen scurt","level":"group","parent":"5","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"501","name":"Acțiuni deținute la entitățile afiliate","level":"account","parent":"50","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"505","name":"Obligațiuni emise și răscumpărate","level":"account","parent":"50","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"506","name":"Obligațiuni","level":"account","parent":"50","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"507","name":"Certificate verzi primite","level":"account","parent":"50","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"508","name":"Alte investiții pe termen scurt și creanțe asimilate","level":"account","parent":"50","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5081","name":"Alte titluri de plasament","level":"subaccount","parent":"508","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5088","name":"Dobânzi la obligațiuni și titluri de plasament","level":"subaccount","parent":"508","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"509","name":"Vărsăminte de efectuat pentru investițiile pe termen scurt","level":"account","parent":"50","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5091","name":"Vărsăminte de efectuat pentru acțiunile deținute la entitățile afiliate","level":"subaccount","parent":"509","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5092","name":"Vărsăminte de efectuat pentru alte investiții pe termen scurt","level":"subaccount","parent":"509","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"51","name":"Conturi la bănci","level":"group","parent":"5","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"511","name":"Valori de încasat","level":"account","parent":"51","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5112","name":"Cecuri de încasat","level":"subaccount","parent":"511","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5113","name":"Efecte de încasat","level":"subaccount","parent":"511","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5114","name":"Efecte remise spre scontare","level":"subaccount","parent":"511","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"512","name":"Conturi curente la bănci","level":"account","parent":"51","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5121","name":"Conturi la bănci în lei","level":"subaccount","parent":"512","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5124","name":"Conturi la bănci în valută","level":"subaccount","parent":"512","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5125","name":"Sume în curs de decontare","level":"subaccount","parent":"512","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"518","name":"Dobânzi","level":"account","parent":"51","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5186","name":"Dobânzi de plătit","level":"subaccount","parent":"518","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5187","name":"Dobânzi de încasat","level":"subaccount","parent":"518","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"519","name":"Credite bancare pe termen scurt","level":"account","parent":"51","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5191","name":"Credite bancare pe termen scurt","level":"subaccount","parent":"519","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5192","name":"Credite bancare pe termen scurt nerambursate la scadență","level":"subaccount","parent":"519","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5193","name":"Credite externe guvernamentale","level":"subaccount","parent":"519","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5194","name":"Credite externe garantate de stat","level":"subaccount","parent":"519","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5195","name":"Credite externe garantate de bănci","level":"subaccount","parent":"519","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5196","name":"Credite de la Trezoreria Statului","level":"subaccount","parent":"519","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5197","name":"Credite interne garantate de stat","level":"subaccount","parent":"519","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5198","name":"Dobânzi aferente creditelor bancare pe termen scurt","level":"subaccount","parent":"519","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"53","name":"Casa","level":"group","parent":"5","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"531","name":"Casa","level":"account","parent":"53","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5311","name":"Casa în lei","level":"subaccount","parent":"531","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5314","name":"Casa în valută","level":"subaccount","parent":"531","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"532","name":"Alte valori","level":"account","parent":"53","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5321","name":"Timbre fiscale și poștale","level":"subaccount","parent":"532","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5322","name":"Bilete de tratament și odihnă","level":"subaccount","parent":"532","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5323","name":"Tichete și bilete de călătorie","level":"subaccount","parent":"532","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5328","name":"Alte valori","level":"subaccount","parent":"532","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"54","name":"Acreditive","level":"group","parent":"5","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"541","name":"Acreditive","level":"account","parent":"54","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5411","name":"Acreditive în lei","level":"subaccount","parent":"541","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"5414","name":"Acreditive în valută","level":"subaccount","parent":"541","function":"A","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"542","name":"Avansuri de trezorerie","level":"account","parent":"54","function":"A","role":null,"notes":["În acest cont vor fi evidențiate și sumele acordate prin sistemul de carduri."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"58","name":"Viramente interne","level":"group","parent":"5","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"581","name":"Viramente interne","level":"account","parent":"58","function":"A/P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"59","name":"Ajustări pentru pierderea de valoare a conturilor de trezorerie","level":"group","parent":"5","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"591","name":"Ajustări pentru pierderea de valoare a acțiunilor deținute la entitățile afiliate","level":"account","parent":"59","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"595","name":"Ajustări pentru pierderea de valoare a obligațiunilor emise și răscumpărate","level":"account","parent":"59","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"596","name":"Ajustări pentru pierderea de valoare a obligațiunilor","level":"account","parent":"59","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"598","name":"Ajustări pentru pierderea de valoare a altor investiții pe termen scurt și creanțe asimilate","level":"account","parent":"59","function":"P","role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6","name":"Conturi de cheltuieli","level":"class","parent":null,"function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"60","name":"Cheltuieli privind stocurile și alte consumuri","level":"group","parent":"6","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"601","name":"Cheltuieli cu materiile prime","level":"account","parent":"60","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"602","name":"Cheltuieli cu materialele consumabile","level":"account","parent":"60","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6021","name":"Cheltuieli cu materialele auxiliare","level":"subaccount","parent":"602","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6022","name":"Cheltuieli privind combustibilii","level":"subaccount","parent":"602","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6023","name":"Cheltuieli privind materialele pentru ambalat","level":"subaccount","parent":"602","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6024","name":"Cheltuieli privind piesele de schimb","level":"subaccount","parent":"602","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6025","name":"Cheltuieli privind semințele și materialele de plantat","level":"subaccount","parent":"602","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6026","name":"Cheltuieli privind furajele","level":"subaccount","parent":"602","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6028","name":"Cheltuieli privind alte materiale consumabile","level":"subaccount","parent":"602","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"603","name":"Cheltuieli privind materialele de natura obiectelor de inventar","level":"account","parent":"60","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"604","name":"Cheltuieli privind materialele nestocate","level":"account","parent":"60","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"605","name":"Cheltuieli privind utilitățile","level":"account","parent":"60","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6051","name":"Cheltuieli privind consumul de energie","level":"subaccount","parent":"605","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6052","name":"Cheltuieli privind consumul de apă","level":"subaccount","parent":"605","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6053","name":"Cheltuieli privind consumul de gaze naturale","level":"subaccount","parent":"605","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6058","name":"Cheltuieli cu alte utilități","level":"subaccount","parent":"605","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"606","name":"Cheltuieli privind activele biologice de natura stocurilor","level":"account","parent":"60","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"607","name":"Cheltuieli privind mărfurile","level":"account","parent":"60","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"608","name":"Cheltuieli privind ambalajele","level":"account","parent":"60","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"609","name":"Reduceri comerciale primite","level":"account","parent":"60","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"61","name":"Cheltuieli cu serviciile executate de terți","level":"group","parent":"6","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"611","name":"Cheltuieli cu întreținerea și reparațiile","level":"account","parent":"61","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"612","name":"Cheltuieli cu redevențele, locațiile de gestiune și chiriile","level":"account","parent":"61","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6121","name":"Cheltuieli cu redevențele","level":"subaccount","parent":"612","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6122","name":"Cheltuieli cu locațiile de gestiune","level":"subaccount","parent":"612","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6123","name":"Cheltuieli cu chiriile","level":"subaccount","parent":"612","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"613","name":"Cheltuieli cu primele de asigurare","level":"account","parent":"61","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"614","name":"Cheltuieli cu studiile și cercetările","level":"account","parent":"61","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"615","name":"Cheltuieli cu pregătirea personalului","level":"account","parent":"61","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"616","name":"Cheltuieli aferente drepturilor de proprietate intelectuală","level":"account","parent":"61","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"617","name":"Cheltuieli de management","level":"account","parent":"61","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"618","name":"Cheltuieli de consultanță","level":"account","parent":"61","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"62","name":"Cheltuieli cu alte servicii executate de terți","level":"group","parent":"6","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"621","name":"Cheltuieli cu colaboratorii","level":"account","parent":"62","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"622","name":"Cheltuieli privind comisioanele și onorariile","level":"account","parent":"62","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"623","name":"Cheltuieli de protocol, reclamă și publicitate","level":"account","parent":"62","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6231","name":"Cheltuieli de protocol","level":"subaccount","parent":"623","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6232","name":"Cheltuieli de reclamă și publicitate","level":"subaccount","parent":"623","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"624","name":"Cheltuieli cu transportul de bunuri și personal","level":"account","parent":"62","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"625","name":"Cheltuieli cu deplasări, detașări și transferări","level":"account","parent":"62","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"626","name":"Cheltuieli poștale și taxe de telecomunicații","level":"account","parent":"62","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"627","name":"Cheltuieli cu serviciile bancare și asimilate","level":"account","parent":"62","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"628","name":"Alte cheltuieli cu serviciile executate de terți","level":"account","parent":"62","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"63","name":"Cheltuieli cu alte impozite, taxe și vărsăminte asimilate","level":"group","parent":"6","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"635","name":"Cheltuieli cu alte impozite, taxe și vărsăminte asimilate","level":"account","parent":"63","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6351","name":"Cheltuieli cu impozitul suplimentar pentru sectoarele de activitate specifice","level":"subaccount","parent":"635","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"64","name":"Cheltuieli cu personalul","level":"group","parent":"6","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"641","name":"Cheltuieli cu salariile personalului","level":"account","parent":"64","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"642","name":"Cheltuieli cu avantajele în natură și tichetele acordate salariaților","level":"account","parent":"64","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6421","name":"Cheltuieli cu avantajele în natură acordate salariaților","level":"subaccount","parent":"642","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6422","name":"Cheltuieli cu tichetele acordate salariaților","level":"subaccount","parent":"642","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"643","name":"Cheltuieli cu remunerarea în instrumente de capitaluri proprii","level":"account","parent":"64","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"644","name":"Cheltuieli cu primele reprezentând participarea personalului la profit","level":"account","parent":"64","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"645","name":"Cheltuieli privind asigurările și protecția socială","level":"account","parent":"64","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6451","name":"Cheltuieli privind contribuția unității la asigurările sociale","level":"subaccount","parent":"645","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6452","name":"Cheltuieli privind contribuția unității pentru ajutorul de șomaj","level":"subaccount","parent":"645","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6453","name":"Cheltuieli privind contribuția angajatorului pentru asigurările sociale de sănătate","level":"subaccount","parent":"645","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6455","name":"Cheltuieli privind contribuția unității la asigurările de viață","level":"subaccount","parent":"645","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6456","name":"Cheltuieli privind contribuția unității la fondurile de pensii facultative","level":"subaccount","parent":"645","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6457","name":"Cheltuieli privind contribuția unității la primele de asigurare voluntară de sănătate","level":"subaccount","parent":"645","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6458","name":"Alte cheltuieli privind asigurările și protecția socială","level":"subaccount","parent":"645","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"646","name":"Cheltuieli privind contribuția asiguratorie pentru muncă","level":"account","parent":"64","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6461","name":"Cheltuieli privind contribuția asiguratorie pentru muncă corespunzătoare salariaților","level":"subaccount","parent":"646","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6462","name":"Cheltuieli privind contribuția asiguratorie pentru muncă corespunzătoare altor persoane, decât salariații","level":"subaccount","parent":"646","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"65","name":"Alte cheltuieli de exploatare","level":"group","parent":"6","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"651","name":"Cheltuieli din operațiuni de fiducie","level":"account","parent":"65","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6511","name":"Cheltuieli ocazionate de constituirea fiduciei","level":"subaccount","parent":"651","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6512","name":"Cheltuieli din derularea operațiunilor de fiducie","level":"subaccount","parent":"651","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6513","name":"Cheltuieli din lichidarea operațiunilor de fiducie","level":"subaccount","parent":"651","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"652","name":"Cheltuieli cu protecția mediului înconjurător","level":"account","parent":"65","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"654","name":"Pierderi din creanțe și debitori diverși","level":"account","parent":"65","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"655","name":"Cheltuieli din reevaluarea imobilizărilor corporale","level":"account","parent":"65","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"658","name":"Alte cheltuieli de exploatare","level":"account","parent":"65","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6581","name":"Despăgubiri, amenzi și penalități","level":"subaccount","parent":"658","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6582","name":"Donații acordate","level":"subaccount","parent":"658","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6583","name":"Cheltuieli privind activele cedate și alte operațiuni de capital","level":"subaccount","parent":"658","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6584","name":"Cheltuieli cu sumele sau bunurile acordate ca sponsorizări","level":"subaccount","parent":"658","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6586","name":"Cheltuieli reprezentând transferuri și contribuții datorate în baza unor acte normative speciale","level":"subaccount","parent":"658","function":null,"role":"expense","notes":["În acest cont se evidențiază cheltuielile reprezentând transferuri și contribuții datorate în baza unor acte normative speciale, altele decât cele prevăzute de Codul fiscal."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"6587","name":"Cheltuieli privind calamitățile și alte evenimente similare","level":"subaccount","parent":"658","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6588","name":"Alte cheltuieli de exploatare","level":"subaccount","parent":"658","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"66","name":"Cheltuieli financiare","level":"group","parent":"6","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"663","name":"Pierderi din creanțe legate de participații","level":"account","parent":"66","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"664","name":"Cheltuieli privind investițiile financiare cedate","level":"account","parent":"66","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6641","name":"Cheltuieli privind imobilizările financiare cedate","level":"subaccount","parent":"664","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6642","name":"Pierderi din investițiile pe termen scurt cedate","level":"subaccount","parent":"664","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"665","name":"Cheltuieli din diferențe de curs valutar monetare exprimate în valută","level":"account","parent":"66","function":null,"role":"expense","notes":["În acest cont nu se înregistrează diferențele nefavorabile de curs valutar rezultate din evaluarea elementelor monetare care fac parte din investiția netă într-o entitate străină."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"6652","name":"Diferențe nefavorabile de curs valutar din evaluarea elementelor monetare care fac parte din investiția netă într-o entitate străină","level":"subaccount","parent":"665","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"666","name":"Cheltuieli privind dobânzile","level":"account","parent":"66","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"667","name":"Cheltuieli privind sconturile acordate","level":"account","parent":"66","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"668","name":"Alte cheltuieli financiare","level":"account","parent":"66","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"68","name":"Cheltuieli cu amortizările, provizioanele și ajustările pentru depreciere sau pierdere de valoare","level":"group","parent":"6","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"681","name":"Cheltuieli de exploatare privind amortizările, provizioanele și ajustările pentru depreciere","level":"account","parent":"68","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6811","name":"Cheltuieli de exploatare privind amortizarea imobilizărilor","level":"subaccount","parent":"681","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6812","name":"Cheltuieli de exploatare privind provizioanele","level":"subaccount","parent":"681","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6813","name":"Cheltuieli de exploatare privind ajustările pentru deprecierea imobilizărilor","level":"subaccount","parent":"681","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6814","name":"Cheltuieli de exploatare privind ajustările pentru deprecierea activelor circulante","level":"subaccount","parent":"681","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6817","name":"Cheltuieli de exploatare privind ajustările pentru deprecierea fondului comercial","level":"subaccount","parent":"681","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6818","name":"Cheltuieli de exploatare privind ajustările pentru deprecierea creanțelor reprezentând avansuri acordate furnizorilor","level":"subaccount","parent":"681","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"686","name":"Cheltuieli financiare privind amortizările, provizioanele și ajustările pentru pierdere de valoare","level":"account","parent":"68","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6861","name":"Cheltuieli privind actualizarea provizioanelor","level":"subaccount","parent":"686","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6863","name":"Cheltuieli financiare privind ajustările pentru pierderea de valoare a imobilizărilor financiare","level":"subaccount","parent":"686","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6864","name":"Cheltuieli financiare privind ajustările pentru pierderea de valoare a activelor circulante","level":"subaccount","parent":"686","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6865","name":"Cheltuieli financiare privind amortizarea diferențelor aferente titlurilor de stat","level":"subaccount","parent":"686","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"6868","name":"Cheltuieli financiare privind amortizarea primelor de rambursare a obligațiunilor și a altor datorii","level":"subaccount","parent":"686","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"69","name":"Cheltuieli cu impozitul pe profit și alte impozite","level":"group","parent":"6","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"691","name":"Cheltuieli cu impozitul pe profit","level":"account","parent":"69","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"694","name":"Cheltuieli cu impozitul pe profit, respectiv impozitul pe profit la nivelul impozitului minim pe cifra de afaceri, rezultat din decontările în cadrul grupului fiscal în domeniul impozitului pe profit","level":"account","parent":"69","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"695","name":"Cheltuieli cu impozitul specific unor activități","level":"account","parent":"69","function":null,"role":"expense","notes":["Se utilizează pentru evidențierea impozitului specific unor activități, definit potrivit legii."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"697","name":"Cheltuieli cu impozitul pe profit la nivelul impozitului minim pe cifra de afaceri","level":"account","parent":"69","function":null,"role":"expense","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"698","name":"Cheltuieli cu impozitul pe venit și cu alte impozite care nu apar în elementele de mai sus","level":"account","parent":"69","function":null,"role":"expense","notes":["Se utilizează conform reglementărilor legale."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"7","name":"Conturi de venituri","level":"class","parent":null,"function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"70","name":"Cifra de afaceri netă","level":"group","parent":"7","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"701","name":"Venituri din vânzarea produselor finite, produselor agricole și a activelor biologice de natura stocurilor","level":"account","parent":"70","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7015","name":"Venituri din vânzarea produselor finite","level":"subaccount","parent":"701","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7017","name":"Venituri din vânzarea produselor agricole","level":"subaccount","parent":"701","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7018","name":"Venituri din vânzarea activelor biologice de natura stocurilor","level":"subaccount","parent":"701","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"702","name":"Venituri din vânzarea semifabricatelor","level":"account","parent":"70","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"703","name":"Venituri din vânzarea produselor reziduale","level":"account","parent":"70","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"704","name":"Venituri din servicii prestate","level":"account","parent":"70","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"705","name":"Venituri din studii și cercetări","level":"account","parent":"70","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"706","name":"Venituri din redevențe, locații de gestiune și chirii","level":"account","parent":"70","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"707","name":"Venituri din vânzarea mărfurilor","level":"account","parent":"70","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"708","name":"Venituri din activități diverse","level":"account","parent":"70","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"709","name":"Reduceri comerciale acordate","level":"account","parent":"70","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"71","name":"Venituri aferente costului producției în curs de execuție","level":"group","parent":"7","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"711","name":"Venituri aferente costurilor stocurilor de produse","level":"account","parent":"71","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"712","name":"Venituri aferente costurilor serviciilor în curs de execuție","level":"account","parent":"71","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"72","name":"Venituri din producția de imobilizări","level":"group","parent":"7","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"721","name":"Venituri din producția de imobilizări necorporale","level":"account","parent":"72","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"722","name":"Venituri din producția de imobilizări corporale","level":"account","parent":"72","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"725","name":"Venituri din producția de investiții imobiliare","level":"account","parent":"72","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"74","name":"Venituri din subvenții de exploatare","level":"group","parent":"7","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"741","name":"Venituri din subvenții de exploatare","level":"account","parent":"74","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7411","name":"Venituri din subvenții de exploatare aferente cifrei de afaceri","level":"subaccount","parent":"741","function":null,"role":"income","notes":["Se ia în calcul la determinarea cifrei de afaceri."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"7412","name":"Venituri din subvenții de exploatare pentru materii prime și materiale","level":"subaccount","parent":"741","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7413","name":"Venituri din subvenții de exploatare pentru alte cheltuieli externe","level":"subaccount","parent":"741","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7414","name":"Venituri din subvenții de exploatare pentru plata personalului","level":"subaccount","parent":"741","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7415","name":"Venituri din subvenții de exploatare pentru asigurări și protecție socială","level":"subaccount","parent":"741","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7416","name":"Venituri din subvenții de exploatare pentru alte cheltuieli de exploatare","level":"subaccount","parent":"741","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7417","name":"Venituri din subvenții de exploatare în caz de calamități și alte evenimente similare","level":"subaccount","parent":"741","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7418","name":"Venituri din subvenții de exploatare pentru dobânda datorată","level":"subaccount","parent":"741","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7419","name":"Venituri din subvenții de exploatare aferente altor venituri","level":"subaccount","parent":"741","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"75","name":"Alte venituri din exploatare","level":"group","parent":"7","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"751","name":"Venituri din operațiuni de fiducie","level":"account","parent":"75","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7511","name":"Venituri ocazionate de constituirea fiduciei","level":"subaccount","parent":"751","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7512","name":"Venituri din derularea operațiunilor de fiducie","level":"subaccount","parent":"751","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7513","name":"Venituri din lichidarea operațiunilor de fiducie.","level":"subaccount","parent":"751","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"754","name":"Venituri din creanțe reactivate și debitori diverși","level":"account","parent":"75","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"755","name":"Venituri din reevaluarea imobilizărilor corporale","level":"account","parent":"75","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"758","name":"Alte venituri din exploatare","level":"account","parent":"75","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7581","name":"Venituri din despăgubiri, amenzi și penalități","level":"subaccount","parent":"758","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7582","name":"Venituri din donații primite","level":"subaccount","parent":"758","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7583","name":"Venituri din vânzarea activelor și alte operațiuni de capital","level":"subaccount","parent":"758","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7584","name":"Venituri din subvenții pentru investiții","level":"subaccount","parent":"758","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7586","name":"Venituri reprezentând transferuri cuvenite în baza unor acte normative speciale","level":"subaccount","parent":"758","function":null,"role":"income","notes":["În acest cont se evidențiază veniturile reprezentând transferuri cuvenite în baza unor acte normative speciale, altele decât cele prevăzute de Codul fiscal."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"7588","name":"Alte venituri din exploatare","level":"subaccount","parent":"758","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"76","name":"Venituri financiare","level":"group","parent":"7","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"761","name":"Venituri din imobilizări financiare","level":"account","parent":"76","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7611","name":"Venituri din acțiuni deținute la entitățile afiliate","level":"subaccount","parent":"761","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7612","name":"Venituri din acțiuni deținute la entități asociate","level":"subaccount","parent":"761","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7613","name":"Venituri din acțiuni deținute la entități controlate în comun","level":"subaccount","parent":"761","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7615","name":"Venituri din alte imobilizări financiare","level":"subaccount","parent":"761","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"762","name":"Venituri din investiții financiare pe termen scurt","level":"account","parent":"76","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"764","name":"Venituri din investiții financiare cedate","level":"account","parent":"76","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7641","name":"Venituri din imobilizări financiare cedate","level":"subaccount","parent":"764","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7642","name":"Câștiguri din investiții pe termen scurt cedate","level":"subaccount","parent":"764","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"765","name":"Venituri din diferențe de curs valutar","level":"account","parent":"76","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7651","name":"Diferențe favorabile de curs valutar legate de elementele monetare exprimate în valută","level":"subaccount","parent":"765","function":null,"role":"income","notes":["În acest cont nu se înregistrează diferențele favorabile de curs valutar rezultate din evaluarea elementelor monetare care fac parte din investiția netă într-o entitate străină."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"7652","name":"Diferențe favorabile de curs valutar din evaluarea elementelor monetare care fac parte din investiția netă într-o entitate străină","level":"subaccount","parent":"765","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"766","name":"Venituri din dobânzi","level":"account","parent":"76","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"767","name":"Venituri din sconturi obținute","level":"account","parent":"76","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"768","name":"Alte venituri financiare","level":"account","parent":"76","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"78","name":"Venituri din provizioane, amortizări și ajustări pentru depreciere sau pierdere de valoare","level":"group","parent":"7","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"781","name":"Venituri din provizioane și ajustări pentru depreciere privind activitatea de exploatare","level":"account","parent":"78","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7812","name":"Venituri din provizioane","level":"subaccount","parent":"781","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7813","name":"Venituri din ajustări pentru deprecierea imobilizărilor","level":"subaccount","parent":"781","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7814","name":"Venituri din ajustări pentru deprecierea activelor circulante","level":"subaccount","parent":"781","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7815","name":"Venituri din fondul comercial negativ","level":"subaccount","parent":"781","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7818","name":"Venituri din ajustări pentru deprecierea creanțelor reprezentând avansuri acordate furnizorilor","level":"subaccount","parent":"781","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"786","name":"Venituri financiare din amortizări și ajustări pentru pierdere de valoare","level":"account","parent":"78","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7863","name":"Venituri financiare din ajustări pentru pierderea de valoare a imobilizărilor financiare","level":"subaccount","parent":"786","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7864","name":"Venituri financiare din ajustări pentru pierderea de valoare a activelor circulante","level":"subaccount","parent":"786","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"7865","name":"Venituri financiare din amortizarea diferențelor aferente titlurilor de stat","level":"subaccount","parent":"786","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"79","name":"Venituri din impozitul pe profit","level":"group","parent":"7","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"794","name":"Venituri din impozitul pe profit, respectiv impozitul pe profit la nivelul impozitului minim pe cifra de afaceri, rezultat din decontările în cadrul grupului fiscal în domeniul impozitului pe profit","level":"account","parent":"79","function":null,"role":"income","notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"8","name":"conturi speciale","level":"class","parent":null,"function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"80","name":"Conturi în afara bilanțului","level":"group","parent":"8","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"801","name":"Angajamente acordate","level":"account","parent":"80","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"8011","name":"Giruri și garanții acordate","level":"subaccount","parent":"801","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"8018","name":"Alte angajamente acordate","level":"subaccount","parent":"801","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"802","name":"Angajamente primite","level":"account","parent":"80","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"8021","name":"Giruri și garanții primite","level":"subaccount","parent":"802","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"8028","name":"Alte angajamente primite","level":"subaccount","parent":"802","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"803","name":"Alte conturi în afara bilanțului","level":"account","parent":"80","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"8031","name":"Imobilizări corporale primite cu chirie sau în baza altor contracte similare","level":"subaccount","parent":"803","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"8032","name":"Valori materiale primite spre prelucrare sau reparare","level":"subaccount","parent":"803","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"8033","name":"Valori materiale primite în păstrare sau custodie","level":"subaccount","parent":"803","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"8034","name":"Debitori scoși din activ, urmăriți în continuare","level":"subaccount","parent":"803","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"8035","name":"Stocuri de natura obiectelor de inventar date în folosință","level":"subaccount","parent":"803","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"8036","name":"Redevențe, locații de gestiune, chirii și alte datorii asimilate","level":"subaccount","parent":"803","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"8037","name":"Efecte scontate neajunse la scadență","level":"subaccount","parent":"803","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"8038","name":"Bunuri primite în administrare, concesiune, cu chirie și alte bunuri similare","level":"subaccount","parent":"803","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"8039","name":"Alte valori în afara bilanțului","level":"subaccount","parent":"803","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"804","name":"Certificate verzi","level":"account","parent":"80","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"805","name":"Dobânzi aferente contractelor de leasing și altor contracte asimilate, neajunse la scadență","level":"account","parent":"80","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"8051","name":"Dobânzi de plătit","level":"subaccount","parent":"805","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"8052","name":"Dobânzi de încasat","level":"subaccount","parent":"805","function":null,"role":null,"notes":["Acest cont se folosește de către entitățile radiate din Registrul general și care mai au în derulare contracte de leasing."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"806","name":"Certificate de emisii de gaze cu efect de seră","level":"account","parent":"80","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"807","name":"Active contingente","level":"account","parent":"80","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"808","name":"Datorii contingente","level":"account","parent":"80","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"809","name":"Creanțe preluate prin cesionare","level":"account","parent":"80","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"89","name":"Bilanț","level":"group","parent":"8","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"891","name":"Bilanț de deschidere","level":"account","parent":"89","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"892","name":"Bilanț de închidere","level":"account","parent":"89","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"9","name":"conturi de gestiune","level":"class","parent":null,"function":null,"role":null,"notes":["Pentru organizarea contabilității de gestiune, folosirea conturilor din această clasă este opțională."],"valid_from":null,"valid_to":null,"act":null}
+{"code":"90","name":"Decontări interne","level":"group","parent":"9","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"901","name":"Decontări interne privind cheltuielile","level":"account","parent":"90","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"902","name":"Decontări interne privind producția obținută","level":"account","parent":"90","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"903","name":"Decontări interne privind diferențele de preț","level":"account","parent":"90","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"92","name":"Conturi de calculație","level":"group","parent":"9","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"921","name":"Cheltuielile activității de bază","level":"account","parent":"92","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"922","name":"Cheltuielile activităților auxiliare","level":"account","parent":"92","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"923","name":"Cheltuieli indirecte de producție","level":"account","parent":"92","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"924","name":"Cheltuieli generale de administrație","level":"account","parent":"92","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"925","name":"Cheltuieli de desfacere","level":"account","parent":"92","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"93","name":"Costul producției","level":"group","parent":"9","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"931","name":"Costul producției obținute","level":"account","parent":"93","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}
+{"code":"933","name":"Costul producției în curs de execuție","level":"account","parent":"93","function":null,"role":null,"notes":null,"valid_from":null,"valid_to":null,"act":null}

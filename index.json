@@ -232,6 +232,70 @@
       ]
     },
     {
+      "name": "chart-of-accounts",
+      "title": "General chart of accounts (OMFP 1802/2014)",
+      "description": "The general chart of accounts for double-entry bookkeeping of companies, chapter 14 of the accounting regulations approved by OMFP 1802/2014: classes, groups, accounts and subaccounts, with the function the order gives (A for asset, P for liability, A/P for both) where it gives one; a subaccount without one takes the function of its account. role marks what the closing of the result needs: the accounts of class 6 are expenses, those of class 7 income, and 121 is the result. notes are the notes of the order on the account. The chart is the one in force on 2026-01-01, the first day the dataset covers; an account with valid_from null was in force that day. A later change of the chart gives the day it applies from and the act that made it. Names are as the order writes them.",
+      "source": {
+        "name": "Legislative Portal, consolidated forms of OMFP 1802/2014 from 2025-11-19 to 2026-10-13 (https://legislatie.just.ro/Public/DetaliiDocument/250771)",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/250771",
+        "licence": "Legislation, not subject to copyright (Law 8/1996, article 9)"
+      },
+      "frequency": "monthly",
+      "update": "When an order changes the chart of accounts",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/chart-of-accounts/accounts.jsonl",
+          "sha256": "3d80e52b17fb69519f634b3c978fc3c9696177d627b3819e0b61a2551574da22",
+          "bytes": 127003,
+          "records": 645,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code of the class, group, account or subaccount. With valid_from it is unique in the file"
+            },
+            {
+              "name": "name",
+              "description": "The name as the order writes it"
+            },
+            {
+              "name": "level",
+              "description": "class, group, account (three digits) or subaccount (four digits)"
+            },
+            {
+              "name": "parent",
+              "description": "The code one level up, or null for a class"
+            },
+            {
+              "name": "function",
+              "description": "A, P or A/P as the order states it, or null where it states none"
+            },
+            {
+              "name": "role",
+              "description": "expense, income or result for the closing of the result, or null"
+            },
+            {
+              "name": "notes",
+              "description": "The notes of the order on the account, or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day the account applies from, YYYY-MM-DD, or null for an account in force on 2026-01-01"
+            },
+            {
+              "name": "valid_to",
+              "description": "The last day the account applies, or null while it does"
+            },
+            {
+              "name": "act",
+              "description": "The act that brought the account in, or null for an account in force on 2026-01-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "countries",
       "title": "Countries and territories",
       "description": "Countries and territories with their ISO 3166-1 codes, their names in Romanian and English, whether they are a member state of the European Union today, whether they are in the European Union for VAT, with their VAT prefix, and the code with which an electronic invoice under EN 16931, as e-Factura, names them. Northern Ireland is not a country, but invoices name it XI and VIES answers for the prefix XI, so it is here as an entry only for invoices, with no alpha-3 code. Withdrawn entries stay, with their last day of use, so an alpha-2 code can appear on a withdrawn entry and on a current one; the alpha-3 code is unique where there is one. Kosovo is not in ISO 3166-1 and is listed with the user-assigned codes XK and XKX. Names are the short names the European Union institutions use, with Romanian letters written with the comma below and without the asterisk the source puts on Kosovo. A name does not state a position on the status of a territory.",
