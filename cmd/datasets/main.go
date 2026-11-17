@@ -20,6 +20,7 @@ import (
 	"path/filepath"
 	"time"
 
+	"github.com/pidginhost/romanian-datasets/internal/anafforms"
 	"github.com/pidginhost/romanian-datasets/internal/banks"
 	"github.com/pidginhost/romanian-datasets/internal/bnr"
 	"github.com/pidginhost/romanian-datasets/internal/caen"
@@ -48,6 +49,21 @@ type builder struct {
 
 // builders lists every dataset. A new dataset is added here.
 var builders = []builder{
+	{"anaf-forms", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
+		var keys []string
+		file, err := published(root, "anaf-forms", "versions.jsonl")
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		if file != nil {
+			keys, err = anafforms.PublishedKeys(file)
+			file.Close()
+			if err != nil {
+				return dataset.Dataset{}, err
+			}
+		}
+		return anafforms.Dataset(anafforms.FromSite(&http.Client{Timeout: 10 * time.Minute}), keys)
+	}},
 	{"banks", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
 		keys, err := publishedBanks(root)
 		if err != nil {

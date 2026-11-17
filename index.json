@@ -4,6 +4,106 @@
   "licence": "CC-BY-4.0",
   "datasets": [
     {
+      "name": "anaf-forms",
+      "title": "ANAF declaration versions and validators",
+      "description": "The versions of the declarations 100, 112, 300, 390, 394 as ANAF publishes them: for each, the first reporting period it applies to, the orders that set it as ANAF writes them, and the DUKIntegrator validator (soft J), the XSD schema, the PDF form (soft A) and the validation annex ANAF links, with the SHA-256 and size of the validator and the schema as downloaded. It holds the version in force for the reporting period 2026-01 and every later one. For a period, use the version with the latest period_from not after it; of two with the same period_from, the one with the lower order, which ANAF lists first. tools.jsonl gives the DUKIntegrator package ANAF links, with its SHA-256. A file ANAF replaces under the same address changes its hash here.",
+      "source": {
+        "name": "ANAF, pages of the electronic declarations (https://static.anaf.ro/static/10/Anaf/Declaratii_R/<form>.html) and of DUKIntegrator (https://static.anaf.ro/static/DUKIntegrator/DUKIntegrator.htm)",
+        "url": "https://static.anaf.ro/static/10/Anaf/Declaratii_R/descarcare_declaratii.htm",
+        "licence": "Facts taken from the pages of ANAF and from its files: addresses, dates, order numbers and hashes. ANAF states no licence for them"
+      },
+      "frequency": "monthly",
+      "update": "When ANAF publishes a new version or validator of a declaration, which it does several times a year",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/anaf-forms/versions.jsonl",
+          "sha256": "3742c079f91baff9910a6276c9c4efb9acda40b88776ac8c5a13f3a5a893519f",
+          "bytes": 5695,
+          "records": 6,
+          "fields": [
+            {
+              "name": "form",
+              "description": "The declaration, as 100 or 394. With validator it is unique in the file"
+            },
+            {
+              "name": "title",
+              "description": "The text ANAF writes for the version"
+            },
+            {
+              "name": "period_from",
+              "description": "The first reporting period the version applies to, YYYY-MM"
+            },
+            {
+              "name": "published",
+              "description": "The day ANAF published the version, YYYY-MM-DD, or null"
+            },
+            {
+              "name": "order",
+              "description": "The place of the version on the page of ANAF, 1 for the first"
+            },
+            {
+              "name": "form_pdf",
+              "description": "The address of the PDF form (soft A), or null"
+            },
+            {
+              "name": "validator",
+              "description": "The address of the validator package (soft J)"
+            },
+            {
+              "name": "validator_sha256",
+              "description": "The SHA-256 of the validator package"
+            },
+            {
+              "name": "validator_bytes",
+              "description": "The size of the validator package in bytes"
+            },
+            {
+              "name": "schema",
+              "description": "The address of the XSD schema, or null"
+            },
+            {
+              "name": "schema_sha256",
+              "description": "The SHA-256 of the schema, or null"
+            },
+            {
+              "name": "schema_bytes",
+              "description": "The size of the schema in bytes, or null"
+            },
+            {
+              "name": "validation_annex",
+              "description": "The address of the annex with the validations, or null"
+            }
+          ]
+        },
+        {
+          "path": "datasets/anaf-forms/tools.jsonl",
+          "sha256": "13e2584d0d97a8b5469a6d62fe0a225aeeaac08e3134bc3ea333c9dc73a1be26",
+          "bytes": 198,
+          "records": 1,
+          "fields": [
+            {
+              "name": "name",
+              "description": "The program"
+            },
+            {
+              "name": "url",
+              "description": "The address of the package"
+            },
+            {
+              "name": "sha256",
+              "description": "The SHA-256 of the package"
+            },
+            {
+              "name": "bytes",
+              "description": "The size of the package in bytes"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "banks",
       "title": "Credit institutions and IBAN bank codes",
       "description": "The credit institutions in the register of the National Bank of Romania: banks, housing banks, mortgage banks, credit cooperatives and their central bank, branches of foreign credit institutions, and those removed from the register, with the day of removal. codes.jsonl gives the bank code of a Romanian IBAN, the four letters after the check digits, with the BIC: the Romanian BICs of the SWIFT BIC-to-LEI mapping table, joined to the register by LEI. A branch the register gives no LEI for is joined by the LEI of its head office, stated in head_office_lei. Credit cooperatives have no code of their own: their accounts carry the code of their central bank. TREZ, the State Treasury, is added from Order MFP 1650/2014. A code can name an institution that was removed: the BIC of an absorbed bank may stay with the bank that absorbed it. Names and addresses are as BNR writes them; BNR shows some Romanian letters as a question mark.",
