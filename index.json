@@ -2172,6 +2172,98 @@
       ]
     },
     {
+      "name": "treasury",
+      "title": "State Treasury units and the IBAN of their accounts",
+      "description": "The operative units of the State Treasury, each with its code, county and SIRUTA code, and the accounts taxes and other payments go to, as ANAF lists them for each unit. The IBAN of an account at a unit is RO, two check digits (ISO 13616, mod 97), TREZ, the three digits of the unit and iban_suffix: an account has the same suffix and name at every unit, so it is listed once, with the units that have it. published is the earliest publication date ANAF gives for the account at any unit. The accounts of the last sections of a list have no funding source. Names are as ANAF writes them, without Romanian letters. A unit's SIRUTA code is matched by name; Ilfov and Gura Lotrului name no administrative unit and have none.",
+      "source": {
+        "name": "ANAF, IBAN codes of the State Treasury units (https://www.anaf.ro/anaf/internet/ANAF/asistenta_contribuabili/plata_oblig_fiscale/coduri_iban)",
+        "url": "https://www.anaf.ro/anaf/internet/ANAF/asistenta_contribuabili/plata_oblig_fiscale/coduri_iban",
+        "licence": "Facts taken from the lists: the units, which accounts each has and their IBAN. ANAF states no licence for them. The account names are those of the budget classification, set by order of the Minister of Finance, which is not subject to copyright (Law 8/1996, article 9)"
+      },
+      "frequency": "monthly",
+      "update": "When ANAF publishes new lists, which it regenerates often; accounts change with the budget classification",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/treasury/units.jsonl",
+          "sha256": "2baf5a5eaf9efbbe9e5c993ce11b33dea3aac8c8a78af7455480c992d0f86fd2",
+          "bytes": 22224,
+          "records": 202,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The three digits of the unit, which follow TREZ in an IBAN"
+            },
+            {
+              "name": "name",
+              "description": "The name as ANAF writes it"
+            },
+            {
+              "name": "county_treasury",
+              "description": "The code of the county treasury the unit belongs to; 000 for Bucharest"
+            },
+            {
+              "name": "county",
+              "description": "The county, a code of counties.jsonl in siruta"
+            },
+            {
+              "name": "siruta",
+              "description": "The administrative unit the treasury is named after, a code of units.jsonl in siruta, or null"
+            }
+          ]
+        },
+        {
+          "path": "datasets/treasury/sources.jsonl",
+          "sha256": "c734b32464aad423150897919711dcc01ad52b58ae450c501214a6ee4e554538",
+          "bytes": 512,
+          "records": 10,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The letter of the funding source, which is also the third character of an account"
+            },
+            {
+              "name": "name",
+              "description": "The name as ANAF writes it"
+            }
+          ]
+        },
+        {
+          "path": "datasets/treasury/accounts.jsonl",
+          "sha256": "d980a9443cf6b276750fc5b2d7178f3d1e93e28e3b9e4a17ab6638da20f7dcad",
+          "bytes": 3882166,
+          "records": 3000,
+          "fields": [
+            {
+              "name": "source",
+              "description": "The funding source, a code of sources.jsonl, or null. With account it is unique in the file"
+            },
+            {
+              "name": "account",
+              "description": "The code of the account, from the budget classification"
+            },
+            {
+              "name": "name",
+              "description": "The name of the account"
+            },
+            {
+              "name": "iban_suffix",
+              "description": "The last 13 characters of the IBAN, after TREZ and the unit code"
+            },
+            {
+              "name": "published",
+              "description": "The earliest publication date of the account at any unit, YYYY-MM-DD"
+            },
+            {
+              "name": "units",
+              "description": "The codes of the units that have the account"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "vat-numbers",
       "title": "VAT numbers of European jurisdictions",
       "description": "How a VAT number looks in each European jurisdiction: the prefix, the format in words and as a regular expression, and the name of the tax in the local language. It says which jurisdictions are in the European Union for VAT. A number that fits the pattern is well formed; whether it is registered is a question for VIES or the national register.",
