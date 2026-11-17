@@ -79,7 +79,46 @@ func TestTheDatasetCoversEveryYearAndIsValid(t *testing.T) {
 	if err := d.Validate(); err != nil {
 		t.Fatal(err)
 	}
-	if got, want := len(d.Files[0].Records), 4*17; got != want {
+	if got, want := len(d.Files[1].Records), 4*17; got != want {
 		t.Fatalf("%d records, want %d", got, want)
+	}
+}
+
+func TestTheRulesAreTheSeventeenDaysOfTheLaw(t *testing.T) {
+	fixed, movable := 0, 0
+	for _, r := range Rules() {
+		switch {
+		case r.Rule == Fixed && r.Month != nil && r.Day != nil && r.EasterOffset == nil:
+			fixed++
+		case r.Rule == OrthodoxEasterOffset && r.Month == nil && r.Day == nil && r.EasterOffset != nil:
+			movable++
+		default:
+			t.Errorf("rule %+v is neither fixed nor after Easter", r)
+		}
+	}
+	if fixed != 12 || movable != 5 {
+		t.Fatalf("%d fixed and %d movable rules, want 12 and 5", fixed, movable)
+	}
+}
+
+func TestARuleGivesItsDayInAnyYear(t *testing.T) {
+	offset := -2
+	friday := Rule{Rule: OrthodoxEasterOffset, EasterOffset: &offset, ValidFrom: "2024-01-01"}
+	if date, ok := friday.On(2040); !ok || date.Format(time.DateOnly) != "2040-05-04" {
+		t.Fatalf("Good Friday 2040 = %s, %v", date.Format(time.DateOnly), ok)
+	}
+}
+
+func TestARuleOutsideItsValidityGivesNoHoliday(t *testing.T) {
+	month, day, end := 1, 6, "2029-12-31"
+	r := Rule{Rule: Fixed, Month: &month, Day: &day, ValidFrom: "2024-01-01", ValidTo: &end}
+	if _, ok := r.On(2023); ok {
+		t.Error("in force before its first day")
+	}
+	if _, ok := r.On(2029); !ok {
+		t.Error("not in force inside its validity")
+	}
+	if _, ok := r.On(2030); ok {
+		t.Error("in force after its last day")
 	}
 }
