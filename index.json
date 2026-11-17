@@ -2172,6 +2172,78 @@
       ]
     },
     {
+      "name": "tax-offices",
+      "title": "ANAF fiscal units and the localities they serve",
+      "description": "The regional directorates of public finance, the county administrations and the fiscal units of ANAF, with their contact, and for each locality of SIRUTA that ANAF names the unit that serves it, under the territorial competence set by Order ANAF 3631/2015. A locality is mostly an administrative unit; ANAF names some villages and the sectors of Bucharest, and uat gives the administrative unit each is in. To find the unit of an address, look up its village first, then its administrative unit. Large taxpayers are served by the Directorate General for Large Taxpayers (DGAMC), which the page does not list; medium taxpayers and non-residents have units of their own, which serve no locality here. Names and contacts are as ANAF writes them.",
+      "source": {
+        "name": "ANAF, territorial competence of the fiscal units (https://static.anaf.ro/static/10/Anaf/AsistentaContribuabili_r/telefoane_judete/Regiuni.htm)",
+        "url": "https://static.anaf.ro/static/10/Anaf/AsistentaContribuabili_r/telefoane_judete/Regiuni.htm",
+        "licence": "Facts taken from the page: the units, their contact and the localities each serves, which Order ANAF 3631/2015 sets. ANAF states no licence for the page"
+      },
+      "frequency": "monthly",
+      "update": "When ANAF changes its units or the localities they serve",
+      "revision": 2,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/tax-offices/units.jsonl",
+          "sha256": "379bc570454baba532dbbda17886008ca7f95fbeb1b46dac54fbc302716698c6",
+          "bytes": 62585,
+          "records": 218,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The identifier of the unit, made from its name, unique in the file"
+            },
+            {
+              "name": "name",
+              "description": "The name as ANAF writes it"
+            },
+            {
+              "name": "kind",
+              "description": "regional, county, sector, municipal, town, commune, medium-taxpayers or non-residents"
+            },
+            {
+              "name": "regional",
+              "description": "The id of the regional directorate the unit is under, or null for a directorate"
+            },
+            {
+              "name": "county",
+              "description": "The county, a code of counties.jsonl in siruta, or null"
+            },
+            {
+              "name": "contact",
+              "description": "The address and telephone lines, joined by semicolons"
+            }
+          ]
+        },
+        {
+          "path": "datasets/tax-offices/areas.jsonl",
+          "sha256": "ee7ddc2d1ef2e2ad07fcdf247941f14df54c913074fb0455e0267dc666ddb5ef",
+          "bytes": 322231,
+          "records": 3195,
+          "fields": [
+            {
+              "name": "siruta",
+              "description": "The locality served, a code of units.jsonl in siruta, unique in the file"
+            },
+            {
+              "name": "uat",
+              "description": "The administrative unit or Bucharest sector the locality is in, a code of units.jsonl in siruta"
+            },
+            {
+              "name": "unit",
+              "description": "The id of the fiscal unit that serves it"
+            },
+            {
+              "name": "name",
+              "description": "The locality as ANAF writes it"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "treasury",
       "title": "State Treasury units and the IBAN of their accounts",
       "description": "The operative units of the State Treasury, each with its code, county and SIRUTA code, and the accounts taxes and other payments go to, as ANAF lists them for each unit. The IBAN of an account at a unit is RO, two check digits (ISO 13616, mod 97), TREZ, the three digits of the unit and iban_suffix: an account has the same suffix and name at every unit, so it is listed once, with the units that have it. published is the earliest publication date ANAF gives for the account at any unit. The accounts of the last sections of a list have no funding source. Names are as ANAF writes them, without Romanian letters. A unit's SIRUTA code is matched by name; Ilfov and Gura Lotrului name no administrative unit and have none.",

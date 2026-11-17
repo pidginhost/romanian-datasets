@@ -30,6 +30,7 @@ import (
 	"github.com/pidginhost/romanian-datasets/internal/holidays"
 	"github.com/pidginhost/romanian-datasets/internal/reges"
 	"github.com/pidginhost/romanian-datasets/internal/siruta"
+	"github.com/pidginhost/romanian-datasets/internal/taxoffices"
 	"github.com/pidginhost/romanian-datasets/internal/treasury"
 	"github.com/pidginhost/romanian-datasets/internal/vatnode"
 )
@@ -92,8 +93,27 @@ var builders = []builder{
 		}
 		return siruta.Dataset(siruta.FromSite(&http.Client{Timeout: 5 * time.Minute}), published)
 	}},
+	{"tax-offices", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
+		places, err := readSIRUTA[taxoffices.Place](root, "units.jsonl")
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		counties, err := readSIRUTA[taxoffices.County](root, "counties.jsonl")
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		keys, err := publishedTaxOffices(root)
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		return taxoffices.Dataset(taxoffices.FromSite(&http.Client{Timeout: 2 * time.Minute}), places, counties, keys)
+	}},
 	{"treasury", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
-		places, counties, err := sirutaPlaces(root)
+		places, err := readSIRUTA[treasury.Place](root, "units.jsonl")
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		counties, err := readSIRUTA[treasury.County](root, "counties.jsonl")
 		if err != nil {
 			return dataset.Dataset{}, err
 		}
@@ -266,44 +286,48 @@ func publishedBanks(root string) (banks.Published, error) {
 	return out, err
 }
 
-// sirutaPlaces reads the units and counties of the SIRUTA dataset as committed, which treasury is matched to.
-func sirutaPlaces(root string) ([]treasury.Place, []treasury.County, error) {
-	var places []treasury.Place
-	var counties []treasury.County
-	for _, f := range []struct {
-		file string
-		into func(*json.Decoder) error
-	}{
-		{"units.jsonl", func(d *json.Decoder) error {
-			var p treasury.Place
-			err := d.Decode(&p)
-			places = append(places, p)
-			return err
-		}},
-		{"counties.jsonl", func(d *json.Decoder) error {
-			var c treasury.County
-			err := d.Decode(&c)
-			counties = append(counties, c)
-			return err
-		}},
-	} {
-		file, err := published(root, "siruta", f.file)
-		if err != nil {
-			return nil, nil, err
-		}
-		if file == nil {
-			return nil, nil, fmt.Errorf("treasury needs the siruta dataset, which is not built")
-		}
-		decoder := json.NewDecoder(file)
-		for decoder.More() {
-			if err := f.into(decoder); err != nil {
-				file.Close()
-				return nil, nil, fmt.Errorf("siruta %s: %w", f.file, err)
-			}
-		}
-		file.Close()
+// readSIRUTA reads one file of the SIRUTA dataset as committed, which treasury and tax-offices are matched
+// to. The SIRUTA dataset must be built first.
+func readSIRUTA[T any](root, name string) ([]T, error) {
+	file, err := published(root, "siruta", name)
+	if err != nil {
+		return nil, err
 	}
-	return places, counties, nil
+	if file == nil {
+		return nil, fmt.Errorf("the siruta dataset is not built")
+	}
+	defer file.Close()
+	var out []T
+	decoder := json.NewDecoder(file)
+	for decoder.More() {
+		var v T
+		if err := decoder.Decode(&v); err != nil {
+			return nil, fmt.Errorf("siruta %s: %w", name, err)
+		}
+		out = append(out, v)
+	}
+	return out, nil
+}
+
+// publishedTaxOffices gives the unit ids and area codes of the tax-offices dataset as committed.
+func publishedTaxOffices(root string) (taxoffices.Published, error) {
+	var out taxoffices.Published
+	file, err := published(root, "tax-offices", "units.jsonl")
+	if file == nil || err != nil {
+		return out, err
+	}
+	out.Units, err = taxoffices.PublishedUnits(file)
+	file.Close()
+	if err != nil {
+		return out, err
+	}
+	file, err = published(root, "tax-offices", "areas.jsonl")
+	if file == nil || err != nil {
+		return out, err
+	}
+	defer file.Close()
+	out.Areas, err = taxoffices.PublishedAreas(file)
+	return out, err
 }
 
 // publishedTreasury gives the unit codes and account keys of the treasury dataset as committed.
