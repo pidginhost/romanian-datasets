@@ -23,6 +23,7 @@ import (
 	"github.com/pidginhost/romanian-datasets/internal/caen"
 	"github.com/pidginhost/romanian-datasets/internal/countries"
 	"github.com/pidginhost/romanian-datasets/internal/dataset"
+	"github.com/pidginhost/romanian-datasets/internal/efactura"
 	"github.com/pidginhost/romanian-datasets/internal/en16931"
 	"github.com/pidginhost/romanian-datasets/internal/holidays"
 	"github.com/pidginhost/romanian-datasets/internal/siruta"
@@ -48,6 +49,9 @@ var builders = []builder{
 	{"countries", dataset.Manual, func(time.Time, string) (dataset.Dataset, error) {
 		client := &http.Client{Timeout: 2 * time.Minute}
 		return countries.Dataset(countries.FromSite(client), countries.VIESFromSite(client))
+	}},
+	{"efactura", dataset.Monthly, func(time.Time, string) (dataset.Dataset, error) {
+		return efactura.Dataset(efactura.FromSite(&http.Client{Timeout: 2 * time.Minute}))
 	}},
 	{"en16931-codes", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
 		codes, err := publishedEN16931(root)
