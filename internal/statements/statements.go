@@ -135,6 +135,43 @@ func terms(formula string) ([]Term, error) {
 	return out, nil
 }
 
+// parts is what the text of a row holds: its name and its formulas.
+type parts struct {
+	Name     string
+	Accounts *string
+	Terms    []Term
+	Rows     *string
+}
+
+// split reads the formulas out of the text of a row; the rest is its name.
+func split(full string) (parts, error) {
+	var l parts
+	var accounts []string
+	for _, g := range accountsGroup.FindAllString(full, -1) {
+		ts, err := terms(g)
+		if err != nil {
+			return parts{}, err
+		}
+		l.Terms = append(l.Terms, ts...)
+		accounts = append(accounts, strings.TrimSuffix(strings.TrimPrefix(g, "("), ")"))
+	}
+	if len(accounts) > 0 {
+		a := strings.Join(accounts, "; ")
+		l.Accounts = &a
+	}
+	var rows []string
+	for _, g := range rowsGroup.FindAllString(full, -1) {
+		rows = append(rows, strings.TrimSuffix(strings.TrimPrefix(g, "("), ")"))
+	}
+	if len(rows) > 0 {
+		r := strings.Join(rows, "; ")
+		l.Rows = &r
+	}
+	l.Name = strings.Join(strings.Fields(rowsGroup.ReplaceAllString(accountsGroup.ReplaceAllString(full, ""), "")), " ")
+	l.Name = strings.TrimSpace(strings.TrimSuffix(l.Name, ";"))
+	return l, nil
+}
+
 // ReadFormats reads the tables of the formats out of the consolidated annex.
 func ReadFormats(page string) ([]Line, error) {
 	page = scriptPattern.ReplaceAllString(page, "")
@@ -203,29 +240,11 @@ func ReadFormats(page string) ([]Line, error) {
 				}
 				seen[*row] = true
 			}
-			var accounts []string
-			for _, g := range accountsGroup.FindAllString(full, -1) {
-				ts, err := terms(g)
-				if err != nil {
-					return nil, fmt.Errorf("%s, row %v: %w", form, row, err)
-				}
-				l.Terms = append(l.Terms, ts...)
-				accounts = append(accounts, strings.TrimSuffix(strings.TrimPrefix(g, "("), ")"))
+			p, err := split(full)
+			if err != nil {
+				return nil, fmt.Errorf("%s, row %v: %w", form, row, err)
 			}
-			if len(accounts) > 0 {
-				a := strings.Join(accounts, "; ")
-				l.Accounts = &a
-			}
-			var rows []string
-			for _, g := range rowsGroup.FindAllString(full, -1) {
-				rows = append(rows, strings.TrimSuffix(strings.TrimPrefix(g, "("), ")"))
-			}
-			if len(rows) > 0 {
-				r := strings.Join(rows, "; ")
-				l.Rows = &r
-			}
-			l.Name = strings.Join(strings.Fields(rowsGroup.ReplaceAllString(accountsGroup.ReplaceAllString(full, ""), "")), " ")
-			l.Name = strings.TrimSpace(strings.TrimSuffix(l.Name, ";"))
+			l.Name, l.Accounts, l.Terms, l.Rows = p.Name, p.Accounts, p.Terms, p.Rows
 			out = append(out, l)
 		}
 	}

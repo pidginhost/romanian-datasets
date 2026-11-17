@@ -135,6 +135,21 @@ var builders = []builder{
 		}
 		return statements.Dataset(statements.FromSite(&http.Client{Timeout: 5 * time.Minute}), rows)
 	}},
+	{"statement-forms", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
+		var rows []statements.FormLine
+		file, err := published(root, "statement-forms", "lines.jsonl")
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		if file != nil {
+			rows, err = statements.PublishedFormLines(file)
+			file.Close()
+			if err != nil {
+				return dataset.Dataset{}, err
+			}
+		}
+		return statements.YearDataset(statements.FromSite(&http.Client{Timeout: 5 * time.Minute}), rows)
+	}},
 	{"fixed-assets", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
 		var rows []fixedassets.Asset
 		file, err := published(root, "fixed-assets", "assets.jsonl")
