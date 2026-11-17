@@ -8,6 +8,7 @@ The public copy is https://github.com/pidginhost/romanian-datasets.
 
 | Dataset | Content | Source | Kept current |
 | --- | --- | --- | --- |
+| `anaf-forms` | The versions of the declarations 100, 112, 300, 390 and 394 from January 2026, with the reporting period each applies from and the SHA-256 of their DUKIntegrator validators and schemas, and of the DUKIntegrator package | ANAF, pages of the electronic declarations | Monthly |
 | `banks` | The credit institutions in the register of the National Bank of Romania, those removed with the day of removal, and the bank code of a Romanian IBAN with the BIC | BNR register of credit institutions; SWIFT BIC-to-LEI mapping table, published by GLEIF | Monthly |
 | `bnr-currencies` | The currencies with a reference rate of the National Bank of Romania, the units each rate is given for, and since when | BNR yearly rate files | By hand, when BNR changes its list |
 | `caen` | The classification of economic activities CAEN, Rev.2 and Rev.3, and the links between the classes of the two | ONRC nomenclatures on data.gov.ro; Eurostat correspondence table NACE Rev.2 to Rev.2.1 | By hand, when INS changes CAEN |
@@ -44,6 +45,9 @@ A dataset's `revision` starts at 1 and grows by one each time its content change
 ```
 index.json
 datasets/
+  anaf-forms/
+    tools.jsonl
+    versions.jsonl
   banks/
     codes.jsonl
     institutions.jsonl
