@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "publisher": "PidginHost",
+  "licence": "CC-BY-4.0",
+  "datasets": [
+    {
+      "name": "public-holidays",
+      "title": "Public holidays of Romania",
+      "description": "The days on which no work is done by law, as rules that give the days of any year: a fixed month and day, or a number of days from Orthodox Easter Sunday. Orthodox Easter Sunday is the Julian computus moved to the civil calendar. A day can come from two rules, such as the second day of Pentecost on 1 June. Days declared free by a Government decision for one year only are not included. The two days each of three yearly feasts of other legal religions have no fixed date and are not included.",
+      "source": {
+        "name": "Labour Code (Law 53/2003, republished), article 139 (1); Orthodox Easter is computed",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/128647",
+        "licence": "Romanian legislation, not subject to copyright (Law 8/1996, article 9)"
+      },
+      "frequency": "manual",
+      "update": "When article 139 of the Labour Code changes",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/public-holidays/rules.jsonl",
+          "sha256": "f7b806a126eb19fe01180ef8c11ef8fbff026145502618d8c37e3a46bd54c3c3",
+          "bytes": 2235,
+          "records": 17,
+          "fields": [
+            {
+              "name": "name",
+              "description": "The name of the holiday, in Romanian"
+            },
+            {
+              "name": "rule",
+              "description": "fixed: the same month and day every year. orthodox-easter-offset: a number of days from Orthodox Easter Sunday"
+            },
+            {
+              "name": "month",
+              "description": "The month, 1 to 12, of a fixed rule; null otherwise"
+            },
+            {
+              "name": "day",
+              "description": "The day of the month of a fixed rule; null otherwise"
+            },
+            {
+              "name": "easter_offset",
+              "description": "Days from Orthodox Easter Sunday, negative before it; null for a fixed rule"
+            },
+            {
+              "name": "valid_from",
+              "description": "The first day this dataset vouches for the rule, as YYYY-MM-DD. Not the day the holiday became law"
+            },
+            {
+              "name": "valid_to",
+              "description": "The last day of the rule, as YYYY-MM-DD, or null while it is in force"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

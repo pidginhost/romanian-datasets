@@ -1,93 +1,80 @@
 # Romanian datasets
 
+Reference datasets about Romania, built and kept current by PidginHost. Free for anyone to download and use.
 
+The public copy is https://github.com/pidginhost/romanian-datasets.
 
-## Getting started
+## What is here
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+| Dataset | Content | Source | Kept current |
+| --- | --- | --- | --- |
+| `public-holidays` | The days on which no work is done by law, as rules that give them for any year | Labour Code, article 139 (1) | By hand, when the law changes |
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+More datasets follow, each after its source and licence are confirmed.
 
-## Add your files
+## How to read the data
 
-* [Create](https://docs.gitlab.com/user/project/repository/web_editor/#create-a-file) or [upload](https://docs.gitlab.com/user/project/repository/web_editor/#upload-a-file) files
-* [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
+1. Download `index.json`. It lists every dataset with its revision, the day it last changed, how often it is rebuilt, and its files.
+2. Download the files it names. Each path is relative to `index.json`.
+3. Check each file against the `sha256` in the index. Do not use a file that does not match.
+
+A file is JSON Lines: UTF-8, one JSON object on each line, each line ended by a line feed. The `fields` of a file in the index say what each field holds.
+
+A dataset's `revision` starts at 1 and grows by one each time its content changes. To stay current, read `index.json` again and download the datasets whose revision grew.
+
+`"format": 1` is the layout described here. It changes only when a reader has to change.
 
 ```
-cd existing_repo
-git remote add origin https://git.pidginhost.net/pidginhost/romanian-datasets.git
-git branch -M main
-git push -uf origin main
+index.json
+datasets/
+  public-holidays/
+    rules.jsonl
 ```
 
-## Integrate with your tools
+## Licence
 
-* [Set up project integrations](https://git.pidginhost.net/pidginhost/romanian-datasets/-/settings/integrations)
+- The data is under Creative Commons Attribution 4.0 International: see `LICENSE-DATA`. Credit "PidginHost, romanian-datasets". Each dataset in the index names its own source and that source's licence.
+- The code is under the MIT licence: see `LICENSE`.
 
-## Collaborate with your team
+## Build
 
-* [Invite team members and collaborators](https://docs.gitlab.com/user/project/members/)
-* [Create a new merge request](https://docs.gitlab.com/user/project/merge_requests/creating_merge_requests/)
-* [Automatically close issues from merge requests](https://docs.gitlab.com/user/project/issues/managing_issues/#closing-issues-automatically)
-* [Enable merge request approvals](https://docs.gitlab.com/user/project/merge_requests/approvals/)
-* [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
+Needs the Go version in `go.mod`.
 
-## Test and Deploy
+```
+go test ./...
+go run ./cmd/datasets build
+go run ./cmd/datasets verify
+```
 
-Use the built-in continuous integration in GitLab.
+`build` writes every dataset and `index.json`. Run twice, it changes nothing the second time. `verify` checks the files against the index. `list` names every dataset with its frequency.
 
-* [Get started with GitLab CI/CD](https://docs.gitlab.com/ci/quick_start/)
-* [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/user/application_security/sast/)
-* [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/topics/autodevops/requirements/)
-* [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/user/clusters/agent/)
-* [Set up protected environments](https://docs.gitlab.com/ci/environments/protected_environments/)
+## How the datasets stay current
 
-***
+Each dataset has a frequency, set by how often its source changes:
 
-# Editing this README
+| Frequency | Who rebuilds it |
+| --- | --- |
+| `daily`, `weekly`, `monthly`, `yearly` | The scheduled CI job of that frequency: `datasets build -frequency <f>`. It commits to `main` only when something changed. |
+| `manual` | A person, when the source changes: `datasets build -only <name>`, then a merge request with the result. For data that changes rarely. |
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+A build of one frequency leaves every other dataset as it is in the index.
 
-## Suggestions for a good README
+The scheduled job needs:
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+- one pipeline schedule on `main` for each frequency in use, with the variable `DATASETS_FREQUENCY` set to that frequency;
+- the CI variable `DATASETS_PUSH_TOKEN`, a project access token with `write_repository`, masked and protected.
 
-## Name
-Choose a self-explaining name for your project.
+## Public copy
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+Every pipeline on `main` ends with `mirror:github`, which publishes `main` to GitHub the way `pidginhost/csm` does: with force, as the author PidginHost, without the CI files. It uses the group variable `GITHUB_TOKEN`. Changes are made here, never on GitHub.
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+## Add a dataset
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+1. Open an issue with the source, its address and its licence. The licence must allow republishing.
+2. Choose its frequency from how often the source changes. Data that changes rarely is `manual`.
+3. Add a package under `internal/` that returns a `dataset.Dataset`, with tests on recorded input.
+4. Add it to `builders` in `cmd/datasets/main.go`.
+5. Run `build -only <name>` and commit the files it writes together with the code.
+6. If no dataset had that frequency before, add its pipeline schedule.
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Rules for contributors are in `AGENTS.md`.

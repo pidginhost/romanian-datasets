@@ -1,0 +1,17 @@
+{"name":"Anul Nou","rule":"fixed","month":1,"day":1,"easter_offset":null,"valid_from":"2024-01-01","valid_to":null}
+{"name":"Anul Nou","rule":"fixed","month":1,"day":2,"easter_offset":null,"valid_from":"2024-01-01","valid_to":null}
+{"name":"Botezul Domnului - Boboteaza","rule":"fixed","month":1,"day":6,"easter_offset":null,"valid_from":"2024-01-01","valid_to":null}
+{"name":"Soborul Sfântului Proroc Ioan Botezătorul","rule":"fixed","month":1,"day":7,"easter_offset":null,"valid_from":"2024-01-01","valid_to":null}
+{"name":"Ziua Unirii Principatelor Române","rule":"fixed","month":1,"day":24,"easter_offset":null,"valid_from":"2024-01-01","valid_to":null}
+{"name":"Vinerea Mare","rule":"orthodox-easter-offset","month":null,"day":null,"easter_offset":-2,"valid_from":"2024-01-01","valid_to":null}
+{"name":"Paștele","rule":"orthodox-easter-offset","month":null,"day":null,"easter_offset":0,"valid_from":"2024-01-01","valid_to":null}
+{"name":"Paștele","rule":"orthodox-easter-offset","month":null,"day":null,"easter_offset":1,"valid_from":"2024-01-01","valid_to":null}
+{"name":"Ziua Muncii","rule":"fixed","month":5,"day":1,"easter_offset":null,"valid_from":"2024-01-01","valid_to":null}
+{"name":"Ziua Copilului","rule":"fixed","month":6,"day":1,"easter_offset":null,"valid_from":"2024-01-01","valid_to":null}
+{"name":"Rusaliile","rule":"orthodox-easter-offset","month":null,"day":null,"easter_offset":49,"valid_from":"2024-01-01","valid_to":null}
+{"name":"Rusaliile","rule":"orthodox-easter-offset","month":null,"day":null,"easter_offset":50,"valid_from":"2024-01-01","valid_to":null}
+{"name":"Adormirea Maicii Domnului","rule":"fixed","month":8,"day":15,"easter_offset":null,"valid_from":"2024-01-01","valid_to":null}
+{"name":"Sfântul Apostol Andrei","rule":"fixed","month":11,"day":30,"easter_offset":null,"valid_from":"2024-01-01","valid_to":null}
+{"name":"Ziua Națională a României","rule":"fixed","month":12,"day":1,"easter_offset":null,"valid_from":"2024-01-01","valid_to":null}
+{"name":"Crăciunul","rule":"fixed","month":12,"day":25,"easter_offset":null,"valid_from":"2024-01-01","valid_to":null}
+{"name":"Crăciunul","rule":"fixed","month":12,"day":26,"easter_offset":null,"valid_from":"2024-01-01","valid_to":null}
