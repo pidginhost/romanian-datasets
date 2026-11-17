@@ -12,6 +12,8 @@ The public copy is https://github.com/pidginhost/romanian-datasets.
 | `bnr-currencies` | The currencies with a reference rate of the National Bank of Romania, the units each rate is given for, and since when | BNR yearly rate files | By hand, when BNR changes its list |
 | `caen` | The classification of economic activities CAEN, Rev.2 and Rev.3, and the links between the classes of the two | ONRC nomenclatures on data.gov.ro; Eurostat correspondence table NACE Rev.2 to Rev.2.1 | By hand, when INS changes CAEN |
 | `chart-of-accounts` | The general chart of accounts for double-entry bookkeeping of companies (OMFP 1802/2014): classes, groups, accounts and subaccounts with their function and closing role, from 1 January 2026 | Legislative Portal, consolidated OMFP 1802/2014 | Monthly |
+| `chart-of-accounts-nonprofit` | The chart of accounts for associations, foundations and other non-profit legal persons (OMFP 3103/2017), from 1 January 2026 | Legislative Portal, consolidated OMFP 3103/2017 | Monthly |
+| `chart-of-accounts-public` | The chart of accounts for public institutions (OMFP 1917/2005): synthetic accounts of the first, second and third degree, from 1 January 2026 | Legislative Portal, consolidated OMFP 1917/2005 | Monthly |
 | `countries` | Countries and territories with their ISO 3166-1 codes, names in Romanian and English, whether they are in the European Union, and the code an electronic invoice uses for them | Publications Office of the European Union | By hand, when the table changes |
 | `efactura` | The codes the e-Factura system of ANAF accepts for each check of a code list, the CIUS-RO limits on invoice types and VAT point date codes, and the county and sector codes of a Romanian address | Ministry of Finance, e-Factura validation package | Monthly |
 | `en16931-codes` | The code lists of the European standard on e-invoicing: units, currencies, VAT categories and exemption reasons, payment means, document types, address schemes and the others, with the period of each code; the countries are in `countries` | European Commission, EN 16931 genericode archives | Monthly |
@@ -52,6 +54,10 @@ datasets/
     correspondence.jsonl
     versions.jsonl
   chart-of-accounts/
+    accounts.jsonl
+  chart-of-accounts-nonprofit/
+    accounts.jsonl
+  chart-of-accounts-public/
     accounts.jsonl
   countries/
     countries.jsonl

@@ -76,7 +76,7 @@ var chapter14 = []string{
 }
 
 func TestReadChapterReadsTheChart(t *testing.T) {
-	accounts, err := ReadChapter(annex(chapter14...))
+	accounts, err := ReadChapter(annex(chapter14...), Companies)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -89,7 +89,7 @@ func TestReadChapterReadsTheChart(t *testing.T) {
 		if a.Role != nil {
 			r = *a.Role
 		}
-		got = append(got, fmt.Sprintf("%s %s [%s] %s %s %d", a.Code, a.Level, a.Name, f, r, len(a.Notes)))
+		got = append(got, fmt.Sprintf("%s %s [%s] %s %s %d", a.Code, a.Level, *a.Name, f, r, len(a.Notes)))
 	}
 	want := []string{
 		"1 class [Conturi de capitaluri, provizioane, împrumuturi și datorii asimilate] - - 0",
@@ -153,7 +153,7 @@ func TestReadChapterStopsOnWhatItDoesNotKnow(t *testing.T) {
 		"two functions":    annex(append(append([]string{}, chapter14[:4]...), append([]string{"1012. Capital subscris vărsat (P) (A)"}, chapter14[4:]...)...)...),
 		"missing own note": annex(without("^1 Se utilizează pentru evidențierea impozitului specific")...),
 	} {
-		if _, err := ReadChapter(page); err == nil {
+		if _, err := ReadChapter(page, Companies); err == nil {
 			t.Errorf("%s: read", name)
 		}
 	}
@@ -208,7 +208,7 @@ func TestFormsFromTheHorizon(t *testing.T) {
 }
 
 func TestDatasetTakesTheChartInForceOnTheHorizon(t *testing.T) {
-	d, err := Dataset(recordedSite(chapter14).get, nil)
+	d, err := Dataset(recordedSite(chapter14).get, Companies, nil)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -233,13 +233,13 @@ func TestDatasetNeedsAPersonForAChangeOfTheChart(t *testing.T) {
 		}
 	}
 	later = append(later[:len(later)-6], append([]string{"8033. Valori materiale primite în păstrare"}, later[len(later)-6:]...)...)
-	if _, err := Dataset(recordedSite(later).get, nil); err == nil || !strings.Contains(err.Error(), "2026-10-13") {
+	if _, err := Dataset(recordedSite(later).get, Companies, nil); err == nil || !strings.Contains(err.Error(), "2026-10-13") {
 		t.Fatalf("a change without a person was taken: %v", err)
 	}
 
-	Changes["2026-10-13"] = Change{Applies: "2026-11-01", Act: "OMF 1281/2026"}
-	defer delete(Changes, "2026-10-13")
-	d, err := Dataset(recordedSite(later).get, nil)
+	Companies.Changes["2026-10-13"] = Change{Applies: "2026-11-01", Act: "OMF 1281/2026"}
+	defer delete(Companies.Changes, "2026-10-13")
+	d, err := Dataset(recordedSite(later).get, Companies, nil)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -256,7 +256,7 @@ func TestDatasetNeedsAPersonForAChangeOfTheChart(t *testing.T) {
 		if a.ValidTo != nil {
 			to = *a.ValidTo
 		}
-		got = append(got, fmt.Sprintf("%s %s %s..%s", a.Code, a.Name, from, to))
+		got = append(got, fmt.Sprintf("%s %s %s..%s", a.Code, *a.Name, from, to))
 	}
 	want := "1011 Capital subscris nevărsat -..2026-10-31 | 1011 Capital subscris și nevărsat 2026-11-01..- | 8033 Valori materiale primite în păstrare 2026-11-01..-"
 	if strings.Join(got, " | ") != want {
@@ -265,7 +265,7 @@ func TestDatasetNeedsAPersonForAChangeOfTheChart(t *testing.T) {
 }
 
 func TestDatasetStopsWhenAPublishedAccountIsGone(t *testing.T) {
-	_, err := Dataset(recordedSite(chapter14).get, []string{"101|", "5126|"})
+	_, err := Dataset(recordedSite(chapter14).get, Companies, []string{"101|", "5126|"})
 	if err == nil || !strings.Contains(err.Error(), "5126|") {
 		t.Fatalf("error %v", err)
 	}
@@ -275,5 +275,125 @@ func TestPublishedKeysReadTheFile(t *testing.T) {
 	keys, err := PublishedKeys(strings.NewReader("{\"code\":\"101\",\"valid_from\":null}\n{\"code\":\"1011\",\"valid_from\":\"2026-11-01\"}\n"))
 	if err != nil || strings.Join(keys, " ") != "101| 1011|2026-11-01" {
 		t.Fatalf("%v %v", keys, err)
+	}
+}
+
+// table writes a chart the way OMFP 3103/2017 and OMFP 1917/2005 do: each code on a line of its own and its
+// name on the lines after it.
+func table(start, end string, lines ...string) string {
+	var b strings.Builder
+	b.WriteString(`<html><body><span>` + start + `</span>`)
+	for _, l := range lines {
+		fmt.Fprintf(&b, "<span>%s</span>\n", l)
+	}
+	b.WriteString(`<span>` + end + `</span><span>101</span><span>Nu e în plan</span></body></html>`)
+	return b.String()
+}
+
+var nonprofitChart = []string{
+	"1", "CONTURI DE CAPITALURI", "10", "CAPITAL ȘI REZERVE", "101", "Capital (P)",
+	"105", "Rezerve din reevaluare", "105.01", "Rezerve din reevaluare privind activitățile", "fără scop patrimonial (P)",
+	"107", "Patrimoniul privat^2 (P)",
+	"12", "REZULTATUL EXERCIȚIULUI FINANCIAR", "121", "Excedent/profit sau deficit/pierdere",
+	"1211", "Excedent sau deficit privind activitățile fără scop patrimonial (A/P)",
+	"Notă", "...", "^2 Acest cont apare doar la entitățile care dețin bunuri de natura patrimoniului privat.",
+	"(la 21-01-2021,", "Planul de conturi de la punctul 344 a fost modificat de", "Articolul 15 din ORDINUL nr. 58", ")",
+	"Notă", "...", "Potrivit art. 13 din ORDINUL nr. 2.493, prevederile se aplică începând cu anul 2019.",
+	"6", "CONTURI DE CHELTUIELI", "60", "CHELTUIELI PRIVIND STOCURILE", "601", "Cheltuieli cu materiile prime",
+}
+
+func TestReadChapterReadsAChartWrittenAsATable(t *testing.T) {
+	accounts, err := ReadChapter(table("344.", "Capitolul 9", append([]string{"Planul de conturi general este următorul:"}, nonprofitChart...)...), Nonprofit)
+	if err != nil {
+		t.Fatal(err)
+	}
+	var got []string
+	for _, a := range accounts {
+		f, r, p := "-", "-", "-"
+		if a.Function != nil {
+			f = *a.Function
+		}
+		if a.Role != nil {
+			r = *a.Role
+		}
+		if a.Parent != nil {
+			p = *a.Parent
+		}
+		got = append(got, fmt.Sprintf("%s<%s %s [%s] %s %s %d", a.Code, p, a.Level, *a.Name, f, r, len(a.Notes)))
+	}
+	want := []string{
+		"1<- class [CONTURI DE CAPITALURI] - - 0",
+		"10<1 group [CAPITAL ȘI REZERVE] - - 0",
+		"101<10 account [Capital] P - 0",
+		"105<10 account [Rezerve din reevaluare] - - 0",
+		"105.01<105 detail [Rezerve din reevaluare privind activitățile fără scop patrimonial] P - 0",
+		"107<10 account [Patrimoniul privat] P - 1",
+		"12<1 group [REZULTATUL EXERCIȚIULUI FINANCIAR] - - 0",
+		"121<12 account [Excedent/profit sau deficit/pierdere] - result 0",
+		"1211<121 subaccount [Excedent sau deficit privind activitățile fără scop patrimonial] A/P result 0",
+		"6<- class [CONTURI DE CHELTUIELI] - - 0",
+		"60<6 group [CHELTUIELI PRIVIND STOCURILE] - - 0",
+		"601<60 account [Cheltuieli cu materiile prime] - expense 0",
+	}
+	if strings.Join(got, "\n") != strings.Join(want, "\n") {
+		t.Fatalf("got\n%s\nwant\n%s", strings.Join(got, "\n"), strings.Join(want, "\n"))
+	}
+}
+
+var publicChart = []string{
+	"C", "L", "A", "S", "A", "GRUPA", "CONT SINTETIC gr. I, gr. II și gr. III", "DENUMIRE CONT NOU",
+	"1", "CONTURI DE CAPITALURI", "10", "CAPITAL, REZERVE, FONDURI",
+	"100", "Fondul activelor fixe necorporale", "100 00", "Abrogat.", "100 01", "Fondul activelor fixe necorporale ale statului",
+	"100 00 00", "Abrogat.", "100 01 01", "Fondul activelor fixe necorporale ale statului",
+	"139", "Eliminat.", "139 01", "Eliminat.", "139 01 00", "Elimimnat.",
+	"8", "CONTURI SPECIALE", "80", "CONTURI ÎN AFARA BILANȚULUI",
+	"803 00 01", "Active fixe și obiecte de inventar primite în folosință",
+	"89", "891", "Bilanț de deschidere",
+}
+
+func TestReadChapterReadsThePublicChart(t *testing.T) {
+	accounts, err := ReadChapter(table("Capitolul VI", "Capitolul VII*)", append([]string{"PLANUL DE CONTURI GENERAL PENTRU INSTITUȚIILE PUBLICE"}, publicChart...)...), Public)
+	if err != nil {
+		t.Fatal(err)
+	}
+	var got []string
+	for _, a := range accounts {
+		name, p := "-", "-"
+		if a.Name != nil {
+			name = *a.Name
+		}
+		if a.Parent != nil {
+			p = *a.Parent
+		}
+		got = append(got, fmt.Sprintf("%s<%s %s [%s]", a.Code, p, a.Level, name))
+	}
+	want := []string{
+		"1<- class [CONTURI DE CAPITALURI]",
+		"10<1 group [CAPITAL, REZERVE, FONDURI]",
+		"100<10 account [Fondul activelor fixe necorporale]",
+		"100 01<100 subaccount [Fondul activelor fixe necorporale ale statului]",
+		"100 01 01<100 01 detail [Fondul activelor fixe necorporale ale statului]",
+		"8<- class [CONTURI SPECIALE]",
+		"80<8 group [CONTURI ÎN AFARA BILANȚULUI]",
+		"803 00 01<80 detail [Active fixe și obiecte de inventar primite în folosință]",
+		"89<8 group [-]",
+		"891<89 account [Bilanț de deschidere]",
+	}
+	if strings.Join(got, "\n") != strings.Join(want, "\n") {
+		t.Fatalf("got\n%s\nwant\n%s", strings.Join(got, "\n"), strings.Join(want, "\n"))
+	}
+
+	odd := append([]string{"PLANUL DE CONTURI GENERAL PENTRU INSTITUȚIILE PUBLICE"}, publicChart...)
+	odd = append(odd, "892", "Elimnat.")
+	if _, err := ReadChapter(table("Capitolul VI", "Capitolul VII*)", odd...), Public); err == nil || !strings.Contains(err.Error(), "892") {
+		t.Fatalf("an unknown mark was taken as a name: %v", err)
+	}
+}
+
+func TestAboveAndLevel(t *testing.T) {
+	for code, want := range map[string]string{"100 01 01": "100 01|detail", "100 01": "100|subaccount", "105.01": "105|detail", "1011": "101|subaccount", "101": "10|account", "10": "1|group", "1": "|class"} {
+		if got := above(code) + "|" + level(code); got != want {
+			t.Errorf("%s: %s, want %s", code, got, want)
+		}
 	}
 }
