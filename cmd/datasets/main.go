@@ -23,6 +23,7 @@ import (
 	"github.com/pidginhost/romanian-datasets/internal/anafforms"
 	"github.com/pidginhost/romanian-datasets/internal/banks"
 	"github.com/pidginhost/romanian-datasets/internal/bnr"
+	"github.com/pidginhost/romanian-datasets/internal/budget"
 	"github.com/pidginhost/romanian-datasets/internal/caen"
 	"github.com/pidginhost/romanian-datasets/internal/chart"
 	"github.com/pidginhost/romanian-datasets/internal/countries"
@@ -70,6 +71,24 @@ var builders = []builder{
 			return dataset.Dataset{}, err
 		}
 		return banks.Dataset(banks.FromSite(&http.Client{Timeout: 2 * time.Minute}), keys)
+	}},
+	{"budget-classification", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
+		var readers [2]io.Reader
+		for k, name := range []string{"indicators.jsonl", "departments.jsonl"} {
+			file, err := published(root, "budget-classification", name)
+			if err != nil {
+				return dataset.Dataset{}, err
+			}
+			if file != nil {
+				defer file.Close()
+				readers[k] = file
+			}
+		}
+		keys, err := budget.ReadPublished(readers[0], readers[1])
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		return budget.Dataset(budget.FromSite(&http.Client{Timeout: 3 * time.Minute}), keys)
 	}},
 	{"bnr-currencies", dataset.Manual, func(now time.Time, _ string) (dataset.Dataset, error) {
 		return bnr.Dataset(bnr.FromSite(&http.Client{Timeout: time.Minute}), now.UTC().Year())

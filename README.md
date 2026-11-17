@@ -10,6 +10,7 @@ The public copy is https://github.com/pidginhost/romanian-datasets.
 | --- | --- | --- | --- |
 | `anaf-forms` | The versions of the declarations 100, 112, 300, 390 and 394 from January 2026, with the reporting period each applies from and the SHA-256 of their DUKIntegrator validators and schemas, and of the DUKIntegrator package | ANAF, pages of the electronic declarations | Monthly |
 | `banks` | The credit institutions in the register of the National Bank of Romania, those removed with the day of removal, and the bank code of a Romanian IBAN with the BIC | BNR register of credit institutions; SWIFT BIC-to-LEI mapping table, published by GLEIF | Monthly |
+| `budget-classification` | The classification of public finance indicators (OMFP 1954/2005): the revenue and expense codes of every budget, the economic classification and the departmental codes, year by year from 2026 | Ministry of Finance, budget classifications | Monthly |
 | `bnr-currencies` | The currencies with a reference rate of the National Bank of Romania, the units each rate is given for, and since when | BNR yearly rate files | By hand, when BNR changes its list |
 | `caen` | The classification of economic activities CAEN, Rev.2 and Rev.3, and the links between the classes of the two | ONRC nomenclatures on data.gov.ro; Eurostat correspondence table NACE Rev.2 to Rev.2.1 | By hand, when INS changes CAEN |
 | `chart-of-accounts` | The general chart of accounts for double-entry bookkeeping of companies (OMFP 1802/2014): classes, groups, accounts and subaccounts with their function and closing role, from 1 January 2026 | Legislative Portal, consolidated OMFP 1802/2014 | Monthly |
@@ -51,6 +52,9 @@ datasets/
   banks/
     codes.jsonl
     institutions.jsonl
+  budget-classification/
+    departments.jsonl
+    indicators.jsonl
   bnr-currencies/
     currencies.jsonl
   caen/
