@@ -1,0 +1,8 @@
+{"cod":"ContractStareActiv","id":0,"nume":"Activ"}
+{"cod":"ContractStareSuspendare","id":1,"nume":"Suspendat"}
+{"cod":"ContractStareDetasare","id":2,"nume":"Detasat"}
+{"cod":"ContractStareIncetare","id":3,"nume":"Incetat"}
+{"cod":"ContractStareTransferat","id":4,"nume":"Transferat"}
+{"cod":"ContractStareLocMuncaSchimbat","id":5,"nume":"Loc munca schimbat"}
+{"cod":"ContractStareGestiuneRegistruSchimbata","id":6,"nume":"Gestiune registru schimbata"}
+{"cod":"ContractStareReactivare","id":7,"nume":"Reactivat"}

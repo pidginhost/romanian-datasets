@@ -1,0 +1,5 @@
+{"cod":"Cnp","id":0,"nume":"BI sau CI"}
+{"cod":"Pasaport","id":2,"nume":"Pașaport"}
+{"cod":"PasaportCif","id":3,"nume":"Paşaport sau Certificat de înregistrare"}
+{"cod":"PasaportActIdentitate","id":4,"nume":"Paşaport sau Alt act identitate"}
+{"cod":"AltApatridTolerat","id":5,"nume":"Alt tip act identitate (apatrid tolerat)"}

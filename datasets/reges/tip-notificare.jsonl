@@ -1,0 +1,8 @@
+{"cod":"Incadrare","id":0,"nume":"Incadrare"}
+{"cod":"Suspendare","id":1,"nume":"Suspendare"}
+{"cod":"ContractIncetat","id":2,"nume":"Contract încetat"}
+{"cod":"ContractDateEronate","id":3,"nume":"Date eronate"}
+{"cod":"ContractLipsa","id":4,"nume":"Lipsa informatii"}
+{"cod":"ContractProgram","id":5,"nume":"Program de munca"}
+{"cod":"Comunicare","id":6,"nume":"Comunicare"}
+{"cod":"Salariu","id":7,"nume":"Salariu"}

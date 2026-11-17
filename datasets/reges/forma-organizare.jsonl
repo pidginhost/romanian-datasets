@@ -1,0 +1,48 @@
+{"cod":"Agricola","formaJuridica":{"cod":"SocietateCooperativa","extraInfo":6,"id":6,"nume":"Societate Cooperativa"},"id":0,"nume":"Agricola"}
+{"cod":"Arhitect","formaJuridica":{"cod":"ProfesieSpeciala","extraInfo":3,"id":3,"nume":"Profesie exercitata in baza unor legi speciale"},"id":0,"nume":"Arhitect"}
+{"cod":"AlteInstitutiiDeCredit","formaJuridica":{"cod":"InstitutieDeCredit","extraInfo":5,"id":5,"nume":"Institutie de credit"},"id":1,"nume":"Alte institutii de credit"}
+{"cod":"AsistentMedical","formaJuridica":{"cod":"ProfesieSpeciala","extraInfo":3,"id":3,"nume":"Profesie exercitata in baza unor legi speciale"},"id":1,"nume":"Asistent medical"}
+{"cod":"AlteOrganizatiiPatronale","formaJuridica":{"cod":"OrganizatiePatronala","extraInfo":10,"id":10,"nume":"Organizatie Patronala"},"id":2,"nume":"Alte organizatii patronale"}
+{"cod":"AuditorFinanciar","formaJuridica":{"cod":"ProfesieSpeciala","extraInfo":3,"id":3,"nume":"Profesie exercitata in baza unor legi speciale"},"id":2,"nume":"Auditor financiar"}
+{"cod":"AlteOrganizatiiSauAsociatiiCuPersonalitateJuridica","formaJuridica":{"cod":"OrganizatieAsociatieCuPersonalitateJuridica","extraInfo":11,"id":11,"nume":"Organizatie sau asociatie cu personalitate juridica"},"id":3,"nume":"Alte organizatii sau asociatii cu personalitate juridica"}
+{"cod":"Avocat","formaJuridica":{"cod":"ProfesieSpeciala","extraInfo":3,"id":3,"nume":"Profesie exercitata in baza unor legi speciale"},"id":3,"nume":"Avocat"}
+{"cod":"AsociatieDeProprietari","formaJuridica":{"cod":"OrganizatieAsociatieCuPersonalitateJuridica","extraInfo":11,"id":11,"nume":"Organizatie sau asociatie cu personalitate juridica"},"id":4,"nume":"Asociatie de proprietari"}
+{"cod":"ConsilierProprietateIndustriala","formaJuridica":{"cod":"ProfesieSpeciala","extraInfo":3,"id":3,"nume":"Profesie exercitata in baza unor legi speciale"},"id":4,"nume":"Consilier in proprietate industriala"}
+{"cod":"Banca","formaJuridica":{"cod":"InstitutieDeCredit","extraInfo":5,"id":5,"nume":"Institutie de credit"},"id":5,"nume":"Banca"}
+{"cod":"ConsultantFiscal","formaJuridica":{"cod":"ProfesieSpeciala","extraInfo":3,"id":3,"nume":"Profesie exercitata in baza unor legi speciale"},"id":5,"nume":"Consultant fiscal"}
+{"cod":"CaseDeEconomiiPentruDomeniulLocativ","formaJuridica":{"cod":"InstitutieDeCredit","extraInfo":5,"id":5,"nume":"Institutie de credit"},"id":6,"nume":"Case de economii pentru domeniul locativ"}
+{"cod":"ExecutorJudecatoresc","formaJuridica":{"cod":"ProfesieSpeciala","extraInfo":3,"id":3,"nume":"Profesie exercitata in baza unor legi speciale"},"id":6,"nume":"Executor judecatoresc"}
+{"cod":"ConfederatieSindicala","formaJuridica":{"cod":"OrganizatieSindicala","extraInfo":7,"id":7,"nume":"Organizatie Sindicala"},"id":7,"nume":"Confederatie sindicala"}
+{"cod":"ExpertContabil","formaJuridica":{"cod":"ProfesieSpeciala","extraInfo":3,"id":3,"nume":"Profesie exercitata in baza unor legi speciale"},"id":7,"nume":"Expert contabil"}
+{"cod":"DeConsum","formaJuridica":{"cod":"SocietateCooperativa","extraInfo":6,"id":6,"nume":"Societate Cooperativa"},"id":8,"nume":"De consum"}
+{"cod":"ExpertVamal","formaJuridica":{"cod":"ProfesieSpeciala","extraInfo":3,"id":3,"nume":"Profesie exercitata in baza unor legi speciale"},"id":8,"nume":"Expert vamal"}
+{"cod":"DeLocuinte","formaJuridica":{"cod":"SocietateCooperativa","extraInfo":6,"id":6,"nume":"Societate Cooperativa"},"id":9,"nume":"De locuinte"}
+{"cod":"Farmacist","formaJuridica":{"cod":"ProfesieSpeciala","extraInfo":3,"id":3,"nume":"Profesie exercitata in baza unor legi speciale"},"id":9,"nume":"Farmacist"}
+{"cod":"DeTransporturi","formaJuridica":{"cod":"SocietateCooperativa","extraInfo":6,"id":6,"nume":"Societate Cooperativa"},"id":10,"nume":"De transporturi"}
+{"cod":"Medic","formaJuridica":{"cod":"ProfesieSpeciala","extraInfo":3,"id":3,"nume":"Profesie exercitata in baza unor legi speciale"},"id":10,"nume":"Medic"}
+{"cod":"DeValorificare","formaJuridica":{"cod":"SocietateCooperativa","extraInfo":6,"id":6,"nume":"Societate Cooperativa"},"id":11,"nume":"De valorificare"}
+{"cod":"MedicVeterinar","formaJuridica":{"cod":"ProfesieSpeciala","extraInfo":3,"id":3,"nume":"Profesie exercitata in baza unor legi speciale"},"id":11,"nume":"Medic veterinar"}
+{"cod":"Federatiepatronala","formaJuridica":{"cod":"OrganizatiePatronala","extraInfo":10,"id":10,"nume":"Organizatie Patronala"},"id":12,"nume":"Federatie patronala"}
+{"cod":"NotarPublic","formaJuridica":{"cod":"ProfesieSpeciala","extraInfo":3,"id":3,"nume":"Profesie exercitata in baza unor legi speciale"},"id":12,"nume":"Notar public"}
+{"cod":"Federatiesindicala","formaJuridica":{"cod":"SocietateCooperativa","extraInfo":6,"id":6,"nume":"Societate Cooperativa"},"id":13,"nume":"Federatie sindicala"}
+{"cod":"Psiholog","formaJuridica":{"cod":"ProfesieSpeciala","extraInfo":3,"id":3,"nume":"Profesie exercitata in baza unor legi speciale"},"id":13,"nume":"Psiholog"}
+{"cod":"Forestiere","formaJuridica":{"cod":"SocietateCooperativa","extraInfo":6,"id":6,"nume":"Societate Cooperativa"},"id":14,"nume":"Forestiere"}
+{"cod":"TraducatorAutorizat","formaJuridica":{"cod":"ProfesieSpeciala","extraInfo":3,"id":3,"nume":"Profesie exercitata in baza unor legi speciale"},"id":14,"nume":"Traducator autorizat"}
+{"cod":"InstitutiiEmitenteDeMonedaElectronica","formaJuridica":{"cod":"InstitutieDeCredit","extraInfo":5,"id":5,"nume":"Institutie de credit"},"id":15,"nume":"Institutii emitente de moneda electronica"}
+{"cod":"LichidatorJudiciar","formaJuridica":{"cod":"ProfesieSpeciala","extraInfo":3,"id":3,"nume":"Profesie exercitata in baza unor legi speciale"},"id":15,"nume":"Lichidator judiciar"}
+{"cod":"AltePersoaneFizice","formaJuridica":{"cod":"ProfesieSpeciala","extraInfo":3,"id":3,"nume":"Profesie exercitata in baza unor legi speciale"},"id":16,"nume":"Alte persoane fizice care exercita o activitate in baza unei legi speciale"}
+{"cod":"Mestesugareasca","formaJuridica":{"cod":"SocietateCooperativa","extraInfo":6,"id":6,"nume":"Societate Cooperativa"},"id":16,"nume":"Mestesugareasca"}
+{"cod":"OrganizatieCooperatistaDeCredit","formaJuridica":{"cod":"InstitutieDeCredit","extraInfo":5,"id":5,"nume":"Institutie de credit"},"id":17,"nume":"Organizatie cooperatista de credit"}
+{"cod":"OrganizatieSauAsociatieProfesionala","formaJuridica":{"cod":"OrganizatieAsociatieCuPersonalitateJuridica","extraInfo":11,"id":11,"nume":"Organizatie sau asociatie cu personalitate juridica"},"id":18,"nume":"Organizatie sau asociatie profesionala"}
+{"cod":"Patronat","formaJuridica":{"cod":"OrganizatiePatronala","extraInfo":10,"id":10,"nume":"Organizatie Patronala"},"id":19,"nume":"Patronat"}
+{"cod":"Pescaresti","formaJuridica":{"cod":"SocietateCooperativa","extraInfo":6,"id":6,"nume":"Societate Cooperativa"},"id":20,"nume":"Pescaresti"}
+{"cod":"Sindicat","formaJuridica":{"cod":"OrganizatieSindicala","extraInfo":7,"id":7,"nume":"Organizatie Sindicala"},"id":21,"nume":"Sindicat"}
+{"cod":"SocietateCuRaspundereLimitata","formaJuridica":{"cod":"SocietateComerciala","extraInfo":0,"id":0,"nume":"Societate Comerciala"},"id":22,"nume":"Societate cu raspundere limitata"}
+{"cod":"SocietateCuRaspundereLimitataDebutant","formaJuridica":{"cod":"SocietateComerciala","extraInfo":0,"id":0,"nume":"Societate Comerciala"},"id":23,"nume":"Societate cu raspundere limitata - debutant"}
+{"cod":"SocietateInComanditaPeActiuni","formaJuridica":{"cod":"SocietateComerciala","extraInfo":0,"id":0,"nume":"Societate Comerciala"},"id":24,"nume":"Societate in comandita pe actiuni"}
+{"cod":"SocietateInComanditaSimpla","formaJuridica":{"cod":"SocietateComerciala","extraInfo":0,"id":0,"nume":"Societate Comerciala"},"id":25,"nume":"Societate in comandita simpla"}
+{"cod":"SocietateInNumeColectiv","formaJuridica":{"cod":"SocietateComerciala","extraInfo":0,"id":0,"nume":"Societate Comerciala"},"id":26,"nume":"Societate in nume colectiv"}
+{"cod":"SocietatePeActiuni","formaJuridica":{"cod":"SocietateComerciala","extraInfo":0,"id":0,"nume":"Societate Comerciala"},"id":27,"nume":"Societate pe actiuni"}
+{"cod":"Sucursalaauneiinstitutiidecreditstraina","formaJuridica":{"cod":"InstitutieDeCredit","extraInfo":5,"id":5,"nume":"Institutie de credit"},"id":28,"nume":"Sucursala a unei institutii de credit straina"}
+{"cod":"UniunePatronala","formaJuridica":{"cod":"OrganizatiePatronala","extraInfo":10,"id":10,"nume":"Organizatie Patronala"},"id":29,"nume":"Uniune patronala"}
+{"cod":"UniuneSindicala","formaJuridica":{"cod":"OrganizatieSindicala","extraInfo":7,"id":7,"nume":"Organizatie Sindicala"},"id":30,"nume":"Uniune sindicala"}

@@ -1,0 +1,5 @@
+{"cod":"NormaIntreaga840","id":0,"nume":"Normă întreagă 8/40","tipNorma":{"cod":"NormaIntreaga","id":0,"nume":"Normă Intreagă"}}
+{"cod":"NormaIntreaga630","id":1,"nume":"Normă întreagă 6/30","tipNorma":{"cod":"NormaIntreaga","id":0,"nume":"Normă Intreagă"}}
+{"cod":"NormaIntreagaLegiSpeciale","id":2,"nume":"Normă întreagă legi speciale","tipNorma":{"cod":"NormaIntreaga","id":0,"nume":"Normă Intreagă"}}
+{"cod":"TimpPartial","id":3,"nume":"Cu timp parțial","tipNorma":{"cod":"TimpPartial","id":1,"nume":"Cu timp parţial"}}
+{"cod":"TimpOUG132","id":4,"nume":"Timp muncă conform OUG 132/2020","tipNorma":{"cod":"NormaOUG132","id":2,"nume":"Norma intreaga conform OUG 132/2020"}}

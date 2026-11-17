@@ -1,0 +1,6 @@
+{"cod":"Prestator","id":0,"nume":"Prestator"}
+{"cod":"Angajat","id":1,"nume":"Angajat"}
+{"cod":"ReprezentantLegalPrestator","id":2,"nume":"Reprezentant legal prestator"}
+{"cod":"AngajatPrestator","id":3,"nume":"Angajat prestator"}
+{"cod":"DirectorHR","id":4,"nume":"Angajat cu drept de delegare"}
+{"cod":"DirectorHRPrestator","id":5,"nume":"Angajat prestator cu drept de delegare"}

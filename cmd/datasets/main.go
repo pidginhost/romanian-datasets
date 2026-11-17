@@ -26,6 +26,7 @@ import (
 	"github.com/pidginhost/romanian-datasets/internal/efactura"
 	"github.com/pidginhost/romanian-datasets/internal/en16931"
 	"github.com/pidginhost/romanian-datasets/internal/holidays"
+	"github.com/pidginhost/romanian-datasets/internal/reges"
 	"github.com/pidginhost/romanian-datasets/internal/siruta"
 	"github.com/pidginhost/romanian-datasets/internal/vatnode"
 )
@@ -66,6 +67,13 @@ var builders = []builder{
 	}},
 	{"public-holidays", dataset.Manual, func(time.Time, string) (dataset.Dataset, error) {
 		return holidays.Dataset(), nil
+	}},
+	{"reges", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
+		keys, err := publishedREGES(root)
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		return reges.Dataset(reges.FromSite(&http.Client{Timeout: 2 * time.Minute}), keys)
 	}},
 	{"siruta", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
 		published, err := publishedSIRUTA(root)
@@ -243,6 +251,29 @@ func publishedEN16931(root string) (map[string][]string, error) {
 			return nil, fmt.Errorf("%s: %w", l.File, err)
 		}
 		out[l.File] = codes
+	}
+	return out, nil
+}
+
+// publishedREGES gives the keys of each file of the REGES dataset as committed. The files are named after
+// the lists of REGES, so every file of the folder is read.
+func publishedREGES(root string) (map[string][]string, error) {
+	names, err := filepath.Glob(filepath.Join(root, "datasets", "reges", "*.jsonl"))
+	if err != nil {
+		return nil, err
+	}
+	out := map[string][]string{}
+	for _, name := range names {
+		file, err := os.Open(name)
+		if err != nil {
+			return nil, err
+		}
+		keys, err := reges.PublishedKeys(file)
+		file.Close()
+		if err != nil {
+			return nil, fmt.Errorf("%s: %w", name, err)
+		}
+		out[filepath.Base(name)] = keys
 	}
 	return out, nil
 }

@@ -1,0 +1,15 @@
+{"cod":"Superioare","id":0,"nume":"Superioare"}
+{"cod":"StudiiDeScurtaDurata","id":1,"nume":"Studii de Scurta Durata"}
+{"cod":"Medii","id":2,"nume":"Medii"}
+{"cod":"PL","id":3,"nume":"Post liceale"}
+{"cod":"G","id":4,"nume":"Scoala generala"}
+{"cod":"SSiLicenta","id":5,"nume":"Superioare cu licenta"}
+{"cod":"MSiLicentaSauScoalaProfesionalaSiLicenta","id":7,"nume":"Medii cu licenta sau Scoala Profesionala licenta"}
+{"cod":"ScoalaProfesioanalaSiLicenta","id":8,"nume":"Scoala profesionala cu licenta"}
+{"cod":"ScoalaMaistriSiLicenta","id":9,"nume":"Scoala maistri cu licenta"}
+{"cod":"MSiCursDeCalificare","id":10,"nume":"Medii cu curs de calificare"}
+{"cod":"MSiCursDeCalificareSiLicenta","id":11,"nume":"Medii cu curs de calificare si licenta"}
+{"cod":"AltNivelDeStudii","id":12,"nume":"Alt nivel de studii"}
+{"cod":"NA","id":13,"nume":"NA"}
+{"cod":"PLM","id":14,"nume":"Post liceale / Medii"}
+{"cod":"MG","id":15,"nume":"Medii / Scoala generala"}

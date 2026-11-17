@@ -1,0 +1,49 @@
+{"cod":"EroareInregistrareContract","id":1,"nume":"Eroare la înregistrarea contractului"}
+{"cod":"NeafisareTransmiteri","id":2,"nume":"Nu se afișează transmiterile"}
+{"cod":"EroareModificareSalariat","id":3,"nume":"Eroare la modificarea salariatului"}
+{"cod":"ProblemaAutentificare","id":4,"nume":"Problema la autentificare"}
+{"cod":"DateSalariatLipsa","id":5,"nume":"Date salariat lipsă"}
+{"cod":"NotificareContract","id":6,"nume":"Notificare contract"}
+{"cod":"ProblemaResetareParola","id":7,"nume":"Problema la resetarea parolei"}
+{"cod":"EroareGenerareExtrasREGES","id":8,"nume":"Eroare la generarea extrasului REGES"}
+{"cod":"ContractNeactualizatInSistem","id":9,"nume":"Contract neactualizat în sistem"}
+{"cod":"ProblemaVizualizareNotificari","id":10,"nume":"Problema la vizualizarea notificărilor"}
+{"cod":"DateAngajatorIncorecte","id":11,"nume":"Date angajator incorecte"}
+{"cod":"ProblemeAccesPortalExtern","id":12,"nume":"Probleme la accesul în portal extern"}
+{"cod":"EroareSalvareDocumente","id":13,"nume":"Eroare la salvarea documentelor"}
+{"cod":"EroareCerereAcces","id":14,"nume":"Eroare  cerere de acces"}
+{"cod":"ProblemaAdministrareProfilUtilizator","id":15,"nume":"Problema la administrarea profilului utilizator"}
+{"cod":"ProblemaVizualizareListaAngajatori","id":16,"nume":"Probleme la vizualizarea listei de angajatori"}
+{"cod":"ImposibilitateDescarcareDocumente","id":17,"nume":"Nu se pot descărca documentele"}
+{"cod":"EroareIncarcareDocumente","id":18,"nume":"Eroare la încărcarea documentelor"}
+{"cod":"EroareCautareSalariat","id":19,"nume":"Eroare la căutarea salariatului"}
+{"cod":"EroareSchimbareGestionareRegistru","id":20,"nume":"Eroare la schimbarea gestionării registrului"}
+{"cod":"EroareAutentificareIdentitateDigitala","id":21,"nume":"Erori la autentificarea cu identitate digitală"}
+{"cod":"ProblemaAccesCuSemnaturaDigitala","id":22,"nume":"Probleme la accesul cu semnătură digitală"}
+{"cod":"DateContractIncomplete","id":23,"nume":"Date contract incomplete"}
+{"cod":"EroareVizualizareCoduriCAEN","id":24,"nume":"Eroare la vizualizarea codurilor CAEN"}
+{"cod":"ProblemaGenerareExtrasePDF","id":25,"nume":"Probleme la generarea extraselor PDF"}
+{"cod":"DateLipsaInRaportAngajatori","id":26,"nume":"Date lipsă în raportul angajatorilor"}
+{"cod":"EroareAdaugareSalariatStrain","id":27,"nume":"Erori la adăugarea unui salariat străin"}
+{"cod":"EroareAccesareRaportDeActivitate","id":28,"nume":"Eroare la accesarea raportului de activitate"}
+{"cod":"ProblemaDescarcareBazaDeDate","id":29,"nume":"Probleme la descărcarea bazei de date"}
+{"cod":"EroareAutentificareKiosk","id":30,"nume":"Eșec la autentificarea în Kiosk"}
+{"cod":"ProblemaVizualizareAlerte","id":31,"nume":"Probleme la vizualizare alerte"}
+{"cod":"EroareAnulareContract","id":32,"nume":"Eroare la anularea contractului"}
+{"cod":"ProblemaSalvareSetariAccesibilitate","id":33,"nume":"Probleme la salvarea setărilor de accesibilitate"}
+{"cod":"EroareRadiereSalariat","id":34,"nume":"Eroare la radierea salariatului"}
+{"cod":"EroareModificareDrepturiAcces","id":35,"nume":"Erori la modificarea drepturilor de acces"}
+{"cod":"ProblemaPreluareRegistruSalariati","id":36,"nume":"Problema la preluarea registrului salariaților"}
+{"cod":"LipsaCoduriCOR","id":37,"nume":"Lipsă coduri COR"}
+{"cod":"ProblemaSchimbareLocMunca","id":38,"nume":"Probleme la schimbarea locului de muncă"}
+{"cod":"ProblemaAdaugareSporSalarial","id":39,"nume":"Probleme la adăugarea unui spor salarial"}
+{"cod":"DurataSesiune","id":40,"nume":"Durata sesiunii"}
+{"cod":"ProblemaVizualizareMesajeAlerta","id":41,"nume":"Problema la vizualizarea mesajelor de alertă"}
+{"cod":"LipsaIstoricContract","id":42,"nume":"Lipsă istoric Contract"}
+{"cod":"LipsaIstoricSalariat","id":43,"nume":"Lipsă istoric Salariat"}
+{"cod":"AltaProblema","id":44,"nume":"Alta problema"}
+{"cod":"EroareAutentificareSalariat","id":45,"nume":"Eroare la autentificare"}
+{"cod":"ProblemeVizualizareExtrasSalariat","id":46,"nume":"Probleme vizualizare extras"}
+{"cod":"ProblemaTrimitereNotificariSalariat","id":47,"nume":"Problema trimitere notificari"}
+{"cod":"ProblemaVizualizareNotificariSalariat","id":48,"nume":"Problema vizualizare notificari"}
+{"cod":"AltaProblemaSalariat","id":49,"nume":"Alta problema"}

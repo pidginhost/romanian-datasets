@@ -1,0 +1,7 @@
+{"cod":"OreDeZi","id":0,"nume":"Ore de zi"}
+{"cod":"OreDeNoapte","id":1,"nume":"Ore de noapte"}
+{"cod":"Inegal","id":2,"nume":"Ore de zi si de noapte"}
+{"cod":"OreInRepaos","id":3,"nume":"Ore in perioada de repaus"}
+{"cod":"OreZiSiRepaos","id":4,"nume":"Ore de zi si in perioada de repaus"}
+{"cod":"OreNoapteSiRepaos","id":5,"nume":"Ore de noapte si in perioada de repaus"}
+{"cod":"OreZiNoapteSiRepaos","id":6,"nume":"Ore de zi, noapte si in perioada de repaus"}
