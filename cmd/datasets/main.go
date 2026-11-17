@@ -29,8 +29,8 @@ type builder struct {
 
 // builders lists every dataset. A new dataset is added here.
 var builders = []builder{
-	{"public-holidays", dataset.Yearly, func(now time.Time) (dataset.Dataset, error) {
-		return holidays.Dataset(now.UTC().Year() + 1)
+	{"public-holidays", dataset.Manual, func(time.Time) (dataset.Dataset, error) {
+		return holidays.Dataset(), nil
 	}},
 }
 

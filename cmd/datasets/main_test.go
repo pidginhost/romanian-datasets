@@ -105,7 +105,7 @@ func TestADatasetListedUnderAnotherFrequencyIsRefused(t *testing.T) {
 func TestListNamesEveryDatasetWithItsFrequency(t *testing.T) {
 	var out, errs bytes.Buffer
 	run2([]string{"list"}, day, &out, &errs)
-	if !strings.Contains(out.String(), "public-holidays\tyearly") {
+	if !strings.Contains(out.String(), "public-holidays\tmanual") {
 		t.Fatalf("list said %q", out.String())
 	}
 }
@@ -135,28 +135,11 @@ func TestBuildThenVerifyThenBuildAgainChangesNothing(t *testing.T) {
 	}
 }
 
-func TestANewYearAddsAYearOfHolidays(t *testing.T) {
-	root := t.TempDir()
-	var out, errs bytes.Buffer
-	run2([]string{"build", "-root", root}, day, &out, &errs)
-	out.Reset()
-
-	run2([]string{"build", "-root", root}, day.AddDate(1, 0, 0), &out, &errs)
-
-	if !strings.Contains(out.String(), "1 changed public-holidays") {
-		t.Fatalf("build said %q", out.String())
-	}
-	data, _ := os.ReadFile(filepath.Join(root, "datasets", "public-holidays", "holidays.jsonl"))
-	if !strings.Contains(string(data), `"date":"2028-01-01"`) {
-		t.Fatal("2028 is not in the file")
-	}
-}
-
 func TestVerifyFailsOnADamagedFile(t *testing.T) {
 	root := t.TempDir()
 	var out, errs bytes.Buffer
 	run2([]string{"build", "-root", root}, day, &out, &errs)
-	os.WriteFile(filepath.Join(root, "datasets", "public-holidays", "holidays.jsonl"), []byte("{}\n"), 0o644)
+	os.WriteFile(filepath.Join(root, "datasets", "public-holidays", "rules.jsonl"), []byte("{}\n"), 0o644)
 
 	if code := run2([]string{"verify", "-root", root}, day, &out, &errs); code != 1 {
 		t.Fatalf("verify = %d, want 1", code)

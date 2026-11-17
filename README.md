@@ -8,7 +8,7 @@ The public copy is https://github.com/pidginhost/romanian-datasets.
 
 | Dataset | Content | Source | Kept current |
 | --- | --- | --- | --- |
-| `public-holidays` | The days on which no work is done by law: the rules that give them for any year, and the days themselves from 2024 | Labour Code, article 139 (1) | Yearly |
+| `public-holidays` | The days on which no work is done by law, as rules that give them for any year | Labour Code, article 139 (1) | By hand, when the law changes |
 
 More datasets follow, each after its source and licence are confirmed.
 
@@ -29,7 +29,6 @@ index.json
 datasets/
   public-holidays/
     rules.jsonl
-    holidays.jsonl
 ```
 
 ## Licence

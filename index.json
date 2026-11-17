@@ -6,14 +6,14 @@
     {
       "name": "public-holidays",
       "title": "Public holidays of Romania",
-      "description": "The days on which no work is done by law, as rules that give the days of any year and as the days themselves from 2024 to the year after the build. Orthodox Easter Sunday is the Julian computus moved to the civil calendar. Days declared free by a Government decision for one year only are not included. The two days each of three yearly feasts of other legal religions have no fixed date and are not included.",
+      "description": "The days on which no work is done by law, as rules that give the days of any year: a fixed month and day, or a number of days from Orthodox Easter Sunday. Orthodox Easter Sunday is the Julian computus moved to the civil calendar. A day can come from two rules, such as the second day of Pentecost on 1 June. Days declared free by a Government decision for one year only are not included. The two days each of three yearly feasts of other legal religions have no fixed date and are not included.",
       "source": {
         "name": "Labour Code (Law 53/2003, republished), article 139 (1); Orthodox Easter is computed",
         "url": "https://legislatie.just.ro/Public/DetaliiDocument/128647",
         "licence": "Romanian legislation, not subject to copyright (Law 8/1996, article 9)"
       },
-      "frequency": "yearly",
-      "update": "When article 139 of the Labour Code changes, and once a year for the next year",
+      "frequency": "manual",
+      "update": "When article 139 of the Labour Code changes",
       "revision": 1,
       "changed": "2026-11-17",
       "files": [
@@ -50,26 +50,6 @@
             {
               "name": "valid_to",
               "description": "The last day of the rule, as YYYY-MM-DD, or null while it is in force"
-            }
-          ]
-        },
-        {
-          "path": "datasets/public-holidays/holidays.jsonl",
-          "sha256": "e815bff7b979c986c3ab390f88cb06cd48be022529720ed6cf8860e17617d051",
-          "bytes": 4392,
-          "records": 68,
-          "fields": [
-            {
-              "name": "date",
-              "description": "The day, as YYYY-MM-DD"
-            },
-            {
-              "name": "name",
-              "description": "The name of the holiday, in Romanian"
-            },
-            {
-              "name": "movable",
-              "description": "True for a day that follows Orthodox Easter"
             }
           ]
         }

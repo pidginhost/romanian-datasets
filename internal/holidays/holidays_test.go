@@ -1,8 +1,12 @@
 package holidays
 
 import (
+	"slices"
+	"sort"
 	"testing"
 	"time"
+
+	"github.com/pidginhost/romanian-datasets/internal/dataset"
 )
 
 func TestOrthodoxEasterMatchesKnownYears(t *testing.T) {
@@ -17,70 +21,37 @@ func TestOrthodoxEasterMatchesKnownYears(t *testing.T) {
 	}
 }
 
-func TestAYearHasEveryDayOfTheLaw(t *testing.T) {
-	days, err := Of(2026)
-	if err != nil {
-		t.Fatal(err)
+// days works out the holidays of a year from the rules, as a reader of the dataset does.
+func days(year int) []string {
+	var out []string
+	for _, r := range Rules() {
+		if date, ok := r.On(year); ok {
+			out = append(out, date.Format(time.DateOnly))
+		}
 	}
+	sort.Strings(out)
+	return out
+}
+
+func TestTheRulesGiveEveryDayOfTheLawInAYear(t *testing.T) {
 	want := []string{
 		"2026-01-01", "2026-01-02", "2026-01-06", "2026-01-07", "2026-01-24",
 		"2026-04-10", "2026-04-12", "2026-04-13", "2026-05-01", "2026-05-31",
 		"2026-06-01", "2026-06-01", "2026-08-15", "2026-11-30", "2026-12-01",
 		"2026-12-25", "2026-12-26",
 	}
-	if len(days) != len(want) {
-		t.Fatalf("%d days, want %d: %v", len(days), len(want), days)
-	}
-	for i, d := range days {
-		if d.Date != want[i] {
-			t.Errorf("day %d = %s, want %s", i, d.Date, want[i])
-		}
+	if got := days(2026); !slices.Equal(got, want) {
+		t.Fatalf("2026 gives\n%v\nwant\n%v", got, want)
 	}
 }
 
-func TestAMovableDayOnAFixedDayKeepsBothReasons(t *testing.T) {
-	// In 2026 the second day of Pentecost is 1 June, which is also Children's Day.
-	days, _ := Of(2026)
-	var names []string
-	for _, d := range days {
-		if d.Date == "2026-06-01" {
-			names = append(names, d.Name)
-		}
-	}
-	if len(names) != 2 || names[0] == names[1] {
-		t.Fatalf("1 June 2026 has %v, want two different reasons", names)
-	}
-}
-
-func TestMovableDaysAreMarked(t *testing.T) {
-	days, _ := Of(2025)
-	movable := 0
-	for _, d := range days {
-		if d.Movable {
-			movable++
-		}
-	}
-	if movable != 5 {
-		t.Fatalf("%d movable days, want 5", movable)
-	}
-}
-
-func TestAYearBeforeTheRuleIsRefused(t *testing.T) {
-	if _, err := Of(2023); err == nil {
-		t.Fatal("2023 was built, but the list was different then")
-	}
-}
-
-func TestTheDatasetCoversEveryYearAndIsValid(t *testing.T) {
-	d, err := Dataset(2027)
-	if err != nil {
-		t.Fatal(err)
-	}
+func TestTheDatasetHoldsTheRulesAndIsValid(t *testing.T) {
+	d := Dataset()
 	if err := d.Validate(); err != nil {
 		t.Fatal(err)
 	}
-	if got, want := len(d.Files[1].Records), 4*17; got != want {
-		t.Fatalf("%d records, want %d", got, want)
+	if len(d.Files) != 1 || d.Files[0].Name != "rules.jsonl" || len(d.Files[0].Records) != 17 || d.Frequency != dataset.Manual {
+		t.Fatalf("dataset is %+v", d)
 	}
 }
 
