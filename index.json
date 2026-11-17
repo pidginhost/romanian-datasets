@@ -1176,6 +1176,78 @@
       ]
     },
     {
+      "name": "financial-statements",
+      "title": "Formats of the annual financial statements (OMFP 1802/2014)",
+      "description": "The formats of the annual financial statements of companies in the regulations approved by OMFP 1802/2014: the balance sheet (form 10 of the large and medium entities), the abridged balance sheet (form 10 of the small and micro entities) and the profit and loss account (form 20). Each row has its number, which the ANAF forms use, its name, the accounts it is computed from as the format writes them and split into terms (sign, account, part of an account for \"din ct.\", stars of a note), and the rows it sums. A heading has no number. Side marks the row of a pair that takes the credit (Sold C) or debit (Sold D) balance. The formats are those in force on 2026-01-01, the first day the dataset covers; a later change gives the day it applies from and the act. Forms 30 and 40 are set each year by another order and are not here.",
+      "source": {
+        "name": "Legislative Portal, consolidated OMFP 1802/2014 (https://legislatie.just.ro/Public/DetaliiDocument/250771)",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/250771",
+        "licence": "Legislation, not subject to copyright (Law 8/1996, article 9)"
+      },
+      "frequency": "monthly",
+      "update": "When an order changes the formats",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/financial-statements/lines.jsonl",
+          "sha256": "a41bc78ae0a059a8e113c336ea61bc63f546bbc0a4e6a8db29b80c3d790ce08f",
+          "bytes": 92988,
+          "records": 243,
+          "fields": [
+            {
+              "name": "form",
+              "description": "balance-sheet, abridged-balance-sheet or profit-and-loss"
+            },
+            {
+              "name": "code",
+              "description": "The code of the form at ANAF: 10 for a balance sheet, 20 for the profit and loss account"
+            },
+            {
+              "name": "order",
+              "description": "The place of the line in its format, from 1"
+            },
+            {
+              "name": "row",
+              "description": "The number of the row, as 01, or null for a heading. With form and valid_from it is unique in the file"
+            },
+            {
+              "name": "name",
+              "description": "The name as the format writes it, without its formulas"
+            },
+            {
+              "name": "side",
+              "description": "Sold C or Sold D for a row of a pair, or null"
+            },
+            {
+              "name": "accounts",
+              "description": "The formula of accounts as the format writes it, or null"
+            },
+            {
+              "name": "account_terms",
+              "description": "The accounts of the formula, each with sign (+, - or +/-), account, part (true for \"din ct.\") and mark, or null"
+            },
+            {
+              "name": "rows",
+              "description": "The formula of rows as the format writes it, as \"rd. 01 la 06\", or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day the line applies from, YYYY-MM-DD, or null for a line in force on 2026-01-01"
+            },
+            {
+              "name": "valid_to",
+              "description": "The last day the line applies, or null while it does"
+            },
+            {
+              "name": "act",
+              "description": "The act that changed the line, or null for a line in force on 2026-01-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "fixed-assets",
       "title": "Catalogue of fixed assets (HG 2139/2004)",
       "description": "The catalogue of the classification and normal lives of fixed assets approved by HG 2139/2004: groups (1 buildings, 2 technical installations, transport, animals and plantations, 3 furniture, office equipment and other tangible assets), subgroups, classes, subclasses and families, each with the range of its normal life in years, which is the depreciation period of the straight-line method; a new asset takes a life within the range of its code. A heading without a range has none. Where the catalogue gives one code two lives, as a) for a neutral and b) for a corrosive environment, each is a row with its variant. The catalogue is the one in force on 2026-01-01, the first day the dataset covers; a later change gives the day it applies from and the act. Names are as the act writes them.",
