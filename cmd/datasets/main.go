@@ -20,6 +20,7 @@ import (
 	"time"
 
 	"github.com/pidginhost/romanian-datasets/internal/bnr"
+	"github.com/pidginhost/romanian-datasets/internal/caen"
 	"github.com/pidginhost/romanian-datasets/internal/countries"
 	"github.com/pidginhost/romanian-datasets/internal/dataset"
 	"github.com/pidginhost/romanian-datasets/internal/holidays"
@@ -39,6 +40,9 @@ type builder struct {
 var builders = []builder{
 	{"bnr-currencies", dataset.Manual, func(now time.Time, _ string) (dataset.Dataset, error) {
 		return bnr.Dataset(bnr.FromSite(&http.Client{Timeout: time.Minute}), now.UTC().Year())
+	}},
+	{"caen", dataset.Manual, func(time.Time, string) (dataset.Dataset, error) {
+		return caen.Dataset(caen.FromSite(&http.Client{Timeout: 2 * time.Minute}))
 	}},
 	{"countries", dataset.Manual, func(time.Time, string) (dataset.Dataset, error) {
 		client := &http.Client{Timeout: 2 * time.Minute}

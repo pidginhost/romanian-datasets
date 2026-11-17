@@ -44,6 +44,94 @@
       ]
     },
     {
+      "name": "caen",
+      "title": "Classification of economic activities in Romania (CAEN), Rev.2 and Rev.3, with the links between them",
+      "description": "The sections, divisions, groups and classes of CAEN Rev.2 and CAEN Rev.3, with their names in Romanian, as the National Trade Register Office (ONRC) uses them to decode the activities of companies. A code is unique only within its version and level: Rev.2 and Rev.3 use some of the same codes for other activities, so always read the version with the code. Rev.3 corresponds to NACE Rev.2.1 and Rev.2 to NACE Rev.2. The older versions of the source (1998 and 2003) are not here. The days from which each version applies are not in the source. correspondence.jsonl links each class of Rev.2 to the classes of Rev.3 that take its activities, from the correspondence table of Eurostat between NACE Rev.2 and NACE Rev.2.1: CAEN writes the NACE class codes without the dot. Every class of Rev.2 has a link. Classes of Rev.3 with no class of Rev.2 behind them: 4689.",
+      "source": {
+        "name": "National Trade Register Office (ONRC), N_CAEN.CSV and N_VERSIUNE_CAEN.CSV of its newest nomenclatures on data.gov.ro; links from Eurostat, correspondence table NACE Rev.2.1 to NACE Rev.2 (http://data.europa.eu/ux2/nace2.1/NACE2.1_NACE2), published by the Publications Office of the European Union",
+        "url": "https://data.gov.ro/organization/onrc",
+        "licence": "CC BY 4.0, under which ONRC publishes the nomenclatures on data.gov.ro; the correspondence table under the European Commission reuse notice (Decision 2011/833/EU): reuse allowed with the source acknowledged"
+      },
+      "frequency": "manual",
+      "update": "When INS changes CAEN by order, which happens once in many years",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/caen/activities.jsonl",
+          "sha256": "a1f0fac602b18729f385203286f51aba9432acfb40cfcc205091c46007cb720a",
+          "bytes": 320412,
+          "records": 2043,
+          "fields": [
+            {
+              "name": "version",
+              "description": "The version code of ONRC, a code of versions.jsonl: 2 for Rev.2, 3 for Rev.3"
+            },
+            {
+              "name": "revision",
+              "description": "Rev.2 or Rev.3"
+            },
+            {
+              "name": "level",
+              "description": "section, division, group or class"
+            },
+            {
+              "name": "code",
+              "description": "A letter for a section; two, three or four digits for a division, a group or a class, as 62, 621, 6210"
+            },
+            {
+              "name": "name",
+              "description": "The name in Romanian"
+            },
+            {
+              "name": "parent",
+              "description": "The code of the entry one level up in the same version, or null for a section"
+            },
+            {
+              "name": "section",
+              "description": "The letter of the section the entry is in"
+            }
+          ]
+        },
+        {
+          "path": "datasets/caen/versions.jsonl",
+          "sha256": "06391966b4048c41160737a012c31a1cb4428b7fa21f981f694a5040f531c32e",
+          "bytes": 70,
+          "records": 2,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The version code of ONRC"
+            },
+            {
+              "name": "name",
+              "description": "The name ONRC gives the version"
+            }
+          ]
+        },
+        {
+          "path": "datasets/caen/correspondence.jsonl",
+          "sha256": "97b2f0b648ed8c2e07d276e0daed83f913febbda971b07e2a22a6b8183320dd4",
+          "bytes": 41624,
+          "records": 968,
+          "fields": [
+            {
+              "name": "rev2",
+              "description": "A class of CAEN Rev.2, four digits"
+            },
+            {
+              "name": "rev3",
+              "description": "A class of CAEN Rev.3 that takes all or part of its activities, four digits"
+            },
+            {
+              "name": "kind",
+              "description": "1:1 when the two classes match only each other; 1:n when the Rev.2 class is split; n:1 when Rev.2 classes are joined; n:m when both"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "countries",
       "title": "Countries and territories",
       "description": "Countries and territories with their ISO 3166-1 codes, their names in Romanian and English, whether they are a member state of the European Union today, and whether they are in the European Union for VAT, with their VAT prefix. Northern Ireland has the VAT prefix XI but is not a country, so it is not here. Withdrawn entries stay, with their last day of use, so an alpha-2 code can appear on a withdrawn entry and on a current one; the alpha-3 code is unique. Kosovo is not in ISO 3166-1 and is listed with the user-assigned codes XK and XKX. Names are the short names the European Union institutions use, with Romanian letters written with the comma below and without the asterisk the source puts on Kosovo. A name does not state a position on the status of a territory.",
