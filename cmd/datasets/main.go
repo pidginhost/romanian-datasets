@@ -9,17 +9,21 @@
 package main
 
 import (
+	"errors"
 	"flag"
 	"fmt"
 	"io"
+	"io/fs"
 	"net/http"
 	"os"
+	"path/filepath"
 	"time"
 
 	"github.com/pidginhost/romanian-datasets/internal/bnr"
 	"github.com/pidginhost/romanian-datasets/internal/countries"
 	"github.com/pidginhost/romanian-datasets/internal/dataset"
 	"github.com/pidginhost/romanian-datasets/internal/holidays"
+	"github.com/pidginhost/romanian-datasets/internal/siruta"
 	"github.com/pidginhost/romanian-datasets/internal/vatnode"
 )
 
@@ -28,26 +32,33 @@ import (
 type builder struct {
 	name      string
 	frequency dataset.Frequency
-	build     func(now time.Time) (dataset.Dataset, error)
+	build     func(now time.Time, root string) (dataset.Dataset, error)
 }
 
 // builders lists every dataset. A new dataset is added here.
 var builders = []builder{
-	{"bnr-currencies", dataset.Manual, func(now time.Time) (dataset.Dataset, error) {
+	{"bnr-currencies", dataset.Manual, func(now time.Time, _ string) (dataset.Dataset, error) {
 		return bnr.Dataset(bnr.FromSite(&http.Client{Timeout: time.Minute}), now.UTC().Year())
 	}},
-	{"countries", dataset.Manual, func(time.Time) (dataset.Dataset, error) {
+	{"countries", dataset.Manual, func(time.Time, string) (dataset.Dataset, error) {
 		client := &http.Client{Timeout: 2 * time.Minute}
 		return countries.Dataset(countries.FromSite(client), countries.VIESFromSite(client))
 	}},
-	{"public-holidays", dataset.Manual, func(time.Time) (dataset.Dataset, error) {
+	{"public-holidays", dataset.Manual, func(time.Time, string) (dataset.Dataset, error) {
 		return holidays.Dataset(), nil
 	}},
-	{"vat-numbers", dataset.Manual, func(time.Time) (dataset.Dataset, error) {
+	{"siruta", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
+		published, err := publishedSIRUTA(root)
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		return siruta.Dataset(siruta.FromSite(&http.Client{Timeout: 5 * time.Minute}), published)
+	}},
+	{"vat-numbers", dataset.Manual, func(time.Time, string) (dataset.Dataset, error) {
 		client := &http.Client{Timeout: time.Minute}
 		return vatnode.Numbers(vatnode.FromSite(client), vatnode.VIESFromSite(client))
 	}},
-	{"vat-rates", dataset.Weekly, func(time.Time) (dataset.Dataset, error) {
+	{"vat-rates", dataset.Weekly, func(time.Time, string) (dataset.Dataset, error) {
 		client := &http.Client{Timeout: time.Minute}
 		return vatnode.Rates(vatnode.FromSite(client), vatnode.VIESFromSite(client))
 	}},
@@ -74,7 +85,7 @@ func run(args []string, all []builder, now time.Time, out, errs io.Writer) int {
 
 	switch args[0] {
 	case "build":
-		built, kept, err := build(all, *frequency, *only, now)
+		built, kept, err := build(all, *frequency, *only, now, *root)
 		if err != nil {
 			fmt.Fprintln(errs, err)
 			return 2
@@ -146,7 +157,7 @@ func known(root string, names []string) (in, missing []string, err error) {
 }
 
 // build makes the datasets the filter selects and names the ones left as they are.
-func build(all []builder, frequency, only string, now time.Time) (built []dataset.Dataset, kept []string, err error) {
+func build(all []builder, frequency, only string, now time.Time, root string) (built []dataset.Dataset, kept []string, err error) {
 	switch {
 	case frequency != "" && only != "":
 		return nil, nil, fmt.Errorf("use -frequency or -only, not both")
@@ -161,7 +172,7 @@ func build(all []builder, frequency, only string, now time.Time) (built []datase
 			continue
 		}
 		found = true
-		d, err := b.build(now)
+		d, err := b.build(now, root)
 		if err != nil {
 			return nil, nil, fmt.Errorf("dataset %s: %w", b.name, err)
 		}
@@ -174,4 +185,17 @@ func build(all []builder, frequency, only string, now time.Time) (built []datase
 		return nil, nil, fmt.Errorf("no dataset named %s", only)
 	}
 	return built, kept, nil
+}
+
+// publishedSIRUTA gives the codes of the SIRUTA dataset as committed, or none before its first build.
+func publishedSIRUTA(root string) ([]int, error) {
+	file, err := os.Open(filepath.Join(root, "datasets", "siruta", "units.jsonl"))
+	if errors.Is(err, fs.ErrNotExist) {
+		return nil, nil
+	}
+	if err != nil {
+		return nil, err
+	}
+	defer file.Close()
+	return siruta.PublishedCodes(file)
 }

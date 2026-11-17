@@ -19,7 +19,7 @@ func run2(args []string, now time.Time, out, errs *bytes.Buffer) int {
 }
 
 func fake(name string, frequency dataset.Frequency, value *string) builder {
-	return builder{name, frequency, func(time.Time) (dataset.Dataset, error) {
+	return builder{name, frequency, func(time.Time, string) (dataset.Dataset, error) {
 		return dataset.Dataset{
 			Name: name, Title: name, Description: name, Frequency: frequency, Update: "In tests",
 			Source: dataset.Source{Name: "Test", URL: "https://example.test", Licence: "None"},
@@ -190,5 +190,22 @@ func TestADatasetNeverBuiltIsNamedAndVerifyFailsUntilItIsBuilt(t *testing.T) {
 	run([]string{"build", "-root", root, "-frequency", "weekly"}, all, day, &out, &errs)
 	if code := run([]string{"verify", "-root", root}, all, day, &out, &errs); code != 0 {
 		t.Fatalf("verify = %d after both were built: %s", code, errs.String())
+	}
+}
+
+func TestPublishedSIRUTAIsEmptyBeforeTheFirstBuildAndReadsTheCodesAfter(t *testing.T) {
+	root := t.TempDir()
+	if codes, err := publishedSIRUTA(root); err != nil || codes != nil {
+		t.Fatalf("before the first build: %v %v", codes, err)
+	}
+	dir := filepath.Join(root, "datasets", "siruta")
+	if err := os.MkdirAll(dir, 0o755); err != nil {
+		t.Fatal(err)
+	}
+	if err := os.WriteFile(filepath.Join(dir, "units.jsonl"), []byte("{\"code\":10}\n{\"code\":1017}\n"), 0o644); err != nil {
+		t.Fatal(err)
+	}
+	if codes, err := publishedSIRUTA(root); err != nil || len(codes) != 2 || codes[1] != 1017 {
+		t.Fatalf("after: %v %v", codes, err)
 	}
 }
