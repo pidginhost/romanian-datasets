@@ -7,7 +7,7 @@ import (
 )
 
 // An extract in the shape of the EU file: a current member state, a country written with the old cedilla
-// letters, a withdrawn country, Kosovo with no ISO code, the European Union itself and a sea.
+// letters, a withdrawn country, Kosovo with no ISO code, Northern Ireland, the European Union itself and a sea.
 const recorded = `<?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -65,6 +65,13 @@ const recorded = `<?xml version="1.0" encoding="UTF-8"?>
       <dc:identifier>EUR</dc:identifier>
       <at:start.use>1993-11-01</at:start.use>
    </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/country/XXI" at:deprecated="false">
+      <skos:notation rdf:datatype="http://publications.europa.eu/ontology/euvoc#NAC">XXI</skos:notation>
+      <skos:prefLabel xml:lang="ro">Irlanda de Nord</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Northern Ireland</skos:prefLabel>
+      <dc:identifier>XXI</dc:identifier>
+      <at:start.use>2021-01-01</at:start.use>
+   </skos:Concept>
    <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/country/XME" at:deprecated="false">
       <skos:prefLabel xml:lang="en">Mediterranean Sea</skos:prefLabel>
       <skos:prefLabel xml:lang="ro">Marea Mediterană</skos:prefLabel>
@@ -81,12 +88,20 @@ func parse(t *testing.T, text string) map[string]Country {
 	}
 	byCode := map[string]Country{}
 	for i, c := range all {
-		if i > 0 && all[i-1].Alpha3 >= c.Alpha3 {
-			t.Fatalf("not sorted by alpha-3: %s before %s", all[i-1].Alpha3, c.Alpha3)
+		if i > 0 && key(all[i-1]) >= key(c) {
+			t.Fatalf("not sorted by alpha-3, invoice-only entries last: %s before %s", key(all[i-1]), key(c))
 		}
-		byCode[c.Alpha3] = c
+		byCode[key(c)] = c
 	}
 	return byCode
+}
+
+// key is the alpha-3 code, or for an entry only for invoices its alpha-2 code after every alpha-3 code.
+func key(c Country) string {
+	if c.Alpha3 == nil {
+		return "~" + c.Alpha2
+	}
+	return *c.Alpha3
 }
 
 func TestACountryHasItsCodesNamesAndUnionMembership(t *testing.T) {
@@ -122,8 +137,8 @@ func TestKosovoIsListedWithItsUserAssignedCodesAndNoAsterisk(t *testing.T) {
 
 func TestTheUnionItselfAndEntriesWithNoCodeAreLeftOut(t *testing.T) {
 	all := parse(t, recorded)
-	if len(all) != 4 {
-		t.Fatalf("%d entries, want 4: %v", len(all), all)
+	if len(all) != 5 {
+		t.Fatalf("%d entries, want 5: %v", len(all), all)
 	}
 }
 
@@ -151,6 +166,7 @@ func TestTheDatasetIsValidAndManual(t *testing.T) {
 	d, err := Dataset(
 		func() (io.ReadCloser, error) { return io.NopCloser(strings.NewReader(recorded)), nil },
 		func() (io.ReadCloser, error) { return io.NopCloser(strings.NewReader(viesList)), nil },
+		invoiceCodes,
 	)
 	if err != nil {
 		t.Fatal(err)
@@ -158,10 +174,14 @@ func TestTheDatasetIsValidAndManual(t *testing.T) {
 	if err := d.Validate(); err != nil {
 		t.Fatal(err)
 	}
-	if len(d.Files[0].Records) != 4 || d.Frequency != "manual" {
+	if len(d.Files[0].Records) != 5 || d.Frequency != "manual" {
 		t.Fatalf("dataset is %+v", d)
 	}
 }
+
+// invoiceCodes is the country list of an EN 16931 archive for the extract: the Netherlands is left out to
+// show a current country an invoice cannot name.
+var invoiceCodes = []string{"RO", "1A", "XI"}
 
 const viesList = `{"countries":[{"countryCode":"RO"},{"countryCode":"NL"},{"countryCode":"EL"},{"countryCode":"DD"},{"countryCode":"FR"},{"countryCode":"XI"}]}`
 
@@ -169,7 +189,7 @@ func TestACountryInTheUnionForVATHasItsPrefixAndTheOthersHaveNone(t *testing.T) 
 	all, _ := Parse(strings.NewReader(recorded))
 	byCode := map[string]Country{}
 	for _, c := range WithVAT(all, []string{"DD", "EL", "FR", "NL", "RO", "XI"}) {
-		byCode[c.Alpha3] = c
+		byCode[key(c)] = c
 	}
 
 	if ro := byCode["ROU"]; !ro.EUVAT || ro.VATPrefix == nil || *ro.VATPrefix != "RO" {
@@ -188,6 +208,7 @@ func TestTheDatasetCarriesTheVATMarks(t *testing.T) {
 	d, err := Dataset(
 		func() (io.ReadCloser, error) { return io.NopCloser(strings.NewReader(recorded)), nil },
 		func() (io.ReadCloser, error) { return io.NopCloser(strings.NewReader(viesList)), nil },
+		invoiceCodes,
 	)
 	if err != nil {
 		t.Fatal(err)
@@ -198,7 +219,50 @@ func TestTheDatasetCarriesTheVATMarks(t *testing.T) {
 			marked++
 		}
 	}
-	if marked != 2 {
-		t.Fatalf("%d countries marked, want Romania and the Netherlands", marked)
+	if marked != 3 {
+		t.Fatalf("%d countries marked, want Romania, the Netherlands and Northern Ireland", marked)
+	}
+}
+
+func TestNorthernIrelandIsThereOnlyForInvoices(t *testing.T) {
+	ni := parse(t, recorded)["~XI"]
+	if ni.Alpha2 != "XI" || ni.Alpha3 != nil || ni.Numeric != nil || ni.ISO || !ni.InvoiceOnly || ni.NameRO != "Irlanda de Nord" || ni.EUMember {
+		t.Fatalf("Northern Ireland is %+v", ni)
+	}
+}
+
+func TestEachCurrentCountryGetsTheCodeOfTheInvoiceList(t *testing.T) {
+	all, err := Parse(strings.NewReader(recorded))
+	if err != nil {
+		t.Fatal(err)
+	}
+	with, err := WithInvoiceCodes(all, invoiceCodes)
+	if err != nil {
+		t.Fatal(err)
+	}
+	got := map[string]string{}
+	for _, c := range with {
+		code := "-"
+		if c.InvoiceCode != nil {
+			code = *c.InvoiceCode
+		}
+		got[key(c)] = code
+	}
+	want := map[string]string{"ROU": "RO", "NLD": "-", "DDR": "-", "XKX": "1A", "~XI": "XI"}
+	for k, v := range want {
+		if got[k] != v {
+			t.Errorf("%s: invoice code %s, want %s", k, got[k], v)
+		}
+	}
+
+	for name, codes := range map[string][]string{
+		"a code of no country":       {"RO", "1A", "XI", "ZZ"},
+		"a withdrawn country":        {"RO", "1A", "XI", "DD"},
+		"Kosovo twice":               {"RO", "1A", "XK", "XI"},
+		"Northern Ireland not there": {"RO", "1A"},
+	} {
+		if _, err := WithInvoiceCodes(all, codes); err == nil {
+			t.Errorf("%s: no error", name)
+		}
 	}
 }

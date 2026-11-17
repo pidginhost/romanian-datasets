@@ -76,7 +76,7 @@ var Lists = []List{
 
 // Left are the lists of the archives that are read but not published, with the dataset that has them.
 var Left = map[string]string{
-	// The countries are in the countries dataset. The archives write Kosovo 1A and add XI for Northern Ireland.
+	// The countries are in the countries dataset, with the invoice code of each (NewestCountries).
 	"Country.gc": "countries",
 }
 
@@ -383,6 +383,44 @@ func PublishedCodes(r io.Reader) ([]string, error) {
 		}
 		codes = append(codes, e.Code)
 	}
+}
+
+// NewestCountries gives the codes of the country list of the newest archive, which the countries dataset
+// uses for the code of a country on an invoice.
+func NewestCountries(get Get) ([]string, error) {
+	found, err := archives(get)
+	if err != nil {
+		return nil, err
+	}
+	newest := found[len(found)-1]
+	data, err := read(get, newest.Address, maxArchive)
+	if err != nil {
+		return nil, err
+	}
+	z, err := zip.NewReader(bytes.NewReader(data), int64(len(data)))
+	if err != nil {
+		return nil, fmt.Errorf("archive used from %s: not a zip: %w", newest.Used, err)
+	}
+	for _, f := range z.File {
+		if path.Base(f.Name) != "Country.gc" {
+			continue
+		}
+		body, err := f.Open()
+		if err != nil {
+			return nil, err
+		}
+		codes, err := readList(body)
+		body.Close()
+		if err != nil {
+			return nil, fmt.Errorf("archive used from %s, Country.gc: %w", newest.Used, err)
+		}
+		var out []string
+		for _, c := range codes {
+			out = append(out, c.Code)
+		}
+		return out, nil
+	}
+	return nil, fmt.Errorf("archive used from %s has no Country.gc", newest.Used)
 }
 
 // Dataset reads every archive and builds the dataset. published gives, for each file, the codes of the

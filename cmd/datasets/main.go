@@ -48,7 +48,11 @@ var builders = []builder{
 	}},
 	{"countries", dataset.Manual, func(time.Time, string) (dataset.Dataset, error) {
 		client := &http.Client{Timeout: 2 * time.Minute}
-		return countries.Dataset(countries.FromSite(client), countries.VIESFromSite(client))
+		invoice, err := en16931.NewestCountries(en16931.FromSite(client))
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		return countries.Dataset(countries.FromSite(client), countries.VIESFromSite(client), invoice)
 	}},
 	{"efactura", dataset.Monthly, func(time.Time, string) (dataset.Dataset, error) {
 		return efactura.Dataset(efactura.FromSite(&http.Client{Timeout: 2 * time.Minute}))
