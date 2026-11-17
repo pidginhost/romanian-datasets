@@ -28,6 +28,7 @@ import (
 	"github.com/pidginhost/romanian-datasets/internal/efactura"
 	"github.com/pidginhost/romanian-datasets/internal/en16931"
 	"github.com/pidginhost/romanian-datasets/internal/holidays"
+	"github.com/pidginhost/romanian-datasets/internal/mfp"
 	"github.com/pidginhost/romanian-datasets/internal/reges"
 	"github.com/pidginhost/romanian-datasets/internal/siruta"
 	"github.com/pidginhost/romanian-datasets/internal/taxoffices"
@@ -75,6 +76,30 @@ var builders = []builder{
 			return dataset.Dataset{}, err
 		}
 		return en16931.Dataset(en16931.FromSite(&http.Client{Timeout: 2 * time.Minute}), codes)
+	}},
+	{"mfp-localities", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
+		places, err := readSIRUTA[mfp.Place](root, "units.jsonl")
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		counties, err := readSIRUTA[mfp.SIRUTACounty](root, "counties.jsonl")
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		var keys mfp.Published
+		file, err := published(root, "mfp-localities", "localities.jsonl")
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		if file != nil {
+			keys, err = mfp.PublishedKeys(file)
+			file.Close()
+			if err != nil {
+				return dataset.Dataset{}, err
+			}
+		}
+		get, modified := mfp.FromSite(&http.Client{Timeout: 3 * time.Minute})
+		return mfp.Dataset(get, modified, places, counties, keys)
 	}},
 	{"public-holidays", dataset.Manual, func(time.Time, string) (dataset.Dataset, error) {
 		return holidays.Dataset(), nil
