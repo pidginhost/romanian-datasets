@@ -200,6 +200,414 @@
       ]
     },
     {
+      "name": "en16931-codes",
+      "title": "Code lists of the European standard on e-invoicing, EN 16931",
+      "description": "The code lists an invoice under EN 16931 uses, as the European Commission publishes them for the standard: units of measure, currencies, VAT categories and exemption reasons, payment means, document types, electronic address and identifier schemes, allowance and charge reasons, item schemes, reference and text qualifiers, attachment types. They are European, not Romanian; the e-Factura dataset says which codes ANAF accepts. Every archive the Commission still publishes is read, from the one used from 2021-05-17 to the one used from 2026-11-15, so a code that left a list stays with its last day. A code can come back later, as a new row. Names are in English as in the lists. The currencies with a BNR rate are in bnr-currencies, by the same code. The country list of the archives is not here: the countries are in the countries dataset. An invoice writes Kosovo 1A, where countries has XK, and may write XI for Northern Ireland, which countries leaves out.",
+      "source": {
+        "name": "European Commission, Registry of supporting artefacts to implement EN16931, genericode archives used from 2021-05-17 to 2026-11-15",
+        "url": "https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/Registry+of+supporting+artefacts+to+implement+EN16931",
+        "licence": "European Commission reuse notice (Decision 2011/833/EU, CC BY 4.0 for EU content): reuse allowed with the source acknowledged. The codes and their names come from UN/CEFACT, ISO, IANA and the Commission; each file names its origin"
+      },
+      "frequency": "monthly",
+      "update": "The Commission publishes a new archive twice a year, used from 15 May and 15 November",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/en16931-codes/allowance-reasons.jsonl",
+          "sha256": "d4cdb2c4cacd8e8f3802cfa5a0351ffc089be454ea800e80c2b056e5915bb0e9",
+          "bytes": 1890,
+          "records": 19,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code: UNTDID 5189, allowance reason codes (UN/CEFACT)"
+            },
+            {
+              "name": "name",
+              "description": "The name in English, or null when the list gives none"
+            },
+            {
+              "name": "remark",
+              "description": "The remark of the list, or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day from which the first archive with the code is used, as YYYY-MM-DD; not before 2021-05-17, the first archive"
+            },
+            {
+              "name": "valid_to",
+              "description": "The day before the archive that dropped the code is used, as YYYY-MM-DD, or null while the code is in the newest archive"
+            }
+          ]
+        },
+        {
+          "path": "datasets/en16931-codes/charge-reasons.jsonl",
+          "sha256": "de05225f750e5530ff76055569c68def0d47785a65aa29c0a4ee97d5aa96d596",
+          "bytes": 17399,
+          "records": 178,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code: UNTDID 7161, special service description codes (UN/CEFACT)"
+            },
+            {
+              "name": "name",
+              "description": "The name in English, or null when the list gives none"
+            },
+            {
+              "name": "remark",
+              "description": "The remark of the list, or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day from which the first archive with the code is used, as YYYY-MM-DD; not before 2021-05-17, the first archive"
+            },
+            {
+              "name": "valid_to",
+              "description": "The day before the archive that dropped the code is used, as YYYY-MM-DD, or null while the code is in the newest archive"
+            }
+          ]
+        },
+        {
+          "path": "datasets/en16931-codes/currencies.jsonl",
+          "sha256": "fcba1fd5cef60c3219fb38f9b59fdd49c1bf925d38f025dd4dd29f7bb635184b",
+          "bytes": 17498,
+          "records": 184,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code: ISO 4217 currency codes"
+            },
+            {
+              "name": "name",
+              "description": "The name in English, or null when the list gives none"
+            },
+            {
+              "name": "remark",
+              "description": "The remark of the list, or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day from which the first archive with the code is used, as YYYY-MM-DD; not before 2021-05-17, the first archive"
+            },
+            {
+              "name": "valid_to",
+              "description": "The day before the archive that dropped the code is used, as YYYY-MM-DD, or null while the code is in the newest archive"
+            }
+          ]
+        },
+        {
+          "path": "datasets/en16931-codes/document-types.jsonl",
+          "sha256": "91ce79385c006e672b13606ae61aa8afb96a39d825e233aa6e4b945fcdae3b6b",
+          "bytes": 7084,
+          "records": 62,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code: UNTDID 1001, document name codes (UN/CEFACT)"
+            },
+            {
+              "name": "name",
+              "description": "The name in English, or null when the list gives none"
+            },
+            {
+              "name": "remark",
+              "description": "The remark of the list, or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day from which the first archive with the code is used, as YYYY-MM-DD; not before 2021-05-17, the first archive"
+            },
+            {
+              "name": "valid_to",
+              "description": "The day before the archive that dropped the code is used, as YYYY-MM-DD, or null while the code is in the newest archive"
+            }
+          ]
+        },
+        {
+          "path": "datasets/en16931-codes/electronic-address-schemes.jsonl",
+          "sha256": "7b28c232f8117e4cc163f49bfcbb88974993bcc2aa4e3d99e19f82b7c6b98993",
+          "bytes": 12304,
+          "records": 107,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code: Electronic Address Scheme (EAS), kept by the European Commission"
+            },
+            {
+              "name": "name",
+              "description": "The name in English, or null when the list gives none"
+            },
+            {
+              "name": "remark",
+              "description": "The remark of the list, or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day from which the first archive with the code is used, as YYYY-MM-DD; not before 2021-05-17, the first archive"
+            },
+            {
+              "name": "valid_to",
+              "description": "The day before the archive that dropped the code is used, as YYYY-MM-DD, or null while the code is in the newest archive"
+            }
+          ]
+        },
+        {
+          "path": "datasets/en16931-codes/identifier-schemes.jsonl",
+          "sha256": "34623c1403f8bf924f9f4d98a53900a516e80a6f9b8700deeccc59c9f81c3317",
+          "bytes": 28826,
+          "records": 246,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code: ISO/IEC 6523, International Code Designator (ICD)"
+            },
+            {
+              "name": "name",
+              "description": "The name in English, or null when the list gives none"
+            },
+            {
+              "name": "remark",
+              "description": "The remark of the list, or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day from which the first archive with the code is used, as YYYY-MM-DD; not before 2021-05-17, the first archive"
+            },
+            {
+              "name": "valid_to",
+              "description": "The day before the archive that dropped the code is used, as YYYY-MM-DD, or null while the code is in the newest archive"
+            }
+          ]
+        },
+        {
+          "path": "datasets/en16931-codes/item-schemes.jsonl",
+          "sha256": "7836bf1214cfd6dee775f4eadbde90bec2fa63a5fbb1baf0f68e87a789681697",
+          "bytes": 20303,
+          "records": 185,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code: UNTDID 7143, item type identification codes (UN/CEFACT)"
+            },
+            {
+              "name": "name",
+              "description": "The name in English, or null when the list gives none"
+            },
+            {
+              "name": "remark",
+              "description": "The remark of the list, or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day from which the first archive with the code is used, as YYYY-MM-DD; not before 2021-05-17, the first archive"
+            },
+            {
+              "name": "valid_to",
+              "description": "The day before the archive that dropped the code is used, as YYYY-MM-DD, or null while the code is in the newest archive"
+            }
+          ]
+        },
+        {
+          "path": "datasets/en16931-codes/mime-codes.jsonl",
+          "sha256": "b658324f778c263aae31eb83a60fc1b01107621a38a781c3683abe3275a1c883",
+          "bytes": 633,
+          "records": 6,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code: MIME media types for attachments (IANA)"
+            },
+            {
+              "name": "name",
+              "description": "The name in English, or null when the list gives none"
+            },
+            {
+              "name": "remark",
+              "description": "The remark of the list, or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day from which the first archive with the code is used, as YYYY-MM-DD; not before 2021-05-17, the first archive"
+            },
+            {
+              "name": "valid_to",
+              "description": "The day before the archive that dropped the code is used, as YYYY-MM-DD, or null while the code is in the newest archive"
+            }
+          ]
+        },
+        {
+          "path": "datasets/en16931-codes/payment-means.jsonl",
+          "sha256": "c8a0e6f710236da9a0c5d19985e7c17493c859ab365eb2f813d94ce08da155ca",
+          "bytes": 9410,
+          "records": 84,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code: UNTDID 4461, payment means codes (UN/CEFACT)"
+            },
+            {
+              "name": "name",
+              "description": "The name in English, or null when the list gives none"
+            },
+            {
+              "name": "remark",
+              "description": "The remark of the list, or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day from which the first archive with the code is used, as YYYY-MM-DD; not before 2021-05-17, the first archive"
+            },
+            {
+              "name": "valid_to",
+              "description": "The day before the archive that dropped the code is used, as YYYY-MM-DD, or null while the code is in the newest archive"
+            }
+          ]
+        },
+        {
+          "path": "datasets/en16931-codes/reference-qualifiers.jsonl",
+          "sha256": "32d521ac1eca71f6ea73185f668bbeca72aaf5ecf63b4721b888f810cd16203c",
+          "bytes": 89406,
+          "records": 818,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code: UNTDID 1153, reference code qualifiers (UN/CEFACT)"
+            },
+            {
+              "name": "name",
+              "description": "The name in English, or null when the list gives none"
+            },
+            {
+              "name": "remark",
+              "description": "The remark of the list, or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day from which the first archive with the code is used, as YYYY-MM-DD; not before 2021-05-17, the first archive"
+            },
+            {
+              "name": "valid_to",
+              "description": "The day before the archive that dropped the code is used, as YYYY-MM-DD, or null while the code is in the newest archive"
+            }
+          ]
+        },
+        {
+          "path": "datasets/en16931-codes/text-subjects.jsonl",
+          "sha256": "9baace5633c7abbd4890fb9ab0219bd182b5b4ee1af6e58bf7cf11a254a8acc0",
+          "bytes": 41688,
+          "records": 401,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code: UNTDID 4451, text subject code qualifiers (UN/CEFACT)"
+            },
+            {
+              "name": "name",
+              "description": "The name in English, or null when the list gives none"
+            },
+            {
+              "name": "remark",
+              "description": "The remark of the list, or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day from which the first archive with the code is used, as YYYY-MM-DD; not before 2021-05-17, the first archive"
+            },
+            {
+              "name": "valid_to",
+              "description": "The day before the archive that dropped the code is used, as YYYY-MM-DD, or null while the code is in the newest archive"
+            }
+          ]
+        },
+        {
+          "path": "datasets/en16931-codes/units.jsonl",
+          "sha256": "398e44abec0258d7013f689e6bbfa81f4b65a6dfeaf9a70c491be4e98679935b",
+          "bytes": 219392,
+          "records": 2162,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code: UN/ECE Recommendation 20, codes for units of measure, with the codes of Recommendation 21"
+            },
+            {
+              "name": "name",
+              "description": "The name in English, or null when the list gives none"
+            },
+            {
+              "name": "remark",
+              "description": "The remark of the list, or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day from which the first archive with the code is used, as YYYY-MM-DD; not before 2021-05-17, the first archive"
+            },
+            {
+              "name": "valid_to",
+              "description": "The day before the archive that dropped the code is used, as YYYY-MM-DD, or null while the code is in the newest archive"
+            }
+          ]
+        },
+        {
+          "path": "datasets/en16931-codes/vat-categories.jsonl",
+          "sha256": "ceef5fa1992681fc5baec75f94c131f5c627dd5cb5f1fd8b0f4fab0e4a16bdfd",
+          "bytes": 1200,
+          "records": 9,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code: UNTDID 5305, duty or tax or fee category codes (UN/CEFACT)"
+            },
+            {
+              "name": "name",
+              "description": "The name in English, or null when the list gives none"
+            },
+            {
+              "name": "remark",
+              "description": "The remark of the list, or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day from which the first archive with the code is used, as YYYY-MM-DD; not before 2021-05-17, the first archive"
+            },
+            {
+              "name": "valid_to",
+              "description": "The day before the archive that dropped the code is used, as YYYY-MM-DD, or null while the code is in the newest archive"
+            }
+          ]
+        },
+        {
+          "path": "datasets/en16931-codes/vat-exemption-reasons.jsonl",
+          "sha256": "6e50a442d53f9a23663e43f88653ed7dbe1a420b6a57c080bebc7788fa8fa469",
+          "bytes": 19443,
+          "records": 106,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code: VAT exemption reason codes (VATEX), kept by the European Commission"
+            },
+            {
+              "name": "name",
+              "description": "The name in English, or null when the list gives none"
+            },
+            {
+              "name": "remark",
+              "description": "The remark of the list, or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day from which the first archive with the code is used, as YYYY-MM-DD; not before 2021-05-17, the first archive"
+            },
+            {
+              "name": "valid_to",
+              "description": "The day before the archive that dropped the code is used, as YYYY-MM-DD, or null while the code is in the newest archive"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "public-holidays",
       "title": "Public holidays of Romania",
       "description": "The days on which no work is done by law, as rules that give the days of any year: a fixed month and day, or a number of days from Orthodox Easter Sunday. Orthodox Easter Sunday is the Julian computus moved to the civil calendar. A day can come from two rules, such as the second day of Pentecost on 1 June. Days declared free by a Government decision for one year only are not included. The two days each of three yearly feasts of other legal religions have no fixed date and are not included.",

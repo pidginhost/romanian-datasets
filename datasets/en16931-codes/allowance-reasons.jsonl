@@ -1,0 +1,19 @@
+{"code":"100","name":"Special rebate","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"102","name":"Fixed long term","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"103","name":"Temporary","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"104","name":"Standard","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"105","name":"Yearly turnover","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"41","name":"Bonus for works ahead of schedule","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"42","name":"Other bonus","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"60","name":"Manufacturer’s consumer discount","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"62","name":"Due to military status","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"63","name":"Due to work accident","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"64","name":"Special agreement","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"65","name":"Production error discount","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"66","name":"New outlet discount","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"67","name":"Sample discount","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"68","name":"End-of-range discount","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"70","name":"Incoterm discount","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"71","name":"Point of sales threshold allowance","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"88","name":"Material surcharge/deduction","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"95","name":"Discount","remark":null,"valid_from":"2021-05-17","valid_to":null}

@@ -1,0 +1,401 @@
+{"code":"AAA","name":"Goods item description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAB","name":"Payment term","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAC","name":"Dangerous goods additional information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAD","name":"Dangerous goods technical name","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAE","name":"Acknowledgement description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAF","name":"Rate additional information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAG","name":"Party instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAI","name":"General information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAJ","name":"Additional conditions of sale/purchase","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAK","name":"Price conditions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAL","name":"Goods dimensions in characters","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAM","name":"Equipment re-usage restrictions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAN","name":"Handling restriction","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAO","name":"Error description (free text)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAP","name":"Response (free text)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAQ","name":"Package content's description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAR","name":"Terms of delivery","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAS","name":"Bill of lading remarks","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAT","name":"Mode of settlement information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAU","name":"Consignment invoice information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAV","name":"Clearance invoice information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAW","name":"Letter of credit information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAX","name":"License information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAY","name":"Certification statements","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAZ","name":"Additional export information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABA","name":"Tariff statements","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABB","name":"Medical history","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABC","name":"Conditions of sale or purchase","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABD","name":"Contract document type","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABE","name":"Additional terms and/or conditions (documentary credit)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABF","name":"Instructions or information about standby documentary","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABG","name":"Instructions or information about partial shipment(s)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABH","name":"Instructions or information about transhipment(s)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABI","name":"Additional handling instructions documentary credit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABJ","name":"Domestic routing information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABK","name":"Chargeable category of equipment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABL","name":"Government information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABM","name":"Onward routing information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABN","name":"Accounting information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABO","name":"Discrepancy information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABP","name":"Confirmation instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABQ","name":"Method of issuance","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABR","name":"Documents delivery instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABS","name":"Additional conditions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABT","name":"Information/instructions about additional amounts covered","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABU","name":"Deferred payment termed additional","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABV","name":"Acceptance terms additional","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABW","name":"Negotiation terms additional","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABX","name":"Document name and documentary requirements","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABZ","name":"Instructions/information about revolving documentary credit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACA","name":"Documentary requirements","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACB","name":"Additional information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACC","name":"Factor assignment clause","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACD","name":"Reason","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACE","name":"Dispute","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACF","name":"Additional attribute information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACG","name":"Absence declaration","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACH","name":"Aggregation statement","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACI","name":"Compilation statement","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACJ","name":"Definitional exception","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACK","name":"Privacy statement","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACL","name":"Quality statement","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACM","name":"Statistical description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACN","name":"Statistical definition","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACO","name":"Statistical name","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACP","name":"Statistical title","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACQ","name":"Off-dimension information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACR","name":"Unexpected stops information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACS","name":"Principles","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACT","name":"Terms and definition","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACU","name":"Segment name","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACV","name":"Simple data element name","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACW","name":"Scope","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACX","name":"Message type name","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACY","name":"Introduction","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACZ","name":"Glossary","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADA","name":"Functional definition","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADB","name":"Examples","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADC","name":"Cover page","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADD","name":"Dependency (syntax) notes","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADE","name":"Code value name","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADF","name":"Code list name","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADG","name":"Clarification of usage","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADH","name":"Composite data element name","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADI","name":"Field of application","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADJ","name":"Type of assets and liabilities","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADK","name":"Promotion information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADL","name":"Meter condition","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADM","name":"Meter reading information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADN","name":"Type of transaction reason","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADO","name":"Type of survey question","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADP","name":"Carrier's agent counter information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADQ","name":"Description of work item on equipment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADR","name":"Message definition","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADS","name":"Booked item information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADT","name":"Source of document","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADU","name":"Note","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADV","name":"Fixed part of segment clarification text","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADW","name":"Characteristics of goods","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADX","name":"Additional discharge instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADY","name":"Container stripping instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADZ","name":"CSC (Container Safety Convention) plate information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEA","name":"Cargo remarks","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEB","name":"Temperature control instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEC","name":"Text refers to expected data","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AED","name":"Text refers to received data","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEE","name":"Section clarification text","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEF","name":"Information to the beneficiary","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEG","name":"Information to the applicant","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEH","name":"Instructions to the beneficiary","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEI","name":"Instructions to the applicant","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEJ","name":"Controlled atmosphere","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEK","name":"Take off annotation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEL","name":"Price variation narrative","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEM","name":"Documentary credit amendment instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEN","name":"Standard method narrative","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEO","name":"Project narrative","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEP","name":"Radioactive goods, additional information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEQ","name":"Bank-to-bank information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AER","name":"Reimbursement instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AES","name":"Reason for amending a message","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AET","name":"Instructions to the paying and/or accepting and/or","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEU","name":"Interest instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEV","name":"Agent commission","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEW","name":"Remitting bank instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEX","name":"Instructions to the collecting bank","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEY","name":"Collection amount instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEZ","name":"Internal auditing information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFA","name":"Constraint","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFB","name":"Comment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFC","name":"Semantic note","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFD","name":"Help text","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFE","name":"Legend","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFF","name":"Batch code structure","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFG","name":"Product application","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFH","name":"Customer complaint","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFI","name":"Probable cause of fault","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFJ","name":"Defect description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFK","name":"Repair description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFL","name":"Review comments","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFM","name":"Title","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFN","name":"Description of amount","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFO","name":"Responsibilities","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFP","name":"Supplier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFQ","name":"Purchase region","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFR","name":"Affiliation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFS","name":"Borrower","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFT","name":"Line of business","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFU","name":"Financial institution","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFV","name":"Business founder","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFW","name":"Business history","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFX","name":"Banking arrangements","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFY","name":"Business origin","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFZ","name":"Brand names' description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGA","name":"Business financing details","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGB","name":"Competition","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGC","name":"Construction process details","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGD","name":"Construction specialty","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGE","name":"Contract information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGF","name":"Corporate filing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGG","name":"Customer information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGH","name":"Copyright notice","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGI","name":"Contingent debt","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGJ","name":"Conviction details","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGK","name":"Equipment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGL","name":"Workforce description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGM","name":"Exemption","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGN","name":"Future plans","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGO","name":"Interviewee conversation information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGP","name":"Intangible asset","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGQ","name":"Inventory","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGR","name":"Investment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGS","name":"Intercompany relations information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGT","name":"Joint venture","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGU","name":"Loan","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGV","name":"Long term debt","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGW","name":"Location","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGX","name":"Current legal structure","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGY","name":"Marital contract","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGZ","name":"Marketing activities","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHA","name":"Merger","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHB","name":"Marketable securities","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHC","name":"Business debt","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHD","name":"Original legal structure","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHE","name":"Employee sharing arrangements","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHF","name":"Organization details","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHG","name":"Public record details","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHH","name":"Price range","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHI","name":"Qualifications","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHJ","name":"Registered activity","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHK","name":"Criminal sentence","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHL","name":"Sales method","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHM","name":"Educational institution information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHN","name":"Status details","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHO","name":"Sales","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHP","name":"Spouse information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHQ","name":"Educational degree information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHR","name":"Shareholding information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHS","name":"Sales territory","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHT","name":"Accountant's comments","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHU","name":"Exemption law location","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHV","name":"Share classifications","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHW","name":"Forecast","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHX","name":"Event location","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHY","name":"Facility occupancy","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHZ","name":"Import and export details","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIA","name":"Additional facility information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIB","name":"Inventory value","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIC","name":"Education","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AID","name":"Event","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIE","name":"Agent","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIF","name":"Domestically agreed financial statement details","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIG","name":"Other current asset description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIH","name":"Other current liability description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AII","name":"Former business activity","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIJ","name":"Trade name use","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIK","name":"Signing authority","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIL","name":"Guarantee","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIM","name":"Holding company operation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIN","name":"Consignment routing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIO","name":"Letter of protest","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIP","name":"Question","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIQ","name":"Party information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIR","name":"Area boundaries description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIS","name":"Advertisement information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIT","name":"Financial statement details","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIU","name":"Access instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIV","name":"Liquidity","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIW","name":"Credit line","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIX","name":"Warranty terms","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIY","name":"Division description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIZ","name":"Reporting instruction","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJA","name":"Examination result","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJB","name":"Laboratory result","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALC","name":"Allowance/charge information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALD","name":"X-ray result","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALE","name":"Pathology result","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALF","name":"Intervention description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALG","name":"Summary of admittance","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALH","name":"Medical treatment course detail","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALI","name":"Prognosis","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALJ","name":"Instruction to patient","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALK","name":"Instruction to physician","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALL","name":"All documents","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALM","name":"Medicine treatment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALN","name":"Medicine dosage and administration","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALO","name":"Availability of patient","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALP","name":"Reason for service request","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALQ","name":"Purpose of service","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARR","name":"Arrival conditions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARS","name":"Service requester's comment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUT","name":"Authentication","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUU","name":"Requested location description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUV","name":"Medicine administration condition","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUW","name":"Patient information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUX","name":"Precautionary measure","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUY","name":"Service characteristic","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUZ","name":"Planned event comment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVA","name":"Expected delay comment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVB","name":"Transport requirements comment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVC","name":"Temporary approval condition","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVD","name":"Customs Valuation Information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVE","name":"Value Added Tax (VAT) margin scheme","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVF","name":"Maritime Declaration of Health","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BAG","name":"Passenger baggage information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BAH","name":"Maritime Declaration of Health","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BAI","name":"Additional product information address","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BAJ","name":"Information to be printed on despatch advice","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BAK","name":"Missing goods remarks","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BAL","name":"Non-acceptance information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BAM","name":"Returns information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BAN","name":"Sub-line item information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BAO","name":"Test information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BAP","name":"External link","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BAQ","name":"VAT exemption reason","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BAR","name":"Processing Instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BAS","name":"Relay Instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BAT","name":"SIMA applicable","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"BAU","name":"Appeals program code","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"BAV","name":"SIMA subject","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"BAW","name":"Surtax applicable","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"BAX","name":"SIMA security bond","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"BAY","name":"Surtax subject","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"BAZ","name":"Safeguard applicable","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"BBA","name":"Safeguard applicable","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"BBB","name":"Safeguard subject","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"BLC","name":"Transport contract document clause","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLD","name":"Instruction to prepare the patient","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLE","name":"Medicine treatment comment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLF","name":"Examination result comment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLG","name":"Service request comment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLH","name":"Prescription reason","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLI","name":"Prescription comment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLJ","name":"Clinical investigation comment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLK","name":"Medicinal specification comment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLL","name":"Economic contribution comment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLM","name":"Status of a plan","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLN","name":"Random sample test information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLO","name":"Period of time","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLP","name":"Legislation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLQ","name":"Security measures requested","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLR","name":"Transport contract document remark","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLS","name":"Previous port of call security information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLT","name":"Security information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLU","name":"Waste information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLV","name":"B2C marketing information, short description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLW","name":"B2B marketing information, long description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLX","name":"B2C marketing information, long description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLY","name":"Product ingredients","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BLZ","name":"Location short name","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BMA","name":"Packaging material information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BMB","name":"Filler material information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BMC","name":"Ship-to-ship activity information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BMD","name":"Package material description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BME","name":"Consumer level package marking","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BMF","name":"SIMA measure in force","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"BMG","name":"Pre-CARM","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"BMH","name":"SIMA measure type","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"CCI","name":"Customs clearance instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CCJ","name":"Sub Type Code","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"CCK","name":"SIMA information","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"CCL","name":"Time limit end","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"CCM","name":"Time limit start","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"CCN","name":"Warehouse time limit","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"CCO","name":"Value for duty information","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"CEX","name":"Customs clearance instructions export","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CHG","name":"Change information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CIP","name":"Customs clearance instruction import","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CLP","name":"Clearance place requested","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CLR","name":"Loading remarks","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"COI","name":"Order information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CUR","name":"Customer remarks","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CUS","name":"Customs declaration information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DAR","name":"Damage remarks","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DCL","name":"Document issuer declaration","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DEL","name":"Delivery information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DIN","name":"Delivery instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DOC","name":"Documentation instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DUT","name":"Duty declaration","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"EUR","name":"Effective used routing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FBC","name":"First block to be printed on the transport contract","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GBL","name":"Government bill of lading information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GEN","name":"Entire transaction set","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GS7","name":"Further information concerning GGVS par. 7","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"HAN","name":"Consignment handling instruction","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"HAZ","name":"Hazard information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ICN","name":"Consignment information for consignee","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IIN","name":"Insurance instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IMI","name":"Invoice mailing instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IND","name":"Commercial invoice item description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"INS","name":"Insurance information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"INV","name":"Invoice instruction","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IRP","name":"Information for railway purpose","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ITR","name":"Inland transport details","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ITS","name":"Testing instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LAN","name":"Location Alias","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LIN","name":"Line item","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LOI","name":"Loading instruction","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MCO","name":"Miscellaneous charge order","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MDH","name":"Maritime Declaration of Health","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MKS","name":"Additional marks/numbers information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ORI","name":"Order instruction","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"OSI","name":"Other service information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PAC","name":"Packing/marking information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PAI","name":"Payment instructions information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PAY","name":"Payables information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PKG","name":"Packaging information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PKT","name":"Packaging terms information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PMD","name":"Payment detail/remittance information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PMT","name":"Payment information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PRD","name":"Product information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PRF","name":"Price calculation formula","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PRI","name":"Priority information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PUR","name":"Purchasing information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"QIN","name":"Quarantine instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"QQD","name":"Quality demands/requirements","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"QUT","name":"Quotation instruction/information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RAH","name":"Risk and handling information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"REG","name":"Regulatory information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RET","name":"Return to origin information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"REV","name":"Receivables","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RQR","name":"Consignment route","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SAF","name":"Safety information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SIC","name":"Consignment documentary instruction","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SIN","name":"Special instructions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SLR","name":"Ship line requested","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SPA","name":"Special permission for transport, generally","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SPG","name":"Special permission concerning the goods to be transported","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SPH","name":"Special handling","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SPP","name":"Special permission concerning package","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SPT","name":"Special permission concerning transport means","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SRN","name":"Subsidiary risk number (IATA/DGR)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSR","name":"Special service request","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SUR","name":"Supplier remarks","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TCA","name":"Consignment tariff","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TDT","name":"Consignment transport","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TRA","name":"Transportation information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TRR","name":"Requested tariff","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TXD","name":"Tax declaration","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"WHI","name":"Warehouse instruction/information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ZZZ","name":"Mutually defined","remark":null,"valid_from":"2021-05-17","valid_to":null}

@@ -1,0 +1,246 @@
+{"code":"0002","name":"System Information et Repertoire des Entreprise et des Etablissements: SIRENE","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0003","name":"Codification Numerique des Etablissments Financiers En Belgique","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0004","name":"NBS/OSI NETWORK","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0005","name":"USA FED GOV OSI NETWORK","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0006","name":"USA DOD OSI NETWORK","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0007","name":"Organisationsnummer","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0008","name":"LE NUMERO NATIONAL","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0009","name":"SIRET-CODE","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0010","name":"Organizational Identifiers for Structured Names under ISO 9541 Part 2","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0011","name":"International Code Designator for the Identification of OSI-based, Amateur Radio Organizations, Network Objects and Application Services.","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0012","name":"European Computer Manufacturers Association: ECMA","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0013","name":"VSA FTP CODE (FTP = File Transfer Protocol)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0014","name":"NIST/OSI Implememts' Workshop","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0015","name":"Electronic Data Interchange: EDI","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0016","name":"EWOS Object Identifiers","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0017","name":"COMMON LANGUAGE","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0018","name":"SNA/OSI Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0019","name":"Air Transport Industry Services Communications Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0020","name":"European Laboratory for Particle Physics: CERN","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0021","name":"SOCIETY FOR WORLDWIDE INTERBANK FINANCIAL, TELECOMMUNICATION S.W.I.F.T.","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0022","name":"OSF Distributed Computing Object Identification","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0023","name":"Nordic University and Research Network: NORDUnet","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0024","name":"Digital Equipment Corporation: DEC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0025","name":"OSI ASIA-OCEANIA WORKSHOP","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0026","name":"NATO ISO 6523 ICDE coding scheme","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0027","name":"Aeronautical Telecommunications Network (ATN)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0028","name":"International Standard ISO 6523","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0029","name":"The All-Union Classifier of Enterprises and Organisations","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0030","name":"AT&T/OSI Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0031","name":"EDI Partner Identification Code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0032","name":"Telecom Australia","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0033","name":"S G W OSI Internetwork","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0034","name":"Reuter Open Address Standard","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0035","name":"ISO 6523 - ICD","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0036","name":"TeleTrust Object Identifiers","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0037","name":"LY-tunnus","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0038","name":"The Australian GOSIP Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0039","name":"The OZ DOD OSI Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0040","name":"Unilever Group Companies","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0041","name":"Citicorp Global Information Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0042","name":"DBP Telekom Object Identifiers","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0043","name":"HydroNETT","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0044","name":"Thai Industrial Standards Institute (TISI)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0045","name":"ICI Company Identification System","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0046","name":"FUNLOC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0047","name":"BULL ODI/DSA/UNIX Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0048","name":"OSINZ","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0049","name":"Auckland Area Health","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0050","name":"Firmenich","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0051","name":"AGFA-DIS","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0052","name":"Society of Motion Picture and Television Engineers (SMPTE)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0053","name":"Migros_Network M_NETOPZ","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0054","name":"ISO6523 - ICDPCR","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0055","name":"Energy Net","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0056","name":"Nokia Object Identifiers (NOI)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0057","name":"Saint Gobain","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0058","name":"Siemens Corporate Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0059","name":"DANZNET","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0060","name":"Data Universal Numbering System (D-U-N-S Number)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0061","name":"SOFFEX OSI","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0062","name":"KPN OVN","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0063","name":"ascomOSINet","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0064","name":"UTC: Uniforme Transport Code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0065","name":"SOLVAY OSI CODING","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0066","name":"Roche Corporate Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0067","name":"ZellwegerOSINet","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0068","name":"Intel Corporation OSI","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0069","name":"SITA Object Identifier Tree","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0070","name":"DaimlerChrysler Corporate Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0071","name":"LEGO /OSI NETWORK","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0072","name":"NAVISTAR/OSI Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0073","name":"ICD Formatted ATM address","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0074","name":"ARINC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0075","name":"Alcanet/Alcatel-Alsthom Corporate Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0076","name":"Sistema Italiano di Identificazione di ogetti gestito da UNINFO","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0077","name":"Sistema Italiano di Indirizzamento di Reti OSI Gestito da UNINFO","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0078","name":"Mitel terminal or switching equipment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0079","name":"ATM Forum","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0080","name":"UK National Health Service Scheme, (EDIRA compliant)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0081","name":"International NSAP","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0082","name":"Norwegian Telecommunications Authority's, NTA'S, EDI, identifier scheme (EDIRA compliant)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0083","name":"Advanced Telecommunications Modules Limited, Corporate Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0084","name":"Athens Chamber of Commerce & Industry Scheme (EDIRA compliant)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0085","name":"Swiss Chambers of Commerce Scheme (EDIRA) compliant","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0086","name":"United States Council for International Business (USCIB) Scheme, (EDIRA compliant)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0087","name":"National Federation of Chambers of Commerce & Industry of Belgium, Scheme (EDIRA compliant)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0088","name":"EAN Location Code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0089","name":"The Association of British Chambers of Commerce Ltd. Scheme, (EDIRA compliant)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0090","name":"Internet IP addressing - ISO 6523 ICD encoding","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0091","name":"Cisco Sysytems / OSI Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0093","name":"Revenue Canada Business Number Registration (EDIRA compliant)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0094","name":"DEUTSCHER INDUSTRIE- UND HANDELSTAG (DIHT) Scheme (EDIRA compliant)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0095","name":"Hewlett - Packard Company Internal AM Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0096","name":"The Danish Business Authority - P-number (DK:P)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0097","name":"FTI - Ediforum Italia, (EDIRA compliant)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0098","name":"CHAMBER OF COMMERCE TEL AVIV-JAFFA Scheme (EDIRA compliant)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0099","name":"Siemens Supervisory Systems Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0100","name":"PNG_ICD Scheme","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0101","name":"South African Code Allocation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0102","name":"HEAG","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0104","name":"BT - ICD Coding System","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0105","name":"Portuguese Chamber of Commerce and Industry Scheme (EDIRA compliant)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0106","name":"Vereniging van Kamers van Koophandel en Fabrieken in Nederland (Association of Chambers of Commerce and Industry in the Netherlands), Scheme (EDIRA compliant)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0107","name":"Association of Swedish Chambers of Commerce and Industry Scheme (EDIRA compliant)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0108","name":"Australian Chambers of Commerce and Industry Scheme (EDIRA compliant)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0109","name":"BellSouth ICD AESA (ATM End System Address)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0110","name":"Bell Atlantic","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0111","name":"Object Identifiers","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0112","name":"ISO register for Standards producing Organizations","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0113","name":"OriginNet","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0114","name":"Check Point Software Technologies","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0115","name":"Pacific Bell Data Communications Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0116","name":"PSS Object Identifiers","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0117","name":"STENTOR-ICD CODING SYSTEM","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0118","name":"ATM-Network ZN'96","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0119","name":"MCI / OSI Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0120","name":"Advantis","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0121","name":"Affable Software Data Interchange Codes","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0122","name":"BB-DATA GmbH","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0123","name":"BASF Company ATM-Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0124","name":"IOTA Identifiers for Organizations for Telecommunications Addressing using the ICD system format defined in ISO/IEC 8348","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0125","name":"Henkel Corporate Network (H-Net)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0126","name":"GTE/OSI Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0127","name":"Dresdner Bank Corporate Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0128","name":"BCNR (Swiss Clearing Bank Number)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0129","name":"BPI (Swiss Business Partner Identification) code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0130","name":"Directorates of the European Commission","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0131","name":"Code for the Identification of National Organizations","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0132","name":"Certicom Object Identifiers","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0133","name":"TC68 OID","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0134","name":"Infonet Services Corporation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0135","name":"SIA Object Identifiers","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0136","name":"Cable & Wireless Global ATM End-System Address Plan","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0137","name":"Global AESA scheme","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0138","name":"France Telecom ATM End System Address Plan","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0139","name":"Savvis Communications AESA:.","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0140","name":"Toshiba Organizations, Partners, And Suppliers' (TOPAS) Code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0141","name":"NATO Commercial and Government Entity system","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0142","name":"SECETI Object Identifiers","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0143","name":"EINESTEINet AG","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0144","name":"DoDAAC (Department of Defense Activity Address Code)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0145","name":"DGCP (Direction Générale de la Comptabilité Publique)administrative accounting identification scheme","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0146","name":"DGI (Direction Générale des Impots) code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0147","name":"Standard Company Code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0148","name":"ITU (International Telecommunications Union)Data Network Identification Codes (DNIC)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0149","name":"Global Business Identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0150","name":"Madge Networks Ltd- ICD ATM Addressing Scheme","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0151","name":"Australian Business Number (ABN) Scheme","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0152","name":"Edira Scheme Identifier Code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0153","name":"Concert Global Network Services ICD AESA","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0154","name":"Identification number of economic subjects: (ICO)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0155","name":"Global Crossing AESA (ATM End System Address)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0156","name":"AUNA","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0157","name":"ATM interconnection with the Dutch KPN Telecom","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0158","name":"Identification number of economic subject (ICO) Act on State Statistics of 29 November 2'001, § 27","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0159","name":"ACTALIS Object Identifiers","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0160","name":"GTIN - Global Trade Item Number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0161","name":"ECCMA Open Technical Directory","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0162","name":"CEN/ISSS Object Identifier Scheme","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0163","name":"US-EPA Facility Identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0164","name":"TELUS Corporation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0165","name":"FIEIE Object identifiers","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0166","name":"Swissguide Identifier Scheme","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0167","name":"Priority Telecom ATM End System Address Plan","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0168","name":"Vodafone Ireland OSI Addressing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0169","name":"Swiss Federal Business Identification Number. Central Business names Index (zefix) Identification Number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0170","name":"Teikoku Company Code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0171","name":"Luxembourg CP & CPS (Certification Policy and Certification Practice Statement) Index","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0172","name":"Project Group “Lists of Properties” (PROLIST®)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0173","name":"eCI@ss","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0174","name":"StepNexus","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0175","name":"Siemens AG","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0176","name":"Paradine GmbH","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0177","name":"Odette International Limited","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0178","name":"Route1 MobiNET","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0179","name":"Penango Object Identifiers","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0180","name":"Lithuanian military PKI","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0183","name":"Numéro d'identification suisse des enterprises (IDE), Swiss Unique Business Identification Number (UIDB)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0184","name":"DIGSTORG","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0185","name":"Perceval Object Code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0186","name":"TrustPoint Object Identifiers","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0187","name":"Amazon Unique Identification Scheme","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0188","name":"Corporate Number of The Social Security and Tax Number System","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0189","name":"European Business Identifier (EBID)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0190","name":"Organisatie Indentificatie Nummer (OIN)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0191","name":"Company Code (Estonia)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0192","name":"Organisasjonsnummer","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0193","name":"UBL.BE Party Identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0194","name":"KOIOS Open Technical Dictionary","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0195","name":"Singapore Nationwide E-lnvoice Framework","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0196","name":"Icelandic identifier - Íslensk kennitala","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0197","name":"APPLiA Pl Standard","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0198","name":"ERSTORG","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0199","name":"Legal Entity Identifier (LEI)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0200","name":"Legal entity code (Lithuania)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0201","name":"Codice Univoco Unità Organizzativa iPA","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0202","name":"Indirizzo di Posta Elettronica Certificata","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0203","name":"eDelivery Network Participant identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0204","name":"Leitweg-ID","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0205","name":"CODDEST","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0206","name":"Registre du Commerce et de l’Industrie : RCI","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0207","name":"PiLog Ontology Codification Identifier (POCI)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0208","name":"Numero d'entreprise / ondernemingsnummer / Unternehmensnummer","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0209","name":"GS1 identification keys","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0210","name":"CODICE FISCALE","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0211","name":"PARTITA IVA","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0212","name":"Finnish Organization Identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0213","name":"Finnish Organization Value Add Tax Identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0214","name":"Tradeplace TradePI Standard","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"0215","name":"Net service ID","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"0216","name":"OVTcode","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"0217","name":"The Netherlands Chamber of Commerce and Industry establishment number","remark":null,"valid_from":"2022-09-21","valid_to":null}
+{"code":"0218","name":"Unified registration number (Latvia)","remark":null,"valid_from":"2022-09-21","valid_to":null}
+{"code":"0219","name":"Taxpayer registration code (Latvia)","remark":null,"valid_from":"2022-09-21","valid_to":null}
+{"code":"0220","name":"The Register of Natural Persons (Latvia)","remark":null,"valid_from":"2022-09-21","valid_to":null}
+{"code":"0221","name":"The registered number of the qualified invoice issuer","remark":null,"valid_from":"2023-05-15","valid_to":null}
+{"code":"0222","name":"Metadata Registry Support","remark":null,"valid_from":"2023-05-15","valid_to":null}
+{"code":"0223","name":"EU based company","remark":null,"valid_from":"2023-05-15","valid_to":null}
+{"code":"0224","name":"FTCTC CODE ROUTAGE","remark":null,"valid_from":"2023-05-15","valid_to":null}
+{"code":"0225","name":"FRCTC ELECTRONIC ADDRESS","remark":null,"valid_from":"2023-05-15","valid_to":null}
+{"code":"0226","name":"FRCTC Particulier","remark":null,"valid_from":"2023-05-15","valid_to":null}
+{"code":"0227","name":"NON - EU based company","remark":null,"valid_from":"2023-05-15","valid_to":null}
+{"code":"0228","name":"Répertoire des Entreprises et des Etablissements (RIDET)","remark":null,"valid_from":"2023-05-15","valid_to":null}
+{"code":"0229","name":"T.A.H.I.T.I (traitement automatique hiérarchisé des institutions de Tahiti et des îles)","remark":null,"valid_from":"2023-05-15","valid_to":null}
+{"code":"0230","name":"National e-Invoicing Framework","remark":null,"valid_from":"2023-05-15","valid_to":null}
+{"code":"0231","name":"Single taxable company (France)","remark":null,"valid_from":"2024-11-15","valid_to":null}
+{"code":"0232","name":"NOBB product number","remark":null,"valid_from":"2024-11-15","valid_to":null}
+{"code":"0233","name":"Elnummer","remark":null,"valid_from":"2024-11-15","valid_to":null}
+{"code":"0234","name":"Toimitusosoite ID","remark":null,"valid_from":"2024-11-15","valid_to":null}
+{"code":"0235","name":"UAE Tax Identification Number (TIN)","remark":null,"valid_from":"2024-11-15","valid_to":null}
+{"code":"0236","name":"ToimipaikkalD","remark":null,"valid_from":"2024-11-15","valid_to":null}
+{"code":"0237","name":"CPR (Danish person civil registration number)","remark":null,"valid_from":"2024-11-15","valid_to":null}
+{"code":"0238","name":"Plateforme.s agréée.s à la facturation électronique (PPF/PDP)","remark":null,"valid_from":"2024-11-15","valid_to":null}
+{"code":"0239","name":"EAEU","remark":null,"valid_from":"2025-05-15","valid_to":null}
+{"code":"0240","name":"Register of legal persons (in French : Répertoire des personnes morales)","remark":null,"valid_from":"2025-05-15","valid_to":null}
+{"code":"0241","name":"Hitachi Rail","remark":null,"valid_from":"2025-11-15","valid_to":null}
+{"code":"0242","name":"OpenPeppol Service Provider Identification Scheme (SPIS)","remark":null,"valid_from":"2025-11-15","valid_to":null}
+{"code":"0243","name":"Business Partner Number (Catena-X)","remark":null,"valid_from":"2025-11-15","valid_to":null}
+{"code":"0244","name":"Tax Identification (Tax ID), Nigeria","remark":null,"valid_from":"2025-11-15","valid_to":null}
+{"code":"0245","name":"Tax identification number (DIČ, Slovakia)","remark":null,"valid_from":"2026-05-15","valid_to":null}
+{"code":"0246","name":"German Electronic Business Address","remark":null,"valid_from":"2026-05-15","valid_to":null}
+{"code":"0247","name":"Name unknown","remark":null,"valid_from":"2026-05-15","valid_to":null}
+{"code":"0248","name":"Oman Value Added Tax Identification Number (VATIN)","remark":null,"valid_from":"2026-05-15","valid_to":null}
+{"code":"0249","name":"The Chamber of Commerce & Industry St. Eustatius & Saba establishment number","remark":null,"valid_from":"2026-11-15","valid_to":null}
+{"code":"0250","name":"SECD - Siemens Energy Classification Dictionary","remark":null,"valid_from":"2026-11-15","valid_to":null}
+{"code":"0251","name":"The Bonaire Chamber of Commerce and Industry establishment number.","remark":null,"valid_from":"2026-11-15","valid_to":null}

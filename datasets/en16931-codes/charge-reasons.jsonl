@@ -1,0 +1,178 @@
+{"code":"AA","name":"Advertising","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAA","name":"Telecommunication","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAC","name":"Technical modification","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAD","name":"Job-order production","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAE","name":"Outlays","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAF","name":"Off-premises","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAH","name":"Additional processing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAI","name":"Attesting","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAS","name":"Acceptance","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAT","name":"Rush delivery","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAV","name":"Special construction","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAY","name":"Airport facilities","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAZ","name":"Concession","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABA","name":"Compulsory storage","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABB","name":"Fuel removal","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABC","name":"Into plane","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABD","name":"Overtime","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABF","name":"Tooling","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABK","name":"Miscellaneous","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABL","name":"Additional packaging","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABN","name":"Dunnage","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABR","name":"Containerisation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABS","name":"Carton packing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABT","name":"Hessian wrapped","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABU","name":"Polyethylene wrap packing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACF","name":"Miscellaneous treatment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACG","name":"Enamelling treatment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACH","name":"Heat treatment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACI","name":"Plating treatment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACJ","name":"Painting","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACK","name":"Polishing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACL","name":"Priming","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACM","name":"Preservation treatment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACS","name":"Fitting","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADC","name":"Consolidation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADE","name":"Bill of lading","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADJ","name":"Airbag","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADK","name":"Transfer","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADL","name":"Slipsheet","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADM","name":"Binding","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADN","name":"Repair or replacement of broken returnable package","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADO","name":"Efficient logistics","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADP","name":"Merchandising","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADQ","name":"Product mix","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADR","name":"Other services","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADT","name":"Pick-up","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADW","name":"Chronic illness","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADY","name":"New product introduction","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADZ","name":"Direct delivery","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEA","name":"Diversion","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEB","name":"Disconnect","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEC","name":"Distribution","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AED","name":"Handling of hazardous cargo","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEF","name":"Rents and leases","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEH","name":"Location differential","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEI","name":"Aircraft refueling","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEJ","name":"Fuel shipped into storage","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEK","name":"Cash on delivery","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEL","name":"Small order processing service","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEM","name":"Clerical or administrative services","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEN","name":"Guarantee","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEO","name":"Collection and recycling","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEP","name":"Copyright fee collection","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AES","name":"Veterinary inspection service","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AET","name":"Pensioner service","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEU","name":"Medicine free pass holder","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEV","name":"Environmental protection service","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEW","name":"Environmental clean-up service","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEX","name":"National cheque processing service outside account area","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEY","name":"National payment service outside account area","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEZ","name":"National payment service within account area","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJ","name":"Adjustments","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AU","name":"Authentication","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CA","name":"Cataloguing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAB","name":"Cartage","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAD","name":"Certification","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAE","name":"Certificate of conformance","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAF","name":"Certificate of origin","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAI","name":"Cutting","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAJ","name":"Consular service","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAK","name":"Customer collection","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAL","name":"Payroll payment service","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAM","name":"Cash transportation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAN","name":"Home banking service","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAO","name":"Bilateral agreement service","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAP","name":"Insurance brokerage service","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAQ","name":"Cheque generation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAR","name":"Preferential merchandising location","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAS","name":"Crane","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAT","name":"Special colour service","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAU","name":"Sorting","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAV","name":"Battery collection and recycling","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAW","name":"Product take back fee","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAX","name":"Quality control released","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAY","name":"Quality control held","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAZ","name":"Quality control embargo","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CD","name":"Car loading","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CG","name":"Cleaning","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CS","name":"Cigarette stamping","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CT","name":"Count and recount","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DAB","name":"Layout/design","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DAC","name":"Assortment allowance","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DAD","name":"Driver assigned unloading","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DAF","name":"Debtor bound","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DAG","name":"Dealer allowance","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DAH","name":"Allowance transferable to the consumer","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DAI","name":"Growth of business","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DAJ","name":"Introduction allowance","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DAK","name":"Multi-buy promotion","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DAL","name":"Partnership","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DAM","name":"Return handling","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DAN","name":"Minimum order not fulfilled charge","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DAO","name":"Point of sales threshold allowance","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DAP","name":"Wholesaling discount","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DAQ","name":"Documentary credits transfer commission","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DL","name":"Delivery","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"EG","name":"Engraving","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"EP","name":"Expediting","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ER","name":"Exchange rate guarantee","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FAA","name":"Fabrication","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FAB","name":"Freight equalization","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FAC","name":"Freight extraordinary handling","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FC","name":"Freight service","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FH","name":"Filling/handling","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FI","name":"Financing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GAA","name":"Grinding","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"HAA","name":"Hose","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"HD","name":"Handling","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"HH","name":"Hoisting and hauling","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IAA","name":"Installation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IAB","name":"Installation and warranty","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ID","name":"Inside delivery","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IF","name":"Inspection","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IR","name":"Installation and training","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IS","name":"Invoicing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"KO","name":"Koshering","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"L1","name":"Carrier count","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LA","name":"Labelling","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LAA","name":"Labour","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LAB","name":"Repair and return","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LF","name":"Legalisation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MAE","name":"Mounting","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MI","name":"Mail invoice","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ML","name":"Mail invoice to each location","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"NAA","name":"Non-returnable containers","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"OA","name":"Outside cable connectors","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PA","name":"Invoice with shipment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PAA","name":"Phosphatizing (steel treatment)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PC","name":"Packing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PL","name":"Palletizing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PRV","name":"Price variation","remark":null,"valid_from":"2024-05-15","valid_to":null}
+{"code":"RAB","name":"Repacking","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RAC","name":"Repair","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RAD","name":"Returnable container","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RAF","name":"Restocking","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RE","name":"Re-delivery","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RF","name":"Refurbishing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RH","name":"Rail wagon hire","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RV","name":"Loading","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SA","name":"Salvaging","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SAA","name":"Shipping and handling","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SAD","name":"Special packaging","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SAE","name":"Stamping","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SAI","name":"Consignee unload","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SG","name":"Shrink-wrap","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SH","name":"Special handling","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SM","name":"Special finish","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SU","name":"Set-up","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TAB","name":"Tank renting","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TAC","name":"Testing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TT","name":"Transportation - third party billing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TV","name":"Transportation by vendor","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"V1","name":"Drop yard","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"V2","name":"Drop dock","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"WH","name":"Warehousing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XAA","name":"Combine all same day shipment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"YY","name":"Split pick-up","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ZZZ","name":"Mutually defined","remark":null,"valid_from":"2021-05-17","valid_to":null}

@@ -1,0 +1,185 @@
+{"code":"AA","name":"Product version number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AB","name":"Assembly","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AC","name":"HIBC (Health Industry Bar Code)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AD","name":"Cold roll number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AE","name":"Hot roll number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AF","name":"Slab number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AG","name":"Software revision number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AH","name":"UPC (Universal Product Code) Consumer package code (1-5-5)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AI","name":"UPC (Universal Product Code) Consumer package code (1-5-5-","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJ","name":"Sample number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AK","name":"Pack number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AL","name":"UPC (Universal Product Code) Shipping container code (1-2-","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AM","name":"UPC (Universal Product Code)/EAN (European article number)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AN","name":"UPC (Universal Product Code) suffix","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AO","name":"State label code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AP","name":"Heat number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQ","name":"Coupon number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AR","name":"Resource number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AS","name":"Work task number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AT","name":"Price look up number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AU","name":"NSN (North Atlantic Treaty Organization Stock Number)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AV","name":"Refined product code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AW","name":"Exhibit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AX","name":"End item","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AY","name":"Federal supply classification","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AZ","name":"Engineering data list","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BA","name":"Milestone event number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BB","name":"Lot number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BC","name":"National drug code 4-4-2 format","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BD","name":"National drug code 5-3-2 format","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BE","name":"National drug code 5-4-1 format","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BF","name":"National drug code 5-4-2 format","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BG","name":"National drug code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BH","name":"Part number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BI","name":"Local Stock Number (LSN)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BJ","name":"Next higher assembly number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BK","name":"Data category","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BL","name":"Control number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BM","name":"Special material identification code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BN","name":"Locally assigned control number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BO","name":"Buyer's colour","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BP","name":"Buyer's part number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BQ","name":"Variable measure product code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BR","name":"Financial phase","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BS","name":"Contract breakdown","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BT","name":"Technical phase","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BU","name":"Dye lot number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BV","name":"Daily statement of activities","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BW","name":"Periodical statement of activities within a bilaterally","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BX","name":"Calendar week statement of activities","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BY","name":"Calendar month statement of activities","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BZ","name":"Original equipment number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CC","name":"Industry commodity code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CG","name":"Commodity grouping","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CL","name":"Colour number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CR","name":"Contract number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CV","name":"Customs article number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DR","name":"Drawing revision number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DW","name":"Drawing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"EC","name":"Engineering change level","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"EF","name":"Material code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"EMD","name":"EMDN (European Medical Device Nomenclature)","remark":null,"valid_from":"2023-05-15","valid_to":null}
+{"code":"EN","name":"International Article Numbering Association (EAN)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FS","name":"Fish species","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GB","name":"Buyer's internal product group code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GMN","name":"Global model number","remark":null,"valid_from":"2024-05-15","valid_to":null}
+{"code":"GN","name":"National product group code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GS","name":"General specification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"HS","name":"Harmonised system","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IB","name":"ISBN (International Standard Book Number)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IN","name":"Buyer's item number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IS","name":"ISSN (International Standard Serial Number)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IT","name":"Buyer's style number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IZ","name":"Buyer's size code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MA","name":"Machine number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MF","name":"Manufacturer's (producer's) article number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MN","name":"Model number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MP","name":"Product/service identification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"NB","name":"Batch number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ON","name":"Customer order number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PD","name":"Part number description","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PL","name":"Purchaser's order line number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PO","name":"Purchase order number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PPI","name":"Phytosanitary Passport identifier","remark":null,"valid_from":"2025-05-15","valid_to":null}
+{"code":"PV","name":"Promotional variant number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"QS","name":"Buyer's qualifier for size","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RC","name":"Returnable container number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RN","name":"Release number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RU","name":"Run number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RY","name":"Record keeping of model year","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SA","name":"Supplier's article number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SG","name":"Standard group of products (mixed assortment)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SK","name":"SKU (Stock keeping unit)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SN","name":"Serial number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SRS","name":"RSK number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SRT","name":"IFLS (Institut Francais du Libre Service) 5 digit product","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SRU","name":"IFLS (Institut Francais du Libre Service) 9 digit product","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SRV","name":"GS1 Global Trade Item Number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SRW","name":"EDIS (Energy Data Identification System)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SRX","name":"Slaughter number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SRY","name":"Official animal number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SRZ","name":"Harmonized tariff schedule","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SS","name":"Supplier's supplier article number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSA","name":"46 Level DOT Code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSB","name":"Airline Tariff 6D","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSC","name":"Title 49 Code of Federal Regulations","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSD","name":"International Civil Aviation Administration code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSE","name":"Hazardous Materials ID DOT","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSF","name":"Endorsement","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSG","name":"Air Force Regulation 71-4","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSH","name":"Breed","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSI","name":"Chemical Abstract Service (CAS) registry number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSJ","name":"Engine model designation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSK","name":"Institutional Meat Purchase Specifications (IMPS) Number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSL","name":"Price Look-Up code (PLU)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSM","name":"International Maritime Organization (IMO) Code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSN","name":"Bureau of Explosives 600-A (rail)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSO","name":"United Nations Dangerous Goods List","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSP","name":"International Code of Botanical Nomenclature (ICBN)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSQ","name":"International Code of Zoological Nomenclature (ICZN)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSR","name":"International Code of Nomenclature for Cultivated Plants","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSS","name":"Distributor’s article identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SST","name":"Norwegian Classification system ENVA","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSU","name":"Supplier assigned classification","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSV","name":"Mexican classification system AMECE","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSW","name":"German classification system CCG","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSX","name":"Finnish classification system EANFIN","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSY","name":"Canadian classification system ICC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSZ","name":"French classification system IFLS5","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ST","name":"Style number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STA","name":"Dutch classification system CBL","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STB","name":"Japanese classification system JICFS","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STC","name":"European Union dairy subsidy eligibility classification","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STD","name":"GS1 Spain classification system","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STE","name":"GS1 Poland classification system","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STF","name":"Federal Agency on Technical Regulating and Metrology of the","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STG","name":"Efficient Consumer Response (ECR) Austria classification","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STH","name":"GS1 Italy classification system","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STI","name":"CPV (Common Procurement Vocabulary)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STJ","name":"IFDA (International Foodservice Distributors Association)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STK","name":"AHFS (American Hospital Formulary Service) pharmacologic -","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STL","name":"ATC (Anatomical Therapeutic Chemical) classification system","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STM","name":"CLADIMED (Classification des Dispositifs Médicaux)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STN","name":"CMDR (Canadian Medical Device Regulations) classification","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STO","name":"CNDM (Classificazione Nazionale dei Dispositivi Medici)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STP","name":"UK DM&D (Dictionary of Medicines & Devices) standard coding","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STQ","name":"eCl@ss","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STR","name":"EDMA (European Diagnostic Manufacturers Association)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STS","name":"EGAR (European Generic Article Register)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STT","name":"GMDN (Global Medical Devices Nomenclature)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STU","name":"GPI (Generic Product Identifier)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STV","name":"HCPCS (Healthcare Common Procedure Coding System)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STW","name":"ICPS (International Classification for Patient Safety)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STX","name":"MedDRA (Medical Dictionary for Regulatory Activities)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STY","name":"Medical Columbus","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STZ","name":"NAPCS (North American Product Classification System)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SUA","name":"NHS (National Health Services) eClass","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SUB","name":"US FDA (Food and Drug Administration) Product Code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SUC","name":"SNOMED CT (Systematized Nomenclature of Medicine-Clinical","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SUD","name":"UMDNS (Universal Medical Device Nomenclature System)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SUE","name":"GS1 Global Returnable Asset Identifier, non-serialised","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SUF","name":"IMEI","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SUG","name":"Waste Type (EMSA)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SUH","name":"Ship's store classification type","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SUI","name":"Emergency fire code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SUJ","name":"Emergency spillage code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SUK","name":"IMDG packing group","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SUL","name":"MARPOL Code IBC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SUM","name":"IMDG subsidiary risk class","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TG","name":"Transport group number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TSN","name":"Taxonomic Serial Number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TSO","name":"IMDG main hazard class","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TSP","name":"EU Combined Nomenclature","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TSQ","name":"Therapeutic classification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TSR","name":"European Waste Catalogue","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TSS","name":"Price grouping code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TST","name":"UNSPSC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TSU","name":"EU RoHS Directive","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"UA","name":"Ultimate customer's article number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"UP","name":"UPC (Universal product code)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VN","name":"Vendor item number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VP","name":"Vendor's (seller's) part number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VS","name":"Vendor's supplemental item number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VX","name":"Vendor specification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ZZZ","name":"Mutually defined","remark":null,"valid_from":"2021-05-17","valid_to":null}
