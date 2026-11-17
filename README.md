@@ -9,6 +9,7 @@ The public copy is https://github.com/pidginhost/romanian-datasets.
 | Dataset | Content | Source | Kept current |
 | --- | --- | --- | --- |
 | `bnr-currencies` | The currencies with a reference rate of the National Bank of Romania, the units each rate is given for, and since when | BNR yearly rate files | By hand, when BNR changes its list |
+| `caen` | The classification of economic activities CAEN, Rev.2 and Rev.3, and the links between the classes of the two | ONRC nomenclatures on data.gov.ro; Eurostat correspondence table NACE Rev.2 to Rev.2.1 | By hand, when INS changes CAEN |
 | `countries` | Countries and territories with their ISO 3166-1 codes, names in Romanian and English, and whether they are in the European Union | Publications Office of the European Union | By hand, when the table changes |
 | `public-holidays` | The days on which no work is done by law, as rules that give them for any year | Labour Code, article 139 (1) | By hand, when the law changes |
 | `siruta` | The administrative-territorial units of Romania: counties, municipalities, towns, communes, localities and Bucharest sectors, with their SIRUTA codes, county letters and development regions | National Institute of Statistics (INS); names with Romanian letters from the INS copy on data.gov.ro | Monthly |
@@ -34,6 +35,10 @@ index.json
 datasets/
   bnr-currencies/
     currencies.jsonl
+  caen/
+    activities.jsonl
+    correspondence.jsonl
+    versions.jsonl
   countries/
     countries.jsonl
   public-holidays/
