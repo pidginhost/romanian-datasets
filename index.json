@@ -1176,6 +1176,70 @@
       ]
     },
     {
+      "name": "fixed-assets",
+      "title": "Catalogue of fixed assets (HG 2139/2004)",
+      "description": "The catalogue of the classification and normal lives of fixed assets approved by HG 2139/2004: groups (1 buildings, 2 technical installations, transport, animals and plantations, 3 furniture, office equipment and other tangible assets), subgroups, classes, subclasses and families, each with the range of its normal life in years, which is the depreciation period of the straight-line method; a new asset takes a life within the range of its code. A heading without a range has none. Where the catalogue gives one code two lives, as a) for a neutral and b) for a corrosive environment, each is a row with its variant. The catalogue is the one in force on 2026-01-01, the first day the dataset covers; a later change gives the day it applies from and the act. Names are as the act writes them.",
+      "source": {
+        "name": "Legislative Portal, HG 2139/2004 in force (https://legislatie.just.ro/Public/DetaliiDocument/58613)",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/58613",
+        "licence": "Legislation, not subject to copyright (Law 8/1996, article 9)"
+      },
+      "frequency": "monthly",
+      "update": "When a government decision changes the catalogue",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/fixed-assets/assets.jsonl",
+          "sha256": "92392a159fa182b3130ee871d762c7f098f25f03166babab643b76350bb618d0",
+          "bytes": 139323,
+          "records": 598,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The classification code, as 2.1.16.1.2.1. With variant and valid_from it is unique in the file"
+            },
+            {
+              "name": "variant",
+              "description": "The letter of a second life the catalogue gives the code, as a or b, or null"
+            },
+            {
+              "name": "depth",
+              "description": "1 for a group, 2 for a subgroup, then class, subclass and the levels below"
+            },
+            {
+              "name": "parent",
+              "description": "The code above, or for a variant its code; null for a group"
+            },
+            {
+              "name": "name",
+              "description": "The name as the act writes it"
+            },
+            {
+              "name": "min_years",
+              "description": "The shortest normal life in years, or null for a heading"
+            },
+            {
+              "name": "max_years",
+              "description": "The longest normal life in years, or null for a heading"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day the row applies from, YYYY-MM-DD, or null for a row in force on 2026-01-01"
+            },
+            {
+              "name": "valid_to",
+              "description": "The last day the row applies, or null while it does"
+            },
+            {
+              "name": "act",
+              "description": "The act that changed the row, or null for a row in force on 2026-01-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "mfp-localities",
       "title": "Localities of the Ministry of Finance with their SIRUTA code",
       "description": "The localities of the nomenclature of the Ministry of Finance (MFP), whose codes ANAF uses in addresses, with the SIRUTA code each matches. MFP gives a SIRUTA code of its own, kept in mfp_siruta, which is wrong for many administrative units (1008 for Alba Iulia, which SIRUTA does not have). siruta is that code when SIRUTA has it in the same county under the same name (match code); otherwise the one place of the county with the name, an administrative unit for a municipality, town, commune or sector and a locality for the others (match name); otherwise null. Of 17317 localities, 16793 match by code, 378 by name, and 146 not: places SIRUTA no longer has, names written another way, the entries for people without a home in Romania, and a few test rows. uat is the administrative unit or Bucharest sector of siruta. Names are as MFP writes them.",
@@ -2774,6 +2838,70 @@
             {
               "name": "name",
               "description": "The locality as ANAF writes it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "travel-allowances",
+      "title": "Allowances for travel abroad (HG 518/1995)",
+      "description": "The daily allowance (diurna) and the accommodation ceiling per day for a mission abroad, by country, in USD or EUR, as annex 1 to HG 518/1995 sets them for the staff of public authorities and institutions: category II is for ministers, secretaries of state, senior civil servants and the other functions the annex names, category I for everyone else. The Fiscal Code refers to these amounts for the part of a daily allowance that is not taxed. Countries are as the act writes them, with alpha2 from the countries dataset where the country still exists. The table is the one in force on 2026-01-01, the first day the dataset covers; a later change gives the day it applies from and the act. The allowance for travel inside Romania (HG 714/2018) is not a table and is not here.",
+      "source": {
+        "name": "Legislative Portal, HG 518/1995 in force, annex 1 (https://legislatie.just.ro/Public/DetaliiDocument/7037)",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/7037",
+        "licence": "Legislation, not subject to copyright (Law 8/1996, article 9)"
+      },
+      "frequency": "monthly",
+      "update": "When a government decision changes the table",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/travel-allowances/allowances.jsonl",
+          "sha256": "27f5f58c59093a48025693d526f4149afb51587e60e9296575b42e5ab5066b21",
+          "bytes": 28510,
+          "records": 166,
+          "fields": [
+            {
+              "name": "country",
+              "description": "The country as the act writes it. With valid_from it is unique in the file"
+            },
+            {
+              "name": "alpha2",
+              "description": "The code of the country in the countries dataset, or null for one that no longer exists"
+            },
+            {
+              "name": "currency",
+              "description": "USD or EUR"
+            },
+            {
+              "name": "daily_i",
+              "description": "The daily allowance of category I, per day"
+            },
+            {
+              "name": "accommodation_i",
+              "description": "The accommodation ceiling of category I, per day"
+            },
+            {
+              "name": "daily_ii",
+              "description": "The daily allowance of category II, per day"
+            },
+            {
+              "name": "accommodation_ii",
+              "description": "The accommodation ceiling of category II, per day"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day the row applies from, YYYY-MM-DD, or null for a row in force on 2026-01-01"
+            },
+            {
+              "name": "valid_to",
+              "description": "The last day the row applies, or null while it does"
+            },
+            {
+              "name": "act",
+              "description": "The act that changed the row, or null for a row in force on 2026-01-01"
             }
           ]
         }

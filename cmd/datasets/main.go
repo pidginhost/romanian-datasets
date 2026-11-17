@@ -30,12 +30,14 @@ import (
 	"github.com/pidginhost/romanian-datasets/internal/dataset"
 	"github.com/pidginhost/romanian-datasets/internal/efactura"
 	"github.com/pidginhost/romanian-datasets/internal/en16931"
+	"github.com/pidginhost/romanian-datasets/internal/fixedassets"
 	"github.com/pidginhost/romanian-datasets/internal/holidays"
 	"github.com/pidginhost/romanian-datasets/internal/mfp"
 	"github.com/pidginhost/romanian-datasets/internal/reges"
 	"github.com/pidginhost/romanian-datasets/internal/singleentry"
 	"github.com/pidginhost/romanian-datasets/internal/siruta"
 	"github.com/pidginhost/romanian-datasets/internal/taxoffices"
+	"github.com/pidginhost/romanian-datasets/internal/travel"
 	"github.com/pidginhost/romanian-datasets/internal/treasury"
 	"github.com/pidginhost/romanian-datasets/internal/vatnode"
 )
@@ -117,6 +119,21 @@ var builders = []builder{
 		}
 		return en16931.Dataset(en16931.FromSite(&http.Client{Timeout: 2 * time.Minute}), codes)
 	}},
+	{"fixed-assets", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
+		var rows []fixedassets.Asset
+		file, err := published(root, "fixed-assets", "assets.jsonl")
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		if file != nil {
+			rows, err = fixedassets.PublishedRows(file)
+			file.Close()
+			if err != nil {
+				return dataset.Dataset{}, err
+			}
+		}
+		return fixedassets.Dataset(fixedassets.FromSite(&http.Client{Timeout: 3 * time.Minute}), rows)
+	}},
 	{"mfp-localities", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
 		places, err := readSIRUTA[mfp.Place](root, "units.jsonl")
 		if err != nil {
@@ -187,6 +204,38 @@ var builders = []builder{
 			return dataset.Dataset{}, err
 		}
 		return taxoffices.Dataset(taxoffices.FromSite(&http.Client{Timeout: 2 * time.Minute}), places, counties, keys)
+	}},
+	{"travel-allowances", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
+		file, err := published(root, "countries", "countries.jsonl")
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		if file == nil {
+			return dataset.Dataset{}, fmt.Errorf("the countries dataset is not built")
+		}
+		var countries []travel.Country
+		decoder := json.NewDecoder(file)
+		for decoder.More() {
+			var c travel.Country
+			if err := decoder.Decode(&c); err != nil {
+				file.Close()
+				return dataset.Dataset{}, fmt.Errorf("countries: %w", err)
+			}
+			countries = append(countries, c)
+		}
+		file.Close()
+		var rows []travel.Allowance
+		if file, err = published(root, "travel-allowances", "allowances.jsonl"); err != nil {
+			return dataset.Dataset{}, err
+		}
+		if file != nil {
+			rows, err = travel.PublishedRows(file)
+			file.Close()
+			if err != nil {
+				return dataset.Dataset{}, err
+			}
+		}
+		return travel.Dataset(travel.FromSite(&http.Client{Timeout: 3 * time.Minute}), countries, rows)
 	}},
 	{"treasury", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
 		places, err := readSIRUTA[treasury.Place](root, "units.jsonl")
