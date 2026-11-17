@@ -19,6 +19,7 @@ import (
 	"path/filepath"
 	"time"
 
+	"github.com/pidginhost/romanian-datasets/internal/banks"
 	"github.com/pidginhost/romanian-datasets/internal/bnr"
 	"github.com/pidginhost/romanian-datasets/internal/caen"
 	"github.com/pidginhost/romanian-datasets/internal/countries"
@@ -41,6 +42,13 @@ type builder struct {
 
 // builders lists every dataset. A new dataset is added here.
 var builders = []builder{
+	{"banks", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
+		keys, err := publishedBanks(root)
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		return banks.Dataset(banks.FromSite(&http.Client{Timeout: 2 * time.Minute}), keys)
+	}},
 	{"bnr-currencies", dataset.Manual, func(now time.Time, _ string) (dataset.Dataset, error) {
 		return bnr.Dataset(bnr.FromSite(&http.Client{Timeout: time.Minute}), now.UTC().Year())
 	}},
@@ -222,6 +230,27 @@ func published(root, name, file string) (*os.File, error) {
 		return nil, nil
 	}
 	return f, err
+}
+
+// publishedBanks gives the register numbers and the code keys of the banks dataset as committed.
+func publishedBanks(root string) (banks.Published, error) {
+	var out banks.Published
+	file, err := published(root, "banks", "institutions.jsonl")
+	if file == nil || err != nil {
+		return out, err
+	}
+	out.Numbers, err = banks.PublishedNumbers(file)
+	file.Close()
+	if err != nil {
+		return out, err
+	}
+	file, err = published(root, "banks", "codes.jsonl")
+	if file == nil || err != nil {
+		return out, err
+	}
+	defer file.Close()
+	out.Codes, err = banks.PublishedCodes(file)
+	return out, err
 }
 
 // publishedSIRUTA gives the codes of the SIRUTA dataset as committed, or none before its first build.
