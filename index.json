@@ -202,7 +202,7 @@
     {
       "name": "en16931-codes",
       "title": "Code lists of the European standard on e-invoicing, EN 16931",
-      "description": "The code lists an invoice under EN 16931 uses, as the European Commission publishes them for the standard: units of measure, currencies, countries, VAT categories and exemption reasons, payment means, document types, electronic address and identifier schemes, allowance and charge reasons, item schemes, reference and text qualifiers, attachment types. They are European, not Romanian; the e-Factura dataset says which codes ANAF accepts. Every archive the Commission still publishes is read, from the one used from 2021-05-17 to the one used from 2026-11-15, so a code that left a list stays with its last day. A code can come back later, as a new row. Names are in English as in the lists. The currencies with a BNR rate are in bnr-currencies, by the same code.",
+      "description": "The code lists an invoice under EN 16931 uses, as the European Commission publishes them for the standard: units of measure, currencies, VAT categories and exemption reasons, payment means, document types, electronic address and identifier schemes, allowance and charge reasons, item schemes, reference and text qualifiers, attachment types. They are European, not Romanian; the e-Factura dataset says which codes ANAF accepts. Every archive the Commission still publishes is read, from the one used from 2021-05-17 to the one used from 2026-11-15, so a code that left a list stays with its last day. A code can come back later, as a new row. Names are in English as in the lists. The currencies with a BNR rate are in bnr-currencies, by the same code. The country list of the archives is not here: the countries are in the countries dataset. An invoice writes Kosovo 1A, where countries has XK, and may write XI for Northern Ireland, which countries leaves out.",
       "source": {
         "name": "European Commission, Registry of supporting artefacts to implement EN16931, genericode archives used from 2021-05-17 to 2026-11-15",
         "url": "https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/Registry+of+supporting+artefacts+to+implement+EN16931",
@@ -250,34 +250,6 @@
             {
               "name": "code",
               "description": "The code: UNTDID 7161, special service description codes (UN/CEFACT)"
-            },
-            {
-              "name": "name",
-              "description": "The name in English, or null when the list gives none"
-            },
-            {
-              "name": "remark",
-              "description": "The remark of the list, or null"
-            },
-            {
-              "name": "valid_from",
-              "description": "The day from which the first archive with the code is used, as YYYY-MM-DD; not before 2021-05-17, the first archive"
-            },
-            {
-              "name": "valid_to",
-              "description": "The day before the archive that dropped the code is used, as YYYY-MM-DD, or null while the code is in the newest archive"
-            }
-          ]
-        },
-        {
-          "path": "datasets/en16931-codes/countries.jsonl",
-          "sha256": "25d989d284132caa1ecb79e832ed40ca4c07b4eaa6881f24db5ba913faf3628c",
-          "bytes": 23142,
-          "records": 251,
-          "fields": [
-            {
-              "name": "code",
-              "description": "The code: ISO 3166-1 alpha-2 country codes, with 1A for Kosovo"
             },
             {
               "name": "name",

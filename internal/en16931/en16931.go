@@ -56,11 +56,10 @@ type List struct {
 	Origin string
 }
 
-// Lists are the 15 lists of the archives, in the order of the files.
+// Lists are the lists of the archives that are published, in the order of the files.
 var Lists = []List{
 	{"Allowance.gc", "allowance-reasons.jsonl", "UNTDID 5189, allowance reason codes (UN/CEFACT)"},
 	{"Charge.gc", "charge-reasons.jsonl", "UNTDID 7161, special service description codes (UN/CEFACT)"},
-	{"Country.gc", "countries.jsonl", "ISO 3166-1 alpha-2 country codes, with 1A for Kosovo"},
 	{"Currency.gc", "currencies.jsonl", "ISO 4217 currency codes"},
 	{"1001.gc", "document-types.jsonl", "UNTDID 1001, document name codes (UN/CEFACT)"},
 	{"EAS.gc", "electronic-address-schemes.jsonl", "Electronic Address Scheme (EAS), kept by the European Commission"},
@@ -73,6 +72,12 @@ var Lists = []List{
 	{"Unit.gc", "units.jsonl", "UN/ECE Recommendation 20, codes for units of measure, with the codes of Recommendation 21"},
 	{"5305.gc", "vat-categories.jsonl", "UNTDID 5305, duty or tax or fee category codes (UN/CEFACT)"},
 	{"VATEX.gc", "vat-exemption-reasons.jsonl", "VAT exemption reason codes (VATEX), kept by the European Commission"},
+}
+
+// Left are the lists of the archives that are read but not published, with the dataset that has them.
+var Left = map[string]string{
+	// The countries are in the countries dataset. The archives write Kosovo 1A and add XI for Northern Ireland.
+	"Country.gc": "countries",
 }
 
 // Archive is one genericode archive with the day from which it is used.
@@ -192,7 +197,8 @@ func readList(r io.Reader) ([]Code, error) {
 	return out, nil
 }
 
-// readArchive reads the 15 lists of one archive. A list the build does not know stops it.
+// readArchive reads the published lists of one archive. A list the build does not know stops it; a list
+// left out is checked to be a list and not kept.
 func readArchive(data []byte) (map[string][]Code, error) {
 	z, err := zip.NewReader(bytes.NewReader(data), int64(len(data)))
 	if err != nil {
@@ -201,6 +207,9 @@ func readArchive(data []byte) (map[string][]Code, error) {
 	known := map[string]bool{}
 	for _, l := range Lists {
 		known[l.Member] = true
+	}
+	for member := range Left {
+		known[member] = true
 	}
 	out := map[string][]Code{}
 	for _, f := range z.File {
@@ -222,6 +231,9 @@ func readArchive(data []byte) (map[string][]Code, error) {
 		body.Close()
 		if err != nil {
 			return nil, fmt.Errorf("%s: %w", name, err)
+		}
+		if _, left := Left[name]; left {
+			continue
 		}
 		out[name] = codes
 	}
@@ -437,12 +449,14 @@ func Dataset(get Get, published map[string][]string) (dataset.Dataset, error) {
 		Name:  "en16931-codes",
 		Title: "Code lists of the European standard on e-invoicing, EN 16931",
 		Description: "The code lists an invoice under EN 16931 uses, as the European Commission publishes them for the standard: " +
-			"units of measure, currencies, countries, VAT categories and exemption reasons, payment means, document types, " +
+			"units of measure, currencies, VAT categories and exemption reasons, payment means, document types, " +
 			"electronic address and identifier schemes, allowance and charge reasons, item schemes, reference and text qualifiers, attachment types. " +
 			"They are European, not Romanian; the e-Factura dataset says which codes ANAF accepts. " +
 			"Every archive the Commission still publishes is read, from the one used from " + first + " to the one used from " + newest + ", " +
 			"so a code that left a list stays with its last day. A code can come back later, as a new row. " +
-			"Names are in English as in the lists. The currencies with a BNR rate are in bnr-currencies, by the same code.",
+			"Names are in English as in the lists. The currencies with a BNR rate are in bnr-currencies, by the same code. " +
+			"The country list of the archives is not here: the countries are in the countries dataset. " +
+			"An invoice writes Kosovo 1A, where countries has XK, and may write XI for Northern Ireland, which countries leaves out.",
 		Source: dataset.Source{
 			Name:    "European Commission, Registry of supporting artefacts to implement EN16931, genericode archives used from " + first + " to " + newest,
 			URL:     Page,
