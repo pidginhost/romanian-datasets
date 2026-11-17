@@ -4,6 +4,106 @@
   "licence": "CC-BY-4.0",
   "datasets": [
     {
+      "name": "banks",
+      "title": "Credit institutions and IBAN bank codes",
+      "description": "The credit institutions in the register of the National Bank of Romania: banks, housing banks, mortgage banks, credit cooperatives and their central bank, branches of foreign credit institutions, and those removed from the register, with the day of removal. codes.jsonl gives the bank code of a Romanian IBAN, the four letters after the check digits, with the BIC: the Romanian BICs of the SWIFT BIC-to-LEI mapping table, joined to the register by LEI. A branch the register gives no LEI for is joined by the LEI of its head office, stated in head_office_lei. Credit cooperatives have no code of their own: their accounts carry the code of their central bank. TREZ, the State Treasury, is added from Order MFP 1650/2014. A code can name an institution that was removed: the BIC of an absorbed bank may stay with the bank that absorbed it. Names and addresses are as BNR writes them; BNR shows some Romanian letters as a question mark.",
+      "source": {
+        "name": "National Bank of Romania, register of credit institutions (https://www.bnr.ro/2349-registre-si-liste); SWIFT BIC-to-LEI mapping table of 2026-10-30, published by GLEIF (https://www.gleif.org/en/lei-data/lei-mapping/download-bic-to-lei-relationship-files)",
+        "url": "https://www.bnr.ro/2349-registre-si-liste",
+        "licence": "Register: facts taken from the public register BNR keeps under Regulation 1/2007; BNR's own terms for its content: https://www.bnr.ro/2281-termeni-si-conditii. BICs: royalty-free licence of SWIFT for any use, with this notice: SWIFT © and database rights October 2026. All rights reserved. This Mapping Table has been developed by SWIFT. Any use of the Mapping Table, in whole or in part, is subject to the BIC/LEI Mapping Table License Agreement as published with the Mapping Table available on GLEIF's website. The Mapping Table is updated monthly. For the latest BIC information and updates, always refer to www.swift.com/bic ."
+      },
+      "frequency": "monthly",
+      "update": "When BNR changes the register or SWIFT publishes a new mapping table, which it does every month",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/banks/institutions.jsonl",
+          "sha256": "f344510fb2de5979887e86b7c2094775c53faa50da586c7d88d4cb46957ae081",
+          "bytes": 33811,
+          "records": 75,
+          "fields": [
+            {
+              "name": "number",
+              "description": "The number of the entry in the register, unique in the file"
+            },
+            {
+              "name": "kind",
+              "description": "bank, housing-bank, mortgage-bank, cooperative-central, cooperative, branch-third-country or branch-eu"
+            },
+            {
+              "name": "name",
+              "description": "The name as the register writes it"
+            },
+            {
+              "name": "address",
+              "description": "The registered office, or null for a removed institution"
+            },
+            {
+              "name": "registered",
+              "description": "The day of entry in the register, YYYY-MM-DD"
+            },
+            {
+              "name": "cui",
+              "description": "The tax identification code (CUI), or null"
+            },
+            {
+              "name": "trade_register",
+              "description": "The number in the trade register, or null"
+            },
+            {
+              "name": "lei",
+              "description": "The Legal Entity Identifier the register gives, or null"
+            },
+            {
+              "name": "head_office_lei",
+              "description": "For a branch the register gives no LEI for, the LEI of the institution it belongs to; null otherwise"
+            },
+            {
+              "name": "start",
+              "description": "The day from which the institution may operate, YYYY-MM-DD, or null"
+            },
+            {
+              "name": "removed",
+              "description": "The day of removal from the register, YYYY-MM-DD, or null for an institution in the register"
+            },
+            {
+              "name": "remarks",
+              "description": "The remarks of the register: former names, mergers, or null"
+            }
+          ]
+        },
+        {
+          "path": "datasets/banks/codes.jsonl",
+          "sha256": "12120f70d607a305fb3d53446361685ae18fb84b97fb1a2d4350304b74b559db",
+          "bytes": 3624,
+          "records": 31,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The bank code of a Romanian IBAN: characters 5 to 8"
+            },
+            {
+              "name": "bic",
+              "description": "The BIC, or null for a code that has none here"
+            },
+            {
+              "name": "number",
+              "description": "The number of the institution in institutions.jsonl, or null for a code outside the register"
+            },
+            {
+              "name": "name",
+              "description": "The holder of a code outside the register, or null"
+            },
+            {
+              "name": "source",
+              "description": "Where the code comes from"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "bnr-currencies",
       "title": "Currencies with a reference rate of the National Bank of Romania",
       "description": "The currencies for which the National Bank of Romania (BNR) publishes a reference rate against the leu, with the number of units the rate is given for and the first and last day of publication, from 2005. XAU is one gram of gold and XDR is the special drawing right. A currency BNR stopped publishing stays in the list with its last day. The rates themselves are not here: read them from BNR.",
