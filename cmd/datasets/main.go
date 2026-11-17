@@ -23,6 +23,7 @@ import (
 	"github.com/pidginhost/romanian-datasets/internal/banks"
 	"github.com/pidginhost/romanian-datasets/internal/bnr"
 	"github.com/pidginhost/romanian-datasets/internal/caen"
+	"github.com/pidginhost/romanian-datasets/internal/chart"
 	"github.com/pidginhost/romanian-datasets/internal/countries"
 	"github.com/pidginhost/romanian-datasets/internal/dataset"
 	"github.com/pidginhost/romanian-datasets/internal/efactura"
@@ -58,6 +59,21 @@ var builders = []builder{
 	}},
 	{"caen", dataset.Manual, func(time.Time, string) (dataset.Dataset, error) {
 		return caen.Dataset(caen.FromSite(&http.Client{Timeout: 2 * time.Minute}))
+	}},
+	{"chart-of-accounts", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
+		var keys []string
+		file, err := published(root, "chart-of-accounts", "accounts.jsonl")
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		if file != nil {
+			keys, err = chart.PublishedKeys(file)
+			file.Close()
+			if err != nil {
+				return dataset.Dataset{}, err
+			}
+		}
+		return chart.Dataset(chart.FromSite(&http.Client{Timeout: 3 * time.Minute}), keys)
 	}},
 	{"countries", dataset.Manual, func(time.Time, string) (dataset.Dataset, error) {
 		client := &http.Client{Timeout: 2 * time.Minute}

@@ -11,6 +11,7 @@ The public copy is https://github.com/pidginhost/romanian-datasets.
 | `banks` | The credit institutions in the register of the National Bank of Romania, those removed with the day of removal, and the bank code of a Romanian IBAN with the BIC | BNR register of credit institutions; SWIFT BIC-to-LEI mapping table, published by GLEIF | Monthly |
 | `bnr-currencies` | The currencies with a reference rate of the National Bank of Romania, the units each rate is given for, and since when | BNR yearly rate files | By hand, when BNR changes its list |
 | `caen` | The classification of economic activities CAEN, Rev.2 and Rev.3, and the links between the classes of the two | ONRC nomenclatures on data.gov.ro; Eurostat correspondence table NACE Rev.2 to Rev.2.1 | By hand, when INS changes CAEN |
+| `chart-of-accounts` | The general chart of accounts for double-entry bookkeeping of companies (OMFP 1802/2014): classes, groups, accounts and subaccounts with their function and closing role, from 1 January 2026 | Legislative Portal, consolidated OMFP 1802/2014 | Monthly |
 | `countries` | Countries and territories with their ISO 3166-1 codes, names in Romanian and English, whether they are in the European Union, and the code an electronic invoice uses for them | Publications Office of the European Union | By hand, when the table changes |
 | `efactura` | The codes the e-Factura system of ANAF accepts for each check of a code list, the CIUS-RO limits on invoice types and VAT point date codes, and the county and sector codes of a Romanian address | Ministry of Finance, e-Factura validation package | Monthly |
 | `en16931-codes` | The code lists of the European standard on e-invoicing: units, currencies, VAT categories and exemption reasons, payment means, document types, address schemes and the others, with the period of each code; the countries are in `countries` | European Commission, EN 16931 genericode archives | Monthly |
@@ -49,6 +50,8 @@ datasets/
     activities.jsonl
     correspondence.jsonl
     versions.jsonl
+  chart-of-accounts/
+    accounts.jsonl
   countries/
     countries.jsonl
   efactura/
