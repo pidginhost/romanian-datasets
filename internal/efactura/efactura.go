@@ -461,7 +461,7 @@ func Dataset(get Get) (dataset.Dataset, error) {
 					{Name: "rule", Description: "The check of the package: BR-CL-* for a code list of EN 16931, BR-RO-* for a rule of CIUS-RO"},
 					{Name: "part", Description: "For a check with more than one list, when this one applies: invoice or credit note (BR-CL-01); any party, or seller or payee only (BR-CL-10). Null otherwise"},
 					{Name: "field", Description: "What the check constrains, in our words"},
-					{Name: "list", Description: "The file that names the code, as dataset/file: a file of en16931-codes, found by code, or countries/countries.jsonl, found by alpha2, where 1A (Kosovo, XK there) and XI (Northern Ireland) are not. Null for the VAT point date codes, which no dataset has (UNTDID 2005: 3, 35, 432)"},
+					{Name: "list", Description: "The file that names the code, as dataset/file: a file of en16931-codes, found by code, or countries/countries.jsonl, found by invoice_code. Null for the VAT point date codes, which no dataset has (UNTDID 2005: 3, 35, 432)"},
 					{Name: "code", Description: "A code the check accepts. A code outside the list of its check is refused"},
 				},
 				Records: codes,

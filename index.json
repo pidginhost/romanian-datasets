@@ -134,30 +134,30 @@
     {
       "name": "countries",
       "title": "Countries and territories",
-      "description": "Countries and territories with their ISO 3166-1 codes, their names in Romanian and English, whether they are a member state of the European Union today, and whether they are in the European Union for VAT, with their VAT prefix. Northern Ireland has the VAT prefix XI but is not a country, so it is not here. Withdrawn entries stay, with their last day of use, so an alpha-2 code can appear on a withdrawn entry and on a current one; the alpha-3 code is unique. Kosovo is not in ISO 3166-1 and is listed with the user-assigned codes XK and XKX. Names are the short names the European Union institutions use, with Romanian letters written with the comma below and without the asterisk the source puts on Kosovo. A name does not state a position on the status of a territory.",
+      "description": "Countries and territories with their ISO 3166-1 codes, their names in Romanian and English, whether they are a member state of the European Union today, whether they are in the European Union for VAT, with their VAT prefix, and the code with which an electronic invoice under EN 16931, as e-Factura, names them. Northern Ireland is not a country, but invoices name it XI and VIES answers for the prefix XI, so it is here as an entry only for invoices, with no alpha-3 code. Withdrawn entries stay, with their last day of use, so an alpha-2 code can appear on a withdrawn entry and on a current one; the alpha-3 code is unique where there is one. Kosovo is not in ISO 3166-1 and is listed with the user-assigned codes XK and XKX. Names are the short names the European Union institutions use, with Romanian letters written with the comma below and without the asterisk the source puts on Kosovo. A name does not state a position on the status of a territory.",
       "source": {
-        "name": "Publications Office of the European Union, Countries and territories authority table; VAT prefixes from the VIES service of the European Commission (https://ec.europa.eu/taxation_customs/vies/rest-api/check-status)",
+        "name": "Publications Office of the European Union, Countries and territories authority table; VAT prefixes from the VIES service of the European Commission (https://ec.europa.eu/taxation_customs/vies/rest-api/check-status); invoice codes from the country list of the EN 16931 code lists of the European Commission",
         "url": "https://publications.europa.eu/resource/distribution/country/rdf/skos_core/countries-skos.rdf",
         "licence": "European Commission reuse notice (Decision 2011/833/EU): reuse allowed with the source acknowledged"
       },
       "frequency": "manual",
       "update": "When the Publications Office changes the table: a new or withdrawn country, a changed name, a change in the European Union",
-      "revision": 2,
+      "revision": 3,
       "changed": "2026-11-17",
       "files": [
         {
           "path": "datasets/countries/countries.jsonl",
-          "sha256": "d4bc900cf92e574f9309999355e8f477f299391cb3cfbd8e5f09a97098617cb2",
-          "bytes": 56316,
-          "records": 282,
+          "sha256": "ba103056eb9de571d61df36226d4da14987d9c9fdee73836a84b7d64bfa931d8",
+          "bytes": 68124,
+          "records": 283,
           "fields": [
             {
               "name": "alpha2",
-              "description": "ISO 3166-1 alpha-2 code; for Kosovo the user-assigned XK"
+              "description": "ISO 3166-1 alpha-2 code; for Kosovo the user-assigned XK; for Northern Ireland, an entry only for invoices, XI"
             },
             {
               "name": "alpha3",
-              "description": "ISO 3166-1 alpha-3 code, unique in the file; for Kosovo the user-assigned XKX"
+              "description": "ISO 3166-1 alpha-3 code, unique in the file; for Kosovo the user-assigned XKX; null for an entry only for invoices"
             },
             {
               "name": "numeric",
@@ -194,6 +194,14 @@
             {
               "name": "valid_to",
               "description": "The last day of use of a withdrawn entry, as YYYY-MM-DD, or null for a current one"
+            },
+            {
+              "name": "invoice_code",
+              "description": "The code an electronic invoice under EN 16931 uses for it: the alpha-2 code, 1A for Kosovo, XI for Northern Ireland; null when an invoice cannot name it, as for a withdrawn entry"
+            },
+            {
+              "name": "invoice_only",
+              "description": "True for an entry that is here only because invoices name it: Northern Ireland"
             }
           ]
         }
@@ -210,7 +218,7 @@
       },
       "frequency": "monthly",
       "update": "When the Ministry of Finance publishes a new validation package",
-      "revision": 1,
+      "revision": 2,
       "changed": "2026-11-17",
       "files": [
         {
@@ -233,7 +241,7 @@
             },
             {
               "name": "list",
-              "description": "The file that names the code, as dataset/file: a file of en16931-codes, found by code, or countries/countries.jsonl, found by alpha2, where 1A (Kosovo, XK there) and XI (Northern Ireland) are not. Null for the VAT point date codes, which no dataset has (UNTDID 2005: 3, 35, 432)"
+              "description": "The file that names the code, as dataset/file: a file of en16931-codes, found by code, or countries/countries.jsonl, found by invoice_code. Null for the VAT point date codes, which no dataset has (UNTDID 2005: 3, 35, 432)"
             },
             {
               "name": "code",
