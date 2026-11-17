@@ -244,6 +244,110 @@
       ]
     },
     {
+      "name": "budget-classification",
+      "title": "Classification of public finance indicators",
+      "description": "The classification of public finance indicators approved by OMFP 1954/2005, as the Ministry of Finance publishes it for each year: for each budget, the revenue codes and the functional expense codes (chapter, subchapter, paragraph), the economic expense codes of annex I (title, article, paragraph), and the departmental codes of annexes II and III. The second part of a code names the budget: 01.01 is chapter 01 of the state budget. A code with notes was marked by the ministry with stars; notes holds the note where the sheet explains it. section is the heading above the code. remark is any other text the ministry wrote on the row. The rows of a year stay when the ministry publishes the next. Names are as the ministry writes them.",
+      "source": {
+        "name": "Ministry of Finance, classification of public finance indicators in force (https://mfinante.gov.ro/ro/domenii/buget/clasificatiile-bugetare)",
+        "url": "https://mfinante.gov.ro/ro/domenii/buget/clasificatiile-bugetare",
+        "licence": "Legislation, not subject to copyright (Law 8/1996, article 9): annexes of OMFP 1954/2005 as the ministry keeps them up to date"
+      },
+      "frequency": "monthly",
+      "update": "When the ministry changes the classification, which it does by notes several times a year",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/budget-classification/indicators.jsonl",
+          "sha256": "a144ad19a00c4f997186f63890e541d7a0498e6801358bd040de29f49b5e1647",
+          "bytes": 1858771,
+          "records": 5605,
+          "fields": [
+            {
+              "name": "year",
+              "description": "The year the classification is in force"
+            },
+            {
+              "name": "annex",
+              "description": "The annex, as Anexa 1"
+            },
+            {
+              "name": "budget",
+              "description": "The budget the annex classifies"
+            },
+            {
+              "name": "part",
+              "description": "revenue or expense"
+            },
+            {
+              "name": "view",
+              "description": "functional, or economic for annex I (economica)"
+            },
+            {
+              "name": "code",
+              "description": "The code; with year, annex, part and view it is unique in the file"
+            },
+            {
+              "name": "level",
+              "description": "chapter, subchapter or paragraph; title, article or paragraph in the economic view"
+            },
+            {
+              "name": "parent",
+              "description": "The longest code above this one in its sheet, or null where the sheet has none"
+            },
+            {
+              "name": "name",
+              "description": "The name as the ministry writes it"
+            },
+            {
+              "name": "section",
+              "description": "The heading above the code, or null"
+            },
+            {
+              "name": "notes",
+              "description": "The note the stars of the code refer to, or null"
+            },
+            {
+              "name": "remark",
+              "description": "Other text on the row, or null"
+            }
+          ]
+        },
+        {
+          "path": "datasets/budget-classification/departments.jsonl",
+          "sha256": "46e06e8b107707b244ec4ffda743e0b28107b54ac74f06f90fcea8404789378c",
+          "bytes": 21050,
+          "records": 118,
+          "fields": [
+            {
+              "name": "year",
+              "description": "The year the classification is in force"
+            },
+            {
+              "name": "annex",
+              "description": "Anexa II for the authorities and institutions of the central and local administration, Anexa III for those financed in full from own revenues"
+            },
+            {
+              "name": "section",
+              "description": "The heading above the code, or null: the annex numbers each section from 1"
+            },
+            {
+              "name": "code",
+              "description": "The departmental code; with year, annex and section it is unique in the file"
+            },
+            {
+              "name": "name",
+              "description": "The name as the ministry writes it"
+            },
+            {
+              "name": "remark",
+              "description": "Other text on the row, as the act the code rests on, or null"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "caen",
       "title": "Classification of economic activities in Romania (CAEN), Rev.2 and Rev.3, with the links between them",
       "description": "The sections, divisions, groups and classes of CAEN Rev.2 and CAEN Rev.3, with their names in Romanian, as the National Trade Register Office (ONRC) uses them to decode the activities of companies. A code is unique only within its version and level: Rev.2 and Rev.3 use some of the same codes for other activities, so always read the version with the code. Rev.3 corresponds to NACE Rev.2.1 and Rev.2 to NACE Rev.2. The older versions of the source (1998 and 2003) are not here. The days from which each version applies are not in the source. correspondence.jsonl links each class of Rev.2 to the classes of Rev.3 that take its activities, from the correspondence table of Eurostat between NACE Rev.2 and NACE Rev.2.1: CAEN writes the NACE class codes without the dot. Every class of Rev.2 has a link. Classes of Rev.3 with no class of Rev.2 behind them: 4689.",
