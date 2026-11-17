@@ -732,6 +732,1214 @@
       ]
     },
     {
+      "name": "reges",
+      "title": "Nomenclatures of REGES-Online",
+      "description": "The nomenclatures of REGES-Online, the employee register of the Labour Inspectorate, as its public nomenclature service gives them: COR occupations in every version with the current one marked, activity domains (CAEN), counties and localities with their SIRUTA codes, nationalities, legal and organisation forms, contract types, working time, grounds for termination, suspension and secondment, predefined bonuses, identity documents, disability grades, education levels, and the lists of the public pay law 153/2017. One file for each list, named after it; entries as REGES gives them, with their REGES identifier, which a message to REGES needs. Names are written as REGES writes them, some with Romanian letters and some without. The localities inside each county are left out of judet.jsonl: localitate.jsonl has them, with judetId. Lists that have no entry today are not here: tipSporAngajator.",
+      "source": {
+        "name": "Labour Inspectorate (Inspecția Muncii), REGES-Online nomenclature service https://api.inspectiamuncii.ro/api/Nomenclator?tip=toate, documented in https://github.com/reges-ro/integrare",
+        "url": "https://github.com/reges-ro/integrare",
+        "licence": "No licence is stated. The Labour Inspectorate publishes the nomenclatures through a public service that needs no key, and its documentation asks applications to store them"
+      },
+      "frequency": "monthly",
+      "update": "When the Labour Inspectorate changes a list; COR changes by order several times a year",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/reges/act-identitate-pf.jsonl",
+          "sha256": "32596d042aa61e91ee3d6269e8d5a1bf37518aa5e35900a8d9389ef80458d48e",
+          "bytes": 331,
+          "records": 5,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/anexa-l153.jsonl",
+          "sha256": "b67c668db8538f7e2b9eea7cacdc051567273c55c5acdc4be5c1aea56a305c68",
+          "bytes": 749276,
+          "records": 9,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            },
+            {
+              "name": "capitole",
+              "description": "The chapters of the annex, with their letters and functions, as REGES gives them"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/apatrid.jsonl",
+          "sha256": "c9462f0c1d5896ce2f0c09ac8e283b594b8233702e40bdba10ad95bd4a880162",
+          "bytes": 195,
+          "records": 2,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/categorie-angajator.jsonl",
+          "sha256": "e84063d151ca9f5dc221bd9f08cacbc4f037acd099a824e188feff65be24da3e",
+          "bytes": 118,
+          "records": 2,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/cetatenie.jsonl",
+          "sha256": "3022f553c76c6851bbf221e1bfba8bfd9733af342c6d03e37dd4803ba08ba50f",
+          "bytes": 1167,
+          "records": 3,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            },
+            {
+              "name": "tipuriActeIdentitate",
+              "description": "The identity document types for this citizenship, as REGES gives them"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/cor.jsonl",
+          "sha256": "73742d9f00c2fdfcd03d177b107c3c3aeb4482c00016d48f727dff31a1675ee0",
+          "bytes": 6898398,
+          "records": 34147,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            },
+            {
+              "name": "corId",
+              "description": "The corId REGES gives the entry, or null"
+            },
+            {
+              "name": "ocupatie",
+              "description": "True for an occupation, false for a group above the occupations"
+            },
+            {
+              "name": "versiune",
+              "description": "The version of the classification the entry belongs to"
+            },
+            {
+              "name": "versiuneCurenta",
+              "description": "True for an entry of the current version"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/domeniu-activitate.jsonl",
+          "sha256": "ae134177a00497a68d19be6891fd6b550e10e59889ddaf70dbd2be844c2d75ae",
+          "bytes": 454929,
+          "records": 2021,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            },
+            {
+              "name": "domeniuActivitateId",
+              "description": "The domeniuActivitateId REGES gives the entry, or null"
+            },
+            {
+              "name": "isDomeniuActivitate",
+              "description": "True for a CAEN class, false for a section, division or group"
+            },
+            {
+              "name": "versiune",
+              "description": "The version of the classification the entry belongs to"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/exceptie-data-sfarsit.jsonl",
+          "sha256": "bfd2390a502634e966a4216633f6d02fe90da3883820bd983ffb576389a7d636",
+          "bytes": 511,
+          "records": 3,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/forma-juridica.jsonl",
+          "sha256": "74dd3948abe3d71f556eaf244dc85ff62275293f2f5b8c1a687cbdeaa23f7381",
+          "bytes": 3711,
+          "records": 22,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            },
+            {
+              "name": "categorieAngajator",
+              "description": "The employer category, as REGES gives it"
+            },
+            {
+              "name": "extraInfo",
+              "description": "The extraInfo number REGES gives the entry"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/forma-organizare.jsonl",
+          "sha256": "8d114fce17344a835f6e84ff71530ddc01d591199054cb602e79636f15df12bc",
+          "bytes": 8545,
+          "records": 48,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            },
+            {
+              "name": "formaJuridica",
+              "description": "The legal form, as REGES gives it"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/forma-proprietate.jsonl",
+          "sha256": "340a37d98c04b819bbf6f94ab599d8a96c4d7abe730bd218d0a79a93a80f1c82",
+          "bytes": 216,
+          "records": 5,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/grad-handicap.jsonl",
+          "sha256": "ddcd4d8f9bf74e933b16d9b4a9d775311b7aae9ae66e4b7a3e373b01b4fc24c5",
+          "bytes": 195,
+          "records": 5,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/grad-invaliditate.jsonl",
+          "sha256": "ea85b59f55e2b9fac7f8a6490bb29c72ccf8380778a23a03133d29a6112e4334",
+          "bytes": 153,
+          "records": 4,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/grad-profesional-l153.jsonl",
+          "sha256": "81909357b411347759d37b47d544cb45bd1921e3734b106d889400bc902d5cfa",
+          "bytes": 1317,
+          "records": 34,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/gradatie-l153.jsonl",
+          "sha256": "61a8b923b98e1cb45506b68f28b64fa4da82aa959f7df0753d644f68071c8bfa",
+          "bytes": 180,
+          "records": 6,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/judet.jsonl",
+          "sha256": "8b25cff07dc14a481f9fda4ce4328cc57eea5c0c0b945df2a84e04dfe83a4646",
+          "bytes": 1571,
+          "records": 42,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/localitate.jsonl",
+          "sha256": "097efcbf785c77f9ac6b66f96f9a9533e53b6b36476bc67cbcf96e7eaf097e01",
+          "bytes": 1332877,
+          "records": 13847,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "codSiruta",
+              "description": "The SIRUTA code of the locality, a code of units.jsonl in siruta"
+            },
+            {
+              "name": "judetId",
+              "description": "The id of its county in judet.jsonl"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/moneda.jsonl",
+          "sha256": "e2fd18be1b52b48c6b0fcded40c67445dd59c624fe66cf1e6278a2b5b3220cc7",
+          "bytes": 10047,
+          "records": 178,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/nationalitate.jsonl",
+          "sha256": "605dd7bfa00e8558f2d778d5e7dff3fbb42766c80a659d50a43b2e15cc5ea603",
+          "bytes": 24111,
+          "records": 246,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "abreviere",
+              "description": "The country letters"
+            },
+            {
+              "name": "cetatenie",
+              "description": "The citizenship, an id of cetatenie.jsonl, alone or in an object"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/nivel-infiintare.jsonl",
+          "sha256": "8ff1d85eacfba769a7aa8e94dfe245015abd985c4c324f80b1b364cfe8e91e81",
+          "bytes": 207,
+          "records": 3,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/nivel-studii.jsonl",
+          "sha256": "032ab6497558a38f647cb310701fabcd98019618152b007e20c756716d170238",
+          "bytes": 952,
+          "records": 15,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/norma-timp-munca.jsonl",
+          "sha256": "7ba80ffe8855fd8ff50d6a6eff375ac80072fd40a05f0a9371e86147b674887b",
+          "bytes": 696,
+          "records": 5,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            },
+            {
+              "name": "tipNorma",
+              "description": "The type of working time, as REGES gives it"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/repartizare-interval-timp.jsonl",
+          "sha256": "5b137d4cda9662eeae6a4b219fb391484bd3303395a064f97d4dee54d6826dbb",
+          "bytes": 185,
+          "records": 3,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/repartizare-munca.jsonl",
+          "sha256": "0c02c6f24586f2aeb8cdf36190994c8321aa951755a4cc23d575508f79281c25",
+          "bytes": 241,
+          "records": 5,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/repartizare-timp-munca.jsonl",
+          "sha256": "f2606141610cd2ff569dc5ed0406bbedbb6e6cba401d21f374a92678a77c1580",
+          "bytes": 463,
+          "records": 7,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/specialitate-functie-l153.jsonl",
+          "sha256": "302c71a153c1dac1f134d0889ea08adf9efdab7e964cca3199f01a7ddd9dee14",
+          "bytes": 4493,
+          "records": 82,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/specialitate-structura-aprobata-l153.jsonl",
+          "sha256": "15278aca411bdd4e1a0537deeafcaf862cd4cb5ae997e9bba7756a8baa5ce65a",
+          "bytes": 3586,
+          "records": 68,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/stare-contract-munca.jsonl",
+          "sha256": "6ee39b5f29032331aba3787ee871279ddf393e62ef9b374cdaf4f8f22325732f",
+          "bytes": 512,
+          "records": 8,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/stare-propunere.jsonl",
+          "sha256": "4ad6f9687f6df9192fc870221fd4a3278576f70948e83c976c2a40ea9abf3a65",
+          "bytes": 169,
+          "records": 4,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/structura-aprobata-l153.jsonl",
+          "sha256": "6cd70d9e08f83137d2ac51f5ca6c22761a07311ea30b6c0d0a7ec3d2888c4d04",
+          "bytes": 658,
+          "records": 15,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/temei-detasare.jsonl",
+          "sha256": "6da1fe84c31cb33f16bee97cb796297fd70e0807ffb3d5bf50a84b7c8c9e8289",
+          "bytes": 293,
+          "records": 4,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/temei-incetare.jsonl",
+          "sha256": "10f4bf3ee6827284f75fe866fe64e8280f496433d7c2cd0c2cce8453456e63a0",
+          "bytes": 6115,
+          "records": 28,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/temei-reactivare.jsonl",
+          "sha256": "e2f82d55de7f8808592073fb7d957d9f478883ea7901592d6bdf5f883617aaaf",
+          "bytes": 88,
+          "records": 1,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/temei-suspendare.jsonl",
+          "sha256": "d8cffffdcc57889c970fa67f313fa4c2773dea84d2389fcccbe653e82e5d19f0",
+          "bytes": 8035,
+          "records": 30,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            },
+            {
+              "name": "abrogat",
+              "description": "True for a ground that was repealed"
+            },
+            {
+              "name": "actNormativ",
+              "description": "The legal act of the ground"
+            },
+            {
+              "name": "categorie",
+              "description": "The category of the ground"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-act-identitate.jsonl",
+          "sha256": "162114ce5f725ddd5ddb4761fbbe77d143f83471884af43f7c9aef8d41cc9893",
+          "bytes": 1194,
+          "records": 13,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            },
+            {
+              "name": "cetatenie",
+              "description": "The citizenship, an id of cetatenie.jsonl, alone or in an object"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-autorizatie-exceptie.jsonl",
+          "sha256": "853f9ca31c5140b707328f6cca107f823ffb621a6da6488479e6b5869ed600bf",
+          "bytes": 1358,
+          "records": 18,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-autorizatie.jsonl",
+          "sha256": "fa447787cf87f8616e95421c8f66345be12a9120384374388a3750295f3c0438",
+          "bytes": 540,
+          "records": 9,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-aviz-angajare.jsonl",
+          "sha256": "50c26808356395fefcd809f34e09bba9ebdc3a576d51ef5e215d8ef371f620bd",
+          "bytes": 463,
+          "records": 7,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-calitate.jsonl",
+          "sha256": "68d875e16c9623d3f7edd545094e7443af112085ab7b4fccdaadf872ac13eede",
+          "bytes": 414,
+          "records": 2,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            },
+            {
+              "name": "traduceri",
+              "description": "The name in other languages, as REGES gives it"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-cerere.jsonl",
+          "sha256": "b99e2b5117c8931a45f13d8c34db83c610f0a25a36d7997602a4ba4f9982b8ac",
+          "bytes": 133,
+          "records": 2,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-contract-munca.jsonl",
+          "sha256": "2e0bcef7ecac8ad7f4e98897120e0a3d3aafdc39d8856ef717d511b435d4e33e",
+          "bytes": 1813,
+          "records": 16,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            },
+            {
+              "name": "legea153",
+              "description": "True for a contract type under Law 153/2017 on the pay of public staff"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-delegat.jsonl",
+          "sha256": "1a8ca5c6ec3cbae8793e6b4c755ebf0cd95fec1db0e0b9b191e698d6f66c3bc2",
+          "bytes": 382,
+          "records": 6,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-document-justificativ.jsonl",
+          "sha256": "e9a096f5a4db1bd711fd8c7e09fa5142da8e814af9224f5991a9b92d356ab1fd",
+          "bytes": 242,
+          "records": 5,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-durata.jsonl",
+          "sha256": "aa36a14bf5d7ebbb2cd4c626b5c8df311273030e6f6a1c3c2de946919e98a458",
+          "bytes": 106,
+          "records": 2,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-handicap.jsonl",
+          "sha256": "e7ecfda05628a094e43809332ece16459ff0fba0655c68c78068ba7d6ed845d9",
+          "bytes": 427,
+          "records": 10,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-identificare.jsonl",
+          "sha256": "ea3ec0eb8203ddc9ec74a29bbf29b75cfabfb28ea232f0a1f3fa47bb877e6021",
+          "bytes": 146,
+          "records": 4,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-loc-munca.jsonl",
+          "sha256": "e9ef83e0a1eaae6fd80ff08e9b8fdbb5bad277b8df1505ce43b2fa7defe835ee",
+          "bytes": 72,
+          "records": 2,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-mutare.jsonl",
+          "sha256": "156d80e914b7af17ba584f57472a750983fd299d9fe313d48996654200770136",
+          "bytes": 189,
+          "records": 3,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-norma.jsonl",
+          "sha256": "1b36328bf98602c2f42f83fa2682240fe69a5d7cc3d07e4c8fbe3e6e14665571",
+          "bytes": 186,
+          "records": 3,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-notificare.jsonl",
+          "sha256": "0a5cabbf4c46620426e3789b5b3847fb4195ce56875248d332c3708ab2c4d551",
+          "bytes": 419,
+          "records": 8,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-sesizare.jsonl",
+          "sha256": "7add717d087a0d8d43ff86caf792a9c1f79821e27a5ad855c4750e618cac381a",
+          "bytes": 4273,
+          "records": 49,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-spor-predefinit.jsonl",
+          "sha256": "666e9b966a1dd960ad789a6f5102c865d0db97b7e155d9e7852132efad17165d",
+          "bytes": 15327,
+          "records": 71,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "descriere",
+              "description": "The description REGES gives"
+            },
+            {
+              "name": "numeAfisat",
+              "description": "The name REGES shows"
+            },
+            {
+              "name": "versiune",
+              "description": "The version of the classification the entry belongs to"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-temei-legal.jsonl",
+          "sha256": "53e14c7c21d984573ee960fa99d5ef93a9f58913479a31bd640b9ab74fbb0dc9",
+          "bytes": 141,
+          "records": 3,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-transfer.jsonl",
+          "sha256": "61e0e2d72600ec70c0c5d8cb468e2fb79c0da052966690c51ced8358a464f078",
+          "bytes": 227,
+          "records": 2,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        },
+        {
+          "path": "datasets/reges/tip-tura.jsonl",
+          "sha256": "fa43e70ea1b810fe9cf986b2deed875687bb5241aed06cc5cb7e11d78c99553c",
+          "bytes": 155,
+          "records": 4,
+          "fields": [
+            {
+              "name": "id",
+              "description": "The REGES identifier of the entry: a number, or a UUID in the longer lists. With cod it is unique in the file"
+            },
+            {
+              "name": "nume",
+              "description": "The name as REGES writes it"
+            },
+            {
+              "name": "cod",
+              "description": "The code of the entry in REGES messages"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "siruta",
       "title": "Administrative-territorial units of Romania (SIRUTA)",
       "description": "The register of administrative-territorial units of Romania kept by the National Institute of Statistics (INS), edition S1 2026: counties and Bucharest, municipalities, towns and communes, and the localities and Bucharest sectors in them, with their SIRUTA codes. Names are in capitals as INS writes them. INS writes them without Romanian letters; the letters come from the copy INS publishes on data.gov.ro, used only where its letters are the INS letters with the marks, and written with the comma below. 4 names keep the INS spelling without the marks, because the two copies spell them differently. The register has no history and no code has left it since 2013. A code is never removed here: if INS drops one, the dataset is not rebuilt until a person decides how it ends. The check digit of the INS methodology does not hold for some codes, so do not reject a code by it.",

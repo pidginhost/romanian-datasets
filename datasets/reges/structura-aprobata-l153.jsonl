@@ -1,0 +1,15 @@
+{"cod":"1","id":1,"nume":"sectie"}
+{"cod":"2","id":2,"nume":"compartiment"}
+{"cod":"3","id":3,"nume":"cabinet"}
+{"cod":"4","id":4,"nume":"serviciu"}
+{"cod":"5","id":5,"nume":"laborator"}
+{"cod":"6","id":6,"nume":"dispensar"}
+{"cod":"7","id":7,"nume":"UTS"}
+{"cod":"8","id":8,"nume":"bloc operator"}
+{"cod":"9","id":9,"nume":"farmacie"}
+{"cod":"10","id":10,"nume":"statie de dializă"}
+{"cod":"11","id":11,"nume":"centru de dializa"}
+{"cod":"12","id":12,"nume":"unitate"}
+{"cod":"13","id":13,"nume":"cercetare"}
+{"cod":"14","id":14,"nume":"aparat functional (functiile detinute de personalul TESA si de deservire)"}
+{"cod":"15","id":15,"nume":"alta optiune"}

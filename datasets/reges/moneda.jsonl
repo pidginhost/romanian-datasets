@@ -1,0 +1,178 @@
+{"cod":"RON","id":0,"nume":"RON - Leu"}
+{"cod":"EUR","id":1,"nume":"EUR - Euro"}
+{"cod":"USD","id":2,"nume":"USD - Dolar USA"}
+{"cod":"AED","id":3,"nume":"AED - United Arab Emirates dirham"}
+{"cod":"AFN","id":4,"nume":"AFN - Afghan afghani"}
+{"cod":"ALL","id":5,"nume":"ALL - Albanian lek"}
+{"cod":"AMD","id":6,"nume":"AMD - Armenian dram"}
+{"cod":"ANG","id":7,"nume":"ANG - Netherlands Antillean guilder"}
+{"cod":"AOA","id":8,"nume":"AOA - Angolan kwanza"}
+{"cod":"ARS","id":9,"nume":"ARS - Argentine peso"}
+{"cod":"AUD","id":10,"nume":"AUD - Australian dollar"}
+{"cod":"AWG","id":11,"nume":"AWG - Aruban florin"}
+{"cod":"AZN","id":12,"nume":"AZN - Azerbaijani manat"}
+{"cod":"BAM","id":13,"nume":"BAM - Bosnia and Herzegovina convertible mark"}
+{"cod":"BBD","id":14,"nume":"BBD - Barbados dollar"}
+{"cod":"BDT","id":15,"nume":"BDT - Bangladeshi taka"}
+{"cod":"BGN","id":16,"nume":"BGN - Bulgarian lev"}
+{"cod":"BHD","id":17,"nume":"BHD - Bahraini dinar"}
+{"cod":"BIF","id":18,"nume":"BIF - Burundian franc"}
+{"cod":"BMD","id":19,"nume":"BMD - Bermudian dollar"}
+{"cod":"BND","id":20,"nume":"BND - Brunei dollar"}
+{"cod":"BOB","id":21,"nume":"BOB - Boliviano"}
+{"cod":"BOV","id":22,"nume":"BOV - Bolivian Mvdol (funds code)"}
+{"cod":"BRL","id":23,"nume":"BRL - Brazilian real"}
+{"cod":"BSD","id":24,"nume":"BSD - Bahamian dollar"}
+{"cod":"BTN","id":25,"nume":"BTN - Bhutanese ngultrum"}
+{"cod":"BWP","id":26,"nume":"BWP - Botswana pula"}
+{"cod":"BYN","id":27,"nume":"BYN - Belarusian ruble"}
+{"cod":"BZD","id":28,"nume":"BZD - Belize dollar"}
+{"cod":"CAD","id":29,"nume":"CAD - Canadian dollar"}
+{"cod":"CDF","id":30,"nume":"CDF - Congolese franc"}
+{"cod":"CHE","id":31,"nume":"CHE - WIR euro (complementary currency)"}
+{"cod":"CHF","id":32,"nume":"CHF - Swiss franc"}
+{"cod":"CHW","id":33,"nume":"CHW - WIR franc (complementary currency)"}
+{"cod":"CLF","id":34,"nume":"CLF - Unidad de Fomento (funds code)"}
+{"cod":"CLP","id":35,"nume":"CLP - Chilean peso"}
+{"cod":"CNY","id":36,"nume":"CNY - Renminbi[6]"}
+{"cod":"COP","id":37,"nume":"COP - Colombian peso"}
+{"cod":"COU","id":38,"nume":"COU - Unidad de Valor Real (UVR) (funds code)[7]"}
+{"cod":"CRC","id":39,"nume":"CRC - Costa Rican colon"}
+{"cod":"CUP","id":40,"nume":"CUP - Cuban peso"}
+{"cod":"CVE","id":41,"nume":"CVE - Cape Verdean escudo"}
+{"cod":"CZK","id":42,"nume":"CZK - Czech koruna"}
+{"cod":"DJF","id":43,"nume":"DJF - Djiboutian franc"}
+{"cod":"DKK","id":44,"nume":"DKK - Danish krone"}
+{"cod":"DOP","id":45,"nume":"DOP - Dominican peso"}
+{"cod":"DZD","id":46,"nume":"DZD - Algerian dinar"}
+{"cod":"EGP","id":47,"nume":"EGP - Egyptian pound"}
+{"cod":"ERN","id":48,"nume":"ERN - Eritrean nakfa"}
+{"cod":"ETB","id":49,"nume":"ETB - Ethiopian birr"}
+{"cod":"FJD","id":51,"nume":"FJD - Fiji dollar"}
+{"cod":"FKP","id":52,"nume":"FKP - Falkland Islands pound"}
+{"cod":"GBP","id":53,"nume":"GBP - Pound sterling"}
+{"cod":"GEL","id":54,"nume":"GEL - Georgian lari"}
+{"cod":"GHS","id":55,"nume":"GHS - Ghanaian cedi"}
+{"cod":"GIP","id":56,"nume":"GIP - Gibraltar pound"}
+{"cod":"GMD","id":57,"nume":"GMD - Gambian dalasi"}
+{"cod":"GNF","id":58,"nume":"GNF - Guinean franc"}
+{"cod":"GTQ","id":59,"nume":"GTQ - Guatemalan quetzal"}
+{"cod":"GYD","id":60,"nume":"GYD - Guyanese dollar"}
+{"cod":"HKD","id":61,"nume":"HKD - Hong Kong dollar"}
+{"cod":"HNL","id":62,"nume":"HNL - Honduran lempira"}
+{"cod":"HTG","id":63,"nume":"HTG - Haitian gourde"}
+{"cod":"HUF","id":64,"nume":"HUF - Hungarian forint"}
+{"cod":"IDR","id":65,"nume":"IDR - Indonesian rupiah"}
+{"cod":"ILS","id":66,"nume":"ILS - Israeli new shekel"}
+{"cod":"INR","id":67,"nume":"INR - Indian rupee"}
+{"cod":"IQD","id":68,"nume":"IQD - Iraqi dinar"}
+{"cod":"IRR","id":69,"nume":"IRR - Iranian rial"}
+{"cod":"ISK","id":70,"nume":"ISK - Icelandic króna (plural: krónur)"}
+{"cod":"JMD","id":71,"nume":"JMD - Jamaican dollar"}
+{"cod":"JOD","id":72,"nume":"JOD - Jordanian dinar"}
+{"cod":"JPY","id":73,"nume":"JPY - Japanese yen"}
+{"cod":"KES","id":74,"nume":"KES - Kenyan shilling"}
+{"cod":"KGS","id":75,"nume":"KGS - Kyrgyzstani som"}
+{"cod":"KHR","id":76,"nume":"KHR - Cambodian riel"}
+{"cod":"KMF","id":77,"nume":"KMF - Comoro franc"}
+{"cod":"KPW","id":78,"nume":"KPW - North Korean won"}
+{"cod":"KRW","id":79,"nume":"KRW - South Korean won"}
+{"cod":"KWD","id":80,"nume":"KWD - Kuwaiti dinar"}
+{"cod":"KYD","id":81,"nume":"KYD - Cayman Islands dollar"}
+{"cod":"KZT","id":82,"nume":"KZT - Kazakhstani tenge"}
+{"cod":"LAK","id":83,"nume":"LAK - Lao kip"}
+{"cod":"LBP","id":84,"nume":"LBP - Lebanese pound"}
+{"cod":"LKR","id":85,"nume":"LKR - Sri Lankan rupee"}
+{"cod":"LRD","id":86,"nume":"LRD - Liberian dollar"}
+{"cod":"LSL","id":87,"nume":"LSL - Lesotho loti"}
+{"cod":"LYD","id":88,"nume":"LYD - Libyan dinar"}
+{"cod":"MAD","id":89,"nume":"MAD - Moroccan dirham"}
+{"cod":"MDL","id":90,"nume":"MDL - Moldovan leu"}
+{"cod":"MGA","id":91,"nume":"MGA - Malagasy ariary"}
+{"cod":"MKD","id":92,"nume":"MKD - Macedonian denar"}
+{"cod":"MMK","id":93,"nume":"MMK - Myanmar kyat"}
+{"cod":"MNT","id":94,"nume":"MNT - Mongolian tögrög"}
+{"cod":"MOP","id":95,"nume":"MOP - Macanese pataca"}
+{"cod":"MRU","id":96,"nume":"MRU - Mauritanian ouguiya"}
+{"cod":"MUR","id":97,"nume":"MUR - Mauritian rupee"}
+{"cod":"MVR","id":98,"nume":"MVR - Maldivian rufiyaa"}
+{"cod":"MWK","id":99,"nume":"MWK - Malawian kwacha"}
+{"cod":"MXN","id":100,"nume":"MXN - Mexican peso"}
+{"cod":"MXV","id":101,"nume":"MXV - Mexican Unidad de Inversion (UDI) (funds code)"}
+{"cod":"MYR","id":102,"nume":"MYR - Malaysian ringgit"}
+{"cod":"MZN","id":103,"nume":"MZN - Mozambican metical"}
+{"cod":"NAD","id":104,"nume":"NAD - Namibian dollar"}
+{"cod":"NGN","id":105,"nume":"NGN - Nigerian naira"}
+{"cod":"NIO","id":106,"nume":"NIO - Nicaraguan córdoba"}
+{"cod":"NOK","id":107,"nume":"NOK - Norwegian krone"}
+{"cod":"NPR","id":108,"nume":"NPR - Nepalese rupee"}
+{"cod":"NZD","id":109,"nume":"NZD - New Zealand dollar"}
+{"cod":"OMR","id":110,"nume":"OMR - Omani rial"}
+{"cod":"PAB","id":111,"nume":"PAB - Panamanian balboa"}
+{"cod":"PEN","id":112,"nume":"PEN - Peruvian sol"}
+{"cod":"PGK","id":113,"nume":"PGK - Papua New Guinean kina"}
+{"cod":"PHP","id":114,"nume":"PHP - Philippine peso[11]"}
+{"cod":"PKR","id":115,"nume":"PKR - Pakistani rupee"}
+{"cod":"PLN","id":116,"nume":"PLN - Polish złoty"}
+{"cod":"PYG","id":117,"nume":"PYG - Paraguayan guaraní"}
+{"cod":"QAR","id":118,"nume":"QAR - Qatari riyal"}
+{"cod":"RSD","id":120,"nume":"RSD - Serbian dinar"}
+{"cod":"RUB","id":121,"nume":"RUB - Russian ruble"}
+{"cod":"RWF","id":122,"nume":"RWF - Rwandan franc"}
+{"cod":"SAR","id":123,"nume":"SAR - Saudi riyal"}
+{"cod":"SBD","id":124,"nume":"SBD - Solomon Islands dollar"}
+{"cod":"SCR","id":125,"nume":"SCR - Seychelles rupee"}
+{"cod":"SDG","id":126,"nume":"SDG - Sudanese pound"}
+{"cod":"SEK","id":127,"nume":"SEK - Swedish krona (plural: kronor)"}
+{"cod":"SGD","id":128,"nume":"SGD - Singapore dollar"}
+{"cod":"SHP","id":129,"nume":"SHP - Saint Helena pound"}
+{"cod":"SLE","id":130,"nume":"SLE - Sierra Leonean leone (new leone)[12][13][14]"}
+{"cod":"SOS","id":131,"nume":"SOS - Somalian shilling"}
+{"cod":"SRD","id":132,"nume":"SRD - Surinamese dollar"}
+{"cod":"SSP","id":133,"nume":"SSP - South Sudanese pound"}
+{"cod":"STN","id":134,"nume":"STN - São Tomé and Príncipe dobra"}
+{"cod":"SVC","id":135,"nume":"SVC - Salvadoran colón"}
+{"cod":"SYP","id":136,"nume":"SYP - Syrian pound"}
+{"cod":"SZL","id":137,"nume":"SZL - Swazi lilangeni"}
+{"cod":"THB","id":138,"nume":"THB - Thai baht"}
+{"cod":"TJS","id":139,"nume":"TJS - Tajikistani somoni"}
+{"cod":"TMT","id":140,"nume":"TMT - Turkmenistan manat"}
+{"cod":"TND","id":141,"nume":"TND - Tunisian dinar"}
+{"cod":"TOP","id":142,"nume":"TOP - Tongan paʻanga"}
+{"cod":"TRY","id":143,"nume":"TRY - Turkish lira"}
+{"cod":"TTD","id":144,"nume":"TTD - Trinidad and Tobago dollar"}
+{"cod":"TWD","id":145,"nume":"TWD - New Taiwan dollar"}
+{"cod":"TZS","id":146,"nume":"TZS - Tanzanian shilling"}
+{"cod":"UAH","id":147,"nume":"UAH - Ukrainian hryvnia"}
+{"cod":"UGX","id":148,"nume":"UGX - Ugandan shilling"}
+{"cod":"USN","id":150,"nume":"USN - United States dollar (next day) (funds code)"}
+{"cod":"UYI","id":151,"nume":"UYI - Uruguay Peso en Unidades Indexadas (URUIURUI) (funds code)"}
+{"cod":"UYU","id":152,"nume":"UYU - Uruguayan peso"}
+{"cod":"UYW","id":153,"nume":"UYW - Unidad previsional[16]"}
+{"cod":"UZS","id":154,"nume":"UZS - Uzbekistani sum"}
+{"cod":"VED","id":155,"nume":"VED - Venezuelan digital bolívar[17]"}
+{"cod":"VES","id":156,"nume":"VES - Venezuelan sovereign bolívar[11]"}
+{"cod":"VND","id":157,"nume":"VND - Vietnamese đồng"}
+{"cod":"VUV","id":158,"nume":"VUV - Vanuatu vatu"}
+{"cod":"WST","id":159,"nume":"WST - Samoan tala"}
+{"cod":"XAF","id":160,"nume":"XAF - CFA franc BEAC"}
+{"cod":"XAG","id":161,"nume":"XAG - Silver (one troy ounce)"}
+{"cod":"XAU","id":162,"nume":"XAU - Gold (one troy ounce)"}
+{"cod":"XBA","id":163,"nume":"XBA - European Composite Unit (EURCO) (bond market unit)"}
+{"cod":"XBB","id":164,"nume":"XBB - European Monetary Unit (E.M.U.-6) (bond market unit)"}
+{"cod":"XBC","id":165,"nume":"XBC - European Unit of Account 9 (E.U.A.-9) (bond market unit)"}
+{"cod":"XBD","id":166,"nume":"XBD - European Unit of Account 17 (E.U.A.-17) (bond market unit)"}
+{"cod":"XCD","id":167,"nume":"XCD - East Caribbean dollar"}
+{"cod":"XDR","id":168,"nume":"XDR - Special drawing rights"}
+{"cod":"XOF","id":169,"nume":"XOF - CFA franc BCEAO"}
+{"cod":"XPD","id":170,"nume":"XPD - Palladium (one troy ounce)"}
+{"cod":"XPF","id":171,"nume":"XPF - CFP franc (franc Pacifique)"}
+{"cod":"XPT","id":172,"nume":"XPT - Platinum (one troy ounce)"}
+{"cod":"XSU","id":173,"nume":"XSU - SUCRE"}
+{"cod":"XTS","id":174,"nume":"XTS - Code reserved for testing"}
+{"cod":"XUA","id":175,"nume":"XUA - ADB Unit of Account"}
+{"cod":"XXX","id":176,"nume":"XXX - No currency"}
+{"cod":"YER","id":177,"nume":"YER - Yemeni rial"}
+{"cod":"ZAR","id":178,"nume":"ZAR - South African rand"}
+{"cod":"ZMW","id":179,"nume":"ZMW - Zambian kwacha"}
+{"cod":"ZWG","id":180,"nume":"ZWG - Zimbabwe Gold"}

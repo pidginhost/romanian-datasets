@@ -1,0 +1,22 @@
+{"categorieAngajator":{"cod":"PersoanaFizica","id":1,"nume":"Persoana Fizica"},"cod":"PF","extraInfo":0,"id":0,"nume":"Persoana fizica"}
+{"categorieAngajator":{"cod":"PersoanaJuridica","id":0,"nume":"Persoana Juridica"},"cod":"SocietateComerciala","extraInfo":0,"id":0,"nume":"Societate Comerciala"}
+{"categorieAngajator":{"cod":"PersoanaFizica","id":1,"nume":"Persoana Fizica"},"cod":"PFA","extraInfo":1,"id":1,"nume":"Persoana fizica autorizata"}
+{"categorieAngajator":{"cod":"PersoanaJuridica","id":0,"nume":"Persoana Juridica"},"cod":"RegieAutonoma","extraInfo":1,"id":1,"nume":"Regie Autonoma"}
+{"categorieAngajator":{"cod":"PersoanaJuridica","id":0,"nume":"Persoana Juridica"},"cod":"CompanieNationala","extraInfo":2,"id":2,"nume":"Companie Nationala"}
+{"categorieAngajator":{"cod":"PersoanaFizica","id":1,"nume":"Persoana Fizica"},"cod":"IF","extraInfo":2,"id":2,"nume":"Intreprindere familiala"}
+{"categorieAngajator":{"cod":"PersoanaFizica","id":1,"nume":"Persoana Fizica"},"cod":"ProfesieSpeciala","extraInfo":3,"id":3,"nume":"Profesie exercitata in baza unor legi speciale"}
+{"categorieAngajator":{"cod":"PersoanaJuridica","id":0,"nume":"Persoana Juridica"},"cod":"SocietateNationala","extraInfo":3,"id":3,"nume":"Societate Nationala"}
+{"categorieAngajator":{"cod":"PersoanaJuridica","id":0,"nume":"Persoana Juridica"},"cod":"AutoritateInstitutiePublica","extraInfo":4,"id":4,"nume":"Autoritate sau Institutie Publica"}
+{"categorieAngajator":{"cod":"PersoanaFizica","id":1,"nume":"Persoana Fizica"},"cod":"IPF","extraInfo":4,"id":4,"nume":"Intreprindere individuala"}
+{"categorieAngajator":{"cod":"PersoanaJuridica","id":0,"nume":"Persoana Juridica"},"cod":"InstitutieDeCredit","extraInfo":5,"id":5,"nume":"Institutie de credit"}
+{"categorieAngajator":{"cod":"PersoanaJuridica","id":0,"nume":"Persoana Juridica"},"cod":"SocietateCooperativa","extraInfo":6,"id":6,"nume":"Societate Cooperativa"}
+{"categorieAngajator":{"cod":"PersoanaJuridica","id":0,"nume":"Persoana Juridica"},"cod":"OrganizatieSindicala","extraInfo":7,"id":7,"nume":"Organizatie Sindicala"}
+{"categorieAngajator":{"cod":"PersoanaJuridica","id":0,"nume":"Persoana Juridica"},"cod":"Fundatie","extraInfo":8,"id":8,"nume":"Fundatie"}
+{"categorieAngajator":{"cod":"PersoanaJuridica","id":0,"nume":"Persoana Juridica"},"cod":"AltePersoaneJuridice","extraInfo":9,"id":9,"nume":"Alte Persoane Juridice"}
+{"categorieAngajator":{"cod":"PersoanaJuridica","id":0,"nume":"Persoana Juridica"},"cod":"OrganizatiePatronala","extraInfo":10,"id":10,"nume":"Organizatie Patronala"}
+{"categorieAngajator":{"cod":"PersoanaJuridica","id":0,"nume":"Persoana Juridica"},"cod":"OrganizatieAsociatieCuPersonalitateJuridica","extraInfo":11,"id":11,"nume":"Organizatie sau asociatie cu personalitate juridica"}
+{"categorieAngajator":{"cod":"PersoanaJuridica","id":0,"nume":"Persoana Juridica"},"cod":"ReprezentantaDinRomaniaPentruPJStraina","extraInfo":12,"id":12,"nume":"Reprezentanta din Romania a unei persoane juridice straine"}
+{"categorieAngajator":{"cod":"PersoanaJuridica","id":0,"nume":"Persoana Juridica"},"cod":"InstitutCulturalAlUnuiStat","extraInfo":13,"id":13,"nume":"Institut Cultural al altui stat"}
+{"categorieAngajator":{"cod":"PersoanaJuridica","id":0,"nume":"Persoana Juridica"},"cod":"ReprezentantaComercialaSiEconomicaAleAltuiStat","extraInfo":14,"id":14,"nume":"Reprezentanta comerciala si economica ale altui stat"}
+{"categorieAngajator":{"cod":"PersoanaJuridica","id":0,"nume":"Persoana Juridica"},"cod":"MisiuneDiplomatica","extraInfo":15,"id":15,"nume":"Misiune Diplomatica"}
+{"categorieAngajator":{"cod":"PersoanaJuridica","id":0,"nume":"Persoana Juridica"},"cod":"OficiuConsular","extraInfo":16,"id":16,"nume":"Oficiu Consular"}

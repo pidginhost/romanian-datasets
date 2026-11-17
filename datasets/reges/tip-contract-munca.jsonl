@@ -1,0 +1,16 @@
+{"cod":"ContractIndividualMunca","id":0,"legea153":false,"nume":"Contract individual de muncă"}
+{"cod":"ContractUcenicie","id":1,"legea153":false,"nume":"Contract de ucenicie la locul de muncă"}
+{"cod":"ContractMuncaLaDomiciliu","id":2,"legea153":false,"nume":"Contract de muncă la domiciliu"}
+{"cod":"ContractMuncaTemporara","id":3,"legea153":false,"nume":"Contract de muncă temporară"}
+{"cod":"ContractIndividualMuncaTineriDezavantajati","id":4,"legea153":false,"nume":"Contract individual de muncă tineri dezavantajați (Legea 189/2018)"}
+{"cod":"ContractIndividualMuncaClauzaTelemunca","id":5,"legea153":false,"nume":"Contract individual de muncă cu clauză de telemuncă"}
+{"cod":"ContractMuncaTemporaraClauzaTelemunca","id":6,"legea153":false,"nume":"Contract de muncă temporară cu clauză de telemuncă"}
+{"cod":"DecizieDetasare","id":7,"legea153":false,"nume":"Decizie de detașare"}
+{"cod":"ContractIndividualMuncaPlataCuOra","id":8,"legea153":false,"nume":"Contract individual de muncă în regim de plata cu ora"}
+{"cod":"RaportDeServiciu","id":9,"legea153":true,"nume":"Raport de serviciu (Legea 153/2017)"}
+{"cod":"RaportDeServiciuCuStatutSpecial","id":10,"legea153":true,"nume":"Raport de serviciu cu statut special (Legea 153/2017)"}
+{"cod":"ContractDeManagement","id":11,"legea153":false,"nume":"Contract de management"}
+{"cod":"ContractDeMuncaPentruGarzi","id":12,"legea153":false,"nume":"Contract de munca pentru garzi (Legea 153/2017)"}
+{"cod":"ContractDeActivitateSportiva","id":13,"legea153":false,"nume":"Contract de activitate sportiva (Legea 69/2000)"}
+{"cod":"ActAdministrativDemnitar","id":14,"legea153":true,"nume":"Act administrativ demnitar (Legea 153/2017)"}
+{"cod":"ContractConsilierPersonalDemnitar","id":15,"legea153":false,"nume":"Contract consilier personal demnitar"}

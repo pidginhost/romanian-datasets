@@ -1,0 +1,13 @@
+{"cetatenie":{"id":0},"cod":"CarteIdentitate","id":0,"nume":"Carte de identitate"}
+{"cetatenie":{"id":2},"cod":"Pasaport","id":1,"nume":"Pasaport"}
+{"cetatenie":{"id":0},"cod":"BuletinIdentitate","id":2,"nume":"Buletin de identitate"}
+{"cetatenie":{"id":0},"cod":"Alt","id":3,"nume":"Alt tip de act identitate"}
+{"cetatenie":{"id":2},"cod":"CarteDeRezidenta","id":4,"nume":"Carte de rezidenta"}
+{"cetatenie":{"id":2},"cod":"PermisDeSedere","id":5,"nume":"Permis de sedere"}
+{"cetatenie":{"id":0},"cod":"AltActIdentitateRomanesc","id":6,"nume":"Alt act identitate romanesc"}
+{"cetatenie":{"id":0},"cod":"AltApatridTolerat","id":7,"nume":"Alt tip act identitate (apatrid tolerat)"}
+{"cetatenie":{"id":1},"cod":"NIF","id":8,"nume":"Numar identificare fiscala"}
+{"cetatenie":{"id":1},"cod":"CertificatInregistrare","id":9,"nume":"Certificat de înregistrare"}
+{"cetatenie":{"id":2},"cod":"PasaportBeneficiarProtectieInternationala","id":10,"nume":"Pașaport beneficiar protecție internațională"}
+{"cetatenie":{"id":2},"cod":"AvizDeAngajare","id":11,"nume":"Aviz de angajare"}
+{"cetatenie":{"id":2},"cod":"DocumentDeIdentitatetemporara","id":12,"nume":"Document de identitate temporară (azil)"}
