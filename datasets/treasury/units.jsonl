@@ -1,0 +1,202 @@
+{"code":"002","name":"Trezorerie operativa Municipiul Alba Iulia","county_treasury":"001","county":1,"siruta":1017}
+{"code":"003","name":"Trezorerie operativa Municipiul Blaj","county_treasury":"001","county":1,"siruta":1348}
+{"code":"004","name":"Trezorerie operativa Municipiul Aiud","county_treasury":"001","county":1,"siruta":1213}
+{"code":"005","name":"Trezorerie operativa Sebes","county_treasury":"001","county":1,"siruta":1874}
+{"code":"006","name":"Trezorerie operativa Campeni","county_treasury":"001","county":1,"siruta":1455}
+{"code":"009","name":"Trezorerie operativa Cugir","county_treasury":"001","county":1,"siruta":1696}
+{"code":"021","name":"Trezorerie operativa Municipiul Arad","county_treasury":"020","county":2,"siruta":9262}
+{"code":"022","name":"Trezorerie operativa Chisinau Cris","county_treasury":"020","county":2,"siruta":9459}
+{"code":"024","name":"Trezorerie operativa Ineu","county_treasury":"020","county":2,"siruta":9538}
+{"code":"025","name":"Trezorerie operativa Lipova","county_treasury":"020","county":2,"siruta":9574}
+{"code":"028","name":"Trezorerie operativa Sebis","county_treasury":"020","county":2,"siruta":9690}
+{"code":"032","name":"Trezorerie operativa Savarsin","county_treasury":"020","county":2,"siruta":11842}
+{"code":"046","name":"Trezorerie operativa Municipiul Pitesti","county_treasury":"045","county":3,"siruta":13169}
+{"code":"047","name":"Trezorerie operativa Municipiul Campulung","county_treasury":"045","county":3,"siruta":13490}
+{"code":"048","name":"Trezorerie operativa Municipiul Curtea de Arges","county_treasury":"045","county":3,"siruta":13622}
+{"code":"049","name":"Trezorerie operativa Mioveni","county_treasury":"045","county":3,"siruta":13301}
+{"code":"050","name":"Trezorerie operativa Costesti","county_treasury":"045","county":3,"siruta":13668}
+{"code":"051","name":"Trezorerie operativa Topoloveni","county_treasury":"045","county":3,"siruta":13757}
+{"code":"061","name":"Trezorerie operativa Municipiul Bacau","county_treasury":"060","county":4,"siruta":20297}
+{"code":"062","name":"Trezorerie operativa Municipiul Onesti","county_treasury":"060","county":4,"siruta":20563}
+{"code":"063","name":"Trezorerie operativa Moinesti","county_treasury":"060","county":4,"siruta":20876}
+{"code":"066","name":"Trezorerie operativa Buhusi","county_treasury":"060","county":4,"siruta":20778}
+{"code":"071","name":"Trezorerie operativa Comunala Podu Turcului","county_treasury":"060","county":4,"siruta":24524}
+{"code":"076","name":"Trezorerie operativa Municipiul Oradea","county_treasury":"075","county":5,"siruta":26564}
+{"code":"078","name":"Trezorerie operativa Beius","county_treasury":"075","county":5,"siruta":26804}
+{"code":"081","name":"Trezorerie operativa Alesd","county_treasury":"075","county":5,"siruta":26699}
+{"code":"082","name":"Trezorerie operativa Marghita","county_treasury":"075","county":5,"siruta":26877}
+{"code":"083","name":"Trezorerie operativa Salonta","county_treasury":"075","county":5,"siruta":26975}
+{"code":"101","name":"Trezorerie operativa Municipiul Bistrita","county_treasury":"100","county":6,"siruta":32394}
+{"code":"102","name":"Trezorerie operativa Beclean","county_treasury":"100","county":6,"siruta":32483}
+{"code":"103","name":"Trezorerie operativa Nasaud","county_treasury":"100","county":6,"siruta":32544}
+{"code":"104","name":"Trezorerie operativa Sangeorz Bai","county_treasury":"100","county":6,"siruta":32599}
+{"code":"116","name":"Trezorerie operativa Municipiul Botosani","county_treasury":"115","county":7,"siruta":35731}
+{"code":"117","name":"Trezorerie operativa Municipiul Dorohoi","county_treasury":"115","county":7,"siruta":36006}
+{"code":"118","name":"Trezorerie operativa Darabani","county_treasury":"115","county":7,"siruta":35946}
+{"code":"119","name":"Trezorerie operativa Saveni","county_treasury":"115","county":7,"siruta":36060}
+{"code":"131","name":"Trezorerie operativa Municipiul Brasov","county_treasury":"130","county":8,"siruta":40198}
+{"code":"132","name":"Trezorerie operativa Municipiul Fagaras","county_treasury":"130","county":8,"siruta":40278}
+{"code":"133","name":"Trezorerie operativa Rupea","county_treasury":"130","county":8,"siruta":40394}
+{"code":"136","name":"Trezorerie operativa Sacele","county_treasury":"130","county":8,"siruta":40438}
+{"code":"137","name":"Trezorerie operativa Codlea","county_treasury":"130","county":8,"siruta":40241}
+{"code":"138","name":"Trezorerie operativa Rasnov","county_treasury":"130","county":8,"siruta":40367}
+{"code":"151","name":"Trezorerie operativa Municipiul Braila","county_treasury":"150","county":9,"siruta":42682}
+{"code":"152","name":"Trezorerie operativa Insuratei","county_treasury":"150","county":9,"siruta":43411}
+{"code":"153","name":"Trezorerie operativa Faurei","county_treasury":"150","county":9,"siruta":42753}
+{"code":"154","name":"Trezorerie operativa Ianca","county_treasury":"150","county":9,"siruta":43331}
+{"code":"166","name":"Trezorerie operativa Municipiul Buzau","county_treasury":"165","county":10,"siruta":44818}
+{"code":"167","name":"Trezorerie operativa Municipiul Ramnicu Sarat","county_treasury":"165","county":10,"siruta":44845}
+{"code":"169","name":"Trezorerie operativa Patarlagele","county_treasury":"165","county":10,"siruta":48325}
+{"code":"170","name":"Trezorerie operativa Pogoanele","county_treasury":"165","county":10,"siruta":48744}
+{"code":"181","name":"Trezorerie operativa Municipiul Resita","county_treasury":"180","county":11,"siruta":50790}
+{"code":"182","name":"Trezorerie operativa Municipiul Caransebes","county_treasury":"180","county":11,"siruta":51010}
+{"code":"185","name":"Trezorerie operativa Moldova Noua","county_treasury":"180","county":11,"siruta":51056}
+{"code":"187","name":"Trezorerie operativa Oravita","county_treasury":"180","county":11,"siruta":51118}
+{"code":"188","name":"Trezorerie operativa Otelul Rosu","county_treasury":"180","county":11,"siruta":51207}
+{"code":"190","name":"Trezorerie operativa Bozovici","county_treasury":"180","county":11,"siruta":51573}
+{"code":"201","name":"Trezorerie operativa Municipiul Calarasi","county_treasury":"200","county":51,"siruta":92569}
+{"code":"202","name":"Trezorerie operativa Municipiul Oltenita","county_treasury":"200","county":51,"siruta":100610}
+{"code":"203","name":"Trezorerie operativa Lehliu Gara","county_treasury":"200","county":51,"siruta":93888}
+{"code":"204","name":"Trezorerie operativa Budesti","county_treasury":"200","county":51,"siruta":101458}
+{"code":"216","name":"Trezorerie operativa Municipiul Cluj Napoca","county_treasury":"215","county":12,"siruta":54975}
+{"code":"217","name":"Trezorerie operativa Municipiul Dej","county_treasury":"215","county":12,"siruta":55008}
+{"code":"218","name":"Trezorerie operativa Municipiul Gherla","county_treasury":"215","county":12,"siruta":55384}
+{"code":"219","name":"Trezorerie operativa Municipiul Turda","county_treasury":"215","county":12,"siruta":55259}
+{"code":"221","name":"Trezorerie operativa Huedin","county_treasury":"215","county":12,"siruta":55446}
+{"code":"231","name":"Trezorerie operativa Municipiul Constanta","county_treasury":"230","county":13,"siruta":60419}
+{"code":"232","name":"Trezorerie operativa Municipiul Medgidia","county_treasury":"230","county":13,"siruta":60847}
+{"code":"233","name":"Trezorerie operativa Municipiul Mangalia","county_treasury":"230","county":13,"siruta":60482}
+{"code":"236","name":"Trezorerie operativa Eforie","county_treasury":"230","county":13,"siruta":60455}
+{"code":"238","name":"Trezorerie operativa Harsova","county_treasury":"230","county":13,"siruta":60801}
+{"code":"256","name":"Trezorerie operativa Municipiul Sf.Gheorghe","county_treasury":"255","county":14,"siruta":63394}
+{"code":"257","name":"Trezorerie operativa Municipiul Tg.Secuiesc","county_treasury":"255","county":14,"siruta":63740}
+{"code":"259","name":"Trezorerie operativa Baraolt","county_treasury":"255","county":14,"siruta":63447}
+{"code":"271","name":"Trezorerie operativa Municipiul Targoviste","county_treasury":"270","county":15,"siruta":65342}
+{"code":"273","name":"Trezorerie operativa Gaesti","county_treasury":"270","county":15,"siruta":65681}
+{"code":"274","name":"Trezorerie operativa Moreni","county_treasury":"270","county":15,"siruta":65841}
+{"code":"275","name":"Trezorerie operativa Pucioasa","county_treasury":"270","county":15,"siruta":65921}
+{"code":"276","name":"Trezorerie operativa Titu","county_treasury":"270","county":15,"siruta":66081}
+{"code":"291","name":"Trezorerie operativa Municipiul Craiova","county_treasury":"290","county":16,"siruta":69900}
+{"code":"292","name":"Trezorerie operativa Municipiul Bailesti","county_treasury":"290","county":16,"siruta":70316}
+{"code":"293","name":"Trezorerie operativa Municipiul Calafat","county_treasury":"290","county":16,"siruta":70352}
+{"code":"294","name":"Trezorerie operativa Filiasi","county_treasury":"290","county":16,"siruta":70414}
+{"code":"295","name":"Trezorerie operativa Segarcea","county_treasury":"290","county":16,"siruta":70502}
+{"code":"297","name":"Trezorerie operativa Bechet","county_treasury":"290","county":16,"siruta":70879}
+{"code":"306","name":"Trezorerie operativa Municipiul Galati","county_treasury":"305","county":17,"siruta":75098}
+{"code":"307","name":"Trezorerie operativa Municipiul Tecuci","county_treasury":"305","county":17,"siruta":75203}
+{"code":"308","name":"Trezorerie operativa Tg.Bujor","county_treasury":"305","county":17,"siruta":75472}
+{"code":"321","name":"Trezorerie operativa Municipiul Giurgiu","county_treasury":"320","county":52,"siruta":100521}
+{"code":"322","name":"Trezorerie operativa Bolintin Vale","county_treasury":"320","county":52,"siruta":101190}
+{"code":"323","name":"Trezorerie operativa Mihailesti","county_treasury":"320","county":52,"siruta":104136}
+{"code":"336","name":"Trezorerie operativa Municipiul Tg.Jiu","county_treasury":"335","county":18,"siruta":77812}
+{"code":"337","name":"Trezorerie operativa Tg.Carbunesti","county_treasury":"335","county":18,"siruta":78329}
+{"code":"338","name":"Trezorerie operativa Motru","county_treasury":"335","county":18,"siruta":78141}
+{"code":"339","name":"Trezorerie operativa Novaci","county_treasury":"335","county":18,"siruta":78258}
+{"code":"340","name":"Trezorerie operativa Rovinari","county_treasury":"335","county":18,"siruta":82895}
+{"code":"351","name":"Trezorerie operativa Municipiul Miercurea Ciuc","county_treasury":"350","county":19,"siruta":83320}
+{"code":"352","name":"Trezorerie operativa Municipiul Odorheiul Secuiesc","county_treasury":"350","county":19,"siruta":83133}
+{"code":"353","name":"Trezorerie operativa Gheorgheni","county_treasury":"350","county":19,"siruta":83561}
+{"code":"354","name":"Trezorerie operativa Toplita","county_treasury":"350","county":19,"siruta":83632}
+{"code":"366","name":"Trezorerie operativa Municipiul Deva","county_treasury":"365","county":20,"siruta":86687}
+{"code":"367","name":"Trezorerie operativa Municipiul Hunedoara","county_treasury":"365","county":20,"siruta":86810}
+{"code":"368","name":"Trezorerie operativa Municipiul Petrosani","county_treasury":"365","county":20,"siruta":86990}
+{"code":"369","name":"Trezorerie operativa Municipiul Brad","county_treasury":"365","county":20,"siruta":87291}
+{"code":"370","name":"Trezorerie operativa Municipiul Orastie","county_treasury":"365","county":20,"siruta":87638}
+{"code":"371","name":"Trezorerie operativa Hateg","county_treasury":"365","county":20,"siruta":87576}
+{"code":"391","name":"Trezorerie operativa Municipiul Slobozia","county_treasury":"390","county":21,"siruta":92658}
+{"code":"392","name":"Trezorerie operativa Fetesti","county_treasury":"390","county":21,"siruta":92701}
+{"code":"393","name":"Trezorerie operativa Municipiul Urziceni","county_treasury":"390","county":21,"siruta":100683}
+{"code":"406","name":"Trezorerie operativa Municipiul Iasi","county_treasury":"405","county":22,"siruta":95060}
+{"code":"407","name":"Trezorerie operativa Municipiul Pascani","county_treasury":"405","county":22,"siruta":95391}
+{"code":"408","name":"Trezorerie operativa Tg.Frumos","county_treasury":"405","county":22,"siruta":95471}
+{"code":"409","name":"Trezorerie operativa Harlau","county_treasury":"405","county":22,"siruta":95355}
+{"code":"410","name":"Trezorerie operativa Raducaneni","county_treasury":"405","county":22,"siruta":98685}
+{"code":"421","name":"Trezorerie operativa Ilfov","county_treasury":"420","county":23,"siruta":null}
+{"code":"422","name":"Trezorerie operativa Buftea","county_treasury":"420","county":23,"siruta":100576}
+{"code":"436","name":"Trezorerie operativa Municipiul Baia Mare","county_treasury":"435","county":24,"siruta":106318}
+{"code":"437","name":"Trezorerie operativa Municipiul Sighetul-Marmatiei","county_treasury":"435","county":24,"siruta":106559}
+{"code":"440","name":"Trezorerie operativa Targu Lapus","county_treasury":"435","county":24,"siruta":106817}
+{"code":"441","name":"Trezorerie operativa Viseul de Sus","county_treasury":"435","county":24,"siruta":106979}
+{"code":"461","name":"Trezorerie operativa Municipiul Drobeta Tr.Severin","county_treasury":"460","county":25,"siruta":109773}
+{"code":"462","name":"Trezorerie operativa Baia de Arama","county_treasury":"460","county":25,"siruta":109924}
+{"code":"463","name":"Trezorerie operativa Orsova","county_treasury":"460","county":25,"siruta":110063}
+{"code":"464","name":"Trezorerie operativa Strehaia","county_treasury":"460","county":25,"siruta":110116}
+{"code":"465","name":"Trezorerie operativa Vanju Mare","county_treasury":"460","county":25,"siruta":110232}
+{"code":"476","name":"Trezorerie operativa Municipiul Tg.Mures","county_treasury":"475","county":26,"siruta":114319}
+{"code":"477","name":"Trezorerie operativa Municipiul Reghin","county_treasury":"475","county":26,"siruta":114809}
+{"code":"478","name":"Trezorerie operativa Municipiul Sighisoara","county_treasury":"475","county":26,"siruta":114514}
+{"code":"479","name":"Trezorerie operativa Municipiul Tarnaveni","county_treasury":"475","county":26,"siruta":114925}
+{"code":"480","name":"Trezorerie operativa Ludus","county_treasury":"475","county":26,"siruta":114710}
+{"code":"482","name":"Trezorerie operativa Sovata","county_treasury":"475","county":26,"siruta":114854}
+{"code":"491","name":"Trezorerie operativa Municipiul Piatra Neamt","county_treasury":"490","county":27,"siruta":120726}
+{"code":"492","name":"Trezorerie operativa Municipiul Roman","county_treasury":"490","county":27,"siruta":120860}
+{"code":"493","name":"Trezorerie operativa Oras Tg.Neamt","county_treasury":"490","county":27,"siruta":121055}
+{"code":"494","name":"Trezorerie operativa Oras Bicaz","county_treasury":"490","county":27,"siruta":120968}
+{"code":"506","name":"Trezorerie operativa Municipiu Slatina","county_treasury":"505","county":28,"siruta":125347}
+{"code":"507","name":"Trezorerie operativa Municipiul Caracal","county_treasury":"505","county":28,"siruta":125472}
+{"code":"508","name":"Trezorerie operativa Orasul Bals","county_treasury":"505","county":28,"siruta":125418}
+{"code":"509","name":"Trezorerie operativa Orasul Corabia","county_treasury":"505","county":28,"siruta":125542}
+{"code":"521","name":"Trezorerie operativa Municipiul Ploiesti","county_treasury":"520","county":29,"siruta":130534}
+{"code":"522","name":"Trezorerie operativa Municipiul Campina","county_treasury":"520","county":29,"siruta":131256}
+{"code":"524","name":"Trezorerie operativa Mizil","county_treasury":"520","county":29,"siruta":131407}
+{"code":"526","name":"Trezorerie operativa Slanic","county_treasury":"520","county":29,"siruta":131577}
+{"code":"528","name":"Trezorerie operativa Valenii de Munte","county_treasury":"520","county":29,"siruta":131817}
+{"code":"529","name":"Trezorerie operativa Busteni","county_treasury":"520","county":29,"siruta":131210}
+{"code":"539","name":"Trezorerie operativa Boldesti Scaieni","county_treasury":"520","county":29,"siruta":131069}
+{"code":"546","name":"Trezorerie operativa Municipiul Satu Mare","county_treasury":"545","county":30,"siruta":136483}
+{"code":"547","name":"Trezorerie operativa Municipiul Carei","county_treasury":"545","county":30,"siruta":136526}
+{"code":"548","name":"Trezorerie operativa Negresti Oas","county_treasury":"545","county":30,"siruta":136599}
+{"code":"549","name":"Trezorerie operativa Tasnad","county_treasury":"545","county":30,"siruta":136642}
+{"code":"561","name":"Trezorerie operativa Municipiul Zalau","county_treasury":"560","county":31,"siruta":139704}
+{"code":"562","name":"Trezorerie operativa Cehu Silvaniei","county_treasury":"560","county":31,"siruta":139740}
+{"code":"563","name":"Trezorerie operativa Simleul Silvaniei","county_treasury":"560","county":31,"siruta":139884}
+{"code":"564","name":"Trezorerie operativa Jibou","county_treasury":"560","county":31,"siruta":139811}
+{"code":"576","name":"Trezorerie operativa Municipiul Sibiu","county_treasury":"575","county":32,"siruta":143450}
+{"code":"577","name":"Trezorerie operativa Municipiul Medias","county_treasury":"575","county":32,"siruta":143619}
+{"code":"578","name":"Trezorerie operativa Agnita","county_treasury":"575","county":32,"siruta":143682}
+{"code":"581","name":"Trezorerie operativa Avrig","county_treasury":"575","county":32,"siruta":144054}
+{"code":"585","name":"Trezorerie operativa Saliste","county_treasury":"575","county":32,"siruta":145499}
+{"code":"591","name":"Trezorerie operativa Municipiul Suceava","county_treasury":"590","county":33,"siruta":146263}
+{"code":"592","name":"Trezorerie operativa Municipiul Campulung M.","county_treasury":"590","county":33,"siruta":146502}
+{"code":"593","name":"Trezorerie operativa Municipiul Falticeni","county_treasury":"590","county":33,"siruta":146539}
+{"code":"594","name":"Trezorerie operativa Municipiul Gura Humorului","county_treasury":"590","county":33,"siruta":146584}
+{"code":"595","name":"Trezorerie operativa Municipiul Radauti","county_treasury":"590","county":33,"siruta":146628}
+{"code":"596","name":"Trezorerie operativa Municipiul Siret","county_treasury":"590","county":33,"siruta":146655}
+{"code":"597","name":"Trezorerie operativa Vatra Dornei","county_treasury":"590","county":33,"siruta":146744}
+{"code":"606","name":"Trezorerie operativa Municipiul Alexandria","county_treasury":"605","county":34,"siruta":151790}
+{"code":"607","name":"Trezorerie operativa Municipiul Turnu Magurele","county_treasury":"605","county":34,"siruta":151683}
+{"code":"608","name":"Trezorerie operativa Municipiul Rosiori de Vede","county_treasury":"605","county":34,"siruta":151870}
+{"code":"609","name":"Trezorerie operativa Videle","county_treasury":"605","county":34,"siruta":151905}
+{"code":"610","name":"Trezorerie operativa Zimnicea","county_treasury":"605","county":34,"siruta":151978}
+{"code":"621","name":"Trezorerie operativa Municipiul Timisoara","county_treasury":"620","county":35,"siruta":155243}
+{"code":"623","name":"Trezorerie operativa Municipiul Lugoj","county_treasury":"620","county":35,"siruta":155350}
+{"code":"624","name":"Trezorerie operativa Deta","county_treasury":"620","county":35,"siruta":155458}
+{"code":"625","name":"Trezorerie operativa Jimbolia","county_treasury":"620","county":35,"siruta":155494}
+{"code":"626","name":"Trezorerie operativa Buzias","county_treasury":"620","county":35,"siruta":155403}
+{"code":"627","name":"Trezorerie operativa Sannicolau Mare","county_treasury":"620","county":35,"siruta":155528}
+{"code":"628","name":"Trezorerie operativa Faget","county_treasury":"620","county":35,"siruta":156801}
+{"code":"641","name":"Trezorerie operativa Municipiul Tulcea","county_treasury":"640","county":36,"siruta":159614}
+{"code":"642","name":"Trezorerie operativa Macin","county_treasury":"640","county":36,"siruta":159730}
+{"code":"644","name":"Trezorerie operativa Sulina","county_treasury":"640","county":36,"siruta":159767}
+{"code":"645","name":"Trezorerie operativa Babadag","county_treasury":"640","county":36,"siruta":159650}
+{"code":"646","name":"Trezorerie operativa Baia","county_treasury":"640","county":36,"siruta":159785}
+{"code":"656","name":"Trezorerie operativa Municipiul Vaslui","county_treasury":"655","county":37,"siruta":161945}
+{"code":"657","name":"Trezorerie operativa Municipiul Barlad","county_treasury":"655","county":37,"siruta":161794}
+{"code":"658","name":"Trezorerie operativa Municipiul Husi","county_treasury":"655","county":37,"siruta":161829}
+{"code":"659","name":"Trezorerie operativa Negresti","county_treasury":"655","county":37,"siruta":161856}
+{"code":"671","name":"Trezorerie operativa Municipiul Ramnicu Valcea","county_treasury":"670","county":38,"siruta":167473}
+{"code":"672","name":"Trezorerie operativa Municipiul Dragasani","county_treasury":"670","county":38,"siruta":167981}
+{"code":"674","name":"Trezorerie operativa Horezu","county_treasury":"670","county":38,"siruta":168041}
+{"code":"676","name":"Trezorerie operativa Gura Lotrului","county_treasury":"670","county":38,"siruta":null}
+{"code":"679","name":"Trezorerie operativa Balcesti","county_treasury":"670","county":38,"siruta":168452}
+{"code":"682","name":"Trezorerie operativa Babeni","county_treasury":"670","county":38,"siruta":168372}
+{"code":"691","name":"Trezorerie operativa Municipiul Focsani","county_treasury":"690","county":39,"siruta":174744}
+{"code":"692","name":"Trezorerie operativa Municipiul Adjud","county_treasury":"690","county":39,"siruta":174860}
+{"code":"694","name":"Trezorerie operativa Panciu","county_treasury":"690","county":39,"siruta":175055}
+{"code":"700","name":"Trezorerie operativa Municipiul Bucuresti","county_treasury":"000","county":40,"siruta":179132}
+{"code":"701","name":"Trezorerie operativa Sector 1","county_treasury":"000","county":40,"siruta":179141}
+{"code":"702","name":"Trezorerie operativa Sector 2","county_treasury":"000","county":40,"siruta":179150}
+{"code":"703","name":"Trezorerie operativa Sector 3","county_treasury":"000","county":40,"siruta":179169}
+{"code":"704","name":"Trezorerie operativa Sector 4","county_treasury":"000","county":40,"siruta":179178}
+{"code":"705","name":"Trezorerie operativa Sector 5","county_treasury":"000","county":40,"siruta":179187}
+{"code":"706","name":"Trezorerie operativa Sector 6","county_treasury":"000","county":40,"siruta":179196}

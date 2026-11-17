@@ -9,6 +9,7 @@
 package main
 
 import (
+	"encoding/json"
 	"errors"
 	"flag"
 	"fmt"
@@ -29,6 +30,7 @@ import (
 	"github.com/pidginhost/romanian-datasets/internal/holidays"
 	"github.com/pidginhost/romanian-datasets/internal/reges"
 	"github.com/pidginhost/romanian-datasets/internal/siruta"
+	"github.com/pidginhost/romanian-datasets/internal/treasury"
 	"github.com/pidginhost/romanian-datasets/internal/vatnode"
 )
 
@@ -89,6 +91,17 @@ var builders = []builder{
 			return dataset.Dataset{}, err
 		}
 		return siruta.Dataset(siruta.FromSite(&http.Client{Timeout: 5 * time.Minute}), published)
+	}},
+	{"treasury", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
+		places, counties, err := sirutaPlaces(root)
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		keys, err := publishedTreasury(root)
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		return treasury.Dataset(treasury.FromSite(&http.Client{Timeout: 5 * time.Minute}), places, counties, keys)
 	}},
 	{"vat-numbers", dataset.Manual, func(time.Time, string) (dataset.Dataset, error) {
 		client := &http.Client{Timeout: time.Minute}
@@ -250,6 +263,67 @@ func publishedBanks(root string) (banks.Published, error) {
 	}
 	defer file.Close()
 	out.Codes, err = banks.PublishedCodes(file)
+	return out, err
+}
+
+// sirutaPlaces reads the units and counties of the SIRUTA dataset as committed, which treasury is matched to.
+func sirutaPlaces(root string) ([]treasury.Place, []treasury.County, error) {
+	var places []treasury.Place
+	var counties []treasury.County
+	for _, f := range []struct {
+		file string
+		into func(*json.Decoder) error
+	}{
+		{"units.jsonl", func(d *json.Decoder) error {
+			var p treasury.Place
+			err := d.Decode(&p)
+			places = append(places, p)
+			return err
+		}},
+		{"counties.jsonl", func(d *json.Decoder) error {
+			var c treasury.County
+			err := d.Decode(&c)
+			counties = append(counties, c)
+			return err
+		}},
+	} {
+		file, err := published(root, "siruta", f.file)
+		if err != nil {
+			return nil, nil, err
+		}
+		if file == nil {
+			return nil, nil, fmt.Errorf("treasury needs the siruta dataset, which is not built")
+		}
+		decoder := json.NewDecoder(file)
+		for decoder.More() {
+			if err := f.into(decoder); err != nil {
+				file.Close()
+				return nil, nil, fmt.Errorf("siruta %s: %w", f.file, err)
+			}
+		}
+		file.Close()
+	}
+	return places, counties, nil
+}
+
+// publishedTreasury gives the unit codes and account keys of the treasury dataset as committed.
+func publishedTreasury(root string) (treasury.Published, error) {
+	var out treasury.Published
+	file, err := published(root, "treasury", "units.jsonl")
+	if file == nil || err != nil {
+		return out, err
+	}
+	out.Units, err = treasury.PublishedUnits(file)
+	file.Close()
+	if err != nil {
+		return out, err
+	}
+	file, err = published(root, "treasury", "accounts.jsonl")
+	if file == nil || err != nil {
+		return out, err
+	}
+	defer file.Close()
+	out.Accounts, err = treasury.PublishedAccounts(file)
 	return out, err
 }
 

@@ -17,6 +17,7 @@ The public copy is https://github.com/pidginhost/romanian-datasets.
 | `public-holidays` | The days on which no work is done by law, as rules that give them for any year | Labour Code, article 139 (1) | By hand, when the law changes |
 | `reges` | The nomenclatures of REGES-Online: COR occupations in every version, activity domains, localities, nationalities, legal forms, contract types, grounds for termination and suspension, predefined bonuses and the others, with their REGES identifiers | Labour Inspectorate, REGES-Online nomenclature service | Monthly |
 | `siruta` | The administrative-territorial units of Romania: counties, municipalities, towns, communes, localities and Bucharest sectors, with their SIRUTA codes, county letters and development regions | National Institute of Statistics (INS); names with Romanian letters from the INS copy on data.gov.ro | Monthly |
+| `treasury` | The operative units of the State Treasury with their county and SIRUTA code, and the IBAN of the accounts taxes and other payments go to at each unit | ANAF, IBAN codes of the State Treasury units | Monthly |
 | `vat-numbers` | How a VAT number looks in each European jurisdiction, and which are in the European Union for VAT | vatnode/eu-vat-rates-data, VIES | By hand, when a format changes |
 | `vat-rates` | The VAT rates in force in each European jurisdiction | vatnode/eu-vat-rates-data (European Commission TEDB), VIES | Weekly |
 
@@ -75,6 +76,10 @@ datasets/
     counties.jsonl
     regions.jsonl
     types.jsonl
+    units.jsonl
+  treasury/
+    accounts.jsonl
+    sources.jsonl
     units.jsonl
   vat-numbers/
     numbers.jsonl
