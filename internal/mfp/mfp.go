@@ -78,6 +78,8 @@ type Locality struct {
 	// Parent is the MFP code of the locality this one belongs to.
 	Parent *int    `json:"parent"`
 	Postal *string `json:"postal_code"`
+	// TownHall is the tax code (CUI) of the town hall of an administrative unit, or null.
+	TownHall *string `json:"town_hall_cui"`
 	// MFPSIRUTA is the SIRUTA code MFP gives, which is wrong for many administrative units.
 	MFPSIRUTA *int `json:"mfp_siruta"`
 	SIRUTA    *int `json:"siruta"`
@@ -278,9 +280,39 @@ func ReadLocalities(r io.Reader, county int, types map[string]bool) ([]Locality,
 		if p := r["COD_POSTAL"]; p != "" && p != "0" {
 			postal = &p
 		}
-		out = append(out, Locality{County: county, Code: *code, Name: r["DENUMIRE"], Type: r["TPL_COD"], Parent: parent, Postal: postal, MFPSIRUTA: siruta})
+		var townHall *string
+		if t := r["COD_FISCAL_PRIMARIE"]; t != "" && t != "0" {
+			if !ValidCUI(t) {
+				return fail(fmt.Errorf("the town hall tax code %q has a wrong check digit", t))
+			}
+			townHall = &t
+		}
+		out = append(out, Locality{County: county, Code: *code, Name: r["DENUMIRE"], Type: r["TPL_COD"], Parent: parent, Postal: postal, TownHall: townHall, MFPSIRUTA: siruta})
 	}
 	return out, nil
+}
+
+// ValidCUI checks the control digit of a Romanian tax code: the digits before the last, weighted by
+// 7, 5, 3, 2, 1, 7, 5, 3, 2 from the right, summed, times 10, modulo 11, where 10 counts as 0.
+func ValidCUI(code string) bool {
+	if len(code) < 2 || len(code) > 10 {
+		return false
+	}
+	for _, r := range code {
+		if r < '0' || r > '9' {
+			return false
+		}
+	}
+	body := strings.Repeat("0", 10-len(code)) + code[:len(code)-1]
+	sum := 0
+	for i, w := range "753217532" {
+		sum += int(body[i]-'0') * int(w-'0')
+	}
+	digit := sum * 10 % 11
+	if digit == 10 {
+		digit = 0
+	}
+	return digit == int(code[len(code)-1]-'0')
 }
 
 // Published are the keys of localities.jsonl as published before.
@@ -441,6 +473,7 @@ func Dataset(get Get, modified Modified, places []Place, counties []SIRUTACounty
 					{Name: "type", Description: "The MFP type, a code of types.jsonl"},
 					{Name: "parent", Description: "The MFP code of the locality this one belongs to, in the same county, or null"},
 					{Name: "postal_code", Description: "The postal code MFP gives, or null"},
+					{Name: "town_hall_cui", Description: "The tax code (CUI) of the town hall of an administrative unit, as MFP gives it, or null; local taxes are paid to it"},
 					{Name: "mfp_siruta", Description: "The SIRUTA code MFP gives, or null for 0"},
 					{Name: "siruta", Description: "The SIRUTA place the locality matches, a code of units.jsonl in siruta, or null"},
 					{Name: "uat", Description: "The administrative unit or Bucharest sector of siruta, or null"},
