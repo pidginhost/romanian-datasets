@@ -1250,13 +1250,13 @@
       },
       "frequency": "monthly",
       "update": "When MFP changes its nomenclature, which it republishes often",
-      "revision": 1,
+      "revision": 2,
       "changed": "2026-11-17",
       "files": [
         {
           "path": "datasets/mfp-localities/localities.jsonl",
-          "sha256": "b3ad28eb5fd4553f44a3d507f06a910135d9007ff34509b1e4f0c3fe625a4a1b",
-          "bytes": 2676269,
+          "sha256": "15f892ba1dab9125f715c8663ba8665d5c428abd7bd924341a5777dbfaeaf53b",
+          "bytes": 3056238,
           "records": 17317,
           "fields": [
             {
@@ -1282,6 +1282,10 @@
             {
               "name": "postal_code",
               "description": "The postal code MFP gives, or null"
+            },
+            {
+              "name": "town_hall_cui",
+              "description": "The tax code (CUI) of the town hall of an administrative unit, as MFP gives it, or null; local taxes are paid to it"
             },
             {
               "name": "mfp_siruta",

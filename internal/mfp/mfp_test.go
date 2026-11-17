@@ -16,8 +16,12 @@ const countiesXML = `<?xml version="1.0" encoding="UTF-8" standalone="no"?><NOM_
 const typesXML = `<?xml version="1.0" encoding="UTF-8" standalone="no"?><NOM_TIP_LOCALITATI><rand><COD>?</COD><DENUMIRE>Tip necunoscut</DENUMIRE></rand><rand><COD>Mun</COD><DENUMIRE>MUNICIPIU</DENUMIRE></rand><rand><COD>MRJ</COD><DENUMIRE>Municipiu Resedinta de Judet</DENUMIRE></rand><rand><COD>Sat</COD><DENUMIRE>SAT</DENUMIRE></rand><rand><COD>Com</COD><DENUMIRE>COMUNĂ</DENUMIRE></rand><rand><COD>Sec</COD><DENUMIRE>SECTOR</DENUMIRE></rand></NOM_TIP_LOCALITATI>`
 
 func locality(county, code int, name, kind string, parent, postal, siruta int) string {
-	return fmt.Sprintf(`<rand><JUD_COD>%d</JUD_COD><COD>%d</COD><Cod_POLITIE>1</Cod_POLITIE><DENUMIRE>%s</DENUMIRE><TPL_COD>%s</TPL_COD><COD_POSTAL>%d</COD_POSTAL><LOC_COD>%d</LOC_COD><COD_SIRUTA>%d</COD_SIRUTA></rand>`,
-		county, code, name, kind, postal, parent, siruta)
+	return localityWith(county, code, name, kind, parent, postal, siruta, "0")
+}
+
+func localityWith(county, code int, name, kind string, parent, postal, siruta int, townHall string) string {
+	return fmt.Sprintf(`<rand><JUD_COD>%d</JUD_COD><COD>%d</COD><Cod_POLITIE>1</Cod_POLITIE><DENUMIRE>%s</DENUMIRE><TPL_COD>%s</TPL_COD><COD_POSTAL>%d</COD_POSTAL><LOC_COD>%d</LOC_COD><COD_FISCAL_PRIMARIE>%s</COD_FISCAL_PRIMARIE><COD_SIRUTA>%d</COD_SIRUTA></rand>`,
+		county, code, name, kind, postal, parent, townHall, siruta)
 }
 
 func localities(rows ...string) string {
@@ -27,7 +31,7 @@ func localities(rows ...string) string {
 var (
 	alba = localities(
 		locality(1, 7, "Alba Iulia", "MRJ", 0, 0, 1026),
-		locality(1, 794, "Alba Iulia", "Mun", 0, 0, 1008),
+		localityWith(1, 794, "Alba Iulia", "Mun", 0, 0, 1008, "4562583"),
 		locality(1, 55, "Bonceşti", "Sat", 177, 515501, 1473),
 		locality(1, 177, "Rîmetea", "Com", 0, 0, 0),
 		locality(1, 300, "Fără domiciliu în România (AB)", "?", 0, 0, 319000),
@@ -114,6 +118,9 @@ func TestDatasetMatchesEveryLocalityItCan(t *testing.T) {
 	if strings.Join(got, "\n") != strings.Join(want, "\n") {
 		t.Fatalf("got\n%s\nwant\n%s", strings.Join(got, "\n"), strings.Join(want, "\n"))
 	}
+	if alba := d.Files[0].Records[5].(Locality); alba.Code != 794 || alba.TownHall == nil || *alba.TownHall != "4562583" {
+		t.Fatalf("%+v", alba)
+	}
 	first := d.Files[0].Records[1].(Locality)
 	if *first.Parent != 177 || *first.Postal != "515501" || *first.MFPSIRUTA != 1473 {
 		t.Fatalf("%+v", first)
@@ -131,6 +138,9 @@ func TestDatasetStopsOnWhatItDoesNotKnow(t *testing.T) {
 		},
 		"row of another county": func(s site) {
 			s[Folder+"nomLocalitati_1_17.11.2026.xml"] = localities(locality(2, 7, "Arad", "Mun", 0, 0, 9262))
+		},
+		"bad town hall code": func(s site) {
+			s[Folder+"nomLocalitati_1_17.11.2026.xml"] = localities(localityWith(1, 794, "Alba Iulia", "Mun", 0, 0, 1008, "4562584"))
 		},
 		"listed twice": func(s site) {
 			s[Folder+"nomLocalitati_1_17.11.2026.xml"] = localities(locality(1, 7, "Alba Iulia", "MRJ", 0, 0, 1026), locality(1, 7, "Alba Iulia", "MRJ", 0, 0, 1026))
@@ -158,5 +168,13 @@ func TestPublishedKeysReadTheFile(t *testing.T) {
 	keys, err := PublishedKeys(strings.NewReader("{\"county\":1,\"code\":7}\n{\"county\":40,\"code\":1}\n"))
 	if err != nil || strings.Join(keys, " ") != "1|7 40|1" {
 		t.Fatalf("%v %v", keys, err)
+	}
+}
+
+func TestValidCUI(t *testing.T) {
+	for code, want := range map[string]bool{"4562583": true, "4562584": false, "18547290": true, "1": false, "12a": false} {
+		if ValidCUI(code) != want {
+			t.Errorf("%s: %v", code, !want)
+		}
 	}
 }
