@@ -4,6 +4,46 @@
   "licence": "CC-BY-4.0",
   "datasets": [
     {
+      "name": "bnr-currencies",
+      "title": "Currencies with a reference rate of the National Bank of Romania",
+      "description": "The currencies for which the National Bank of Romania (BNR) publishes a reference rate against the leu, with the number of units the rate is given for and the first and last day of publication, from 2005. XAU is one gram of gold and XDR is the special drawing right. A currency BNR stopped publishing stays in the list with its last day. The rates themselves are not here: read them from BNR.",
+      "source": {
+        "name": "National Bank of Romania, yearly reference rate files",
+        "url": "https://curs.bnr.ro/",
+        "licence": "Facts taken from the files; no rate is copied. BNR's own terms for its content: https://www.bnr.ro/2281-termeni-si-conditii"
+      },
+      "frequency": "manual",
+      "update": "When BNR adds a currency, stops publishing one or changes a multiplier",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/bnr-currencies/currencies.jsonl",
+          "sha256": "334a68083acc67d38fd074ab9ef327708f0bb7984bcd26a69f894cd434400715",
+          "bytes": 2914,
+          "records": 40,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The currency code of BNR, three letters, as in ISO 4217"
+            },
+            {
+              "name": "multiplier",
+              "description": "The number of units the rate is given for: the rate of HUF is for 100 forints"
+            },
+            {
+              "name": "valid_from",
+              "description": "The first day BNR published a rate with this multiplier, as YYYY-MM-DD; not before 2005-01-03, the first day of the files"
+            },
+            {
+              "name": "valid_to",
+              "description": "The last day BNR published a rate, as YYYY-MM-DD, or null while it still does"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "public-holidays",
       "title": "Public holidays of Romania",
       "description": "The days on which no work is done by law, as rules that give the days of any year: a fixed month and day, or a number of days from Orthodox Easter Sunday. Orthodox Easter Sunday is the Julian computus moved to the civil calendar. A day can come from two rules, such as the second day of Pentecost on 1 June. Days declared free by a Government decision for one year only are not included. The two days each of three yearly feasts of other legal religions have no fixed date and are not included.",

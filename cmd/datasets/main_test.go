@@ -105,28 +105,32 @@ func TestADatasetListedUnderAnotherFrequencyIsRefused(t *testing.T) {
 func TestListNamesEveryDatasetWithItsFrequency(t *testing.T) {
 	var out, errs bytes.Buffer
 	run2([]string{"list"}, day, &out, &errs)
-	if !strings.Contains(out.String(), "public-holidays\tmanual") {
-		t.Fatalf("list said %q", out.String())
+	for _, want := range []string{"bnr-currencies\tmanual", "public-holidays\tmanual"} {
+		if !strings.Contains(out.String(), want) {
+			t.Fatalf("list said %q, want %q in it", out.String(), want)
+		}
 	}
 }
 
 func TestBuildThenVerifyThenBuildAgainChangesNothing(t *testing.T) {
 	root := t.TempDir()
+	value := "1"
+	all := []builder{fake("counties", dataset.Manual, &value)}
 	var out, errs bytes.Buffer
 
-	if code := run2([]string{"build", "-root", root}, day, &out, &errs); code != 0 {
+	if code := run([]string{"build", "-root", root}, all, day, &out, &errs); code != 0 {
 		t.Fatalf("build = %d: %s", code, errs.String())
 	}
-	if !strings.Contains(out.String(), "1 changed public-holidays") {
+	if !strings.Contains(out.String(), "1 changed counties") {
 		t.Fatalf("build said %q", out.String())
 	}
-	if code := run2([]string{"verify", "-root", root}, day, &out, &errs); code != 0 {
+	if code := run([]string{"verify", "-root", root}, all, day, &out, &errs); code != 0 {
 		t.Fatalf("verify = %d: %s", code, errs.String())
 	}
 
 	index, _ := os.ReadFile(filepath.Join(root, "index.json"))
 	out.Reset()
-	if code := run2([]string{"build", "-root", root}, day.AddDate(0, 0, 20), &out, &errs); code != 0 {
+	if code := run([]string{"build", "-root", root}, all, day.AddDate(0, 0, 20), &out, &errs); code != 0 {
 		t.Fatalf("second build = %d: %s", code, errs.String())
 	}
 	again, _ := os.ReadFile(filepath.Join(root, "index.json"))
@@ -137,11 +141,13 @@ func TestBuildThenVerifyThenBuildAgainChangesNothing(t *testing.T) {
 
 func TestVerifyFailsOnADamagedFile(t *testing.T) {
 	root := t.TempDir()
+	value := "1"
+	all := []builder{fake("counties", dataset.Manual, &value)}
 	var out, errs bytes.Buffer
-	run2([]string{"build", "-root", root}, day, &out, &errs)
-	os.WriteFile(filepath.Join(root, "datasets", "public-holidays", "rules.jsonl"), []byte("{}\n"), 0o644)
+	run([]string{"build", "-root", root}, all, day, &out, &errs)
+	os.WriteFile(filepath.Join(root, "datasets", "counties", "values.jsonl"), []byte("{}\n"), 0o644)
 
-	if code := run2([]string{"verify", "-root", root}, day, &out, &errs); code != 1 {
+	if code := run([]string{"verify", "-root", root}, all, day, &out, &errs); code != 1 {
 		t.Fatalf("verify = %d, want 1", code)
 	}
 }
@@ -152,5 +158,15 @@ func TestAWrongCommandIsRefused(t *testing.T) {
 		if code := run2(args, day, &out, &errs); code != 2 {
 			t.Errorf("run(%v) = %d, want 2", args, code)
 		}
+	}
+}
+
+func TestEveryListedDatasetHasANameOfItsOwnAndAFrequency(t *testing.T) {
+	seen := map[string]bool{}
+	for _, b := range builders {
+		if seen[b.name] || !b.frequency.Valid() || b.build == nil {
+			t.Errorf("builder %q (%s) is listed twice or is not complete", b.name, b.frequency)
+		}
+		seen[b.name] = true
 	}
 }
