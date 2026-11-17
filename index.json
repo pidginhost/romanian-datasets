@@ -164,6 +164,138 @@
       ]
     },
     {
+      "name": "siruta",
+      "title": "Administrative-territorial units of Romania (SIRUTA)",
+      "description": "The register of administrative-territorial units of Romania kept by the National Institute of Statistics (INS), edition S1 2026: counties and Bucharest, municipalities, towns and communes, and the localities and Bucharest sectors in them, with their SIRUTA codes. Names are in capitals as INS writes them. INS writes them without Romanian letters; the letters come from the copy INS publishes on data.gov.ro, used only where its letters are the INS letters with the marks, and written with the comma below. 4 names keep the INS spelling without the marks, because the two copies spell them differently. The register has no history and no code has left it since 2013. A code is never removed here: if INS drops one, the dataset is not rebuilt until a person decides how it ends. The check digit of the INS methodology does not hold for some codes, so do not reject a code by it.",
+      "source": {
+        "name": "National Institute of Statistics (INS), SIRUTA register, edition S1 2026 (https://insse.ro/cms/files/siruta/2026/SIRUTA_S1_2026.rar); names with Romanian letters from the SIRUTA files INS publishes on data.gov.ro",
+        "url": "https://insse.ro/cms/ro/siruta",
+        "licence": "CC BY 4.0, under which INS publishes SIRUTA on data.gov.ro (https://data.gov.ro/organization/institutul-national-de-statistica)"
+      },
+      "frequency": "monthly",
+      "update": "INS publishes a new edition twice a year, for the first half and for the whole year",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/siruta/units.jsonl",
+          "sha256": "30bf39f482c7ecbd90f0c3f1a06d86682ad25aa103ca1790e3f5be11647e3925",
+          "bytes": 2658341,
+          "records": 16978,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The SIRUTA code"
+            },
+            {
+              "name": "name",
+              "description": "The name, in capitals: JUDEȚUL ALBA, MUNICIPIUL ALBA IULIA, ALBA IULIA"
+            },
+            {
+              "name": "parent",
+              "description": "The code of the unit it belongs to, or null for a county. A locality belongs to its municipality, town or commune, which belongs to its county"
+            },
+            {
+              "name": "type",
+              "description": "The type of unit, a code of types.jsonl"
+            },
+            {
+              "name": "level",
+              "description": "1 for a county or Bucharest; 2 for a municipality, town or commune; 3 for a locality or a Bucharest sector"
+            },
+            {
+              "name": "urban",
+              "description": "True for an urban unit, false for a rural one, null for a county"
+            },
+            {
+              "name": "county",
+              "description": "The county, a code of counties.jsonl"
+            },
+            {
+              "name": "region",
+              "description": "The development region, a code of regions.jsonl"
+            },
+            {
+              "name": "postal_code",
+              "description": "The postal code INS gives a locality, six digits, or null. A town with streets has more postal codes than this one"
+            },
+            {
+              "name": "nuts3",
+              "description": "The NUTS 3 code of its county"
+            },
+            {
+              "name": "lau",
+              "description": "The LAU code of a municipality, town or commune, or null"
+            }
+          ]
+        },
+        {
+          "path": "datasets/siruta/counties.jsonl",
+          "sha256": "1bd7827a0a7596ef26d55026eedc0ff23ad9d95ddd78e90c8acfbf8f9b71a55e",
+          "bytes": 3188,
+          "records": 42,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The county code of INS, the county field of units.jsonl. Bucharest is 40"
+            },
+            {
+              "name": "mnemonic",
+              "description": "The county letters: AB for Alba, B for Bucharest"
+            },
+            {
+              "name": "name",
+              "description": "The name of the county unit in units.jsonl"
+            },
+            {
+              "name": "unit",
+              "description": "The SIRUTA code of the county"
+            },
+            {
+              "name": "region",
+              "description": "The development region, a code of regions.jsonl"
+            }
+          ]
+        },
+        {
+          "path": "datasets/siruta/regions.jsonl",
+          "sha256": "3a0a06506305870dd29808006aac82773d30a5ccb685afe961113121d157a0ec",
+          "bytes": 339,
+          "records": 8,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The number of the development region, 1 to 8"
+            },
+            {
+              "name": "unit",
+              "description": "The SIRUTA code INS gives the region; it is not a unit of units.jsonl"
+            },
+            {
+              "name": "name",
+              "description": "The name, as INS writes it, without Romanian letters"
+            }
+          ]
+        },
+        {
+          "path": "datasets/siruta/types.jsonl",
+          "sha256": "c1f4c6e8be82286b0ba38a34c135a9861681e1db59419c64cb55fccf05002e67",
+          "bytes": 1001,
+          "records": 15,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The type code"
+            },
+            {
+              "name": "name",
+              "description": "The name of the type, from the INS methodology"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "vat-numbers",
       "title": "VAT numbers of European jurisdictions",
       "description": "How a VAT number looks in each European jurisdiction: the prefix, the format in words and as a regular expression, and the name of the tax in the local language. It says which jurisdictions are in the European Union for VAT. A number that fits the pattern is well formed; whether it is registered is a question for VIES or the national register.",

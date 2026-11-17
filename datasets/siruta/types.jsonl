@@ -1,0 +1,15 @@
+{"code":1,"name":"Municipiu reședință de județ, reședință a municipiului București"}
+{"code":2,"name":"Oraș ce aparține de județ, altul decât oraș reședință de județ"}
+{"code":3,"name":"Comună"}
+{"code":4,"name":"Municipiu, altul decât reședință de județ"}
+{"code":5,"name":"Oraș reședință de județ"}
+{"code":6,"name":"Sector al municipiului București"}
+{"code":9,"name":"Localitate componentă, reședință de municipiu"}
+{"code":10,"name":"Localitate componentă a unui municipiu, alta decât reședință de municipiu"}
+{"code":11,"name":"Sat ce aparține de municipiu"}
+{"code":17,"name":"Localitate componentă reședință a orașului"}
+{"code":18,"name":"Localitate componentă a unui oraș, alta decât reședință de oraș"}
+{"code":19,"name":"Sat ce aparține unui oraș"}
+{"code":22,"name":"Sat reședință de comună"}
+{"code":23,"name":"Sat ce aparține de comună, altul decât reședință de comună"}
+{"code":40,"name":"Județ, municipiul București"}

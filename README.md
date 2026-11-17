@@ -11,6 +11,7 @@ The public copy is https://github.com/pidginhost/romanian-datasets.
 | `bnr-currencies` | The currencies with a reference rate of the National Bank of Romania, the units each rate is given for, and since when | BNR yearly rate files | By hand, when BNR changes its list |
 | `countries` | Countries and territories with their ISO 3166-1 codes, names in Romanian and English, and whether they are in the European Union | Publications Office of the European Union | By hand, when the table changes |
 | `public-holidays` | The days on which no work is done by law, as rules that give them for any year | Labour Code, article 139 (1) | By hand, when the law changes |
+| `siruta` | The administrative-territorial units of Romania: counties, municipalities, towns, communes, localities and Bucharest sectors, with their SIRUTA codes, county letters and development regions | National Institute of Statistics (INS); names with Romanian letters from the INS copy on data.gov.ro | Monthly |
 | `vat-numbers` | How a VAT number looks in each European jurisdiction, and which are in the European Union for VAT | vatnode/eu-vat-rates-data, VIES | By hand, when a format changes |
 | `vat-rates` | The VAT rates in force in each European jurisdiction | vatnode/eu-vat-rates-data (European Commission TEDB), VIES | Weekly |
 
@@ -37,6 +38,11 @@ datasets/
     countries.jsonl
   public-holidays/
     rules.jsonl
+  siruta/
+    counties.jsonl
+    regions.jsonl
+    types.jsonl
+    units.jsonl
   vat-numbers/
     numbers.jsonl
   vat-rates/
