@@ -9,6 +9,7 @@ The public copy is https://github.com/pidginhost/romanian-datasets.
 | Dataset | Content | Source | Kept current |
 | --- | --- | --- | --- |
 | `bnr-currencies` | The currencies with a reference rate of the National Bank of Romania, the units each rate is given for, and since when | BNR yearly rate files | By hand, when BNR changes its list |
+| `countries` | Countries and territories with their ISO 3166-1 codes, names in Romanian and English, and whether they are in the European Union | Publications Office of the European Union | By hand, when the table changes |
 | `public-holidays` | The days on which no work is done by law, as rules that give them for any year | Labour Code, article 139 (1) | By hand, when the law changes |
 
 More datasets follow, each after its source and licence are confirmed.
@@ -30,6 +31,8 @@ index.json
 datasets/
   bnr-currencies/
     currencies.jsonl
+  countries/
+    countries.jsonl
   public-holidays/
     rules.jsonl
 ```

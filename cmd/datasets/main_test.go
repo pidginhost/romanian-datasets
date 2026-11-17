@@ -105,7 +105,7 @@ func TestADatasetListedUnderAnotherFrequencyIsRefused(t *testing.T) {
 func TestListNamesEveryDatasetWithItsFrequency(t *testing.T) {
 	var out, errs bytes.Buffer
 	run2([]string{"list"}, day, &out, &errs)
-	for _, want := range []string{"bnr-currencies\tmanual", "public-holidays\tmanual"} {
+	for _, want := range []string{"bnr-currencies\tmanual", "countries\tmanual", "public-holidays\tmanual"} {
 		if !strings.Contains(out.String(), want) {
 			t.Fatalf("list said %q, want %q in it", out.String(), want)
 		}
