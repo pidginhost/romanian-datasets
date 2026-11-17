@@ -12,6 +12,7 @@ import (
 	"time"
 
 	"github.com/pidginhost/romanian-datasets/internal/dataset"
+	"github.com/pidginhost/romanian-datasets/internal/fetch"
 )
 
 // FirstYear is the first year BNR publishes a file for.
@@ -133,21 +134,7 @@ type Fetch func(year int) (io.ReadCloser, error)
 // FromSite reads the yearly files from the BNR server kept for applications.
 func FromSite(client *http.Client) Fetch {
 	return func(year int) (io.ReadCloser, error) {
-		address := fmt.Sprintf("https://curs.bnr.ro/files/xml/years/nbrfxrates%d.xml", year)
-		request, err := http.NewRequest(http.MethodGet, address, nil)
-		if err != nil {
-			return nil, err
-		}
-		request.Header.Set("User-Agent", "romanian-datasets (https://github.com/pidginhost/romanian-datasets)")
-		response, err := client.Do(request)
-		if err != nil {
-			return nil, err
-		}
-		if response.StatusCode != http.StatusOK {
-			response.Body.Close()
-			return nil, fmt.Errorf("%s answered %s", address, response.Status)
-		}
-		return response.Body, nil
+		return fetch.Get(client, fmt.Sprintf("https://curs.bnr.ro/files/xml/years/nbrfxrates%d.xml", year), "")
 	}
 }
 

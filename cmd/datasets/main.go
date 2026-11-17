@@ -36,7 +36,8 @@ var builders = []builder{
 		return bnr.Dataset(bnr.FromSite(&http.Client{Timeout: time.Minute}), now.UTC().Year())
 	}},
 	{"countries", dataset.Manual, func(time.Time) (dataset.Dataset, error) {
-		return countries.Dataset(countries.FromSite(&http.Client{Timeout: 2 * time.Minute}))
+		client := &http.Client{Timeout: 2 * time.Minute}
+		return countries.Dataset(countries.FromSite(client), countries.VIESFromSite(client))
 	}},
 	{"public-holidays", dataset.Manual, func(time.Time) (dataset.Dataset, error) {
 		return holidays.Dataset(), nil

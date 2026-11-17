@@ -12,6 +12,8 @@ import (
 	"time"
 
 	"github.com/pidginhost/romanian-datasets/internal/dataset"
+	"github.com/pidginhost/romanian-datasets/internal/fetch"
+	"github.com/pidginhost/romanian-datasets/internal/vies"
 )
 
 // Address is the whole table in one file.
@@ -38,6 +40,10 @@ type Country struct {
 	NameEN  string  `json:"name_en"`
 	// EUMember is true for a current member state of the European Union.
 	EUMember bool `json:"eu_member"`
+	// EUVAT is true for a country whose VAT numbers the VIES service of the European Commission answers for.
+	EUVAT bool `json:"eu_vat"`
+	// VATPrefix is the prefix of its VAT numbers when EUVAT is true, otherwise null. Greece is EL.
+	VATPrefix *string `json:"vat_prefix"`
 	// ISO is false for an entry that ISO 3166-1 does not list, which is Kosovo.
 	ISO       bool   `json:"iso"`
 	ValidFrom string `json:"valid_from"`
@@ -156,32 +162,36 @@ func isDate(s string) bool {
 	return err == nil
 }
 
-// Fetch gives the table.
+// Fetch gives one source file.
 type Fetch func() (io.ReadCloser, error)
 
 // FromSite reads the table from the Publications Office.
 func FromSite(client *http.Client) Fetch {
-	return func() (io.ReadCloser, error) {
-		request, err := http.NewRequest(http.MethodGet, Address, nil)
-		if err != nil {
-			return nil, err
-		}
-		request.Header.Set("User-Agent", "romanian-datasets (https://github.com/pidginhost/romanian-datasets)")
-		response, err := client.Do(request)
-		if err != nil {
-			return nil, err
-		}
-		if response.StatusCode != http.StatusOK {
-			response.Body.Close()
-			return nil, fmt.Errorf("%s answered %s", Address, response.Status)
-		}
-		return response.Body, nil
-	}
+	return func() (io.ReadCloser, error) { return fetch.Get(client, Address, "") }
 }
 
-// Dataset reads the table and builds the dataset.
-func Dataset(fetch Fetch) (dataset.Dataset, error) {
-	body, err := fetch()
+// VIESFromSite reads the list of VAT prefixes from the VIES service.
+func VIESFromSite(client *http.Client) Fetch {
+	return func() (io.ReadCloser, error) { return fetch.Get(client, vies.Address, "application/json") }
+}
+
+// WithVAT marks the current countries VIES answers for. A withdrawn country is never marked.
+func WithVAT(all []Country, prefixes []string) []Country {
+	out := append([]Country(nil), all...)
+	for i := range out {
+		if out[i].ValidTo != nil {
+			continue
+		}
+		if prefix, in := vies.PrefixOf(out[i].Alpha2, prefixes); in {
+			out[i].EUVAT, out[i].VATPrefix = true, &prefix
+		}
+	}
+	return out
+}
+
+// Dataset reads the table and the VIES list and builds the dataset.
+func Dataset(table, viesList Fetch) (dataset.Dataset, error) {
+	body, err := table()
 	if err != nil {
 		return dataset.Dataset{}, err
 	}
@@ -190,6 +200,17 @@ func Dataset(fetch Fetch) (dataset.Dataset, error) {
 	if err != nil {
 		return dataset.Dataset{}, err
 	}
+
+	list, err := viesList()
+	if err != nil {
+		return dataset.Dataset{}, err
+	}
+	defer list.Close()
+	prefixes, err := vies.Prefixes(list)
+	if err != nil {
+		return dataset.Dataset{}, err
+	}
+	all = WithVAT(all, prefixes)
 
 	var records []any
 	for _, c := range all {
@@ -200,15 +221,16 @@ func Dataset(fetch Fetch) (dataset.Dataset, error) {
 		Name:  "countries",
 		Title: "Countries and territories",
 		Description: "Countries and territories with their ISO 3166-1 codes, their names in Romanian and English, " +
-			"and whether they are a member state of the European Union today. " +
+			"whether they are a member state of the European Union today, and whether they are in the European Union for VAT, with their VAT prefix. " +
+			"Northern Ireland has the VAT prefix XI but is not a country, so it is not here. " +
 			"Withdrawn entries stay, with their last day of use, so an alpha-2 code can appear on a withdrawn entry and on a current one; the alpha-3 code is unique. " +
 			"Kosovo is not in ISO 3166-1 and is listed with the user-assigned codes XK and XKX. " +
 			"Names are the short names the European Union institutions use, with Romanian letters written with the comma below " +
 			"and without the asterisk the source puts on Kosovo. A name does not state a position on the status of a territory.",
 		Source: dataset.Source{
-			Name:    "Publications Office of the European Union, Countries and territories authority table",
+			Name:    "Publications Office of the European Union, Countries and territories authority table; VAT prefixes from the VIES service of the European Commission (" + vies.Address + ")",
 			URL:     Address,
-			Licence: "European Commission reuse notice (Decision 2011/833/EU): reuse allowed with the source acknowledged",
+			Licence: vies.Licence,
 		},
 		Frequency: dataset.Manual,
 		Update:    "When the Publications Office changes the table: a new or withdrawn country, a changed name, a change in the European Union",
@@ -221,6 +243,8 @@ func Dataset(fetch Fetch) (dataset.Dataset, error) {
 				{Name: "name_ro", Description: "Short name in Romanian"},
 				{Name: "name_en", Description: "Short name in English"},
 				{Name: "eu_member", Description: "True for a member state of the European Union at the time of the build"},
+				{Name: "eu_vat", Description: "True for a country whose VAT numbers the VIES service of the European Commission answers for"},
+				{Name: "vat_prefix", Description: "The prefix of its VAT numbers when eu_vat is true, otherwise null. Greece is EL, not GR"},
 				{Name: "iso", Description: "False for an entry ISO 3166-1 does not list"},
 				{Name: "valid_from", Description: "The first day of use the source gives, as YYYY-MM-DD. Many old entries carry 1950-05-09, the first day of the table"},
 				{Name: "valid_to", Description: "The last day of use of a withdrawn entry, as YYYY-MM-DD, or null for a current one"},

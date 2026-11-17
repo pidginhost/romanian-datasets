@@ -148,7 +148,10 @@ func TestATableThatCannotBeTrustedIsRefused(t *testing.T) {
 }
 
 func TestTheDatasetIsValidAndManual(t *testing.T) {
-	d, err := Dataset(func() (io.ReadCloser, error) { return io.NopCloser(strings.NewReader(recorded)), nil })
+	d, err := Dataset(
+		func() (io.ReadCloser, error) { return io.NopCloser(strings.NewReader(recorded)), nil },
+		func() (io.ReadCloser, error) { return io.NopCloser(strings.NewReader(viesList)), nil },
+	)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -157,5 +160,45 @@ func TestTheDatasetIsValidAndManual(t *testing.T) {
 	}
 	if len(d.Files[0].Records) != 4 || d.Frequency != "manual" {
 		t.Fatalf("dataset is %+v", d)
+	}
+}
+
+const viesList = `{"countries":[{"countryCode":"RO"},{"countryCode":"NL"},{"countryCode":"EL"},{"countryCode":"DD"},{"countryCode":"FR"},{"countryCode":"XI"}]}`
+
+func TestACountryInTheUnionForVATHasItsPrefixAndTheOthersHaveNone(t *testing.T) {
+	all, _ := Parse(strings.NewReader(recorded))
+	byCode := map[string]Country{}
+	for _, c := range WithVAT(all, []string{"DD", "EL", "FR", "NL", "RO", "XI"}) {
+		byCode[c.Alpha3] = c
+	}
+
+	if ro := byCode["ROU"]; !ro.EUVAT || ro.VATPrefix == nil || *ro.VATPrefix != "RO" {
+		t.Fatalf("Romania is %+v", ro)
+	}
+	if xk := byCode["XKX"]; xk.EUVAT || xk.VATPrefix != nil {
+		t.Fatalf("Kosovo is %+v", xk)
+	}
+	// A withdrawn country keeps its code but is not in the Union for VAT.
+	if ddr := byCode["DDR"]; ddr.EUVAT || ddr.VATPrefix != nil {
+		t.Fatalf("East Germany is %+v", ddr)
+	}
+}
+
+func TestTheDatasetCarriesTheVATMarks(t *testing.T) {
+	d, err := Dataset(
+		func() (io.ReadCloser, error) { return io.NopCloser(strings.NewReader(recorded)), nil },
+		func() (io.ReadCloser, error) { return io.NopCloser(strings.NewReader(viesList)), nil },
+	)
+	if err != nil {
+		t.Fatal(err)
+	}
+	marked := 0
+	for _, r := range d.Files[0].Records {
+		if r.(Country).EUVAT {
+			marked++
+		}
+	}
+	if marked != 2 {
+		t.Fatalf("%d countries marked, want Romania and the Netherlands", marked)
 	}
 }
