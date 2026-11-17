@@ -116,7 +116,8 @@ func Dataset(lastYear int) (dataset.Dataset, error) {
 			URL:     "https://legislatie.just.ro/Public/DetaliiDocument/128647",
 			Licence: "Romanian legislation, not subject to copyright (Law 8/1996, article 9)",
 		},
-		Update: "When article 139 of the Labour Code changes, and once a year for the next year",
+		Frequency: dataset.Yearly,
+		Update:    "When article 139 of the Labour Code changes, and once a year for the next year",
 		Files: []dataset.File{{
 			Name: "holidays.jsonl",
 			Fields: []dataset.Field{

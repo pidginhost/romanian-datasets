@@ -38,7 +38,9 @@ type IndexDataset struct {
 	Title       string `json:"title"`
 	Description string `json:"description"`
 	Source      Source `json:"source"`
-	Update      string `json:"update"`
+	// Frequency is how often a reader can expect a change: manual, daily, weekly, monthly or yearly.
+	Frequency Frequency `json:"frequency"`
+	Update    string    `json:"update"`
 	// Revision starts at 1 and grows by one each time the content of the dataset changes.
 	Revision int `json:"revision"`
 	// Changed is the day of the build that made this revision, as YYYY-MM-DD.
@@ -74,7 +76,10 @@ func ReadIndex(root string) (Index, error) {
 // Publish writes the datasets and the index under root. A dataset whose content is the same as in the
 // index already there keeps its revision and its day; one that changed gets the next revision and today.
 // Files of a dataset that are no longer built are removed. It returns the names of the datasets that changed.
-func Publish(root string, datasets []Dataset, today string) ([]string, error) {
+//
+// keep names the datasets that are not rebuilt this time: their files and their entries in the index stay
+// as they are. A dataset in the old index that is neither built nor kept leaves the index.
+func Publish(root string, datasets []Dataset, keep []string, today string) ([]string, error) {
 	old, err := ReadIndex(root)
 	if err != nil {
 		return nil, err
@@ -88,6 +93,14 @@ func Publish(root string, datasets []Dataset, today string) ([]string, error) {
 	sort.Slice(sorted, func(i, j int) bool { return sorted[i].Name < sorted[j].Name })
 
 	index := Index{Format: IndexFormat, Publisher: "PidginHost", Licence: "CC-BY-4.0", Datasets: []IndexDataset{}}
+	for _, name := range keep {
+		entry, known := before[name]
+		if !known {
+			return nil, fmt.Errorf("dataset %s is not in the index yet: build it once before leaving it out", name)
+		}
+		index.Datasets = append(index.Datasets, entry)
+	}
+
 	var changed []string
 	for i, d := range sorted {
 		if err := d.Validate(); err != nil {
@@ -96,9 +109,15 @@ func Publish(root string, datasets []Dataset, today string) ([]string, error) {
 		if i > 0 && sorted[i-1].Name == d.Name {
 			return nil, fmt.Errorf("dataset %s is built twice", d.Name)
 		}
+		for _, name := range keep {
+			if name == d.Name {
+				return nil, fmt.Errorf("dataset %s is both built and kept", d.Name)
+			}
+		}
 
 		entry := IndexDataset{
-			Name: d.Name, Title: d.Title, Description: d.Description, Source: d.Source, Update: d.Update,
+			Name: d.Name, Title: d.Title, Description: d.Description, Source: d.Source,
+			Frequency: d.Frequency, Update: d.Update,
 			Files: []IndexFile{},
 		}
 		keep := map[string]bool{}
@@ -134,6 +153,7 @@ func Publish(root string, datasets []Dataset, today string) ([]string, error) {
 		index.Datasets = append(index.Datasets, entry)
 	}
 
+	sort.Slice(index.Datasets, func(i, j int) bool { return index.Datasets[i].Name < index.Datasets[j].Name })
 	data, err := Document(index)
 	if err != nil {
 		return nil, err

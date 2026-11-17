@@ -6,7 +6,7 @@ Keep this file short. Change it only by merge request.
 ## Project
 - Public reference datasets about Romania, built by PidginHost and free for anyone (CC BY 4.0).
 - This repository on the internal GitLab is the source. It is mirrored to https://github.com/pidginhost/romanian-datasets, which is what readers download from.
-- A Go tool builds every dataset and the index. A scheduled CI job runs it and commits only when something changed.
+- A Go tool builds every dataset and the index. Each dataset has a frequency: `daily`, `weekly`, `monthly` and `yearly` datasets are rebuilt by the scheduled CI job of that frequency, which commits only when something changed; a `manual` dataset is rebuilt by a person.
 - The first reader is the Conta accounting application (conta/conta, ADR-027). It reads `index.json`, then the files it names, and checks each by SHA-256.
 - Everything here is public. Never commit personal data, company data, credentials or anything not meant for the whole internet.
 
@@ -17,6 +17,9 @@ Keep this file short. Change it only by merge request.
 - A code is never removed from a dataset. It gets an end date, so old documents stay valid.
 - `index.json` format 1 is a contract with readers. A change that a reader must follow needs a new format number and a decision issue.
 - Files in `datasets/` and `index.json` are written by the tool only. Never edit them by hand.
+- Choose a dataset's frequency from how often its source changes. Do not schedule what changes once in years: make it `manual`.
+- The first dataset of a frequency needs a pipeline schedule with `DATASETS_FREQUENCY` set to it.
+- GitHub is a copy, pushed with force by `mirror:github`. Never change anything there.
 
 ## Build and test
 - Needs the Go version in `go.mod`. No dependencies outside the standard library without a decision issue.

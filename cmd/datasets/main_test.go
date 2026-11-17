@@ -7,27 +7,126 @@ import (
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/pidginhost/romanian-datasets/internal/dataset"
 )
 
 var day = time.Date(2026, 11, 17, 9, 0, 0, 0, time.UTC)
+
+// run2 runs the command with the real list of datasets.
+func run2(args []string, now time.Time, out, errs *bytes.Buffer) int {
+	return run(args, builders, now, out, errs)
+}
+
+func fake(name string, frequency dataset.Frequency, value *string) builder {
+	return builder{name, frequency, func(time.Time) (dataset.Dataset, error) {
+		return dataset.Dataset{
+			Name: name, Title: name, Description: name, Frequency: frequency, Update: "In tests",
+			Source: dataset.Source{Name: "Test", URL: "https://example.test", Licence: "None"},
+			Files: []dataset.File{{
+				Name:    "values.jsonl",
+				Fields:  []dataset.Field{{Name: "value", Description: "A value"}},
+				Records: []any{map[string]string{"value": *value}},
+			}},
+		}, nil
+	}}
+}
+
+func TestAFrequencyBuildRebuildsOnlyItsDatasets(t *testing.T) {
+	root := t.TempDir()
+	daily, manual := "1", "1"
+	all := []builder{fake("rates", dataset.Daily, &daily), fake("counties", dataset.Manual, &manual)}
+	var out, errs bytes.Buffer
+	if code := run([]string{"build", "-root", root}, all, day, &out, &errs); code != 0 {
+		t.Fatalf("first build = %d: %s", code, errs.String())
+	}
+
+	daily, manual = "2", "2"
+	out.Reset()
+	if code := run([]string{"build", "-root", root, "-frequency", "daily"}, all, day, &out, &errs); code != 0 {
+		t.Fatalf("daily build = %d: %s", code, errs.String())
+	}
+
+	if !strings.Contains(out.String(), "1 dataset(s) built, 1 changed rates") {
+		t.Fatalf("build said %q", out.String())
+	}
+	rates, _ := os.ReadFile(filepath.Join(root, "datasets", "rates", "values.jsonl"))
+	counties, _ := os.ReadFile(filepath.Join(root, "datasets", "counties", "values.jsonl"))
+	if !strings.Contains(string(rates), `"2"`) || !strings.Contains(string(counties), `"1"`) {
+		t.Fatalf("rates %s counties %s", rates, counties)
+	}
+	if code := run([]string{"verify", "-root", root}, all, day, &out, &errs); code != 0 {
+		t.Fatalf("verify = %d: %s", code, errs.String())
+	}
+}
+
+func TestOnlyBuildsOneDatasetEvenAManualOne(t *testing.T) {
+	root := t.TempDir()
+	daily, manual := "1", "1"
+	all := []builder{fake("rates", dataset.Daily, &daily), fake("counties", dataset.Manual, &manual)}
+	var out, errs bytes.Buffer
+	run([]string{"build", "-root", root}, all, day, &out, &errs)
+
+	daily, manual = "2", "2"
+	out.Reset()
+	run([]string{"build", "-root", root, "-only", "counties"}, all, day, &out, &errs)
+
+	if !strings.Contains(out.String(), "1 dataset(s) built, 1 changed counties") {
+		t.Fatalf("build said %q", out.String())
+	}
+}
+
+func TestAFilterThatSelectsNothingRightIsRefused(t *testing.T) {
+	value := "1"
+	all := []builder{fake("rates", dataset.Daily, &value)}
+	var out, errs bytes.Buffer
+	for _, args := range [][]string{
+		{"build", "-frequency", "manual"},
+		{"build", "-frequency", "hourly"},
+		{"build", "-only", "nothing"},
+		{"build", "-only", "rates", "-frequency", "daily"},
+	} {
+		if code := run(append(args, "-root", t.TempDir()), all, day, &out, &errs); code != 2 {
+			t.Errorf("run(%v) = %d, want 2", args, code)
+		}
+	}
+}
+
+func TestADatasetListedUnderAnotherFrequencyIsRefused(t *testing.T) {
+	value := "1"
+	wrong := fake("rates", dataset.Daily, &value)
+	wrong.frequency = dataset.Weekly
+	var out, errs bytes.Buffer
+	if code := run([]string{"build", "-root", t.TempDir()}, []builder{wrong}, day, &out, &errs); code != 2 {
+		t.Fatalf("build = %d, want 2", code)
+	}
+}
+
+func TestListNamesEveryDatasetWithItsFrequency(t *testing.T) {
+	var out, errs bytes.Buffer
+	run2([]string{"list"}, day, &out, &errs)
+	if !strings.Contains(out.String(), "public-holidays\tyearly") {
+		t.Fatalf("list said %q", out.String())
+	}
+}
 
 func TestBuildThenVerifyThenBuildAgainChangesNothing(t *testing.T) {
 	root := t.TempDir()
 	var out, errs bytes.Buffer
 
-	if code := run([]string{"build", "-root", root}, day, &out, &errs); code != 0 {
+	if code := run2([]string{"build", "-root", root}, day, &out, &errs); code != 0 {
 		t.Fatalf("build = %d: %s", code, errs.String())
 	}
 	if !strings.Contains(out.String(), "1 changed public-holidays") {
 		t.Fatalf("build said %q", out.String())
 	}
-	if code := run([]string{"verify", "-root", root}, day, &out, &errs); code != 0 {
+	if code := run2([]string{"verify", "-root", root}, day, &out, &errs); code != 0 {
 		t.Fatalf("verify = %d: %s", code, errs.String())
 	}
 
 	index, _ := os.ReadFile(filepath.Join(root, "index.json"))
 	out.Reset()
-	if code := run([]string{"build", "-root", root}, day.AddDate(0, 0, 20), &out, &errs); code != 0 {
+	if code := run2([]string{"build", "-root", root}, day.AddDate(0, 0, 20), &out, &errs); code != 0 {
 		t.Fatalf("second build = %d: %s", code, errs.String())
 	}
 	again, _ := os.ReadFile(filepath.Join(root, "index.json"))
@@ -39,10 +138,10 @@ func TestBuildThenVerifyThenBuildAgainChangesNothing(t *testing.T) {
 func TestANewYearAddsAYearOfHolidays(t *testing.T) {
 	root := t.TempDir()
 	var out, errs bytes.Buffer
-	run([]string{"build", "-root", root}, day, &out, &errs)
+	run2([]string{"build", "-root", root}, day, &out, &errs)
 	out.Reset()
 
-	run([]string{"build", "-root", root}, day.AddDate(1, 0, 0), &out, &errs)
+	run2([]string{"build", "-root", root}, day.AddDate(1, 0, 0), &out, &errs)
 
 	if !strings.Contains(out.String(), "1 changed public-holidays") {
 		t.Fatalf("build said %q", out.String())
@@ -56,10 +155,10 @@ func TestANewYearAddsAYearOfHolidays(t *testing.T) {
 func TestVerifyFailsOnADamagedFile(t *testing.T) {
 	root := t.TempDir()
 	var out, errs bytes.Buffer
-	run([]string{"build", "-root", root}, day, &out, &errs)
+	run2([]string{"build", "-root", root}, day, &out, &errs)
 	os.WriteFile(filepath.Join(root, "datasets", "public-holidays", "holidays.jsonl"), []byte("{}\n"), 0o644)
 
-	if code := run([]string{"verify", "-root", root}, day, &out, &errs); code != 1 {
+	if code := run2([]string{"verify", "-root", root}, day, &out, &errs); code != 1 {
 		t.Fatalf("verify = %d, want 1", code)
 	}
 }
@@ -67,7 +166,7 @@ func TestVerifyFailsOnADamagedFile(t *testing.T) {
 func TestAWrongCommandIsRefused(t *testing.T) {
 	var out, errs bytes.Buffer
 	for _, args := range [][]string{{}, {"publish"}, {"build", "-nope"}} {
-		if code := run(args, day, &out, &errs); code != 2 {
+		if code := run2(args, day, &out, &errs); code != 2 {
 			t.Errorf("run(%v) = %d, want 2", args, code)
 		}
 	}

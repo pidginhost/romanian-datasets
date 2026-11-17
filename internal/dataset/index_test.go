@@ -18,7 +18,7 @@ func sample(names ...string) Dataset {
 		records = append(records, county{Code: string(rune('A' + i)), Name: n})
 	}
 	return Dataset{
-		Name: "sample", Title: "Sample", Description: "A sample.", Update: "Never",
+		Name: "sample", Title: "Sample", Description: "A sample.", Frequency: Manual, Update: "Never",
 		Source: Source{Name: "Test", URL: "https://example.test", Licence: "None"},
 		Files: []File{{
 			Name:    "counties.jsonl",
@@ -30,7 +30,7 @@ func sample(names ...string) Dataset {
 
 func publish(t *testing.T, root string, d Dataset, today string) []string {
 	t.Helper()
-	changed, err := Publish(root, []Dataset{d}, today)
+	changed, err := Publish(root, []Dataset{d}, nil, today)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -164,6 +164,7 @@ func TestADatasetThatCannotBePublishedIsRefused(t *testing.T) {
 	cases := map[string]func(d *Dataset){
 		"dataset name": func(d *Dataset) { d.Name = "Sample Data" },
 		"licence":      func(d *Dataset) { d.Source.Licence = "" },
+		"frequency":    func(d *Dataset) { d.Frequency = "hourly" },
 		"title":        func(d *Dataset) { d.Title = "" },
 		"no files":     func(d *Dataset) { d.Files = nil },
 		"file name":    func(d *Dataset) { d.Files[0].Name = "Counties.csv" },
@@ -174,14 +175,67 @@ func TestADatasetThatCannotBePublishedIsRefused(t *testing.T) {
 	for want, breakIt := range cases {
 		d := sample("Alba")
 		breakIt(&d)
-		if _, err := Publish(t.TempDir(), []Dataset{d}, "2026-11-17"); err == nil || !strings.Contains(err.Error(), want) {
+		if _, err := Publish(t.TempDir(), []Dataset{d}, nil, "2026-11-17"); err == nil || !strings.Contains(err.Error(), want) {
 			t.Errorf("Publish = %v, want an error with %q", err, want)
 		}
 	}
 }
 
 func TestTheSameDatasetTwiceIsRefused(t *testing.T) {
-	if _, err := Publish(t.TempDir(), []Dataset{sample("Alba"), sample("Arad")}, "2026-11-17"); err == nil {
+	if _, err := Publish(t.TempDir(), []Dataset{sample("Alba"), sample("Arad")}, nil, "2026-11-17"); err == nil {
 		t.Fatal("two datasets with one name were published")
+	}
+}
+
+func other(name string) Dataset {
+	d := sample("Cluj")
+	d.Name = name
+	d.Frequency = Daily
+	return d
+}
+
+func TestADatasetThatIsKeptStaysAsItWasWhileAnotherIsRebuilt(t *testing.T) {
+	root := t.TempDir()
+	if _, err := Publish(root, []Dataset{sample("Alba"), other("daily")}, nil, "2026-11-17"); err != nil {
+		t.Fatal(err)
+	}
+	kept := read(t, filepath.Join(root, "datasets", "sample", "counties.jsonl"))
+
+	changed, err := Publish(root, []Dataset{other("daily")}, []string{"sample"}, "2026-11-18")
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	index, _ := ReadIndex(root)
+	if len(changed) != 0 || len(index.Datasets) != 2 || index.Datasets[0].Name != "daily" || index.Datasets[1].Name != "sample" {
+		t.Fatalf("changed %v, index %+v", changed, index.Datasets)
+	}
+	if index.Datasets[1].Changed != "2026-11-17" || read(t, filepath.Join(root, "datasets", "sample", "counties.jsonl")) != kept {
+		t.Fatal("the kept dataset changed")
+	}
+	if err := Verify(root); err != nil {
+		t.Fatal(err)
+	}
+}
+
+func TestADatasetCannotBeKeptBeforeItsFirstBuild(t *testing.T) {
+	if _, err := Publish(t.TempDir(), []Dataset{other("daily")}, []string{"sample"}, "2026-11-17"); err == nil {
+		t.Fatal("a dataset with no files and no entry was kept")
+	}
+}
+
+func TestADatasetCannotBeBothBuiltAndKept(t *testing.T) {
+	root := t.TempDir()
+	publish(t, root, sample("Alba"), "2026-11-17")
+	if _, err := Publish(root, []Dataset{sample("Alba")}, []string{"sample"}, "2026-11-18"); err == nil {
+		t.Fatal("a dataset was built and kept at once")
+	}
+}
+
+func TestTheIndexGivesTheFrequency(t *testing.T) {
+	root := t.TempDir()
+	publish(t, root, other("daily"), "2026-11-17")
+	if !strings.Contains(read(t, filepath.Join(root, IndexName)), `"frequency": "daily"`) {
+		t.Fatal("the index does not give the frequency")
 	}
 }

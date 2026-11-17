@@ -31,6 +31,28 @@ type File struct {
 	Records []any
 }
 
+// Frequency says how a dataset is kept current.
+type Frequency string
+
+const (
+	// Manual is a dataset that changes rarely. A person rebuilds it and commits the result.
+	Manual Frequency = "manual"
+	// Daily, Weekly, Monthly and Yearly datasets are rebuilt by the scheduled job of that name.
+	Daily   Frequency = "daily"
+	Weekly  Frequency = "weekly"
+	Monthly Frequency = "monthly"
+	Yearly  Frequency = "yearly"
+)
+
+// Valid is true for one of the frequencies above.
+func (f Frequency) Valid() bool {
+	switch f {
+	case Manual, Daily, Weekly, Monthly, Yearly:
+		return true
+	}
+	return false
+}
+
 // Dataset is one published list with its description and its files.
 type Dataset struct {
 	// Name is the folder name: lower case letters, digits and dashes.
@@ -38,7 +60,9 @@ type Dataset struct {
 	Title       string
 	Description string
 	Source      Source
-	// Update says how often the source changes, in words.
+	// Frequency is how the dataset is kept current: by a person, or by which scheduled job.
+	Frequency Frequency
+	// Update says when the source changes, in words.
 	Update string
 	Files  []File
 }
@@ -55,6 +79,8 @@ func (d Dataset) Validate() error {
 		return fmt.Errorf("dataset name %q: use lower case letters, digits and dashes", d.Name)
 	case d.Title == "" || d.Description == "" || d.Update == "":
 		return fmt.Errorf("dataset %s: title, description and update are required", d.Name)
+	case !d.Frequency.Valid():
+		return fmt.Errorf("dataset %s: frequency %q is not manual, daily, weekly, monthly or yearly", d.Name, d.Frequency)
 	case d.Source.Name == "" || d.Source.URL == "" || d.Source.Licence == "":
 		return fmt.Errorf("dataset %s: the source needs a name, an address and a licence", d.Name)
 	case len(d.Files) == 0:

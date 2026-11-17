@@ -6,15 +6,15 @@ The public copy is https://github.com/pidginhost/romanian-datasets.
 
 ## What is here
 
-| Dataset | Content | Source |
-| --- | --- | --- |
-| `public-holidays` | The days on which no work is done by law, from 2024 | Labour Code, article 139 (1) |
+| Dataset | Content | Source | Kept current |
+| --- | --- | --- | --- |
+| `public-holidays` | The days on which no work is done by law, from 2024 | Labour Code, article 139 (1) | Yearly |
 
 More datasets follow, each after its source and licence are confirmed.
 
 ## How to read the data
 
-1. Download `index.json`. It lists every dataset with its revision, the day it last changed, and its files.
+1. Download `index.json`. It lists every dataset with its revision, the day it last changed, how often it is rebuilt, and its files.
 2. Download the files it names. Each path is relative to `index.json`.
 3. Check each file against the `sha256` in the index. Do not use a file that does not match.
 
@@ -46,15 +46,35 @@ go run ./cmd/datasets build
 go run ./cmd/datasets verify
 ```
 
-`build` writes every dataset and `index.json`. Run twice, it changes nothing the second time. `verify` checks the files against the index.
+`build` writes every dataset and `index.json`. Run twice, it changes nothing the second time. `verify` checks the files against the index. `list` names every dataset with its frequency.
 
-A scheduled CI job runs `build` and commits to `main` only when something changed. It needs the CI variable `DATASETS_PUSH_TOKEN`, a project access token with `write_repository`, masked and protected.
+## How the datasets stay current
+
+Each dataset has a frequency, set by how often its source changes:
+
+| Frequency | Who rebuilds it |
+| --- | --- |
+| `daily`, `weekly`, `monthly`, `yearly` | The scheduled CI job of that frequency: `datasets build -frequency <f>`. It commits to `main` only when something changed. |
+| `manual` | A person, when the source changes: `datasets build -only <name>`, then a merge request with the result. For data that changes rarely. |
+
+A build of one frequency leaves every other dataset as it is in the index.
+
+The scheduled job needs:
+
+- one pipeline schedule on `main` for each frequency in use, with the variable `DATASETS_FREQUENCY` set to that frequency;
+- the CI variable `DATASETS_PUSH_TOKEN`, a project access token with `write_repository`, masked and protected.
+
+## Public copy
+
+Every pipeline on `main` ends with `mirror:github`, which publishes `main` to GitHub the way `pidginhost/csm` does: with force, as the author PidginHost, without the CI files. It uses the group variable `GITHUB_TOKEN`. Changes are made here, never on GitHub.
 
 ## Add a dataset
 
 1. Open an issue with the source, its address and its licence. The licence must allow republishing.
-2. Add a package under `internal/` that returns a `dataset.Dataset`, with tests on recorded input.
-3. Add it to `build` in `cmd/datasets/main.go`.
-4. Run `build` and commit the files it writes together with the code.
+2. Choose its frequency from how often the source changes. Data that changes rarely is `manual`.
+3. Add a package under `internal/` that returns a `dataset.Dataset`, with tests on recorded input.
+4. Add it to `builders` in `cmd/datasets/main.go`.
+5. Run `build -only <name>` and commit the files it writes together with the code.
+6. If no dataset had that frequency before, add its pipeline schedule.
 
 Rules for contributors are in `AGENTS.md`.
