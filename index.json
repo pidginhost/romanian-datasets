@@ -2184,6 +2184,66 @@
       ]
     },
     {
+      "name": "single-entry-categories",
+      "title": "Income and expense categories of single-entry bookkeeping",
+      "description": "The categories of income and expense of independent activities whose net income is set in the real system, on the basis of single-entry bookkeeping: the letters of article 68 of the Fiscal Code (Law 227/2015) on gross income (income), what is not gross income (not-income), the conditions and kinds of deductible expenses (deductible), the expenses deductible within limits (limited) and the non-deductible expenses (non-deductible). OMFP 170/2015 sets the registers of single entry, not a chart: these categories are what the law gives to sort its entries. text is the letter as the code writes it; notes are the notes of the portal on how a change applies, for instance to the income of a whole year. The categories are those in force on 2026-01-01, the first day the dataset covers; a later change gives the day it took effect and the act, as the portal notes them.",
+      "source": {
+        "name": "Legislative Portal, consolidated forms of the Fiscal Code (Law 227/2015) from 2026-01-01 to 2026-10-18, article 68 (https://legislatie.just.ro/Public/DetaliiDocument/171282)",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/171282",
+        "licence": "Legislation, not subject to copyright (Law 8/1996, article 9)"
+      },
+      "frequency": "monthly",
+      "update": "When a law changes article 68 of the Fiscal Code, which happens several times a year",
+      "revision": 2,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/single-entry-categories/categories.jsonl",
+          "sha256": "fe3416cc2a95351c7f410c1c43ff34a1198ea5c931529447c214e9e2aa820478",
+          "bytes": 31991,
+          "records": 61,
+          "fields": [
+            {
+              "name": "code",
+              "description": "Article, paragraph and letter: 68(5)g^1 is letter g^1 of paragraph (5). With valid_from it is unique in the file"
+            },
+            {
+              "name": "paragraph",
+              "description": "The paragraph of article 68"
+            },
+            {
+              "name": "letter",
+              "description": "The letter, or null for a paragraph without letters"
+            },
+            {
+              "name": "kind",
+              "description": "income, not-income, deductible, limited or non-deductible"
+            },
+            {
+              "name": "text",
+              "description": "The text of the letter as the code writes it"
+            },
+            {
+              "name": "notes",
+              "description": "The notes of the portal on how the text applies, or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day the text took effect, YYYY-MM-DD, or null for a text in force on 2026-01-01"
+            },
+            {
+              "name": "valid_to",
+              "description": "The last day the text applied, or null while it does"
+            },
+            {
+              "name": "act",
+              "description": "The act that made the change, as the portal writes it, or null for a text in force on 2026-01-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "siruta",
       "title": "Administrative-territorial units of Romania (SIRUTA)",
       "description": "The register of administrative-territorial units of Romania kept by the National Institute of Statistics (INS), edition S1 2026: counties and Bucharest, municipalities, towns and communes, and the localities and Bucharest sectors in them, with their SIRUTA codes. Names are in capitals as INS writes them. INS writes them without Romanian letters; the letters come from the copy INS publishes on data.gov.ro, used only where its letters are the INS letters with the marks, and written with the comma below. 4 names keep the INS spelling without the marks, because the two copies spell them differently. The register has no history and no code has left it since 2013. A code is never removed here: if INS drops one, the dataset is not rebuilt until a person decides how it ends. The check digit of the INS methodology does not hold for some codes, so do not reject a code by it.",

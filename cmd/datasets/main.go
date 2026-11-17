@@ -31,6 +31,7 @@ import (
 	"github.com/pidginhost/romanian-datasets/internal/holidays"
 	"github.com/pidginhost/romanian-datasets/internal/mfp"
 	"github.com/pidginhost/romanian-datasets/internal/reges"
+	"github.com/pidginhost/romanian-datasets/internal/singleentry"
 	"github.com/pidginhost/romanian-datasets/internal/siruta"
 	"github.com/pidginhost/romanian-datasets/internal/taxoffices"
 	"github.com/pidginhost/romanian-datasets/internal/treasury"
@@ -126,6 +127,21 @@ var builders = []builder{
 			return dataset.Dataset{}, err
 		}
 		return reges.Dataset(reges.FromSite(&http.Client{Timeout: 2 * time.Minute}), keys)
+	}},
+	{"single-entry-categories", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
+		var keys []string
+		file, err := published(root, "single-entry-categories", "categories.jsonl")
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		if file != nil {
+			keys, err = singleentry.PublishedKeys(file)
+			file.Close()
+			if err != nil {
+				return dataset.Dataset{}, err
+			}
+		}
+		return singleentry.Dataset(singleentry.FromSite(&http.Client{Timeout: 5 * time.Minute}), keys)
 	}},
 	{"siruta", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
 		published, err := publishedSIRUTA(root)

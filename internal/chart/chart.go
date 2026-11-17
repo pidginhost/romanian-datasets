@@ -5,7 +5,6 @@ package chart
 import (
 	"encoding/json"
 	"fmt"
-	"html"
 	"io"
 	"net/http"
 	"regexp"
@@ -15,10 +14,11 @@ import (
 
 	"github.com/pidginhost/romanian-datasets/internal/dataset"
 	"github.com/pidginhost/romanian-datasets/internal/fetch"
+	"github.com/pidginhost/romanian-datasets/internal/portal"
 )
 
-// Portal is the Legislative Portal of the Ministry of Justice.
-const Portal = "https://legislatie.just.ro/Public/DetaliiDocument/"
+// Portal is where the Legislative Portal shows an act, by number.
+const Portal = portal.Address
 
 // Order is the page of OMFP 1802/2014, which lists its consolidated forms.
 const Order = Portal + "250771"
@@ -66,31 +66,16 @@ type Account struct {
 }
 
 var (
-	consolidationPattern = regexp.MustCompile(`title='Consolidarea din (\d{2}\.\d{2}\.\d{4})'[^>]*href='[^']*DetaliiDocument/(\d+)'`)
-	annexPattern         = regexp.MustCompile(`DetaliiDocumentAfis/(\d+)">REGLEMENT`)
-	tagPattern           = regexp.MustCompile(`<[^>]*>`)
-	scriptPattern        = regexp.MustCompile(`(?is)<script.*?</script>|<style.*?</style>`)
-	classPattern         = regexp.MustCompile(`^Clasa (\d) - (.+)$`)
-	linePattern          = regexp.MustCompile(`^(\d{2,4})\.?\s+(.+)$`)
-	notePattern          = regexp.MustCompile(`^\*(\d+)\)\s*(.*)$`)
-	markPattern          = regexp.MustCompile(`\*(\d+)\)`)
-	localPattern         = regexp.MustCompile(`^\^(\d+)\s*(.*)$`)
-	localMarkPattern     = regexp.MustCompile(`\^(\d+)`)
-	removedPattern       = regexp.MustCompile(`^(Eliminat|Abrogat)\.?$`)
-	functionPattern      = regexp.MustCompile(`\s*\((A|P|A/P)\)`)
+	annexPattern     = regexp.MustCompile(`DetaliiDocumentAfis/(\d+)">REGLEMENT`)
+	classPattern     = regexp.MustCompile(`^Clasa (\d) - (.+)$`)
+	linePattern      = regexp.MustCompile(`^(\d{2,4})\.?\s+(.+)$`)
+	notePattern      = regexp.MustCompile(`^\*(\d+)\)\s*(.*)$`)
+	markPattern      = regexp.MustCompile(`\*(\d+)\)`)
+	localPattern     = regexp.MustCompile(`^\^(\d+)\s*(.*)$`)
+	localMarkPattern = regexp.MustCompile(`\^(\d+)`)
+	removedPattern   = regexp.MustCompile(`^(Eliminat|Abrogat)\.?$`)
+	functionPattern  = regexp.MustCompile(`\s*\((A|P|A/P)\)`)
 )
-
-// lines gives the text of an HTML page, one line for each piece of text between tags.
-func lines(page string) []string {
-	page = scriptPattern.ReplaceAllString(page, "")
-	var out []string
-	for _, l := range strings.Split(tagPattern.ReplaceAllString(page, "\n"), "\n") {
-		if l = strings.TrimSpace(html.UnescapeString(l)); l != "" {
-			out = append(out, l)
-		}
-	}
-	return out
-}
 
 type entry struct {
 	code, text string
@@ -106,7 +91,7 @@ type noteRef struct {
 
 // ReadChapter reads chapter 14 out of the text of the consolidated annex and gives its accounts.
 func ReadChapter(page string) ([]Account, error) {
-	all := lines(page)
+	all := portal.Lines(page)
 	start := -1
 	for i, l := range all {
 		if strings.Contains(l, "Planul de conturi general este următorul") {
@@ -292,62 +277,9 @@ func role(code string) *string {
 	return &r
 }
 
-// Form is a consolidated form of the order.
-type Form struct {
-	Date time.Time
-	ID   string
-}
-
-// Forms reads the page of the order and gives its consolidated forms, the oldest first.
-func Forms(page string) ([]Form, error) {
-	var out []Form
-	for _, m := range consolidationPattern.FindAllStringSubmatch(page, -1) {
-		d, err := time.Parse("02.01.2006", m[1])
-		if err != nil {
-			return nil, err
-		}
-		out = append(out, Form{d, m[2]})
-	}
-	if len(out) == 0 {
-		return nil, fmt.Errorf("the order has no consolidated forms")
-	}
-	sort.Slice(out, func(i, j int) bool { return out[i].Date.Before(out[j].Date) })
-	return out, nil
-}
-
-// FromHorizon gives the form in force on the horizon and those after it.
-func FromHorizon(forms []Form) ([]Form, error) {
-	first := -1
-	for i, f := range forms {
-		if !f.Date.After(Horizon) {
-			first = i
-		}
-	}
-	if first < 0 {
-		return nil, fmt.Errorf("no consolidated form is in force on %s", Horizon.Format(time.DateOnly))
-	}
-	return forms[first:], nil
-}
-
-func read(get Get, address string) (string, error) {
-	body, err := get(address)
-	if err != nil {
-		return "", err
-	}
-	defer body.Close()
-	data, err := io.ReadAll(io.LimitReader(body, maxPage+1))
-	if err != nil {
-		return "", err
-	}
-	if len(data) > maxPage {
-		return "", fmt.Errorf("%s is larger than expected", address)
-	}
-	return string(data), nil
-}
-
 // chapter reads the chart of one consolidated form: the form of the order links its annex.
-func chapter(get Get, form Form) ([]Account, error) {
-	page, err := read(get, Portal+form.ID)
+func chapter(get Get, form portal.Form) ([]Account, error) {
+	page, err := portal.Read(get, Portal+form.ID, maxPage)
 	if err != nil {
 		return nil, err
 	}
@@ -355,7 +287,7 @@ func chapter(get Get, form Form) ([]Account, error) {
 	if m == nil {
 		return nil, fmt.Errorf("the consolidated form %s links no annex", form.ID)
 	}
-	annex, err := read(get, Portal+m[1])
+	annex, err := portal.Read(get, Portal+m[1], maxPage)
 	if err != nil {
 		return nil, err
 	}
@@ -374,7 +306,7 @@ func same(a, b Account) bool {
 
 // History joins the charts of the forms from the horizon: an account that changes or leaves the chart ends
 // the day before its change applies, and a new or changed one starts that day.
-func History(forms []Form, charts [][]Account) ([]Account, error) {
+func History(forms []portal.Form, charts [][]Account) ([]Account, error) {
 	var out []Account
 	open := map[string]int{}
 	for _, a := range charts[0] {
@@ -455,15 +387,15 @@ func PublishedKeys(r io.Reader) ([]string, error) {
 // Dataset reads the forms of the order from the horizon and builds the dataset. An account published
 // before and missing now stops the build.
 func Dataset(get Get, published []string) (dataset.Dataset, error) {
-	page, err := read(get, Order)
+	page, err := portal.Read(get, Order, maxPage)
 	if err != nil {
 		return dataset.Dataset{}, err
 	}
-	all, err := Forms(page)
+	all, err := portal.Forms(page)
 	if err != nil {
 		return dataset.Dataset{}, err
 	}
-	forms, err := FromHorizon(all)
+	forms, err := portal.FromHorizon(all, Horizon)
 	if err != nil {
 		return dataset.Dataset{}, err
 	}

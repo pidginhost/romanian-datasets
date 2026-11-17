@@ -6,6 +6,8 @@ import (
 	"io"
 	"strings"
 	"testing"
+
+	"github.com/pidginhost/romanian-datasets/internal/portal"
 )
 
 // annex writes the consolidated annex the way the portal does: each piece of text in its own element, the
@@ -188,11 +190,11 @@ func recordedSite(later []string) site {
 }
 
 func TestFormsFromTheHorizon(t *testing.T) {
-	forms, err := Forms(orderPage)
+	forms, err := portal.Forms(orderPage)
 	if err != nil {
 		t.Fatal(err)
 	}
-	from, err := FromHorizon(forms)
+	from, err := portal.FromHorizon(forms, Horizon)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -200,7 +202,7 @@ func TestFormsFromTheHorizon(t *testing.T) {
 		t.Fatalf("%+v", from)
 	}
 	// The newest form alone came after the horizon, so no form is in force on it.
-	if _, err := FromHorizon(forms[2:]); err == nil {
+	if _, err := portal.FromHorizon(forms[2:], Horizon); err == nil {
 		t.Fatal("a form after the horizon was taken as in force on it")
 	}
 }
