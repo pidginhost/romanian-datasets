@@ -200,6 +200,70 @@
       ]
     },
     {
+      "name": "efactura",
+      "title": "Codes accepted by e-Factura",
+      "description": "The codes the e-Factura system of ANAF accepts in an invoice, as its validation package 1.0.9 checks them: for each check of a code list (BR-CL-*) and each check of CIUS-RO that narrows one (BR-RO-*), every code it accepts. The package carries its own copy of the European lists, which can be older than en16931-codes: a code new in en16931-codes can be refused by ANAF, and a code that left en16931-codes can still be accepted. Names are not here: read them from the file of en16931-codes the list field names. Also the subdivision codes CIUS-RO asks for in a Romanian address: RO-AB to RO-VS for the county, and SECTOR1 to SECTOR6 as the city in Bucharest. Only facts are taken from the package; its rules decide, and they are not here.",
+      "source": {
+        "name": "Ministry of Finance, e-Factura validation package ro16931-ubl-1.0.9 (https://mfinante.gov.ro/static/10/eFactura/ro16931-ubl-1.0.9.zip), files codelist/EN16931-UBL-codes.sch and cius-ro/RO16931-rules.sch",
+        "url": "https://mfinante.gov.ro/web/efactura/informatii-tehnice",
+        "licence": "Facts taken from the package: which codes each check accepts. The package states no licence and no text of it is copied"
+      },
+      "frequency": "monthly",
+      "update": "When the Ministry of Finance publishes a new validation package",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/efactura/accepted-codes.jsonl",
+          "sha256": "580b35bcbabe8ceb97ce77fac464df11f9adaabed0baf300f09eb99d0bccf370",
+          "bytes": 600435,
+          "records": 5561,
+          "fields": [
+            {
+              "name": "rule",
+              "description": "The check of the package: BR-CL-* for a code list of EN 16931, BR-RO-* for a rule of CIUS-RO"
+            },
+            {
+              "name": "part",
+              "description": "For a check with more than one list, when this one applies: invoice or credit note (BR-CL-01); any party, or seller or payee only (BR-CL-10). Null otherwise"
+            },
+            {
+              "name": "field",
+              "description": "What the check constrains, in our words"
+            },
+            {
+              "name": "list",
+              "description": "The file of en16931-codes with the name of the code, or null for the VAT point date codes, which are not there (UNTDID 2005: 3, 35, 432)"
+            },
+            {
+              "name": "code",
+              "description": "A code the check accepts. A code outside the list of its check is refused"
+            }
+          ]
+        },
+        {
+          "path": "datasets/efactura/subdivisions.jsonl",
+          "sha256": "ef8195f08486ae781062bad87eee118d7c0aaba5fbf998cbb7215fbe364c9c37",
+          "bytes": 2248,
+          "records": 48,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code CIUS-RO asks for: RO-AB to RO-VS (ISO 3166-2:RO) for the county of a Romanian address, SECTOR1 to SECTOR6 for the city in Bucharest, whose county is RO-B"
+            },
+            {
+              "name": "mnemonic",
+              "description": "For a county, the county letters, the mnemonic of counties.jsonl in siruta; null for a sector"
+            },
+            {
+              "name": "sector",
+              "description": "For a sector, its number, 1 to 6; null for a county"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "en16931-codes",
       "title": "Code lists of the European standard on e-invoicing, EN 16931",
       "description": "The code lists an invoice under EN 16931 uses, as the European Commission publishes them for the standard: units of measure, currencies, countries, VAT categories and exemption reasons, payment means, document types, electronic address and identifier schemes, allowance and charge reasons, item schemes, reference and text qualifiers, attachment types. They are European, not Romanian; the e-Factura dataset says which codes ANAF accepts. Every archive the Commission still publishes is read, from the one used from 2021-05-17 to the one used from 2026-11-15, so a code that left a list stays with its last day. A code can come back later, as a new row. Names are in English as in the lists. The currencies with a BNR rate are in bnr-currencies, by the same code.",
