@@ -20,6 +20,7 @@ import (
 	"github.com/pidginhost/romanian-datasets/internal/countries"
 	"github.com/pidginhost/romanian-datasets/internal/dataset"
 	"github.com/pidginhost/romanian-datasets/internal/holidays"
+	"github.com/pidginhost/romanian-datasets/internal/vatnode"
 )
 
 // builder makes one dataset. Name and frequency are stated here so that a build can leave a dataset out
@@ -41,6 +42,14 @@ var builders = []builder{
 	}},
 	{"public-holidays", dataset.Manual, func(time.Time) (dataset.Dataset, error) {
 		return holidays.Dataset(), nil
+	}},
+	{"vat-numbers", dataset.Manual, func(time.Time) (dataset.Dataset, error) {
+		client := &http.Client{Timeout: time.Minute}
+		return vatnode.Numbers(vatnode.FromSite(client), vatnode.VIESFromSite(client))
+	}},
+	{"vat-rates", dataset.Weekly, func(time.Time) (dataset.Dataset, error) {
+		client := &http.Client{Timeout: time.Minute}
+		return vatnode.Rates(vatnode.FromSite(client), vatnode.VIESFromSite(client))
 	}},
 }
 
@@ -70,6 +79,15 @@ func run(args []string, all []builder, now time.Time, out, errs io.Writer) int {
 			fmt.Fprintln(errs, err)
 			return 2
 		}
+		// A dataset that was never built has nothing to keep. It is named, and verify fails until it is built.
+		kept, missing, err := known(*root, kept)
+		if err != nil {
+			fmt.Fprintln(errs, err)
+			return 1
+		}
+		for _, name := range missing {
+			fmt.Fprintf(out, "not built yet: %s\n", name)
+		}
 		changed, err := dataset.Publish(*root, built, kept, now.UTC().Format(time.DateOnly))
 		if err != nil {
 			fmt.Fprintln(errs, err)
@@ -86,6 +104,14 @@ func run(args []string, all []builder, now time.Time, out, errs io.Writer) int {
 			fmt.Fprintln(errs, err)
 			return 1
 		}
+		var names []string
+		for _, b := range all {
+			names = append(names, b.name)
+		}
+		if _, missing, err := known(*root, names); err != nil || len(missing) > 0 {
+			fmt.Fprintf(errs, "listed but not in the index: %v %v\n", missing, err)
+			return 1
+		}
 		fmt.Fprintln(out, "the files match the index")
 		return 0
 	case "list":
@@ -97,6 +123,26 @@ func run(args []string, all []builder, now time.Time, out, errs io.Writer) int {
 		fmt.Fprintf(errs, "unknown command %q\n", args[0])
 		return 2
 	}
+}
+
+// known splits names into the datasets the index already has and the ones it does not.
+func known(root string, names []string) (in, missing []string, err error) {
+	index, err := dataset.ReadIndex(root)
+	if err != nil {
+		return nil, nil, err
+	}
+	have := map[string]bool{}
+	for _, d := range index.Datasets {
+		have[d.Name] = true
+	}
+	for _, name := range names {
+		if have[name] {
+			in = append(in, name)
+		} else {
+			missing = append(missing, name)
+		}
+	}
+	return in, missing, nil
 }
 
 // build makes the datasets the filter selects and names the ones left as they are.

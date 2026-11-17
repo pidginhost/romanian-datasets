@@ -105,7 +105,7 @@ func TestADatasetListedUnderAnotherFrequencyIsRefused(t *testing.T) {
 func TestListNamesEveryDatasetWithItsFrequency(t *testing.T) {
 	var out, errs bytes.Buffer
 	run2([]string{"list"}, day, &out, &errs)
-	for _, want := range []string{"bnr-currencies\tmanual", "countries\tmanual", "public-holidays\tmanual"} {
+	for _, want := range []string{"bnr-currencies\tmanual", "countries\tmanual", "public-holidays\tmanual", "vat-numbers\tmanual", "vat-rates\tweekly"} {
 		if !strings.Contains(out.String(), want) {
 			t.Fatalf("list said %q, want %q in it", out.String(), want)
 		}
@@ -168,5 +168,27 @@ func TestEveryListedDatasetHasANameOfItsOwnAndAFrequency(t *testing.T) {
 			t.Errorf("builder %q (%s) is listed twice or is not complete", b.name, b.frequency)
 		}
 		seen[b.name] = true
+	}
+}
+
+func TestADatasetNeverBuiltIsNamedAndVerifyFailsUntilItIsBuilt(t *testing.T) {
+	root := t.TempDir()
+	first, second := "1", "1"
+	all := []builder{fake("counties", dataset.Manual, &first), fake("rates", dataset.Weekly, &second)}
+	var out, errs bytes.Buffer
+
+	if code := run([]string{"build", "-root", root, "-only", "counties"}, all, day, &out, &errs); code != 0 {
+		t.Fatalf("build = %d: %s", code, errs.String())
+	}
+	if !strings.Contains(out.String(), "not built yet: rates") {
+		t.Fatalf("build said %q", out.String())
+	}
+	if code := run([]string{"verify", "-root", root}, all, day, &out, &errs); code != 1 {
+		t.Fatalf("verify = %d, want 1 while rates is not built", code)
+	}
+
+	run([]string{"build", "-root", root, "-frequency", "weekly"}, all, day, &out, &errs)
+	if code := run([]string{"verify", "-root", root}, all, day, &out, &errs); code != 0 {
+		t.Fatalf("verify = %d after both were built: %s", code, errs.String())
 	}
 }
