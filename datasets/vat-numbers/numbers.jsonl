@@ -1,0 +1,45 @@
+{"code":"AD","name_en":"Andorra","eu_vat":false,"vat_prefix":null,"tax_name":"Impost General Indirecte","tax_abbreviation":"IGI","format":"1 letter + 6 digits + 1 letter","pattern":"^[A-Z]\\d{6}[A-Z]$"}
+{"code":"AL","name_en":"Albania","eu_vat":false,"vat_prefix":null,"tax_name":"Tatimi mbi vlerën e shtuar","tax_abbreviation":"TVSH","format":"1 letter + 8 digits + 1 letter","pattern":"^[A-Z]\\d{8}[A-Z]$"}
+{"code":"AT","name_en":"Austria","eu_vat":true,"vat_prefix":"AT","tax_name":"Umsatzsteuer","tax_abbreviation":"USt","format":"ATU + 8 digits","pattern":"^ATU\\d{8}$"}
+{"code":"BA","name_en":"Bosnia and Herzegovina","eu_vat":false,"vat_prefix":null,"tax_name":"Porez na dodanu vrijednost","tax_abbreviation":"PDV","format":"12 digits","pattern":"^\\d{12}$"}
+{"code":"BE","name_en":"Belgium","eu_vat":true,"vat_prefix":"BE","tax_name":"Belasting over de toegevoegde waarde","tax_abbreviation":"BTW","format":"BE + 0/1 + 9 digits","pattern":"^BE[01]\\d{9}$"}
+{"code":"BG","name_en":"Bulgaria","eu_vat":true,"vat_prefix":"BG","tax_name":"Данък върху добавената стойност","tax_abbreviation":"ДДС","format":"BG + 9–10 digits","pattern":"^BG\\d{9,10}$"}
+{"code":"CH","name_en":"Switzerland","eu_vat":false,"vat_prefix":null,"tax_name":"Mehrwertsteuer","tax_abbreviation":"MWST","format":"CHE-NNN.NNN.NNN (+ MWST/TVA/IVA)","pattern":"^CHE-?\\d{3}\\.?\\d{3}\\.?\\d{3}[ ]?(MWST|TVA|IVA)?$"}
+{"code":"CY","name_en":"Cyprus","eu_vat":true,"vat_prefix":"CY","tax_name":"Φόρος Προστιθέμενης Αξίας","tax_abbreviation":"ΦΠΑ","format":"CY + 8 digits + 1 letter","pattern":"^CY\\d{8}[A-Z]$"}
+{"code":"CZ","name_en":"Czech Republic","eu_vat":true,"vat_prefix":"CZ","tax_name":"Daň z přidané hodnoty","tax_abbreviation":"DPH","format":"CZ + 8–10 digits","pattern":"^CZ\\d{8,10}$"}
+{"code":"DE","name_en":"Germany","eu_vat":true,"vat_prefix":"DE","tax_name":"Mehrwertsteuer","tax_abbreviation":"MwSt","format":"DE + 9 digits","pattern":"^DE\\d{9}$"}
+{"code":"DK","name_en":"Denmark","eu_vat":true,"vat_prefix":"DK","tax_name":"Moms","tax_abbreviation":"moms","format":"DK + 8 digits","pattern":"^DK\\d{8}$"}
+{"code":"EE","name_en":"Estonia","eu_vat":true,"vat_prefix":"EE","tax_name":"Käibemaks","tax_abbreviation":"km","format":"EE + 9 digits","pattern":"^EE\\d{9}$"}
+{"code":"ES","name_en":"Spain","eu_vat":true,"vat_prefix":"ES","tax_name":"Impuesto sobre el Valor Añadido","tax_abbreviation":"IVA","format":"ES + letter + 7 digits + letter/digit, or ES + 8 digits + letter","pattern":"^ES([A-Z]\\d{7}[A-Z0-9]|\\d{8}[A-Z])$"}
+{"code":"FI","name_en":"Finland","eu_vat":true,"vat_prefix":"FI","tax_name":"Arvonlisävero","tax_abbreviation":"ALV","format":"FI + 8 digits","pattern":"^FI\\d{8}$"}
+{"code":"FR","name_en":"France","eu_vat":true,"vat_prefix":"FR","tax_name":"Taxe sur la valeur ajoutée","tax_abbreviation":"TVA","format":"FR + 2 alphanumeric + 9 digits","pattern":"^FR[A-HJ-NP-Z0-9]{2}\\d{9}$"}
+{"code":"GB","name_en":"United Kingdom","eu_vat":false,"vat_prefix":null,"tax_name":"Value Added Tax","tax_abbreviation":"VAT","format":"GB + 9 digits, 12 digits, or GD/HA + 3 digits","pattern":"^GB(\\d{9}|\\d{12}|GD\\d{3}|HA\\d{3})$"}
+{"code":"GE","name_en":"Georgia","eu_vat":false,"vat_prefix":null,"tax_name":"დამატებული ღირებულების გადასახადი","tax_abbreviation":"დღგ","format":"9 digits","pattern":"^\\d{9}$"}
+{"code":"GR","name_en":"Greece","eu_vat":true,"vat_prefix":"EL","tax_name":"Φόρος Προστιθέμενης Αξίας","tax_abbreviation":"ΦΠΑ","format":"EL + 9 digits","pattern":"^EL\\d{9}$"}
+{"code":"HR","name_en":"Croatia","eu_vat":true,"vat_prefix":"HR","tax_name":"Porez na dodanu vrijednost","tax_abbreviation":"PDV","format":"HR + 11 digits","pattern":"^HR\\d{11}$"}
+{"code":"HU","name_en":"Hungary","eu_vat":true,"vat_prefix":"HU","tax_name":"Általános forgalmi adó","tax_abbreviation":"ÁFA","format":"HU + 8 digits","pattern":"^HU\\d{8}$"}
+{"code":"IE","name_en":"Ireland","eu_vat":true,"vat_prefix":"IE","tax_name":"Value Added Tax","tax_abbreviation":"VAT","format":"IE + 7 digits + 1–2 letters, or IE + 1 digit + letter/+/* + 5 digits + 1 letter","pattern":"^IE\\d{7}[A-W][AH]?$|^IE\\d[A-Z+*]\\d{5}[A-W]$"}
+{"code":"IS","name_en":"Iceland","eu_vat":false,"vat_prefix":null,"tax_name":"Virðisaukaskattur","tax_abbreviation":"VSK","format":"5–6 digits","pattern":"^\\d{5,6}$"}
+{"code":"IT","name_en":"Italy","eu_vat":true,"vat_prefix":"IT","tax_name":"Imposta sul valore aggiunto","tax_abbreviation":"IVA","format":"IT + 11 digits","pattern":"^IT\\d{11}$"}
+{"code":"LI","name_en":"Liechtenstein","eu_vat":false,"vat_prefix":null,"tax_name":"Mehrwertsteuer","tax_abbreviation":"MWST","format":"5 digits","pattern":"^\\d{5}$"}
+{"code":"LT","name_en":"Lithuania","eu_vat":true,"vat_prefix":"LT","tax_name":"Pridėtinės vertės mokestis","tax_abbreviation":"PVM","format":"LT + 9 or 12 digits","pattern":"^LT(\\d{9}|\\d{12})$"}
+{"code":"LU","name_en":"Luxembourg","eu_vat":true,"vat_prefix":"LU","tax_name":"Taxe sur la valeur ajoutée","tax_abbreviation":"TVA","format":"LU + 8 digits","pattern":"^LU\\d{8}$"}
+{"code":"LV","name_en":"Latvia","eu_vat":true,"vat_prefix":"LV","tax_name":"Pievienotās vērtības nodoklis","tax_abbreviation":"PVN","format":"LV + 11 digits","pattern":"^LV\\d{11}$"}
+{"code":"MC","name_en":"Monaco","eu_vat":false,"vat_prefix":null,"tax_name":"Taxe sur la valeur ajoutée","tax_abbreviation":"TVA","format":"FR + 2 alphanumeric + 9 digits","pattern":"^FR[A-HJ-NP-Z0-9]{2}\\d{9}$"}
+{"code":"MD","name_en":"Moldova","eu_vat":false,"vat_prefix":null,"tax_name":"Taxa pe valoarea adăugată","tax_abbreviation":"TVA","format":"7 digits","pattern":"^\\d{7}$"}
+{"code":"ME","name_en":"Montenegro","eu_vat":false,"vat_prefix":null,"tax_name":"Porez na dodatu vrijednost","tax_abbreviation":"PDV","format":"8 digits","pattern":"^\\d{8}$"}
+{"code":"MK","name_en":"North Macedonia","eu_vat":false,"vat_prefix":null,"tax_name":"Данок на додадена вредност","tax_abbreviation":"ДДВ","format":"MK + 13 digits","pattern":"^MK\\d{13}$"}
+{"code":"MT","name_en":"Malta","eu_vat":true,"vat_prefix":"MT","tax_name":"Taxxa tal-Valur Miżjud","tax_abbreviation":"VAT","format":"MT + 8 digits","pattern":"^MT\\d{8}$"}
+{"code":"NL","name_en":"Netherlands","eu_vat":true,"vat_prefix":"NL","tax_name":"Belasting over de toegevoegde waarde","tax_abbreviation":"btw","format":"NL + 9 digits + B + 2 digits","pattern":"^NL\\d{9}B\\d{2}$"}
+{"code":"NO","name_en":"Norway","eu_vat":false,"vat_prefix":null,"tax_name":"Merverdiavgift","tax_abbreviation":"MVA","format":"9 digits + MVA","pattern":"^\\d{9}MVA$"}
+{"code":"PL","name_en":"Poland","eu_vat":true,"vat_prefix":"PL","tax_name":"Podatek od towarów i usług","tax_abbreviation":"VAT","format":"PL + 10 digits","pattern":"^PL\\d{10}$"}
+{"code":"PT","name_en":"Portugal","eu_vat":true,"vat_prefix":"PT","tax_name":"Imposto sobre o Valor Acrescentado","tax_abbreviation":"IVA","format":"PT + 9 digits","pattern":"^PT\\d{9}$"}
+{"code":"RO","name_en":"Romania","eu_vat":true,"vat_prefix":"RO","tax_name":"Taxa pe valoarea adăugată","tax_abbreviation":"TVA","format":"RO + 2–10 digits","pattern":"^RO\\d{2,10}$"}
+{"code":"RS","name_en":"Serbia","eu_vat":false,"vat_prefix":null,"tax_name":"Porez na dodatu vrednost","tax_abbreviation":"PDV","format":"9 digits","pattern":"^\\d{9}$"}
+{"code":"SE","name_en":"Sweden","eu_vat":true,"vat_prefix":"SE","tax_name":"Mervärdesskatt","tax_abbreviation":"moms","format":"SE + 10 digits + 01","pattern":"^SE\\d{10}01$"}
+{"code":"SI","name_en":"Slovenia","eu_vat":true,"vat_prefix":"SI","tax_name":"Davek na dodano vrednost","tax_abbreviation":"DDV","format":"SI + 8 digits","pattern":"^SI\\d{8}$"}
+{"code":"SK","name_en":"Slovakia","eu_vat":true,"vat_prefix":"SK","tax_name":"Daň z pridanej hodnoty","tax_abbreviation":"DPH","format":"SK + 10 digits","pattern":"^SK\\d{10}$"}
+{"code":"TR","name_en":"Turkey","eu_vat":false,"vat_prefix":null,"tax_name":"Katma Değer Vergisi","tax_abbreviation":"KDV","format":"10 digits","pattern":"^\\d{10}$"}
+{"code":"UA","name_en":"Ukraine","eu_vat":false,"vat_prefix":null,"tax_name":"Податок на додану вартість","tax_abbreviation":"ПДВ","format":"9 digits","pattern":"^\\d{9}$"}
+{"code":"XI","name_en":"Northern Ireland","eu_vat":true,"vat_prefix":"XI","tax_name":"Value Added Tax","tax_abbreviation":"VAT","format":"XI + 9 digits, 12 digits, or GD/HA + 3 digits","pattern":"^XI(\\d{9}|\\d{12}|(GD|HA)\\d{3})$"}
+{"code":"XK","name_en":"Kosovo","eu_vat":false,"vat_prefix":null,"tax_name":"Tatimi mbi Vlerën e Shtuar","tax_abbreviation":"TVSH","format":"9 digits","pattern":"^\\d{9}$"}

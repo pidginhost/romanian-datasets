@@ -162,6 +162,102 @@
           ]
         }
       ]
+    },
+    {
+      "name": "vat-numbers",
+      "title": "VAT numbers of European jurisdictions",
+      "description": "How a VAT number looks in each European jurisdiction: the prefix, the format in words and as a regular expression, and the name of the tax in the local language. It says which jurisdictions are in the European Union for VAT. A number that fits the pattern is well formed; whether it is registered is a question for VIES or the national register.",
+      "source": {
+        "name": "vatnode/eu-vat-rates-data (https://github.com/vatnode/eu-vat-rates-data), from the Taxes in Europe Database of the European Commission for the member states and from national sources for the others; VAT prefixes from the VIES service of the European Commission (https://ec.europa.eu/taxation_customs/vies/rest-api/check-status)",
+        "url": "https://raw.githubusercontent.com/vatnode/eu-vat-rates-data/refs/heads/main/data/eu-vat-rates-data.json",
+        "licence": "MIT, copyright (c) 2026 Iurii Rogulia, for the vatnode file; European Commission reuse notice (Decision 2011/833/EU): reuse allowed with the source acknowledged, for VIES"
+      },
+      "frequency": "manual",
+      "update": "When a jurisdiction changes the form of its VAT numbers, or joins or leaves the European Union for VAT",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/vat-numbers/numbers.jsonl",
+          "sha256": "8637eb61986a4c88b7bd267f531d9d50a6fad79223d1a46741f59b21157a5c99",
+          "bytes": 8745,
+          "records": 45,
+          "fields": [
+            {
+              "name": "code",
+              "description": "ISO 3166-1 alpha-2 code of the jurisdiction; XI for Northern Ireland and XK for Kosovo, which have none"
+            },
+            {
+              "name": "name_en",
+              "description": "Name of the jurisdiction in English"
+            },
+            {
+              "name": "eu_vat",
+              "description": "True when the VIES service of the European Commission answers for the VAT numbers of the jurisdiction"
+            },
+            {
+              "name": "vat_prefix",
+              "description": "The prefix of the VAT numbers in VIES when eu_vat is true, otherwise null. Greece is EL, not GR"
+            },
+            {
+              "name": "tax_name",
+              "description": "The name of the tax in the local language"
+            },
+            {
+              "name": "tax_abbreviation",
+              "description": "The short name of the tax in the local language"
+            },
+            {
+              "name": "format",
+              "description": "The form of the VAT number, in words"
+            },
+            {
+              "name": "pattern",
+              "description": "The form of the VAT number as a regular expression, with the prefix where the jurisdiction uses one"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "vat-rates",
+      "title": "VAT rates of European jurisdictions",
+      "description": "The VAT rates in force in each European jurisdiction: the standard rate, the reduced rates, and the super-reduced and parking rates where there are any. It does not say which goods a reduced rate applies to, and it holds no earlier rates: the day a dataset changed is in the index.",
+      "source": {
+        "name": "vatnode/eu-vat-rates-data (https://github.com/vatnode/eu-vat-rates-data), from the Taxes in Europe Database of the European Commission for the member states and from national sources for the others; VAT prefixes from the VIES service of the European Commission (https://ec.europa.eu/taxation_customs/vies/rest-api/check-status)",
+        "url": "https://raw.githubusercontent.com/vatnode/eu-vat-rates-data/refs/heads/main/data/eu-vat-rates-data.json",
+        "licence": "MIT, copyright (c) 2026 Iurii Rogulia, for the vatnode file; European Commission reuse notice (Decision 2011/833/EU): reuse allowed with the source acknowledged, for VIES"
+      },
+      "frequency": "weekly",
+      "update": "When a jurisdiction changes a rate; the source checks the European Commission database daily",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/vat-rates/rates.jsonl",
+          "sha256": "237d9f804d06350a4d9d8bffed0cda1246e9a2381278bdf655d4234bf98c0f78",
+          "bytes": 8672,
+          "records": 140,
+          "fields": [
+            {
+              "name": "code",
+              "description": "ISO 3166-1 alpha-2 code of the jurisdiction; XI for Northern Ireland and XK for Kosovo, which have none"
+            },
+            {
+              "name": "eu_vat",
+              "description": "True when the VIES service of the European Commission answers for the VAT numbers of the jurisdiction"
+            },
+            {
+              "name": "category",
+              "description": "standard, reduced, super_reduced or parking"
+            },
+            {
+              "name": "rate",
+              "description": "The rate in percent, as decimal text with no trailing zeros: \"21\", \"5.5\""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

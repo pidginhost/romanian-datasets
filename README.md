@@ -11,6 +11,8 @@ The public copy is https://github.com/pidginhost/romanian-datasets.
 | `bnr-currencies` | The currencies with a reference rate of the National Bank of Romania, the units each rate is given for, and since when | BNR yearly rate files | By hand, when BNR changes its list |
 | `countries` | Countries and territories with their ISO 3166-1 codes, names in Romanian and English, and whether they are in the European Union | Publications Office of the European Union | By hand, when the table changes |
 | `public-holidays` | The days on which no work is done by law, as rules that give them for any year | Labour Code, article 139 (1) | By hand, when the law changes |
+| `vat-numbers` | How a VAT number looks in each European jurisdiction, and which are in the European Union for VAT | vatnode/eu-vat-rates-data, VIES | By hand, when a format changes |
+| `vat-rates` | The VAT rates in force in each European jurisdiction | vatnode/eu-vat-rates-data (European Commission TEDB), VIES | Weekly |
 
 More datasets follow, each after its source and licence are confirmed.
 
@@ -35,6 +37,10 @@ datasets/
     countries.jsonl
   public-holidays/
     rules.jsonl
+  vat-numbers/
+    numbers.jsonl
+  vat-rates/
+    rates.jsonl
 ```
 
 ## Licence
@@ -80,7 +86,7 @@ Every pipeline on `main` ends with `mirror:github`, which publishes `main` to Gi
 2. Choose its frequency from how often the source changes. Data that changes rarely is `manual`.
 3. Add a package under `internal/` that returns a `dataset.Dataset`, with tests on recorded input.
 4. Add it to `builders` in `cmd/datasets/main.go`.
-5. Run `build -only <name>` and commit the files it writes together with the code.
+5. Run `build -only <name>` and commit the files it writes together with the code. `verify` fails while a listed dataset is not in the index.
 6. If no dataset had that frequency before, add its pipeline schedule.
 
 Rules for contributors are in `AGENTS.md`.
