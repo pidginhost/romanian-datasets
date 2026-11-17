@@ -34,16 +34,20 @@ func gc(columns []string, rows ...[3]string) string {
 
 var codeName = []string{"Code", "Name"}
 
-// archive writes a zip with every list of Lists: the given ones as given, the others with one code.
+// archive writes a zip with every list of Lists and Left: the given ones as given, the others with one code.
 func archive(lists map[string]string) []byte {
 	var b bytes.Buffer
 	z := zip.NewWriter(&b)
+	members := []string{"Country.gc"}
 	for _, l := range Lists {
-		text, ok := lists[l.Member]
+		members = append(members, l.Member)
+	}
+	for _, member := range members {
+		text, ok := lists[member]
 		if !ok {
 			text = gc(codeName, [3]string{"X", "Something", ""})
 		}
-		w, _ := z.Create(l.Member)
+		w, _ := z.Create(member)
 		io.WriteString(w, text)
 	}
 	z.Close()
@@ -130,8 +134,15 @@ func TestReadListReadsTheColumnsAndRefusesSurprises(t *testing.T) {
 }
 
 func TestReadArchiveWantsExactlyTheKnownLists(t *testing.T) {
-	if _, err := readArchive(archive(nil)); err != nil {
+	lists, err := readArchive(archive(nil))
+	if err != nil {
 		t.Fatal(err)
+	}
+	if _, kept := lists["Country.gc"]; kept || len(lists) != len(Lists) {
+		t.Fatalf("lists kept: %d, countries kept: %v", len(lists), kept)
+	}
+	if _, err := readArchive(archive(map[string]string{"Country.gc": "not a list"})); err == nil {
+		t.Fatal("a broken list that is left out was not seen")
 	}
 
 	var b bytes.Buffer

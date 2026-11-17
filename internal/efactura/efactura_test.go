@@ -123,7 +123,7 @@ func TestReadGivesTheCodesOfEachCheckAndTheSubdivisions(t *testing.T) {
 		}
 	}
 	for _, a := range all {
-		if a.Rule == "BR-CL-06" && a.List != nil || a.Rule == "BR-CL-23" && (a.List == nil || *a.List != "units.jsonl") {
+		if a.Rule == "BR-CL-06" && a.List != nil || a.Rule == "BR-CL-23" && (a.List == nil || *a.List != "en16931-codes/units.jsonl") || a.Rule == "BR-CL-14" && (a.List == nil || *a.List != "countries/countries.jsonl") {
 			t.Errorf("list of %s: %v", a.Rule, a.List)
 		}
 	}

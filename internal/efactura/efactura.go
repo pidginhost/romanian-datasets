@@ -138,7 +138,7 @@ type Rule struct {
 	ID string
 	// Field is what the check constrains, in our words.
 	Field string
-	// List is the file of the EN 16931 dataset the codes come from, or empty for a list that has none.
+	// List is the file that names the codes, as dataset/file, or empty for a list no dataset has.
 	List string
 	// Parts are the conditions under which a list applies, in the order of the lists in the test;
 	// empty when the test has one list for every case.
@@ -147,34 +147,34 @@ type Rule struct {
 
 // CodeRules are the checks of the code list file, as the European standard numbers them.
 var CodeRules = []Rule{
-	{"BR-CL-01", "Invoice type code and credit note type code", "document-types.jsonl", []string{"invoice", "credit note"}},
-	{"BR-CL-03", "Currency of an amount", "currencies.jsonl", nil},
-	{"BR-CL-04", "Invoice currency", "currencies.jsonl", nil},
-	{"BR-CL-05", "VAT accounting currency", "currencies.jsonl", nil},
+	{"BR-CL-01", "Invoice type code and credit note type code", "en16931-codes/document-types.jsonl", []string{"invoice", "credit note"}},
+	{"BR-CL-03", "Currency of an amount", "en16931-codes/currencies.jsonl", nil},
+	{"BR-CL-04", "Invoice currency", "en16931-codes/currencies.jsonl", nil},
+	{"BR-CL-05", "VAT accounting currency", "en16931-codes/currencies.jsonl", nil},
 	{"BR-CL-06", "VAT point date code of the invoice period", "", nil},
-	{"BR-CL-07", "Scheme of an invoiced object identifier", "reference-qualifiers.jsonl", nil},
-	{"BR-CL-10", "Scheme of a party identifier", "identifier-schemes.jsonl", []string{"any party", "seller or payee"}},
-	{"BR-CL-11", "Scheme of a legal registration identifier", "identifier-schemes.jsonl", nil},
-	{"BR-CL-13", "Scheme of an item classification", "item-schemes.jsonl", nil},
-	{"BR-CL-14", "Country of an address", "countries.jsonl", nil},
-	{"BR-CL-15", "Country of origin of an item", "countries.jsonl", nil},
-	{"BR-CL-16", "Payment means", "payment-means.jsonl", nil},
-	{"BR-CL-17", "VAT category", "vat-categories.jsonl", nil},
-	{"BR-CL-18", "VAT category of an item", "vat-categories.jsonl", nil},
-	{"BR-CL-19", "Allowance reason", "allowance-reasons.jsonl", nil},
-	{"BR-CL-20", "Charge reason", "charge-reasons.jsonl", nil},
-	{"BR-CL-21", "Scheme of an item standard identifier", "identifier-schemes.jsonl", nil},
-	{"BR-CL-22", "VAT exemption reason", "vat-exemption-reasons.jsonl", nil},
-	{"BR-CL-23", "Unit of measure", "units.jsonl", nil},
-	{"BR-CL-24", "Type of an attached document", "mime-codes.jsonl", nil},
-	{"BR-CL-25", "Scheme of an electronic address", "electronic-address-schemes.jsonl", nil},
-	{"BR-CL-26", "Scheme of a delivery location identifier", "identifier-schemes.jsonl", nil},
+	{"BR-CL-07", "Scheme of an invoiced object identifier", "en16931-codes/reference-qualifiers.jsonl", nil},
+	{"BR-CL-10", "Scheme of a party identifier", "en16931-codes/identifier-schemes.jsonl", []string{"any party", "seller or payee"}},
+	{"BR-CL-11", "Scheme of a legal registration identifier", "en16931-codes/identifier-schemes.jsonl", nil},
+	{"BR-CL-13", "Scheme of an item classification", "en16931-codes/item-schemes.jsonl", nil},
+	{"BR-CL-14", "Country of an address", "countries/countries.jsonl", nil},
+	{"BR-CL-15", "Country of origin of an item", "countries/countries.jsonl", nil},
+	{"BR-CL-16", "Payment means", "en16931-codes/payment-means.jsonl", nil},
+	{"BR-CL-17", "VAT category", "en16931-codes/vat-categories.jsonl", nil},
+	{"BR-CL-18", "VAT category of an item", "en16931-codes/vat-categories.jsonl", nil},
+	{"BR-CL-19", "Allowance reason", "en16931-codes/allowance-reasons.jsonl", nil},
+	{"BR-CL-20", "Charge reason", "en16931-codes/charge-reasons.jsonl", nil},
+	{"BR-CL-21", "Scheme of an item standard identifier", "en16931-codes/identifier-schemes.jsonl", nil},
+	{"BR-CL-22", "VAT exemption reason", "en16931-codes/vat-exemption-reasons.jsonl", nil},
+	{"BR-CL-23", "Unit of measure", "en16931-codes/units.jsonl", nil},
+	{"BR-CL-24", "Type of an attached document", "en16931-codes/mime-codes.jsonl", nil},
+	{"BR-CL-25", "Scheme of an electronic address", "en16931-codes/electronic-address-schemes.jsonl", nil},
+	{"BR-CL-26", "Scheme of a delivery location identifier", "en16931-codes/identifier-schemes.jsonl", nil},
 }
 
 // RORules are the checks of CIUS-RO that narrow a list.
 var RORules = []Rule{
-	{"BR-RO-020_1", "Invoice type code", "document-types.jsonl", nil},
-	{"BR-RO-020_2", "Credit note type code", "document-types.jsonl", nil},
+	{"BR-RO-020_1", "Invoice type code", "en16931-codes/document-types.jsonl", nil},
+	{"BR-RO-020_2", "Credit note type code", "en16931-codes/document-types.jsonl", nil},
 	{"BR-RO-040", "VAT point date code", "", nil},
 }
 
@@ -209,7 +209,7 @@ type Accepted struct {
 	// Part names when the code applies, for a rule with more than one list; null otherwise.
 	Part  *string `json:"part"`
 	Field string  `json:"field"`
-	// List is the file of en16931-codes with the name of the code, or null.
+	// List is the file that names the code, as dataset/file, or null.
 	List *string `json:"list"`
 	Code string  `json:"code"`
 }
@@ -444,7 +444,7 @@ func Dataset(get Get) (dataset.Dataset, error) {
 		Description: "The codes the e-Factura system of ANAF accepts in an invoice, as its validation package " + pkg.Label() + " checks them: " +
 			"for each check of a code list (BR-CL-*) and each check of CIUS-RO that narrows one (BR-RO-*), every code it accepts. " +
 			"The package carries its own copy of the European lists, which can be older than en16931-codes: a code new in en16931-codes can be refused by ANAF, " +
-			"and a code that left en16931-codes can still be accepted. Names are not here: read them from the file of en16931-codes the list field names. " +
+			"and a code that left en16931-codes can still be accepted. Names are not here: read them from the file the list field names. " +
 			"Also the subdivision codes CIUS-RO asks for in a Romanian address: RO-AB to RO-VS for the county, and SECTOR1 to SECTOR6 as the city in Bucharest. " +
 			"Only facts are taken from the package; its rules decide, and they are not here.",
 		Source: dataset.Source{
@@ -461,7 +461,7 @@ func Dataset(get Get) (dataset.Dataset, error) {
 					{Name: "rule", Description: "The check of the package: BR-CL-* for a code list of EN 16931, BR-RO-* for a rule of CIUS-RO"},
 					{Name: "part", Description: "For a check with more than one list, when this one applies: invoice or credit note (BR-CL-01); any party, or seller or payee only (BR-CL-10). Null otherwise"},
 					{Name: "field", Description: "What the check constrains, in our words"},
-					{Name: "list", Description: "The file of en16931-codes with the name of the code, or null for the VAT point date codes, which are not there (UNTDID 2005: 3, 35, 432)"},
+					{Name: "list", Description: "The file that names the code, as dataset/file: a file of en16931-codes, found by code, or countries/countries.jsonl, found by alpha2, where 1A (Kosovo, XK there) and XI (Northern Ireland) are not. Null for the VAT point date codes, which no dataset has (UNTDID 2005: 3, 35, 432)"},
 					{Name: "code", Description: "A code the check accepts. A code outside the list of its check is refused"},
 				},
 				Records: codes,
