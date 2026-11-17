@@ -36,6 +36,7 @@ import (
 	"github.com/pidginhost/romanian-datasets/internal/reges"
 	"github.com/pidginhost/romanian-datasets/internal/singleentry"
 	"github.com/pidginhost/romanian-datasets/internal/siruta"
+	"github.com/pidginhost/romanian-datasets/internal/statements"
 	"github.com/pidginhost/romanian-datasets/internal/taxoffices"
 	"github.com/pidginhost/romanian-datasets/internal/travel"
 	"github.com/pidginhost/romanian-datasets/internal/treasury"
@@ -118,6 +119,21 @@ var builders = []builder{
 			return dataset.Dataset{}, err
 		}
 		return en16931.Dataset(en16931.FromSite(&http.Client{Timeout: 2 * time.Minute}), codes)
+	}},
+	{"financial-statements", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
+		var rows []statements.Line
+		file, err := published(root, "financial-statements", "lines.jsonl")
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		if file != nil {
+			rows, err = statements.PublishedRows(file)
+			file.Close()
+			if err != nil {
+				return dataset.Dataset{}, err
+			}
+		}
+		return statements.Dataset(statements.FromSite(&http.Client{Timeout: 5 * time.Minute}), rows)
 	}},
 	{"fixed-assets", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
 		var rows []fixedassets.Asset

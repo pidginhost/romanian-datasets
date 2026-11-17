@@ -19,6 +19,7 @@ The public copy is https://github.com/pidginhost/romanian-datasets.
 | `countries` | Countries and territories with their ISO 3166-1 codes, names in Romanian and English, whether they are in the European Union, and the code an electronic invoice uses for them | Publications Office of the European Union | By hand, when the table changes |
 | `efactura` | The codes the e-Factura system of ANAF accepts for each check of a code list, the CIUS-RO limits on invoice types and VAT point date codes, and the county and sector codes of a Romanian address | Ministry of Finance, e-Factura validation package | Monthly |
 | `en16931-codes` | The code lists of the European standard on e-invoicing: units, currencies, VAT categories and exemption reasons, payment means, document types, address schemes and the others, with the period of each code; the countries are in `countries` | European Commission, EN 16931 genericode archives | Monthly |
+| `financial-statements` | The formats of the balance sheet, the abridged balance sheet and the profit and loss account (OMFP 1802/2014): each row with its number, its accounts split into terms and the rows it sums | Legislative Portal, consolidated OMFP 1802/2014 | Monthly |
 | `fixed-assets` | The catalogue of fixed assets (HG 2139/2004): classification codes and the range of their normal life in years, the depreciation period | Legislative Portal, HG 2139/2004 | Monthly |
 | `mfp-localities` | The localities of the Ministry of Finance nomenclature, whose codes ANAF uses in addresses, with the SIRUTA code each matches and how | Ministry of Finance, nomenclatures | Monthly |
 | `public-holidays` | The days on which no work is done by law, as rules that give them for any year | Labour Code, article 139 (1) | By hand, when the law changes |
@@ -89,6 +90,8 @@ datasets/
     units.jsonl
     vat-categories.jsonl
     vat-exemption-reasons.jsonl
+  financial-statements/
+    lines.jsonl
   fixed-assets/
     assets.jsonl
   mfp-localities/
