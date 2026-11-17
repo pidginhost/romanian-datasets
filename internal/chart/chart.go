@@ -1,5 +1,6 @@
-// Package chart builds the general chart of accounts of OMFP 1802/2014, chapter 14 of the accounting
-// regulations for companies, from the consolidated forms of the order on the Legislative Portal.
+// Package chart builds charts of accounts set by order of the Minister of Finance, from the consolidated
+// forms of each order on the Legislative Portal: the general chart for companies (OMFP 1802/2014), for
+// non-profit entities (OMFP 3103/2017) and for public institutions (OMFP 1917/2005).
 package chart
 
 import (
@@ -20,8 +21,99 @@ import (
 // Portal is where the Legislative Portal shows an act, by number.
 const Portal = portal.Address
 
+// Spec says where an order keeps its chart and how the chart is written.
+type Spec struct {
+	// Name, Title and Description are those of the dataset.
+	Name, Title, Description string
+	// Act names the order, as in OMFP 1802/2014.
+	Act string
+	// Order is the page of the order, which lists its consolidated forms.
+	Order string
+	// Annex is the start of the text of the link from a form of the order to its annex.
+	Annex string
+	// Start is the start of the line before the first account, after a leading dash; the last such line
+	// counts. End is the start of the first line after the chart.
+	Start, End string
+	// Table is true for a chart written as a table, each code on a line of its own and its name on the
+	// lines after it; false for one written as "1011. Name (P)".
+	Table bool
+	// Code is the pattern of a code on a line of its own, for a table.
+	Code *regexp.Regexp
+	// Levels describes the level field.
+	Levels string
+	// Changes gives, by the date of a consolidated form after the horizon, the change of the chart it
+	// carries. A form whose chart differs from the one before and that is not here stops the build.
+	Changes map[string]Change
+}
+
 // Order is the page of OMFP 1802/2014, which lists its consolidated forms.
 const Order = Portal + "250771"
+
+// Companies is the general chart of OMFP 1802/2014, chapter 14 of the regulations.
+var Companies = Spec{
+	Name:  "chart-of-accounts",
+	Title: "General chart of accounts (OMFP 1802/2014)",
+	Description: "The general chart of accounts for double-entry bookkeeping of companies, chapter 14 of the accounting regulations approved by " +
+		"OMFP 1802/2014: classes, groups, accounts and subaccounts, with the function the order gives (A for asset, P for liability, A/P for both) " +
+		"where it gives one; a subaccount without one takes the function of its account. " +
+		"role marks what the closing of the result needs: the accounts of class 6 are expenses, those of class 7 income, and 121 is the result. " +
+		"notes are the notes of the order on the account. The chart is the one in force on " + Horizon.Format(time.DateOnly) +
+		", the first day the dataset covers; an account with valid_from null was in force that day. A later change of the chart gives the day it applies " +
+		"from and the act that made it. Names are as the order writes them.",
+	Act:     "OMFP 1802/2014",
+	Order:   Order,
+	Annex:   "REGLEMENT",
+	Start:   "Planul de conturi general este următorul",
+	End:     "Capitolul 15",
+	Levels:  "class, group, account (three digits) or subaccount (four digits)",
+	Changes: map[string]Change{},
+}
+
+// Nonprofit is the general chart of OMFP 3103/2017, for associations, foundations and other non-profit
+// legal persons, point 344 of the regulations.
+var Nonprofit = Spec{
+	Name:  "chart-of-accounts-nonprofit",
+	Title: "Chart of accounts for non-profit entities (OMFP 3103/2017)",
+	Description: "The general chart of accounts for double-entry bookkeeping of non-profit legal persons (associations, foundations, federations, " +
+		"unions, religious denominations and the others the order names), point 344 of the accounting regulations approved by OMFP 3103/2017: " +
+		"classes, groups, accounts, subaccounts and the details the order writes as 105.01, with the function the order gives (A, P or A/P) " +
+		"where it gives one. role marks what the closing of the result needs: the accounts of class 6 are expenses, those of class 7 income, " +
+		"and 121 and its subaccounts are the result. notes are the notes of the order on the account. The chart is the one in force on " +
+		Horizon.Format(time.DateOnly) + ", the first day the dataset covers; an account with valid_from null was in force that day. " +
+		"A later change of the chart gives the day it applies from and the act that made it. Names are as the order writes them.",
+	Act:     "OMFP 3103/2017",
+	Order:   Portal + "250776",
+	Annex:   "Reglementărilor contabile",
+	Start:   "Planul de conturi general este următorul",
+	End:     "Capitolul 9",
+	Table:   true,
+	Code:    regexp.MustCompile(`^\d{1,4}(?:\.\d{2})?$`),
+	Levels:  "class, group, account (three digits), subaccount (four digits) or detail (a code with a point, as 105.01)",
+	Changes: map[string]Change{},
+}
+
+// Public is the general chart of OMFP 1917/2005 for public institutions, chapter VI of the methodological
+// norms.
+var Public = Spec{
+	Name:  "chart-of-accounts-public",
+	Title: "Chart of accounts for public institutions (OMFP 1917/2005)",
+	Description: "The general chart of accounts for public institutions, chapter VI of the methodological norms approved by OMFP 1917/2005: " +
+		"classes, groups and the synthetic accounts of the first, second and third degree, which the order writes as 100, 100 01 and 100 01 01. " +
+		"The order gives no function in the chart; the instructions of chapter VII describe each account. role marks the accounts of class 6 " +
+		"as expenses, those of class 7 as income and financing, and 121 and its accounts as the result. A few codes of the order have no account of " +
+		"the degree above them; parent is then the nearest code above that the chart has. The chart is the one in force on " +
+		Horizon.Format(time.DateOnly) + ", the first day the dataset covers; an account with valid_from null was in force that day. " +
+		"A later change of the chart gives the day it applies from and the act that made it. Names are as the order writes them.",
+	Act:     "OMFP 1917/2005",
+	Order:   Portal + "67474",
+	Annex:   "Normelor metodologice",
+	Start:   "PLANUL DE CONTURI GENERAL PENTRU INSTITUȚIILE PUBLICE",
+	End:     "Capitolul VII",
+	Table:   true,
+	Code:    regexp.MustCompile(`^\d{1,3}(?: \d{2}){0,2}$`),
+	Levels:  "class, group, account (first degree, three digits), subaccount (second degree, as 100 01) or detail (third degree, as 100 01 01)",
+	Changes: map[string]Change{},
+}
 
 // Horizon is the first day the dataset covers: the chart in force on that day and every change after it.
 var Horizon = time.Date(2026, 1, 1, 0, 0, 0, 0, time.UTC)
@@ -44,15 +136,11 @@ type Change struct {
 	Act     string
 }
 
-// Changes gives, by the date of a consolidated form after the horizon, the change of the chart it carries.
-// A consolidated form whose chart differs from the one before and that is not here stops the build.
-var Changes = map[string]Change{}
-
 // Account is one line of the chart.
 type Account struct {
 	Code string `json:"code"`
-	Name string `json:"name"`
-	// Level is class, group, account (three digits) or subaccount (four digits).
+	// Name is null only where the order writes a code without a name.
+	Name   *string `json:"name"`
 	Level  string  `json:"level"`
 	Parent *string `json:"parent"`
 	// Function is A, P or A/P as the order states it, or null where it states none.
@@ -66,15 +154,17 @@ type Account struct {
 }
 
 var (
-	annexPattern     = regexp.MustCompile(`DetaliiDocumentAfis/(\d+)">REGLEMENT`)
 	classPattern     = regexp.MustCompile(`^Clasa (\d) - (.+)$`)
 	linePattern      = regexp.MustCompile(`^(\d{2,4})\.?\s+(.+)$`)
 	notePattern      = regexp.MustCompile(`^\*(\d+)\)\s*(.*)$`)
 	markPattern      = regexp.MustCompile(`\*(\d+)\)`)
 	localPattern     = regexp.MustCompile(`^\^(\d+)\s*(.*)$`)
 	localMarkPattern = regexp.MustCompile(`\^(\d+)`)
-	removedPattern   = regexp.MustCompile(`^(Eliminat|Abrogat)\.?$`)
-	functionPattern  = regexp.MustCompile(`\s*\((A|P|A/P)\)`)
+	// The order marks an account it took out as Eliminat or Abrogat, sometimes misspelt.
+	removedPattern = regexp.MustCompile(`^(Eliminat|Elimimnat|Eiminat|Abrogat|Abrogată)\.?$`)
+	// wordPattern is a name of one word and a point, which is likely another spelling of the marks above.
+	wordPattern     = regexp.MustCompile(`^\pL+\.$`)
+	functionPattern = regexp.MustCompile(`\s*\((A|P|A/P)\)`)
 )
 
 type entry struct {
@@ -89,17 +179,33 @@ type noteRef struct {
 	of  *entry
 }
 
-// ReadChapter reads chapter 14 out of the text of the consolidated annex and gives its accounts.
-func ReadChapter(page string) ([]Account, error) {
+// ReadChapter reads the chart out of the text of a consolidated annex and gives its accounts.
+func ReadChapter(page string, spec Spec) ([]Account, error) {
 	all := portal.Lines(page)
 	start := -1
 	for i, l := range all {
-		if strings.Contains(l, "Planul de conturi general este următorul") {
+		if strings.HasPrefix(strings.TrimPrefix(l, "- "), spec.Start) {
 			start = i
 		}
 	}
 	if start < 0 {
 		return nil, fmt.Errorf("the annex has no chart of accounts")
+	}
+	// isEntry says whether a line starts an account, and gives its code and the text on the line.
+	isEntry := func(l string) (string, string, bool) {
+		if spec.Table {
+			if spec.Code.MatchString(l) {
+				return l, "", true
+			}
+			return "", "", false
+		}
+		if m := classPattern.FindStringSubmatch(l); m != nil {
+			return m[1], m[2], true
+		}
+		if m := linePattern.FindStringSubmatch(l); m != nil {
+			return m[1], m[2], true
+		}
+		return "", "", false
 	}
 
 	// Notes come two ways: *N) notes, mostly listed at the end of the chapter, and ^N notes of one account,
@@ -110,12 +216,13 @@ func ReadChapter(page string) ([]Account, error) {
 	var note *noteRef
 	inChange, inBlock, inOld := false, false, false
 	for _, l := range all[start+1:] {
-		if strings.HasPrefix(l, "Capitolul 15") {
+		if strings.HasPrefix(l, spec.End) {
 			break
 		}
+		_, _, entryLine := isEntry(l)
 		// A note of the portal on a change: one line, or several up to a closing parenthesis.
 		if inChange {
-			if strings.HasSuffix(l, ")") && !linePattern.MatchString(l) {
+			if strings.HasSuffix(l, ")") && !entryLine {
 				inChange = false
 			}
 			continue
@@ -125,7 +232,7 @@ func ReadChapter(page string) ([]Account, error) {
 			inOld, note = true, nil
 			continue
 		}
-		if inOld && !linePattern.MatchString(l) && !classPattern.MatchString(l) && !strings.HasPrefix(l, "(la ") && l != "Notă" && !notePattern.MatchString(l) {
+		if inOld && !entryLine && !strings.HasPrefix(l, "(la ") && l != "Notă" && !notePattern.MatchString(l) {
 			continue
 		}
 		inOld = false
@@ -134,7 +241,7 @@ func ReadChapter(page string) ([]Account, error) {
 			inChange = !strings.HasSuffix(l, ")")
 			note = nil
 			continue
-		case l == "...":
+		case l == "..." || l == "+":
 			continue
 		case l == "Notă":
 			inBlock, note = true, nil
@@ -149,10 +256,16 @@ func ReadChapter(page string) ([]Account, error) {
 			continue
 		}
 		if m := localPattern.FindStringSubmatch(l); m != nil && inBlock {
-			if len(entries) == 0 {
-				return nil, fmt.Errorf("a note before any account")
+			// The note goes to the nearest account above that refers to it and has it not yet.
+			var e *entry
+			for i := len(entries) - 1; i >= 0 && e == nil; i-- {
+				if _, has := entries[i].local[m[1]]; !has && strings.Contains(entries[i].text, "^"+m[1]) {
+					e = entries[i]
+				}
 			}
-			e := entries[len(entries)-1]
+			if e == nil {
+				return nil, fmt.Errorf("note ^%s refers to no account above it", m[1])
+			}
 			if e.local == nil {
 				e.local = map[string]string{}
 			}
@@ -160,13 +273,8 @@ func ReadChapter(page string) ([]Account, error) {
 			note = &noteRef{key: m[1], of: e}
 			continue
 		}
-		if m := classPattern.FindStringSubmatch(l); m != nil {
-			entries = append(entries, &entry{code: m[1], text: m[2]})
-			inBlock, note = false, nil
-			continue
-		}
-		if m := linePattern.FindStringSubmatch(l); m != nil {
-			entries = append(entries, &entry{code: m[1], text: m[2]})
+		if code, text, ok := isEntry(l); ok {
+			entries = append(entries, &entry{code: code, text: text})
 			inBlock, note = false, nil
 			continue
 		}
@@ -179,6 +287,8 @@ func ReadChapter(page string) ([]Account, error) {
 			// The portal's own text in a note block.
 		case len(entries) > 0:
 			entries[len(entries)-1].text += " " + l
+		case spec.Table:
+			// The head of the table.
 		default:
 			return nil, fmt.Errorf("the chart starts with a line the build does not know: %q", l)
 		}
@@ -196,6 +306,9 @@ func ReadChapter(page string) ([]Account, error) {
 		// An account the order took out is left in the text as "Eliminat"; it may come back under another name.
 		if removedPattern.MatchString(text) {
 			continue
+		}
+		if wordPattern.MatchString(text) {
+			return nil, fmt.Errorf("account %s is named %q, which may mark it as taken out: a person decides", e.code, text)
 		}
 		var function *string
 		if fs := functionPattern.FindAllStringSubmatch(text, -1); len(fs) > 1 {
@@ -222,8 +335,10 @@ func ReadChapter(page string) ([]Account, error) {
 		if len(e.local) > len(localMarkPattern.FindAllString(text, -1)) {
 			return nil, fmt.Errorf("account %s has a note it does not refer to", e.code)
 		}
-		name := strings.TrimSpace(localMarkPattern.ReplaceAllString(markPattern.ReplaceAllString(functionPattern.ReplaceAllString(text, ""), ""), ""))
-		if name == "" {
+		var name *string
+		if n := strings.TrimSpace(localMarkPattern.ReplaceAllString(markPattern.ReplaceAllString(functionPattern.ReplaceAllString(text, ""), ""), "")); n != "" {
+			name = &n
+		} else if !spec.Table {
 			return nil, fmt.Errorf("account %s has no name", e.code)
 		}
 		if seen[e.code] {
@@ -231,21 +346,17 @@ func ReadChapter(page string) ([]Account, error) {
 		}
 		seen[e.code] = true
 
-		a := Account{Code: e.code, Name: name, Function: function, Notes: accountNotes}
-		switch len(e.code) {
-		case 1:
-			a.Level = "class"
-		case 2:
-			a.Level = "group"
-		case 3:
-			a.Level = "account"
-		case 4:
-			a.Level = "subaccount"
-		}
+		a := Account{Code: e.code, Name: name, Function: function, Notes: accountNotes, Level: level(e.code)}
 		if len(e.code) > 1 {
-			parent := e.code[:len(e.code)-1]
-			if !seen[parent] {
-				return nil, fmt.Errorf("account %s comes before its parent %s", e.code, parent)
+			parent := ""
+			for up := above(e.code); up != ""; up = above(up) {
+				if seen[up] {
+					parent = up
+					break
+				}
+			}
+			if parent == "" || (!spec.Table && parent != e.code[:len(e.code)-1]) {
+				return nil, fmt.Errorf("account %s comes before its parent", e.code)
 			}
 			a.Parent = &parent
 		}
@@ -258,14 +369,41 @@ func ReadChapter(page string) ([]Account, error) {
 	return out, nil
 }
 
+// above gives the code one step up: 100 01 01 is under 100 01, 105.01 under 105, 1011 under 101, and a
+// class has nothing above it.
+func above(code string) string {
+	if at := strings.LastIndexAny(code, " ."); at >= 0 {
+		return code[:at]
+	}
+	if len(code) <= 1 {
+		return ""
+	}
+	return code[:len(code)-1]
+}
+
+// level names the level of a code.
+func level(code string) string {
+	switch {
+	case strings.Count(code, " ") == 2 || strings.Contains(code, "."):
+		return "detail"
+	case strings.Count(code, " ") == 1 || len(code) == 4:
+		return "subaccount"
+	case len(code) == 3:
+		return "account"
+	case len(code) == 2:
+		return "group"
+	}
+	return "class"
+}
+
 // role gives the part an account plays when the result is closed: the accounts of class 6 are expenses,
-// those of class 7 income, and 121 is the result. Classes and groups have none.
+// those of class 7 income, and 121 and the accounts under it are the result. Classes and groups have none.
 func role(code string) *string {
 	r := ""
 	switch {
 	case len(code) < 3:
 		return nil
-	case code == "121":
+	case strings.HasPrefix(code, "121"):
 		r = "result"
 	case code[0] == '6':
 		r = "expense"
@@ -278,12 +416,12 @@ func role(code string) *string {
 }
 
 // chapter reads the chart of one consolidated form: the form of the order links its annex.
-func chapter(get Get, form portal.Form) ([]Account, error) {
+func chapter(get Get, spec Spec, form portal.Form) ([]Account, error) {
 	page, err := portal.Read(get, Portal+form.ID, maxPage)
 	if err != nil {
 		return nil, err
 	}
-	m := annexPattern.FindStringSubmatch(page)
+	m := regexp.MustCompile(`DetaliiDocumentAfis/(\d+)">` + regexp.QuoteMeta(spec.Annex)).FindStringSubmatch(page)
 	if m == nil {
 		return nil, fmt.Errorf("the consolidated form %s links no annex", form.ID)
 	}
@@ -291,7 +429,7 @@ func chapter(get Get, form portal.Form) ([]Account, error) {
 	if err != nil {
 		return nil, err
 	}
-	accounts, err := ReadChapter(annex)
+	accounts, err := ReadChapter(annex, spec)
 	if err != nil {
 		return nil, fmt.Errorf("annex %s: %w", m[1], err)
 	}
@@ -306,7 +444,7 @@ func same(a, b Account) bool {
 
 // History joins the charts of the forms from the horizon: an account that changes or leaves the chart ends
 // the day before its change applies, and a new or changed one starts that day.
-func History(forms []portal.Form, charts [][]Account) ([]Account, error) {
+func History(spec Spec, forms []portal.Form, charts [][]Account) ([]Account, error) {
 	var out []Account
 	open := map[string]int{}
 	for _, a := range charts[0] {
@@ -328,9 +466,9 @@ func History(forms []portal.Form, charts [][]Account) ([]Account, error) {
 			continue
 		}
 		date := forms[i].Date.Format(time.DateOnly)
-		change, ok := Changes[date]
+		change, ok := spec.Changes[date]
 		if !ok {
-			return nil, fmt.Errorf("the chart changes in the consolidated form of %s: a person reads the change and adds it to Changes", date)
+			return nil, fmt.Errorf("the chart changes in the consolidated form of %s: a person reads the change and adds it to the Changes of %s", date, spec.Name)
 		}
 		applies, err := time.Parse(time.DateOnly, change.Applies)
 		if err != nil {
@@ -386,8 +524,8 @@ func PublishedKeys(r io.Reader) ([]string, error) {
 
 // Dataset reads the forms of the order from the horizon and builds the dataset. An account published
 // before and missing now stops the build.
-func Dataset(get Get, published []string) (dataset.Dataset, error) {
-	page, err := portal.Read(get, Order, maxPage)
+func Dataset(get Get, spec Spec, published []string) (dataset.Dataset, error) {
+	page, err := portal.Read(get, spec.Order, maxPage)
 	if err != nil {
 		return dataset.Dataset{}, err
 	}
@@ -401,13 +539,13 @@ func Dataset(get Get, published []string) (dataset.Dataset, error) {
 	}
 	var charts [][]Account
 	for _, f := range forms {
-		c, err := chapter(get, f)
+		c, err := chapter(get, spec, f)
 		if err != nil {
 			return dataset.Dataset{}, fmt.Errorf("consolidated form of %s: %w", f.Date.Format(time.DateOnly), err)
 		}
 		charts = append(charts, c)
 	}
-	accounts, err := History(forms, charts)
+	accounts, err := History(spec, forms, charts)
 	if err != nil {
 		return dataset.Dataset{}, err
 	}
@@ -434,18 +572,12 @@ func Dataset(get Get, published []string) (dataset.Dataset, error) {
 	first := forms[0].Date.Format(time.DateOnly)
 	last := forms[len(forms)-1].Date.Format(time.DateOnly)
 	return dataset.Dataset{
-		Name:  "chart-of-accounts",
-		Title: "General chart of accounts (OMFP 1802/2014)",
-		Description: "The general chart of accounts for double-entry bookkeeping of companies, chapter 14 of the accounting regulations approved by " +
-			"OMFP 1802/2014: classes, groups, accounts and subaccounts, with the function the order gives (A for asset, P for liability, A/P for both) " +
-			"where it gives one; a subaccount without one takes the function of its account. " +
-			"role marks what the closing of the result needs: the accounts of class 6 are expenses, those of class 7 income, and 121 is the result. " +
-			"notes are the notes of the order on the account. The chart is the one in force on " + Horizon.Format(time.DateOnly) +
-			", the first day the dataset covers; an account with valid_from null was in force that day. A later change of the chart gives the day it applies " +
-			"from and the act that made it. Names are as the order writes them.",
+		Name:        spec.Name,
+		Title:       spec.Title,
+		Description: spec.Description,
 		Source: dataset.Source{
-			Name:    "Legislative Portal, consolidated forms of OMFP 1802/2014 from " + first + " to " + last + " (" + Order + ")",
-			URL:     Order,
+			Name:    "Legislative Portal, consolidated forms of " + spec.Act + " from " + first + " to " + last + " (" + spec.Order + ")",
+			URL:     spec.Order,
 			Licence: "Legislation, not subject to copyright (Law 8/1996, article 9)",
 		},
 		Frequency: dataset.Monthly,
@@ -453,9 +585,9 @@ func Dataset(get Get, published []string) (dataset.Dataset, error) {
 		Files: []dataset.File{{
 			Name: "accounts.jsonl",
 			Fields: []dataset.Field{
-				{Name: "code", Description: "The code of the class, group, account or subaccount. With valid_from it is unique in the file"},
+				{Name: "code", Description: codeField(spec)},
 				{Name: "name", Description: "The name as the order writes it"},
-				{Name: "level", Description: "class, group, account (three digits) or subaccount (four digits)"},
+				{Name: "level", Description: spec.Levels},
 				{Name: "parent", Description: "The code one level up, or null for a class"},
 				{Name: "function", Description: "A, P or A/P as the order states it, or null where it states none"},
 				{Name: "role", Description: "expense, income or result for the closing of the result, or null"},
@@ -467,4 +599,12 @@ func Dataset(get Get, published []string) (dataset.Dataset, error) {
 			Records: records,
 		}},
 	}, nil
+}
+
+// codeField describes the code field; the chart for companies keeps the words it was first published with.
+func codeField(spec Spec) string {
+	if spec.Name == Companies.Name {
+		return "The code of the class, group, account or subaccount. With valid_from it is unique in the file"
+	}
+	return "The code as the order writes it. With valid_from it is unique in the file"
 }

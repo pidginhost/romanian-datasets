@@ -296,6 +296,134 @@
       ]
     },
     {
+      "name": "chart-of-accounts-nonprofit",
+      "title": "Chart of accounts for non-profit entities (OMFP 3103/2017)",
+      "description": "The general chart of accounts for double-entry bookkeeping of non-profit legal persons (associations, foundations, federations, unions, religious denominations and the others the order names), point 344 of the accounting regulations approved by OMFP 3103/2017: classes, groups, accounts, subaccounts and the details the order writes as 105.01, with the function the order gives (A, P or A/P) where it gives one. role marks what the closing of the result needs: the accounts of class 6 are expenses, those of class 7 income, and 121 and its subaccounts are the result. notes are the notes of the order on the account. The chart is the one in force on 2026-01-01, the first day the dataset covers; an account with valid_from null was in force that day. A later change of the chart gives the day it applies from and the act that made it. Names are as the order writes them.",
+      "source": {
+        "name": "Legislative Portal, consolidated forms of OMFP 3103/2017 from 2024-01-12 to 2024-01-12 (https://legislatie.just.ro/Public/DetaliiDocument/250776)",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/250776",
+        "licence": "Legislation, not subject to copyright (Law 8/1996, article 9)"
+      },
+      "frequency": "monthly",
+      "update": "When an order changes the chart of accounts",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/chart-of-accounts-nonprofit/accounts.jsonl",
+          "sha256": "d23bbacdfc8278d3bac8bd76d43621e63238e644af37ee075ce35a382e2627b6",
+          "bytes": 138685,
+          "records": 694,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code as the order writes it. With valid_from it is unique in the file"
+            },
+            {
+              "name": "name",
+              "description": "The name as the order writes it"
+            },
+            {
+              "name": "level",
+              "description": "class, group, account (three digits), subaccount (four digits) or detail (a code with a point, as 105.01)"
+            },
+            {
+              "name": "parent",
+              "description": "The code one level up, or null for a class"
+            },
+            {
+              "name": "function",
+              "description": "A, P or A/P as the order states it, or null where it states none"
+            },
+            {
+              "name": "role",
+              "description": "expense, income or result for the closing of the result, or null"
+            },
+            {
+              "name": "notes",
+              "description": "The notes of the order on the account, or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day the account applies from, YYYY-MM-DD, or null for an account in force on 2026-01-01"
+            },
+            {
+              "name": "valid_to",
+              "description": "The last day the account applies, or null while it does"
+            },
+            {
+              "name": "act",
+              "description": "The act that brought the account in, or null for an account in force on 2026-01-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "chart-of-accounts-public",
+      "title": "Chart of accounts for public institutions (OMFP 1917/2005)",
+      "description": "The general chart of accounts for public institutions, chapter VI of the methodological norms approved by OMFP 1917/2005: classes, groups and the synthetic accounts of the first, second and third degree, which the order writes as 100, 100 01 and 100 01 01. The order gives no function in the chart; the instructions of chapter VII describe each account. role marks the accounts of class 6 as expenses, those of class 7 as income and financing, and 121 and its accounts as the result. A few codes of the order have no account of the degree above them; parent is then the nearest code above that the chart has. The chart is the one in force on 2026-01-01, the first day the dataset covers; an account with valid_from null was in force that day. A later change of the chart gives the day it applies from and the act that made it. Names are as the order writes them.",
+      "source": {
+        "name": "Legislative Portal, consolidated forms of OMFP 1917/2005 from 2024-04-19 to 2024-04-19 (https://legislatie.just.ro/Public/DetaliiDocument/67474)",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/67474",
+        "licence": "Legislation, not subject to copyright (Law 8/1996, article 9)"
+      },
+      "frequency": "monthly",
+      "update": "When an order changes the chart of accounts",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/chart-of-accounts-public/accounts.jsonl",
+          "sha256": "36117f3ad403c75bc2401eb356567fad8f7fb5f753763ef4480a01d83004d493",
+          "bytes": 360418,
+          "records": 1670,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code as the order writes it. With valid_from it is unique in the file"
+            },
+            {
+              "name": "name",
+              "description": "The name as the order writes it"
+            },
+            {
+              "name": "level",
+              "description": "class, group, account (first degree, three digits), subaccount (second degree, as 100 01) or detail (third degree, as 100 01 01)"
+            },
+            {
+              "name": "parent",
+              "description": "The code one level up, or null for a class"
+            },
+            {
+              "name": "function",
+              "description": "A, P or A/P as the order states it, or null where it states none"
+            },
+            {
+              "name": "role",
+              "description": "expense, income or result for the closing of the result, or null"
+            },
+            {
+              "name": "notes",
+              "description": "The notes of the order on the account, or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day the account applies from, YYYY-MM-DD, or null for an account in force on 2026-01-01"
+            },
+            {
+              "name": "valid_to",
+              "description": "The last day the account applies, or null while it does"
+            },
+            {
+              "name": "act",
+              "description": "The act that brought the account in, or null for an account in force on 2026-01-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "countries",
       "title": "Countries and territories",
       "description": "Countries and territories with their ISO 3166-1 codes, their names in Romanian and English, whether they are a member state of the European Union today, whether they are in the European Union for VAT, with their VAT prefix, and the code with which an electronic invoice under EN 16931, as e-Factura, names them. Northern Ireland is not a country, but invoices name it XI and VIES answers for the prefix XI, so it is here as an entry only for invoices, with no alpha-3 code. Withdrawn entries stay, with their last day of use, so an alpha-2 code can appear on a withdrawn entry and on a current one; the alpha-3 code is unique where there is one. Kosovo is not in ISO 3166-1 and is listed with the user-assigned codes XK and XKX. Names are the short names the European Union institutions use, with Romanian letters written with the comma below and without the asterisk the source puts on Kosovo. A name does not state a position on the status of a territory.",

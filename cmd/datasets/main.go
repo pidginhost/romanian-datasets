@@ -61,21 +61,9 @@ var builders = []builder{
 	{"caen", dataset.Manual, func(time.Time, string) (dataset.Dataset, error) {
 		return caen.Dataset(caen.FromSite(&http.Client{Timeout: 2 * time.Minute}))
 	}},
-	{"chart-of-accounts", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
-		var keys []string
-		file, err := published(root, "chart-of-accounts", "accounts.jsonl")
-		if err != nil {
-			return dataset.Dataset{}, err
-		}
-		if file != nil {
-			keys, err = chart.PublishedKeys(file)
-			file.Close()
-			if err != nil {
-				return dataset.Dataset{}, err
-			}
-		}
-		return chart.Dataset(chart.FromSite(&http.Client{Timeout: 3 * time.Minute}), keys)
-	}},
+	{"chart-of-accounts", dataset.Monthly, chartBuilder(chart.Companies)},
+	{"chart-of-accounts-nonprofit", dataset.Monthly, chartBuilder(chart.Nonprofit)},
+	{"chart-of-accounts-public", dataset.Monthly, chartBuilder(chart.Public)},
 	{"countries", dataset.Manual, func(time.Time, string) (dataset.Dataset, error) {
 		client := &http.Client{Timeout: 2 * time.Minute}
 		invoice, err := en16931.NewestCountries(en16931.FromSite(client))
@@ -341,6 +329,25 @@ func publishedBanks(root string) (banks.Published, error) {
 	defer file.Close()
 	out.Codes, err = banks.PublishedCodes(file)
 	return out, err
+}
+
+// chartBuilder builds one chart of accounts, keeping every account published before.
+func chartBuilder(spec chart.Spec) func(time.Time, string) (dataset.Dataset, error) {
+	return func(_ time.Time, root string) (dataset.Dataset, error) {
+		var keys []string
+		file, err := published(root, spec.Name, "accounts.jsonl")
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		if file != nil {
+			keys, err = chart.PublishedKeys(file)
+			file.Close()
+			if err != nil {
+				return dataset.Dataset{}, err
+			}
+		}
+		return chart.Dataset(chart.FromSite(&http.Client{Timeout: 5 * time.Minute}), spec, keys)
+	}
 }
 
 // readSIRUTA reads one file of the SIRUTA dataset as committed, which treasury and tax-offices are matched
