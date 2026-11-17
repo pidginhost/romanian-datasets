@@ -167,7 +167,7 @@ func ReadCatalogue(page string) ([]Asset, error) {
 			if m == nil {
 				return nil, fmt.Errorf("a row the build does not know: %q", cell)
 			}
-			// One heading row holds its life inside the name: "2.5. Alte instalații ... 20-30 și plantații".
+			// One heading row holds its life inside the name, as 2.5 does ("animale 20-30 si plantatii").
 			a := Asset{Code: m[1], Name: m[2]}
 			if lm := inRangePattern.FindStringSubmatchIndex(" " + m[2] + " "); lm != nil {
 				s := " " + m[2] + " "
