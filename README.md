@@ -14,6 +14,7 @@ The public copy is https://github.com/pidginhost/romanian-datasets.
 | `countries` | Countries and territories with their ISO 3166-1 codes, names in Romanian and English, whether they are in the European Union, and the code an electronic invoice uses for them | Publications Office of the European Union | By hand, when the table changes |
 | `efactura` | The codes the e-Factura system of ANAF accepts for each check of a code list, the CIUS-RO limits on invoice types and VAT point date codes, and the county and sector codes of a Romanian address | Ministry of Finance, e-Factura validation package | Monthly |
 | `en16931-codes` | The code lists of the European standard on e-invoicing: units, currencies, VAT categories and exemption reasons, payment means, document types, address schemes and the others, with the period of each code; the countries are in `countries` | European Commission, EN 16931 genericode archives | Monthly |
+| `mfp-localities` | The localities of the Ministry of Finance nomenclature, whose codes ANAF uses in addresses, with the SIRUTA code each matches and how | Ministry of Finance, nomenclatures | Monthly |
 | `public-holidays` | The days on which no work is done by law, as rules that give them for any year | Labour Code, article 139 (1) | By hand, when the law changes |
 | `reges` | The nomenclatures of REGES-Online: COR occupations in every version, activity domains, localities, nationalities, legal forms, contract types, grounds for termination and suspension, predefined bonuses and the others, with their REGES identifiers | Labour Inspectorate, REGES-Online nomenclature service | Monthly |
 | `siruta` | The administrative-territorial units of Romania: counties, municipalities, towns, communes, localities and Bucharest sectors, with their SIRUTA codes, county letters and development regions | National Institute of Statistics (INS); names with Romanian letters from the INS copy on data.gov.ro | Monthly |
@@ -68,6 +69,9 @@ datasets/
     units.jsonl
     vat-categories.jsonl
     vat-exemption-reasons.jsonl
+  mfp-localities/
+    localities.jsonl
+    types.jsonl
   public-holidays/
     rules.jsonl
   reges/

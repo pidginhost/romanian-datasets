@@ -780,6 +780,86 @@
       ]
     },
     {
+      "name": "mfp-localities",
+      "title": "Localities of the Ministry of Finance with their SIRUTA code",
+      "description": "The localities of the nomenclature of the Ministry of Finance (MFP), whose codes ANAF uses in addresses, with the SIRUTA code each matches. MFP gives a SIRUTA code of its own, kept in mfp_siruta, which is wrong for many administrative units (1008 for Alba Iulia, which SIRUTA does not have). siruta is that code when SIRUTA has it in the same county under the same name (match code); otherwise the one place of the county with the name, an administrative unit for a municipality, town, commune or sector and a locality for the others (match name); otherwise null. Of 17317 localities, 16793 match by code, 378 by name, and 146 not: places SIRUTA no longer has, names written another way, the entries for people without a home in Romania, and a few test rows. uat is the administrative unit or Bucharest sector of siruta. Names are as MFP writes them.",
+      "source": {
+        "name": "Ministry of Finance, nomenclatures of counties, locality types and localities (https://www.mfinante.gov.ro/static/40/Mfp/nomenclatoare/)",
+        "url": "https://www.mfinante.gov.ro/static/40/Mfp/nomenclatoare/nomJudete.xml",
+        "licence": "Facts taken from the nomenclatures: the codes, names, types and postal codes of the localities. MFP states no licence for them"
+      },
+      "frequency": "monthly",
+      "update": "When MFP changes its nomenclature, which it republishes often",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/mfp-localities/localities.jsonl",
+          "sha256": "b3ad28eb5fd4553f44a3d507f06a910135d9007ff34509b1e4f0c3fe625a4a1b",
+          "bytes": 2676269,
+          "records": 17317,
+          "fields": [
+            {
+              "name": "county",
+              "description": "The county, a code of counties.jsonl in siruta; MFP uses the same codes"
+            },
+            {
+              "name": "code",
+              "description": "The MFP code of the locality. With county it is unique in the file"
+            },
+            {
+              "name": "name",
+              "description": "The name as MFP writes it"
+            },
+            {
+              "name": "type",
+              "description": "The MFP type, a code of types.jsonl"
+            },
+            {
+              "name": "parent",
+              "description": "The MFP code of the locality this one belongs to, in the same county, or null"
+            },
+            {
+              "name": "postal_code",
+              "description": "The postal code MFP gives, or null"
+            },
+            {
+              "name": "mfp_siruta",
+              "description": "The SIRUTA code MFP gives, or null for 0"
+            },
+            {
+              "name": "siruta",
+              "description": "The SIRUTA place the locality matches, a code of units.jsonl in siruta, or null"
+            },
+            {
+              "name": "uat",
+              "description": "The administrative unit or Bucharest sector of siruta, or null"
+            },
+            {
+              "name": "match",
+              "description": "code, name, or null: how siruta was found"
+            }
+          ]
+        },
+        {
+          "path": "datasets/mfp-localities/types.jsonl",
+          "sha256": "b22a7b1d5ea8266273c1d8f219edaf7c9945f3df01b57bbe34945dcddd21d8b0",
+          "bytes": 281,
+          "records": 8,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The MFP code of the type"
+            },
+            {
+              "name": "name",
+              "description": "The name as MFP writes it"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "public-holidays",
       "title": "Public holidays of Romania",
       "description": "The days on which no work is done by law, as rules that give the days of any year: a fixed month and day, or a number of days from Orthodox Easter Sunday. Orthodox Easter Sunday is the Julian computus moved to the civil calendar. A day can come from two rules, such as the second day of Pentecost on 1 June. Days declared free by a Government decision for one year only are not included. The two days each of three yearly feasts of other legal religions have no fixed date and are not included.",

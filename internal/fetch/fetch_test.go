@@ -10,3 +10,9 @@ func TestAnAddressThatIsNotHTTPSIsRefusedBeforeAnyRequest(t *testing.T) {
 		t.Fatal("a plain http address was read")
 	}
 }
+
+func TestModifiedRefusesAnAddressThatIsNotHTTPS(t *testing.T) {
+	if _, err := Modified(&http.Client{}, "http://example.test/file"); err == nil {
+		t.Fatal("a plain http address was asked")
+	}
+}
