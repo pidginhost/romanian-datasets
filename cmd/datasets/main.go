@@ -12,9 +12,11 @@ import (
 	"flag"
 	"fmt"
 	"io"
+	"net/http"
 	"os"
 	"time"
 
+	"github.com/pidginhost/romanian-datasets/internal/bnr"
 	"github.com/pidginhost/romanian-datasets/internal/dataset"
 	"github.com/pidginhost/romanian-datasets/internal/holidays"
 )
@@ -29,6 +31,9 @@ type builder struct {
 
 // builders lists every dataset. A new dataset is added here.
 var builders = []builder{
+	{"bnr-currencies", dataset.Manual, func(now time.Time) (dataset.Dataset, error) {
+		return bnr.Dataset(bnr.FromSite(&http.Client{Timeout: time.Minute}), now.UTC().Year())
+	}},
 	{"public-holidays", dataset.Manual, func(time.Time) (dataset.Dataset, error) {
 		return holidays.Dataset(), nil
 	}},
