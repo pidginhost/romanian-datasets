@@ -1,0 +1,62 @@
+{"code":"102","name":"Tax notification","remark":"Invoice","valid_from":"2022-03-04","valid_to":null}
+{"code":"130","name":"Invoicing data sheet","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"202","name":"Direct payment valuation","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"203","name":"Provisional payment valuation","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"204","name":"Payment valuation","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"211","name":"Interim application for payment","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"218","name":"Final payment request based on completion of work","remark":"Invoice","valid_from":"2022-03-04","valid_to":null}
+{"code":"219","name":"Payment request for completed units","remark":"Invoice","valid_from":"2022-03-04","valid_to":null}
+{"code":"261","name":"Self billed credit note","remark":"Credit Note","valid_from":"2021-05-17","valid_to":null}
+{"code":"262","name":"Consolidated credit note - goods and services","remark":"Credit Note","valid_from":"2021-05-17","valid_to":null}
+{"code":"295","name":"Price variation invoice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"296","name":"Credit note for price variation","remark":"Credit Note","valid_from":"2021-05-17","valid_to":null}
+{"code":"308","name":"Delcredere credit note","remark":"Credit Note","valid_from":"2021-05-17","valid_to":null}
+{"code":"325","name":"Proforma invoice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"326","name":"Partial invoice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"331","name":"Commercial invoice which includes a packing list","remark":"Invoice","valid_from":"2022-03-04","valid_to":null}
+{"code":"380","name":"Commercial invoice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"381","name":"Credit note","remark":"Credit Note","valid_from":"2021-05-17","valid_to":null}
+{"code":"382","name":"Commission note","remark":"Invoice","valid_from":"2022-03-04","valid_to":null}
+{"code":"383","name":"Debit note","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"384","name":"Corrected invoice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"385","name":"Consolidated invoice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"386","name":"Prepayment invoice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"387","name":"Hire invoice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"388","name":"Tax invoice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"389","name":"Self-billed invoice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"390","name":"Delcredere invoice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"393","name":"Factored invoice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"394","name":"Lease invoice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"395","name":"Consignment invoice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"396","name":"Factored credit note","remark":"Credit Note","valid_from":"2021-05-17","valid_to":null}
+{"code":"420","name":"Optical Character Reading (OCR) payment credit note","remark":"Credit Note","valid_from":"2021-05-17","valid_to":null}
+{"code":"456","name":"Debit advice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"457","name":"Reversal of debit","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"458","name":"Reversal of credit","remark":"Credit Note","valid_from":"2021-05-17","valid_to":null}
+{"code":"471","name":"Self-billed corrective invoice, invoice type, Corrected","remark":"Invoice","valid_from":"2025-05-15","valid_to":null}
+{"code":"472","name":"Factored Corrective Invoice, invoice type, Corrected","remark":"Invoice","valid_from":"2025-05-15","valid_to":null}
+{"code":"473","name":"Self billed Factored corrective invoice, invoice type, Corrected","remark":"Invoice","valid_from":"2025-05-15","valid_to":null}
+{"code":"500","name":"Self Prepayment invoice, invoice type, Original","remark":"Invoice","valid_from":"2025-05-15","valid_to":null}
+{"code":"501","name":"Self billed factored invoice, invoice type, Original","remark":"Invoice","valid_from":"2025-05-15","valid_to":null}
+{"code":"502","name":"Self billet factored Credit Note, Credit note type, Corrected","remark":"Credit Note","valid_from":"2025-05-15","valid_to":null}
+{"code":"503","name":"Prepayment credit note, credit note type, Corrected","remark":"Credit Note","valid_from":"2025-05-15","valid_to":null}
+{"code":"527","name":"Self billed debit note","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"532","name":"Forwarder's credit note","remark":"Credit Note","valid_from":"2021-05-17","valid_to":null}
+{"code":"553","name":"Forwarder's invoice discrepancy report","remark":"Invoice","valid_from":"2022-03-04","valid_to":null}
+{"code":"575","name":"Insurer's invoice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"623","name":"Forwarder's invoice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"633","name":"Port charges documents","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"71","name":"Request for payment","remark":"Invoice","valid_from":"2022-03-04","valid_to":null}
+{"code":"751","name":"Invoice information for accounting purposes","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"780","name":"Freight invoice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"80","name":"Debit note related to goods or services","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"81","name":"Credit note related to goods or services","remark":"Credit Note","valid_from":"2021-05-17","valid_to":null}
+{"code":"817","name":"Claim notification","remark":"Invoice","valid_from":"2022-03-04","valid_to":null}
+{"code":"82","name":"Metered services invoice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"83","name":"Credit note related to financial adjustments","remark":"Credit Note","valid_from":"2021-05-17","valid_to":null}
+{"code":"84","name":"Debit note related to financial adjustments","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}
+{"code":"870","name":"Consular invoice","remark":"Invoice","valid_from":"2022-03-04","valid_to":null}
+{"code":"875","name":"Partial construction invoice","remark":"Invoice","valid_from":"2022-03-04","valid_to":null}
+{"code":"876","name":"Partial final construction invoice","remark":"Invoice","valid_from":"2022-03-04","valid_to":null}
+{"code":"877","name":"Final construction invoice","remark":"Invoice","valid_from":"2022-03-04","valid_to":null}
+{"code":"935","name":"Customs invoice","remark":"Invoice","valid_from":"2021-05-17","valid_to":null}

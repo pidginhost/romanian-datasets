@@ -1,0 +1,9 @@
+{"code":"AE","name":"VAT Reverse charge","remark":"VAT reverse charge","valid_from":"2021-05-17","valid_to":null}
+{"code":"E","name":"Exempt from tax","remark":"Exempt from tax","valid_from":"2021-05-17","valid_to":null}
+{"code":"G","name":"Free export item, tax not charged","remark":"Free export item, tax not charged","valid_from":"2021-05-17","valid_to":null}
+{"code":"K","name":"VAT exempt for EEA intra-community supply of goods and services","remark":"VAT exempt for intra community supply of goods","valid_from":"2021-05-17","valid_to":null}
+{"code":"L","name":"Canary Islands general indirect tax","remark":"Canary Islands General Indirect Tax","valid_from":"2021-05-17","valid_to":null}
+{"code":"M","name":"Tax for production, services and importation in Ceuta and Melilla","remark":"Liable for IPSI","valid_from":"2021-05-17","valid_to":null}
+{"code":"O","name":"Service outside scope of tax","remark":"Services outside scope of tax","valid_from":"2021-05-17","valid_to":null}
+{"code":"S","name":"Standard rate","remark":"Standard rate","valid_from":"2021-05-17","valid_to":null}
+{"code":"Z","name":"Zero rated goods","remark":"Zero rated goods","valid_from":"2021-05-17","valid_to":null}

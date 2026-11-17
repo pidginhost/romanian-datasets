@@ -1,0 +1,184 @@
+{"code":"AED","name":"UAE Dirham","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFN","name":"Afghani","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALL","name":"Lek","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMD","name":"Armenian Dram","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANG","name":"Netherlands Antillean Guilder","remark":null,"valid_from":"2021-05-17","valid_to":"2026-05-14"}
+{"code":"AOA","name":"Kwanza","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARS","name":"Argentine Peso","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUD","name":"Australian Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWG","name":"Aruban Florin","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AZN","name":"Azerbaijan Manat","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BAM","name":"Convertible Mark","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BBD","name":"Barbados Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BDT","name":"Taka","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BGN","name":"Bulgarian Lev","remark":null,"valid_from":"2021-05-17","valid_to":"2026-05-14"}
+{"code":"BHD","name":"Bahraini Dinar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BIF","name":"Burundi Franc","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BMD","name":"Bermudian Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BND","name":"Brunei Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BOB","name":"Boliviano","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BOV","name":"Mvdol","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BRL","name":"Brazilian Real","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BSD","name":"Bahamian Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BTN","name":"Ngultrum","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BWP","name":"Pula","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BYN","name":"Belarusian Ruble","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BZD","name":"Belize Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAD","name":"Canadian Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CDF","name":"Congolese Franc","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CHE","name":"WIR Euro","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CHF","name":"Swiss Franc","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CHW","name":"WIR Franc","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CLF","name":"Unidad de Fomento","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CLP","name":"Chilean Peso","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CNH","name":"Renminbi (offshore)","remark":null,"valid_from":"2025-11-15","valid_to":null}
+{"code":"CNY","name":"Yuan Renminbi","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"COP","name":"Colombian Peso","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"COU","name":"Unidad de Valor Real","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CRC","name":"Costa Rican Colon","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CUC","name":"Peso Convertible","remark":null,"valid_from":"2021-05-17","valid_to":"2025-05-14"}
+{"code":"CUP","name":"Cuban Peso","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CVE","name":"Cabo Verde Escudo","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CZK","name":"Czech Koruna","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DJF","name":"Djibouti Franc","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DKK","name":"Danish Krone","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DOP","name":"Dominican Peso","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DZD","name":"Algerian Dinar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"EGP","name":"Egyptian Pound","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ERN","name":"Nakfa","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ETB","name":"Ethiopian Birr","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"EUR","name":"Euro","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FJD","name":"Fiji Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FKP","name":"Falkland Islands Pound","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GBP","name":"Pound Sterling","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GEL","name":"Lari","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GHS","name":"Ghana Cedi","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GIP","name":"Gibraltar Pound","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GMD","name":"Dalasi","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GNF","name":"Guinean Franc","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GTQ","name":"Quetzal","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GYD","name":"Guyana Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"HKD","name":"Hong Kong Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"HNL","name":"Lempira","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"HRK","name":"Kuna","remark":null,"valid_from":"2021-05-17","valid_to":"2024-11-14"}
+{"code":"HTG","name":"Gourde","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"HUF","name":"Forint","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IDR","name":"Rupiah","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ILS","name":"New Israeli Sheqel","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"INR","name":"Indian Rupee","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IQD","name":"Iraqi Dinar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IRR","name":"Iranian Rial","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ISK","name":"Iceland Krona","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"JMD","name":"Jamaican Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"JOD","name":"Jordanian Dinar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"JPY","name":"Yen","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"KES","name":"Kenyan Shilling","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"KGS","name":"Som","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"KHR","name":"Riel","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"KMF","name":"Comorian Franc","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"KPW","name":"North Korean Won","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"KRW","name":"Won","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"KWD","name":"Kuwaiti Dinar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"KYD","name":"Cayman Islands Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"KZT","name":"Tenge","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LAK","name":"Lao Kip","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LBP","name":"Lebanese Pound","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LKR","name":"Sri Lanka Rupee","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LRD","name":"Liberian Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LSL","name":"Loti","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LYD","name":"Libyan Dinar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MAD","name":"Moroccan Dirham","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MDL","name":"Moldovan Leu","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MGA","name":"Malagasy Ariary","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MKD","name":"Denar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MMK","name":"Kyat","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MNT","name":"Tugrik","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MOP","name":"Pataca","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MRU","name":"Ouguiya","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MUR","name":"Mauritius Rupee","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MVR","name":"Rufiyaa","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MWK","name":"Malawi Kwacha","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MXN","name":"Mexican Peso","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MXV","name":"Mexican Unidad de Inversion (UDI)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MYR","name":"Malaysian Ringgit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MZN","name":"Mozambique Metical","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"NAD","name":"Namibia Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"NGN","name":"Naira","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"NIO","name":"Cordoba Oro","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"NOK","name":"Norwegian Krone","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"NPR","name":"Nepalese Rupee","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"NZD","name":"New Zealand Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"OMR","name":"Rial Omani","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PAB","name":"Balboa","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PEN","name":"Sol","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PGK","name":"Kina","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PHP","name":"Philippine Peso","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PKR","name":"Pakistan Rupee","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PLN","name":"Zloty","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PYG","name":"Guarani","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"QAR","name":"Qatari Rial","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RON","name":"Romanian Leu","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RSD","name":"Serbian Dinar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RUB","name":"Russian Ruble","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RWF","name":"Rwanda Franc","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SAR","name":"Saudi Riyal","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SBD","name":"Solomon Islands Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SCR","name":"Seychelles Rupee","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SDG","name":"Sudanese Pound","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SEK","name":"Swedish Krona","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SGD","name":"Singapore Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SHP","name":"Saint Helena Pound","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SLE","name":"Sierra Leone (new valuation 2022)","remark":null,"valid_from":"2022-09-21","valid_to":null}
+{"code":"SLL","name":"Sierra Leone","remark":null,"valid_from":"2021-05-17","valid_to":"2024-11-14"}
+{"code":"SOS","name":"Somali Shilling","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SRD","name":"Surinam Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SSP","name":"South Sudanese Pound","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STN","name":"Dobra","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SVC","name":"El Salvador Colon","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SYP","name":"Syrian Pound","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SZL","name":"Lilangeni","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"THB","name":"Baht","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TJS","name":"Somoni","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TMT","name":"Turkmenistan New Manat","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TND","name":"Tunisian Dinar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TOP","name":"Pa’anga","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TRY","name":"Turkish Lira","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TTD","name":"Trinidad and Tobago Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TWD","name":"New Taiwan Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TZS","name":"Tanzanian Shilling","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"UAH","name":"Hryvnia","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"UGX","name":"Uganda Shilling","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"USD","name":"US Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"USN","name":"US Dollar (Next day)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"UYI","name":"Uruguay Peso en Unidades Indexadas (UI)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"UYU","name":"Peso Uruguayo","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"UYW","name":"Unidad Previsional","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"UZS","name":"Uzbekistan Sum","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VED","name":"Bolívar Soberano, new valuation","remark":null,"valid_from":"2024-11-15","valid_to":null}
+{"code":"VES","name":"Bolívar Soberano","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VND","name":"Dong","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VUV","name":"Vatu","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"WST","name":"Tala","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XAF","name":"CFA Franc BEAC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XAG","name":"Silver","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XAU","name":"Gold","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XBA","name":"Bond Markets Unit European Composite Unit (EURCO)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XBB","name":"Bond Markets Unit European Monetary Unit (E.M.U.-6)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XBC","name":"Bond Markets Unit European Unit of Account 9 (E.U.A.-9)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XBD","name":"Bond Markets Unit European Unit of Account 17 (E.U.A.-17)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XCD","name":"East Caribbean Dollar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XCG","name":"Caribbean guilder","remark":null,"valid_from":"2026-05-15","valid_to":null}
+{"code":"XDR","name":"SDR (Special Drawing Right)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XOF","name":"CFA Franc BCEAO","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XPD","name":"Palladium","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XPF","name":"CFP Franc","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XPT","name":"Platinum","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XSU","name":"Sucre","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XTS","name":"Codes specifically reserved for testing purposes","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XUA","name":"ADB Unit of Account","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XXX","name":"The codes assigned for transactions where no currency is involved","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"YER","name":"Yemeni Rial","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ZAR","name":"Rand","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ZMW","name":"Zambian Kwacha","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ZWG","name":"Zimbabwe Gold","remark":null,"valid_from":"2024-11-15","valid_to":null}
+{"code":"ZWL","name":"Zimbabwe Dollar","remark":null,"valid_from":"2021-05-17","valid_to":"2025-05-14"}

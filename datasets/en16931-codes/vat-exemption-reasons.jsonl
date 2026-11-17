@@ -1,0 +1,106 @@
+{"code":"VATEX-ES-IGIC11","name":"Exempt based on Article 11 of Law 20/1991 of 7 June","remark":"Only for domestic invoicing in Spain","valid_from":"2026-11-15","valid_to":null}
+{"code":"VATEX-ES-IGIC12","name":"Exempt based on Article 12 of Law 20/1991 of 7 June","remark":"Only for domestic invoicing in Spain","valid_from":"2026-11-15","valid_to":null}
+{"code":"VATEX-ES-IGIC13","name":"Exempt based on Article 13 of Law 20/1991 of 7 June","remark":"Only for domestic invoicing in Spain","valid_from":"2026-11-15","valid_to":null}
+{"code":"VATEX-ES-IGIC1TR","name":"Exempt based on Chapter I of the Consolidated Text approved by Legislative Decree 1/2025","remark":"Only for domestic invoicing in Spain","valid_from":"2026-11-15","valid_to":null}
+{"code":"VATEX-ES-IGIC25","name":"Exempt based on Article 25 of Law 19/1994 of 6 July","remark":"Only for domestic invoicing in Spain","valid_from":"2026-11-15","valid_to":null}
+{"code":"VATEX-ES-IGIC47","name":"Exempt based on Article 47 of Law 19/1994 of 6 July","remark":"Only for domestic invoicing in Spain","valid_from":"2026-11-15","valid_to":null}
+{"code":"VATEX-ES-IGIC90","name":"Exempt based on Article 90 of the Consolidated Text approved by Legislative Decree 1/2025","remark":"Only for domestic invoicing in Spain","valid_from":"2026-11-15","valid_to":null}
+{"code":"VATEX-ES-IPSI7","name":"Exempt based on Article 7 of Law 8/1991 of 25 March","remark":"Only for domestic invoicing in Spain","valid_from":"2026-11-15","valid_to":null}
+{"code":"VATEX-ES-IPSI8","name":"Exempt based on Article 8 of Law 8/1991 of 25 March","remark":"Only for domestic invoicing in Spain","valid_from":"2026-11-15","valid_to":null}
+{"code":"VATEX-ES-IVA140BIS","name":"Exempt based on Article 140 bis of Law 37/1992 of 28 December","remark":"Only for domestic invoicing in Spain","valid_from":"2026-11-15","valid_to":null}
+{"code":"VATEX-ES-IVA20","name":"Exempt based on Article 20 of Law 37/1992 of 28 December","remark":"Only for domestic invoicing in Spain","valid_from":"2026-11-15","valid_to":null}
+{"code":"VATEX-ES-IVA21","name":"Exempt based on Article 21 of Law 37/1992 of 28 December","remark":"Only for domestic invoicing in Spain","valid_from":"2026-11-15","valid_to":null}
+{"code":"VATEX-ES-IVA22","name":"Exempt based on Article 22 of Law 37/1992 of 28 December","remark":"Only for domestic invoicing in Spain","valid_from":"2026-11-15","valid_to":null}
+{"code":"VATEX-ES-IVA23/24","name":"Exempt based on Articles 23/24 of Law 37/1992 of 28 December","remark":"Only for domestic invoicing in Spain","valid_from":"2026-11-15","valid_to":null}
+{"code":"VATEX-ES-IVA25","name":"Exempt based on Article 25 of Law 37/1992 of 28 December","remark":"Only for domestic invoicing in Spain","valid_from":"2026-11-15","valid_to":null}
+{"code":"VATEX-ES-N1","name":"Transaction not subject to VAT based on Articles 7 and 15 of Law 37/1992 of 28 December, Article 9 of Law 20/1991 of 7 June, Article 6 of Law 8/1991 of 25 March, and others","remark":"Only for domestic invoicing in Spain","valid_from":"2026-11-15","valid_to":null}
+{"code":"VATEX-ES-N2","name":"Transaction not subject to VAT based on place-of-supply rules","remark":"Only for domestic invoicing in Spain","valid_from":"2026-11-15","valid_to":null}
+{"code":"VATEX-ES-OTROS","name":"Exempt based on other grounds","remark":"Only for domestic invoicing in Spain","valid_from":"2026-11-15","valid_to":null}
+{"code":"VATEX-EU-132","name":"Exempt based on article 132 of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-132-1A","name":"Exempt based on article 132, section 1 (a) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-132-1B","name":"Exempt based on article 132, section 1 (b) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-132-1C","name":"Exempt based on article 132, section 1 (c) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-132-1D","name":"Exempt based on article 132, section 1 (d) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-132-1E","name":"Exempt based on article 132, section 1 (e) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-132-1F","name":"Exempt based on article 132, section 1 (f) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-132-1G","name":"Exempt based on article 132, section 1 (g) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-132-1H","name":"Exempt based on article 132, section 1 (h) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-132-1I","name":"Exempt based on article 132, section 1 (i) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-132-1J","name":"Exempt based on article 132, section 1 (j) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-132-1K","name":"Exempt based on article 132, section 1 (k) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-132-1L","name":"Exempt based on article 132, section 1 (l) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-132-1M","name":"Exempt based on article 132, section 1 (m) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-132-1N","name":"Exempt based on article 132, section 1 (n) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-132-1O","name":"Exempt based on article 132, section 1 (o) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-132-1P","name":"Exempt based on article 132, section 1 (p) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-132-1Q","name":"Exempt based on article 132, section 1 (q) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-135-1","name":"Exempt based on article 135, section 1 of Council Directive 2006/112/EC","remark":null,"valid_from":"2025-11-15","valid_to":null}
+{"code":"VATEX-EU-143","name":"Exempt based on article 143 of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-143-1A","name":"Exempt based on article 143, section 1 (a) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-143-1B","name":"Exempt based on article 143, section 1 (b) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-143-1C","name":"Exempt based on article 143, section 1 (c) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-143-1D","name":"Exempt based on article 143, section 1 (d) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-143-1E","name":"Exempt based on article 143, section 1 (e) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-143-1F","name":"Exempt based on article 143, section 1 (f) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-143-1FA","name":"Exempt based on article 143, section 1 (fa) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-143-1G","name":"Exempt based on article 143, section 1 (g) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-143-1H","name":"Exempt based on article 143, section 1 (h) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-143-1I","name":"Exempt based on article 143, section 1 (i) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-143-1J","name":"Exempt based on article 143, section 1 (j) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-143-1K","name":"Exempt based on article 143, section 1 (k) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-143-1L","name":"Exempt based on article 143, section 1 (l) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-144","name":"Exempt based on article 144 of Council Directive 2006/112/EC","remark":null,"valid_from":"2024-11-15","valid_to":null}
+{"code":"VATEX-EU-146-1E","name":"Exempt based on article 146 section 1 (e) of Council Directive 2006/112/EC","remark":null,"valid_from":"2024-11-15","valid_to":null}
+{"code":"VATEX-EU-148","name":"Exempt based on article 148 of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-148-A","name":"Exempt based on article 148, section (a) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-148-B","name":"Exempt based on article 148, section (b) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-148-C","name":"Exempt based on article 148, section (c) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-148-D","name":"Exempt based on article 148, section (d) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-148-E","name":"Exempt based on article 148, section (e) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-148-F","name":"Exempt based on article 148, section (f) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-148-G","name":"Exempt based on article 148, section (g) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-151","name":"Exempt based on article 151 of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-151-1A","name":"Exempt based on article 151, section 1 (a) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-151-1AA","name":"Exempt based on article 151, section 1 (aa) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-151-1B","name":"Exempt based on article 151, section 1 (b) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-151-1C","name":"Exempt based on article 151, section 1 (c) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-151-1D","name":"Exempt based on article 151, section 1 (d) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-151-1E","name":"Exempt based on article 151, section 1 (e) of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-153","name":"Exempt based on article 153 of Council Directive 2006/112/EC","remark":null,"valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-EU-159","name":"Exempt based on article 159 of Council Directive 2006/112/EC","remark":null,"valid_from":"2024-11-15","valid_to":null}
+{"code":"VATEX-EU-309","name":"Exempt based on article 309 of Council Directive 2006/112/EC","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-79-C","name":"Exempt based on article 79, point c of Council Directive 2006/112/EC","remark":"Repayment of expenditure is not an exemption in the sense of the VAT Directive but may be handled as such in the context of the EN16931.","valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-AE","name":"Reverse charge","remark":"Only use with VAT category code AE","valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-D","name":"Travel agents VAT scheme.","remark":"Only use with VAT category code E","valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-F","name":"Intra-Community acquisition of second hand goods","remark":"Only use with VAT category code E","valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-G","name":"Export outside the EU","remark":"Only use with VAT category code G","valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-I","name":"Intra-Community acquisition of works of art","remark":"Only use with VAT category code E","valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-IC","name":"Intra-community supply","remark":"Only use with VAT category code K","valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-J","name":"Intra-Community acquisition of collectors items and antiques","remark":"Only use with VAT category code E","valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-EU-O","name":"Not subject to VAT","remark":"Only use with VAT category code O","valid_from":"2021-05-17","valid_to":null}
+{"code":"VATEX-FR-298SEXDECIESA","name":"Exempt based on article 298 sexdecies A of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-AE","name":"Exempt based on 2 of article 283 of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI261-1","name":"Exempt based on 1 of article 261 of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI261-2","name":"Exempt based on 2 of article 261 of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI261-3","name":"Exempt based on 3 of article 261 of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI261-4","name":"Exempt based on 4 of article 261 of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI261-5","name":"Exempt based on 5 of article 261 of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI261-7","name":"Exempt based on 7 of article 261 of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI261-8","name":"Exempt based on 8 of article 261 of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI261A","name":"Exempt based on article 261 A of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI261B","name":"Exempt based on article 261 B of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI261C-1","name":"Exempt based on 1° of article 261 C of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI261C-2","name":"Exempt based on 2° of article 261 C of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI261C-3","name":"Exempt based on 3° of article 261 C of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI261D-1","name":"Exempt based on 1° of article 261 D of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI261D-1BIS","name":"Exempt based on 1°bis of article 261 D of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI261D-2","name":"Exempt based on 2° of article 261 D of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI261D-3","name":"Exempt based on 3° of article 261 D of the Code Général des Impôts (CGI ; General tax code) Exonération de TVA - Article 261 D-3° du Code Général des Impôts","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI261D-4","name":"Exempt based on 4° of article 261 D of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI261E-1","name":"Exempt based on 1° of article 261 E of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI261E-2","name":"Exempt based on 2° of article 261 E of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI275","name":"Exempt based on article 275 of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI277A","name":"Exempt based on article 277 A of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CGI295","name":"Exempt based on article 295 of the Code Général des Impôts (CGI ; General tax code)","remark":"Only for domestic invoicing in France","valid_from":"2025-05-15","valid_to":null}
+{"code":"VATEX-FR-CNWVAT","name":"France domestic Credit Notes without VAT, due to supplier forfeit of VAT for discount","remark":"For domestic Credit Notes only in France","valid_from":"2024-05-15","valid_to":null}
+{"code":"VATEX-FR-FRANCHISE","name":"France domestic VAT franchise in base","remark":"For domestic invoicing in France","valid_from":"2024-05-15","valid_to":null}

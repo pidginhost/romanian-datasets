@@ -1,0 +1,84 @@
+{"code":"1","name":"Instrument not defined","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"10","name":"In cash","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"11","name":"ACH savings credit reversal","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"12","name":"ACH savings debit reversal","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"13","name":"ACH savings credit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"14","name":"ACH savings debit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"15","name":"Bookentry credit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"16","name":"Bookentry debit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"17","name":"ACH demand cash concentration/disbursement (CCD) credit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"18","name":"ACH demand cash concentration/disbursement (CCD) debit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"19","name":"ACH demand corporate trade payment (CTP) credit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"2","name":"Automated clearing house credit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"20","name":"Cheque","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"21","name":"Banker's draft","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"22","name":"Certified banker's draft","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"23","name":"Bank cheque (issued by a banking or similar establishment)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"24","name":"Bill of exchange awaiting acceptance","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"25","name":"Certified cheque","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"26","name":"Local cheque","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"27","name":"ACH demand corporate trade payment (CTP) debit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"28","name":"ACH demand corporate trade exchange (CTX) credit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"29","name":"ACH demand corporate trade exchange (CTX) debit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"3","name":"Automated clearing house debit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"30","name":"Credit transfer","remark":"non-SEPA","valid_from":"2021-05-17","valid_to":null}
+{"code":"31","name":"Debit transfer","remark":"non-SEPA","valid_from":"2021-05-17","valid_to":null}
+{"code":"32","name":"ACH demand cash concentration/disbursement plus (CCD+)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"33","name":"ACH demand cash concentration/disbursement plus (CCD+)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"34","name":"ACH prearranged payment and deposit (PPD)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"35","name":"ACH savings cash concentration/disbursement (CCD) credit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"36","name":"ACH savings cash concentration/disbursement (CCD) debit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"37","name":"ACH savings corporate trade payment (CTP) credit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"38","name":"ACH savings corporate trade payment (CTP) debit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"39","name":"ACH savings corporate trade exchange (CTX) credit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"4","name":"ACH demand debit reversal","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"40","name":"ACH savings corporate trade exchange (CTX) debit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"41","name":"ACH savings cash concentration/disbursement plus (CCD+)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"42","name":"Payment to bank account","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"43","name":"ACH savings cash concentration/disbursement plus (CCD+)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"44","name":"Accepted bill of exchange","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"45","name":"Referenced home-banking credit transfer","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"46","name":"Interbank debit transfer","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"47","name":"Home-banking debit transfer","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"48","name":"Bank card","remark":"Use for all payment cards","valid_from":"2021-05-17","valid_to":null}
+{"code":"49","name":"Direct debit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"5","name":"ACH demand credit reversal","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"50","name":"Payment by postgiro","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"51","name":"FR, norme 6 97-Telereglement CFONB (French Organisation for","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"52","name":"Urgent commercial payment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"53","name":"Urgent Treasury Payment","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"54","name":"Credit card","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"55","name":"Debit card","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"56","name":"Bankgiro","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"57","name":"Standing agreement","remark":"Contractual payment means","valid_from":"2021-05-17","valid_to":null}
+{"code":"58","name":"SEPA credit transfer","remark":"SEPA","valid_from":"2021-05-17","valid_to":null}
+{"code":"59","name":"SEPA direct debit","remark":"SEPA","valid_from":"2021-05-17","valid_to":null}
+{"code":"6","name":"ACH demand credit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"60","name":"Promissory note","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"61","name":"Promissory note signed by the debtor","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"62","name":"Promissory note signed by the debtor and endorsed by a bank","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"63","name":"Promissory note signed by the debtor and endorsed by a","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"64","name":"Promissory note signed by a bank","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"65","name":"Promissory note signed by a bank and endorsed by another","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"66","name":"Promissory note signed by a third party","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"67","name":"Promissory note signed by a third party and endorsed by a","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"68","name":"Online payment service","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"69","name":"Transfer Advice","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"7","name":"ACH demand debit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"70","name":"Bill drawn by the creditor on the debtor","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"74","name":"Bill drawn by the creditor on a bank","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"75","name":"Bill drawn by the creditor, endorsed by another bank","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"76","name":"Bill drawn by the creditor on a bank and endorsed by a","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"77","name":"Bill drawn by the creditor on a third party","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"78","name":"Bill drawn by creditor on third party, accepted and","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"8","name":"Hold","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9","name":"National or regional clearing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"91","name":"Not transferable banker's draft","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"92","name":"Not transferable local cheque","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"93","name":"Reference giro","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"94","name":"Urgent giro","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"95","name":"Free format giro","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"96","name":"Requested method for payment was not used","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"97","name":"Clearing between partners","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"98","name":"JP, Electronically Recorded Monetary Claims","remark":null,"valid_from":"2024-05-15","valid_to":null}
+{"code":"ZZZ","name":"Mutually defined","remark":null,"valid_from":"2021-05-17","valid_to":null}

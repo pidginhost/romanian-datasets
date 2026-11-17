@@ -1,0 +1,107 @@
+{"code":"0002","name":"System Information et Repertoire des Entreprise et des Etablissements: SIRENE","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0007","name":"Organisationsnummer","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0009","name":"SIRET-CODE","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0037","name":"LY-tunnus","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0060","name":"Data Universal Numbering System (D-U-N-S Number)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0088","name":"EAN Location Code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0096","name":"The Danish Business Authority - P-number (DK:P)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0097","name":"FTI - Ediforum Italia, (EDIRA compliant)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0106","name":"Vereniging van Kamers van Koophandel en Fabrieken in Nederland (Association of Chambers of Commerce and Industry in the Netherlands), Scheme (EDIRA compliant)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0130","name":"Directorates of the European Commission","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0135","name":"SIA Object Identifiers","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0142","name":"SECETI Object Identifiers","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0147","name":"Standard Company Code","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"0151","name":"Australian Business Number (ABN) Scheme","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0154","name":"Identification number of economic subjects: (ICO)","remark":null,"valid_from":"2025-05-15","valid_to":null}
+{"code":"0158","name":"Identification number of economic subject (ICO) Act on State Statistics of 29 November 2001, § 27","remark":null,"valid_from":"2025-05-15","valid_to":null}
+{"code":"0170","name":"Teikoku Company Code","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"0177","name":"Odette International Limited","remark":null,"valid_from":"2024-11-15","valid_to":null}
+{"code":"0183","name":"Numéro d'identification suisse des enterprises (IDE), Swiss Unique Business Identification Number (UIDB)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0184","name":"DIGSTORG","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0188","name":"Corporate Number of The Social Security and Tax Number System","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"0190","name":"Dutch Originator's Identification Number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0191","name":"Centre of Registers and Information Systems of the Ministry of Justice","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0192","name":"Enhetsregisteret ved Bronnoysundregisterne","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0193","name":"UBL.BE party identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0194","name":"KOIOS Open Technical Dictionary","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0195","name":"Singapore UEN identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0196","name":"Kennitala - Iceland legal id for individuals and legal entities","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0198","name":"ERSTORG","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0199","name":"Global legal entity identifier (GLEIF)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0200","name":"Legal entity code (Lithuania)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0201","name":"Codice Univoco Unità Organizzativa iPA","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0202","name":"Indirizzo di Posta Elettronica Certificata","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0203","name":"eDelivery Network Participant identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0204","name":"Leitweg-ID","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0205","name":"CODDEST","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"0208","name":"Numero d'entreprise / ondernemingsnummer / Unternehmensnummer","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0209","name":"GS1 identification keys","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0210","name":"CODICE FISCALE","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0211","name":"PARTITA IVA","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0212","name":"Finnish Organization Identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0213","name":"Finnish Organization Value Add Tax Identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"0215","name":"Net service ID","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"0216","name":"OVTcode","remark":null,"valid_from":"2022-03-04","valid_to":null}
+{"code":"0217","name":"The Netherlands Chamber of Commerce and Industry establishment number","remark":null,"valid_from":"2023-05-15","valid_to":null}
+{"code":"0218","name":"Unified registration number (Latvia)","remark":null,"valid_from":"2024-05-15","valid_to":null}
+{"code":"0221","name":"The registered number of the qualified invoice issuer","remark":null,"valid_from":"2023-05-15","valid_to":null}
+{"code":"0225","name":"FRCTC ELECTRONIC ADDRESS","remark":null,"valid_from":"2023-05-15","valid_to":null}
+{"code":"0230","name":"National e-Invoicing Framework","remark":null,"valid_from":"2023-05-15","valid_to":null}
+{"code":"0235","name":"UAE Tax Identification Number (TIN)","remark":null,"valid_from":"2024-11-15","valid_to":null}
+{"code":"0240","name":"Register of legal persons (in French : Répertoire des personnes morales)","remark":null,"valid_from":"2025-05-15","valid_to":null}
+{"code":"0242","name":"OpenPeppol Service Provider Identification Scheme (SPIS)","remark":null,"valid_from":"2026-05-15","valid_to":null}
+{"code":"0244","name":"Tax Identification (Tax ID), Nigeria","remark":null,"valid_from":"2025-11-15","valid_to":null}
+{"code":"0245","name":"Tax identification number (DIČ, Slovakia)","remark":null,"valid_from":"2026-05-15","valid_to":null}
+{"code":"0246","name":"German Electronic Business Address","remark":null,"valid_from":"2026-05-15","valid_to":null}
+{"code":"0248","name":"Oman Value Added Tax Identification Number (VATIN)","remark":null,"valid_from":"2026-05-15","valid_to":null}
+{"code":"9901","name":"Danish Ministry of the Interior and Health","remark":null,"valid_from":"2021-05-17","valid_to":"2025-05-14"}
+{"code":"9906","name":"Ufficio responsabile gestione partite IVA","remark":null,"valid_from":"2021-05-17","valid_to":"2022-09-20"}
+{"code":"9907","name":"TAX Authority","remark":null,"valid_from":"2021-05-17","valid_to":"2022-09-20"}
+{"code":"9910","name":"Hungary VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9913","name":"Business Registers Network","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9914","name":"Österreichische Umsatzsteuer-Identifikationsnummer","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9915","name":"Österreichisches Verwaltungs bzw. Organisationskennzeichen","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9918","name":"SOCIETY FOR WORLDWIDE INTERBANK FINANCIAL, TELECOMMUNICATION S.W.I.F.T","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9919","name":"Kennziffer des Unternehmensregisters","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9920","name":"Agencia Española de Administración Tributaria","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9922","name":"Andorra VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9923","name":"Albania VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9924","name":"Bosnia and Herzegovina VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9925","name":"Belgium VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9926","name":"Bulgaria VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9927","name":"Switzerland VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9928","name":"Cyprus VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9929","name":"Czech Republic VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9930","name":"Germany VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9931","name":"Estonia VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9932","name":"United Kingdom VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9933","name":"Greece VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9934","name":"Croatia VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9935","name":"Ireland VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9936","name":"Liechtenstein VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9937","name":"Lithuania VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9938","name":"Luxemburg VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9939","name":"Latvia VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9940","name":"Monaco VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9941","name":"Montenegro VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9942","name":"Macedonia, the former Yugoslav Republic of VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9943","name":"Malta VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9944","name":"Netherlands VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9945","name":"Poland VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9946","name":"Portugal VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9947","name":"Romania VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9948","name":"Serbia VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9949","name":"Slovenia VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9950","name":"Slovakia VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9951","name":"San Marino VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9952","name":"Turkey VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9953","name":"Holy See (Vatican City State) VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9955","name":"Swedish VAT number","remark":null,"valid_from":"2021-05-17","valid_to":"2023-05-14"}
+{"code":"9957","name":"French VAT number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"9959","name":"Employer Identification Number (EIN, USA)","remark":null,"valid_from":"2022-09-21","valid_to":null}
+{"code":"9960","name":"Taiwan Unified Business Number (UBN)","remark":null,"valid_from":"2026-11-15","valid_to":null}
+{"code":"AN","name":"O.F.T.P. (ODETTE File Transfer Protocol)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQ","name":"X.400 address for mail text","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AS","name":"AS2 exchange","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AU","name":"File Transfer Protocol","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"EM","name":"Electronic mail (SMPT)","remark":null,"valid_from":"2021-05-17","valid_to":null}

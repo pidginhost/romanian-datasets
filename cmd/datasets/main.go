@@ -23,6 +23,7 @@ import (
 	"github.com/pidginhost/romanian-datasets/internal/caen"
 	"github.com/pidginhost/romanian-datasets/internal/countries"
 	"github.com/pidginhost/romanian-datasets/internal/dataset"
+	"github.com/pidginhost/romanian-datasets/internal/en16931"
 	"github.com/pidginhost/romanian-datasets/internal/holidays"
 	"github.com/pidginhost/romanian-datasets/internal/siruta"
 	"github.com/pidginhost/romanian-datasets/internal/vatnode"
@@ -47,6 +48,13 @@ var builders = []builder{
 	{"countries", dataset.Manual, func(time.Time, string) (dataset.Dataset, error) {
 		client := &http.Client{Timeout: 2 * time.Minute}
 		return countries.Dataset(countries.FromSite(client), countries.VIESFromSite(client))
+	}},
+	{"en16931-codes", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
+		codes, err := publishedEN16931(root)
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		return en16931.Dataset(en16931.FromSite(&http.Client{Timeout: 2 * time.Minute}), codes)
 	}},
 	{"public-holidays", dataset.Manual, func(time.Time, string) (dataset.Dataset, error) {
 		return holidays.Dataset(), nil
@@ -191,15 +199,42 @@ func build(all []builder, frequency, only string, now time.Time, root string) (b
 	return built, kept, nil
 }
 
-// publishedSIRUTA gives the codes of the SIRUTA dataset as committed, or none before its first build.
-func publishedSIRUTA(root string) ([]int, error) {
-	file, err := os.Open(filepath.Join(root, "datasets", "siruta", "units.jsonl"))
+// published opens a file of a dataset as committed; nil before the first build of the dataset.
+func published(root, name, file string) (*os.File, error) {
+	f, err := os.Open(filepath.Join(root, "datasets", name, file))
 	if errors.Is(err, fs.ErrNotExist) {
 		return nil, nil
 	}
-	if err != nil {
+	return f, err
+}
+
+// publishedSIRUTA gives the codes of the SIRUTA dataset as committed, or none before its first build.
+func publishedSIRUTA(root string) ([]int, error) {
+	file, err := published(root, "siruta", "units.jsonl")
+	if file == nil || err != nil {
 		return nil, err
 	}
 	defer file.Close()
 	return siruta.PublishedCodes(file)
+}
+
+// publishedEN16931 gives the codes of each file of the EN 16931 dataset as committed.
+func publishedEN16931(root string) (map[string][]string, error) {
+	out := map[string][]string{}
+	for _, l := range en16931.Lists {
+		file, err := published(root, "en16931-codes", l.File)
+		if err != nil {
+			return nil, err
+		}
+		if file == nil {
+			continue
+		}
+		codes, err := en16931.PublishedCodes(file)
+		file.Close()
+		if err != nil {
+			return nil, fmt.Errorf("%s: %w", l.File, err)
+		}
+		out[l.File] = codes
+	}
+	return out, nil
 }

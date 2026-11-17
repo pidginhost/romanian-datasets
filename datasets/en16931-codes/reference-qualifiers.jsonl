@@ -1,0 +1,818 @@
+{"code":"AAA","name":"Order acknowledgement document identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAB","name":"Proforma invoice document identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAC","name":"Documentary credit identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAD","name":"Contract document addendum identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAE","name":"Goods declaration number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAF","name":"Debit card number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAG","name":"Offer number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAH","name":"Bank's batch interbank transaction reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAI","name":"Bank's individual interbank transaction reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAJ","name":"Delivery order number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAK","name":"Despatch advice number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAL","name":"Drawing number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAM","name":"Waybill number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAN","name":"Delivery schedule number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAO","name":"Consignment identifier, consignee assigned","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAP","name":"Partial shipment identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAQ","name":"Transport equipment identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAR","name":"Municipality assigned business registry number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAS","name":"Transport contract document identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAT","name":"Master label number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAU","name":"Despatch note document identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAV","name":"Enquiry number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAW","name":"Docket number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAX","name":"Civil action number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAY","name":"Carrier's agent reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AAZ","name":"Standard Carrier Alpha Code (SCAC) number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABA","name":"Customs valuation decision number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABB","name":"End use authorization number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABC","name":"Anti-dumping case number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABD","name":"Customs tariff number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABE","name":"Declarant's reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABF","name":"Repair estimate number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABG","name":"Customs decision request number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABH","name":"Sub-house bill of lading number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABI","name":"Tax payment identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABJ","name":"Quota number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABK","name":"Transit (onward carriage) guarantee (bond) number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABL","name":"Customs guarantee number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABM","name":"Replacing part number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABN","name":"Seller's catalogue number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABO","name":"Originator's reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABP","name":"Declarant's Customs identity number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABQ","name":"Importer reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABR","name":"Export clearance instruction reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABS","name":"Import clearance instruction reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABT","name":"Goods declaration document identifier, Customs","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABU","name":"Article number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABV","name":"Intra-plant routing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABW","name":"Stock keeping unit number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABX","name":"Text Element Identifier deletion reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABY","name":"Allotment identification (Air)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ABZ","name":"Vehicle licence number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AC","name":"Air cargo transfer manifest","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACA","name":"Cargo acceptance order reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACB","name":"US government agency number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACC","name":"Shipping unit identification","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACD","name":"Additional reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACE","name":"Related document number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACF","name":"Addressee reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACG","name":"ATA carnet number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACH","name":"Packaging unit identification","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACI","name":"Outerpackaging unit identification","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACJ","name":"Customer material specification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACK","name":"Bank reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACL","name":"Principal reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACN","name":"Collection advice document identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACO","name":"Iron charge number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACP","name":"Hot roll number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACQ","name":"Cold roll number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACR","name":"Railway wagon number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACT","name":"Unique claims reference number of the sender","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACU","name":"Loss/event number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACV","name":"Estimate order reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACW","name":"Reference number to previous message","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACX","name":"Banker's acceptance","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACY","name":"Duty memo number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ACZ","name":"Equipment transport charge number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADA","name":"Buyer's item number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADB","name":"Matured certificate of deposit","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADC","name":"Loan","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADD","name":"Analysis number/test number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADE","name":"Account number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADF","name":"Treaty number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADG","name":"Catastrophe number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADI","name":"Bureau signing (statement reference)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADJ","name":"Company / syndicate reference 1","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADK","name":"Company / syndicate reference 2","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADL","name":"Ordering customer consignment reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADM","name":"Shipowner's authorization number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADN","name":"Inland transport order number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADO","name":"Container work order reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADP","name":"Statement number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADQ","name":"Unique market reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADT","name":"Group accounting","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADU","name":"Broker reference 1","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADV","name":"Broker reference 2","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADW","name":"Lloyd's claims office reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADX","name":"Secure delivery terms and conditions agreement reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADY","name":"Report number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ADZ","name":"Trader account number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AE","name":"Authorization for expense (AFE) number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEA","name":"Government agency reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEB","name":"Assembly number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEC","name":"Symbol number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AED","name":"Commodity number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEE","name":"Eur 1 certificate number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEF","name":"Customer process specification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEG","name":"Customer specification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEH","name":"Applicable instructions or standards","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEI","name":"Registration number of previous Customs declaration","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEJ","name":"Post-entry reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEK","name":"Payment order number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEL","name":"Delivery number (transport)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEM","name":"Transport route","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEN","name":"Customer's unit inventory number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEO","name":"Product reservation number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEP","name":"Project number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEQ","name":"Drawing list number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AER","name":"Project specification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AES","name":"Primary reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AET","name":"Request for cancellation number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEU","name":"Supplier's control number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEV","name":"Shipping note number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEW","name":"Empty container bill number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEX","name":"Non-negotiable maritime transport document number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEY","name":"Substitute air waybill number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AEZ","name":"Despatch note (post parcels) number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AF","name":"Airlines flight identification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFA","name":"Through bill of lading number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFB","name":"Cargo manifest number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFC","name":"Bordereau number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFD","name":"Customs item number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFE","name":"Export Control Commodity number (ECCN)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFF","name":"Marking/label reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFG","name":"Tariff number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFH","name":"Replenishment purchase order number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFI","name":"Immediate transportation no. for in bond movement","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFJ","name":"Transportation exportation no. for in bond movement","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFK","name":"Immediate exportation no. for in bond movement","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFL","name":"Associated invoices","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFM","name":"Secondary Customs reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFN","name":"Account party's reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFO","name":"Beneficiary's reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFP","name":"Second beneficiary's reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFQ","name":"Applicant's bank reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFR","name":"Issuing bank's reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFS","name":"Beneficiary's bank reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFT","name":"Direct payment valuation number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFU","name":"Direct payment valuation request number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFV","name":"Quantity valuation number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFW","name":"Quantity valuation request number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFX","name":"Bill of quantities number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFY","name":"Payment valuation number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AFZ","name":"Situation number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGA","name":"Agreement to pay number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGB","name":"Contract party reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGC","name":"Account party's bank reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGD","name":"Agent's bank reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGE","name":"Agent's reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGF","name":"Applicant's reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGG","name":"Dispute number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGH","name":"Credit rating agency's reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGI","name":"Request number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGJ","name":"Single transaction sequence number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGK","name":"Application reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGL","name":"Delivery verification certificate","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGM","name":"Number of temporary importation document","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGN","name":"Reference number quoted on statement","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGO","name":"Sender's reference to the original message","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGP","name":"Company issued equipment ID","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGQ","name":"Domestic flight number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGR","name":"International flight number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGS","name":"Employer identification number of service bureau","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGT","name":"Service group identification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGU","name":"Member number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGV","name":"Previous member number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGW","name":"Scheme/plan number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGX","name":"Previous scheme/plan number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGY","name":"Receiving party's member identification","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AGZ","name":"Payroll number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHA","name":"Packaging specification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHB","name":"Authority issued equipment identification","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHC","name":"Training flight number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHD","name":"Fund code number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHE","name":"Signal code number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHF","name":"Major force program number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHG","name":"Nomination number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHH","name":"Laboratory registration number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHI","name":"Transport contract reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHJ","name":"Payee's reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHK","name":"Payer's reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHL","name":"Creditor's reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHM","name":"Debtor's reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHN","name":"Joint venture reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHO","name":"Chamber of Commerce registration number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHP","name":"Tax registration number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHQ","name":"Wool identification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHR","name":"Wool tax reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHS","name":"Meat processing establishment registration number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHT","name":"Quarantine/treatment status reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHU","name":"Request for quote number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHV","name":"Manual processing authority number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHX","name":"Rate note number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHY","name":"Freight Forwarder number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AHZ","name":"Customs release code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIA","name":"Compliance code number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIB","name":"Department of transportation bond number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIC","name":"Export establishment number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AID","name":"Certificate of conformity","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIE","name":"Ministerial certificate of homologation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIF","name":"Previous delivery instruction number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIG","name":"Passport number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIH","name":"Common transaction reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AII","name":"Bank's common transaction reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIJ","name":"Customer's individual transaction reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIK","name":"Bank's individual transaction reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIL","name":"Customer's common transaction reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIM","name":"Individual transaction reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIN","name":"Product sourcing agreement number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIO","name":"Customs transhipment number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIP","name":"Customs preference inquiry number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIQ","name":"Packing plant number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIR","name":"Original certificate number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIS","name":"Processing plant number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIT","name":"Slaughter plant number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIU","name":"Charge card account number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIV","name":"Event reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIW","name":"Transport section reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIX","name":"Referred product for mechanical analysis","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIY","name":"Referred product for chemical analysis","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AIZ","name":"Consolidated invoice number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJA","name":"Part reference indicator in a drawing","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJB","name":"U.S. Code of Federal Regulations (CFR)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJC","name":"Purchasing activity clause number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJD","name":"U.S. Defense Federal Acquisition Regulation Supplement","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJE","name":"Agency clause number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJF","name":"Circular publication number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJG","name":"U.S. Federal Acquisition Regulation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJH","name":"U.S. General Services Administration Regulation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJI","name":"U.S. Federal Information Resources Management Regulation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJJ","name":"Paragraph","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJK","name":"Special instructions number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJL","name":"Site specific procedures, terms, and conditions number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJM","name":"Master solicitation procedures, terms, and conditions","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJN","name":"U.S. Department of Veterans Affairs Acquisition Regulation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJO","name":"Military Interdepartmental Purchase Request (MIPR) number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJP","name":"Foreign military sales number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJQ","name":"Defense priorities allocation system priority rating","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJR","name":"Wage determination number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJS","name":"Agreement number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJT","name":"Standard Industry Classification (SIC) number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJU","name":"End item number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJV","name":"Federal supply schedule item number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJW","name":"Technical document number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJX","name":"Technical order number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJY","name":"Suffix","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AJZ","name":"Transportation account number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKA","name":"Container disposition order reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKB","name":"Container prefix","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKC","name":"Transport equipment return reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKD","name":"Transport equipment survey reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKE","name":"Transport equipment survey report number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKF","name":"Transport equipment stuffing order","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKG","name":"Vehicle Identification Number (VIN)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKH","name":"Government bill of lading","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKI","name":"Ordering customer's second reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKJ","name":"Direct debit reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKK","name":"Meter reading at the beginning of the delivery","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKL","name":"Meter reading at the end of delivery","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKM","name":"Replenishment purchase order range start number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKN","name":"Third bank's reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKO","name":"Action authorization number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKP","name":"Appropriation number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKQ","name":"Product change authority number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKR","name":"General cargo consignment reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKS","name":"Catalogue sequence number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKT","name":"Forwarding order number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKU","name":"Transport equipment survey reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKV","name":"Lease contract reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKW","name":"Transport costs reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKX","name":"Transport equipment stripping order","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKY","name":"Prior policy number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AKZ","name":"Policy number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALA","name":"Procurement budget number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALB","name":"Domestic inventory management code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALC","name":"Customer reference number assigned to previous balance of","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALD","name":"Previous credit advice reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALE","name":"Reporting form number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALF","name":"Authorization number for exception to dangerous goods","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALG","name":"Dangerous goods security number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALH","name":"Dangerous goods transport licence number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALI","name":"Previous rental agreement number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALJ","name":"Next rental agreement reason number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALK","name":"Consignee's invoice number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALL","name":"Message batch number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALM","name":"Previous delivery schedule number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALN","name":"Physical inventory recount reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALO","name":"Receiving advice number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALP","name":"Returnable container reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALQ","name":"Returns notice number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALR","name":"Sales forecast number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALS","name":"Sales report number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALT","name":"Previous tax control number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALU","name":"AGERD (Aerospace Ground Equipment Requirement Data) number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALV","name":"Registered capital reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALW","name":"Standard number of inspection document","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALX","name":"Model","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALY","name":"Financial management reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ALZ","name":"NOTIfication for COLlection number (NOTICOL)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMA","name":"Previous request for metered reading reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMB","name":"Next rental agreement number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMC","name":"Reference number of a request for metered reading","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMD","name":"Hastening number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AME","name":"Repair data request number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMF","name":"Consumption data request number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMG","name":"Profile number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMH","name":"Case number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMI","name":"Government quality assurance and control level Number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMJ","name":"Payment plan reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMK","name":"Replaced meter unit number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AML","name":"Replenishment purchase order range end number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMM","name":"Insurer assigned reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMN","name":"Canadian excise entry number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMO","name":"Premium rate table","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMP","name":"Advise through bank's reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMQ","name":"US, Department of Transportation bond surety code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMR","name":"US, Food and Drug Administration establishment indicator","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMS","name":"US, Federal Communications Commission (FCC) import","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMT","name":"Goods and Services Tax identification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMU","name":"Integrated logistic support cross reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMV","name":"Department number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMW","name":"Buyer's catalogue number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMX","name":"Financial settlement party's reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMY","name":"Standard's version number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AMZ","name":"Pipeline number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANA","name":"Account servicing bank's reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANB","name":"Completed units payment request reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANC","name":"Payment in advance request reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AND","name":"Parent file","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANE","name":"Sub file","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANF","name":"CAD file layer convention","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANG","name":"Technical regulation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANH","name":"Plot file","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANI","name":"File conversion journal","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANJ","name":"Authorization number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANK","name":"Reference number assigned by third party","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANL","name":"Deposit reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANM","name":"Named bank's reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANN","name":"Drawee's reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANO","name":"Case of need party's reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANP","name":"Collecting bank's reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANQ","name":"Remitting bank's reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANR","name":"Principal's bank reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANS","name":"Presenting bank's reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANT","name":"Consignee's reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANU","name":"Financial transaction reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANV","name":"Credit reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANW","name":"Receiving bank's authorization number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANX","name":"Clearing reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ANY","name":"Sending bank's reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOA","name":"Documentary payment reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOD","name":"Accounting file reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOE","name":"Sender's file reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOF","name":"Receiver's file reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOG","name":"Source document internal reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOH","name":"Principal's reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOI","name":"Debit reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOJ","name":"Calendar","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOK","name":"Work shift","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOL","name":"Work breakdown structure","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOM","name":"Organisation breakdown structure","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AON","name":"Work task charge number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOO","name":"Functional work group","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOP","name":"Work team","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOQ","name":"Department","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOR","name":"Statement of work","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOS","name":"Work package","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOT","name":"Planning package","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOU","name":"Cost account","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOV","name":"Work order","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOW","name":"Transportation Control Number (TCN)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOX","name":"Constraint notation","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOY","name":"ETERMS reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AOZ","name":"Implementation version number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AP","name":"Accounts receivable number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APA","name":"Incorporated legal reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APB","name":"Payment instalment reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APC","name":"Equipment owner reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APD","name":"Cedent's claim number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APE","name":"Reinsurer's claim number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APF","name":"Price/sales catalogue response reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APG","name":"General purpose message reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APH","name":"Invoicing data sheet reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"API","name":"Inventory report reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APJ","name":"Ceiling formula reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APK","name":"Price variation formula reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APL","name":"Reference to account servicing bank's message","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APM","name":"Party sequence number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APN","name":"Purchaser's request reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APO","name":"Contractor request reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APP","name":"Accident reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APQ","name":"Commercial account summary reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APR","name":"Contract breakdown reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APS","name":"Contractor registration number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APT","name":"Applicable coefficient identification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APU","name":"Special budget account number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APV","name":"Authorisation for repair reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APW","name":"Manufacturer defined repair rates reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APX","name":"Original submitter log number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APY","name":"Original submitter, parent Data Maintenance Request (DMR)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"APZ","name":"Original submitter, child Data Maintenance Request (DMR)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQA","name":"Entry point assessment log number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQB","name":"Entry point assessment log number, parent DMR","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQC","name":"Entry point assessment log number, child DMR","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQD","name":"Data structure tag","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQE","name":"Central secretariat log number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQF","name":"Central secretariat log number, parent Data Maintenance","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQG","name":"Central secretariat log number, child Data Maintenance","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQH","name":"International assessment log number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQI","name":"International assessment log number, parent Data","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQJ","name":"International assessment log number, child Data Maintenance","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQK","name":"Status report number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQL","name":"Message design group number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQM","name":"US Customs Service (USCS) entry code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQN","name":"Beginning job sequence number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQO","name":"Sender's clause number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQP","name":"Dun and Bradstreet Canada's 8 digit Standard Industrial","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQQ","name":"Activite Principale Exercee (APE) identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQR","name":"Dun and Bradstreet US 8 digit Standard Industrial","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQS","name":"Nomenclature Activity Classification Economy (NACE)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQT","name":"Norme Activite Francaise (NAF) identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQU","name":"Registered contractor activity type","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQV","name":"Statistic Bundes Amt (SBA) identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQW","name":"State or province assigned entity identification","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQX","name":"Institute of Security and Future Market Development (ISFMD)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQY","name":"File identification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AQZ","name":"Bankruptcy procedure number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARA","name":"National government business identification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARB","name":"Prior Data Universal Number System (DUNS) number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARC","name":"Companies Registry Office (CRO) number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARD","name":"Costa Rican judicial number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARE","name":"Numero de Identificacion Tributaria (NIT)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARF","name":"Patron number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARG","name":"Registro Informacion Fiscal (RIF) number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARH","name":"Registro Unico de Contribuyente (RUC) number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARI","name":"Tokyo SHOKO Research (TSR) business identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARJ","name":"Personal identity card number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARK","name":"Systeme Informatique pour le Repertoire des ENtreprises","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARL","name":"Systeme Informatique pour le Repertoire des ETablissements","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARM","name":"Publication issue number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARN","name":"Original filing number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARO","name":"Document page identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARP","name":"Public filing registration number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARQ","name":"Regiristo Federal de Contribuyentes","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARR","name":"Social security number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARS","name":"Document volume number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ART","name":"Book number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARU","name":"Stock exchange company identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARV","name":"Imputation account","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARW","name":"Financial phase reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARX","name":"Technical phase reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARY","name":"Prior contractor registration number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ARZ","name":"Stock adjustment number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASA","name":"Dispensation reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASB","name":"Investment reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASC","name":"Assuming company","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASD","name":"Budget chapter","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASE","name":"Duty free products security number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASF","name":"Duty free products receipt authorisation number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASG","name":"Party information message reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASH","name":"Formal statement reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASI","name":"Proof of delivery reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASJ","name":"Supplier's credit claim reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASK","name":"Picture of actual product","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASL","name":"Picture of a generic product","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASM","name":"Trading partner identification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASN","name":"Prior trading partner identification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASO","name":"Password","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASP","name":"Formal report number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASQ","name":"Fund account number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASR","name":"Safe custody number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASS","name":"Master account number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AST","name":"Group reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASU","name":"Accounting transmission number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASV","name":"Product data file number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASW","name":"Cadastro Geral do Contribuinte (CGC)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASX","name":"Foreign resident identification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASY","name":"CD-ROM","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ASZ","name":"Physical medium","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATA","name":"Financial cancellation reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATB","name":"Purchase for export Customs agreement number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATC","name":"Judgment number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATD","name":"Secretariat number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATE","name":"Previous banking status message reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATF","name":"Last received banking status message reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATG","name":"Bank's documentary procedure reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATH","name":"Customer's documentary procedure reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATI","name":"Safe deposit box number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATJ","name":"Receiving Bankgiro number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATK","name":"Sending Bankgiro number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATL","name":"Bankgiro reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATM","name":"Guarantee number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATN","name":"Collection instrument number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATO","name":"Converted Postgiro number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATP","name":"Cost centre alignment number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATQ","name":"Kamer Van Koophandel (KVK) number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATR","name":"Institut Belgo-Luxembourgeois de Codification (IBLC) number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATS","name":"External object reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATT","name":"Exceptional transport authorisation number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATU","name":"Clave Unica de Identificacion Tributaria (CUIT)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATV","name":"Registro Unico Tributario (RUT)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATW","name":"Flat rack container bundle identification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATX","name":"Transport equipment acceptance order reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATY","name":"Transport equipment release order reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ATZ","name":"Ship's stay reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AU","name":"Authorization to meet competition number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUA","name":"Place of positioning reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUB","name":"Party reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUC","name":"Issued prescription identification","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUD","name":"Collection reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUE","name":"Travel service","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUF","name":"Consignment stock contract","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUG","name":"Importer's letter of credit reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUH","name":"Performed prescription identification","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUI","name":"Image reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUJ","name":"Proposed purchase order reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUK","name":"Application for financial support reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUL","name":"Manufacturing quality agreement number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUM","name":"Software editor reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUN","name":"Software reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUO","name":"Software quality reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUP","name":"Consolidated orders' reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUQ","name":"Customs binding ruling number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUR","name":"Customs non-binding ruling number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUS","name":"Delivery route reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUT","name":"Net area supplier reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUU","name":"Time series reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUV","name":"Connecting point to central grid","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUW","name":"Marketing plan identification number (MPIN)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUX","name":"Entity reference number, previous","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUY","name":"International Standard Industrial Classification (ISIC)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AUZ","name":"Customs pre-approval ruling number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AV","name":"Account payable number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVA","name":"First financial institution's transaction reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVB","name":"Product characteristics directory","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVC","name":"Supplier's customer reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVD","name":"Inventory report request number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVE","name":"Metering point","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVF","name":"Passenger reservation number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVG","name":"Slaughterhouse approval number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVH","name":"Meat cutting plant approval number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVI","name":"Customer travel service identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVJ","name":"Export control classification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVK","name":"Broker reference 3","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVL","name":"Consignment information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVM","name":"Goods item information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVN","name":"Dangerous Goods information","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVO","name":"Pilotage services exemption number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVP","name":"Person registration number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVQ","name":"Place of packing approval number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVR","name":"Original Mandate Reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVS","name":"Mandate Reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVT","name":"Reservation station indentifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVU","name":"Unique goods shipment identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVV","name":"Framework Agreement Number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVW","name":"Hash value","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVX","name":"Movement reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVY","name":"Economic Operators Registration and Identification Number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AVZ","name":"Local Reference Number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWA","name":"Rate code number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWB","name":"Air waybill number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWC","name":"Documentary credit amendment number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWD","name":"Advising bank's reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWE","name":"Cost centre","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWF","name":"Work item quantity determination","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWG","name":"Internal data process number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWH","name":"Category of work reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWI","name":"Policy form number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWJ","name":"Net area","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWK","name":"Service provider","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWL","name":"Error position","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWM","name":"Service category reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWN","name":"Connected location","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWO","name":"Related party","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWP","name":"Latest accounting entry record reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWQ","name":"Accounting entry","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWR","name":"Document reference, original","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWS","name":"Hygienic Certificate number, national","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWT","name":"Administrative Reference Code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWU","name":"Pick-up sheet number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWV","name":"Phone number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWW","name":"Buyer's fund number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWX","name":"Company trading account number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWY","name":"Reserved goods identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AWZ","name":"Handling and movement reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXA","name":"Instruction to despatch reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXB","name":"Instruction for returns number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXC","name":"Metered services consumption report number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXD","name":"Order status enquiry number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXE","name":"Firm booking reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXF","name":"Product inquiry number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXG","name":"Split delivery number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXH","name":"Service relation number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXI","name":"Serial shipping container code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXJ","name":"Test specification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXK","name":"Transport status report number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXL","name":"Tooling contract number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXM","name":"Formula reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXN","name":"Pre-agreement number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXO","name":"Product certification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXP","name":"Consignment contract number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXQ","name":"Product specification reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXR","name":"Payroll deduction advice reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXS","name":"TRACES party identification","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"AXU","name":"Block Stowage Reference","remark":null,"valid_from":"2025-05-15","valid_to":null}
+{"code":"BA","name":"Beginning meter reading actual","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BC","name":"Buyer's contract number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BD","name":"Bid number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BE","name":"Beginning meter reading estimated","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BH","name":"House bill of lading number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BM","name":"Bill of lading number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BN","name":"Consignment identifier, carrier assigned","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BO","name":"Blanket order number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BR","name":"Broker or sales office number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BT","name":"Batch number/lot number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BTP","name":"Battery and accumulator producer registration number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"BW","name":"Blended with number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAS","name":"IATA Cargo Agent CASS Address number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAT","name":"Matching of entries, balanced","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAU","name":"Entry flagging","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAV","name":"Matching of entries, unbalanced","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAW","name":"Document reference, internal","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAX","name":"European Value Added Tax identification","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAY","name":"Cost accounting document","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CAZ","name":"Grid operator's customer reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CBA","name":"Ticket control number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CBB","name":"Order shipment grouping reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CD","name":"Credit note number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CEC","name":"Ceding company","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CED","name":"Debit letter number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CFE","name":"Consignee's further order","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CFF","name":"Animal farm licence number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CFO","name":"Consignor's further order","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CG","name":"Consignee's order number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CH","name":"Customer catalogue number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CK","name":"Cheque number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CKN","name":"Checking number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CM","name":"Credit memo number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CMR","name":"Road consignment note number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CN","name":"Carrier's reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CNO","name":"Charges note document attachment indicator","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"COF","name":"Call off order number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CP","name":"Condition of purchase document number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CR","name":"Customer reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CRN","name":"Transport means journey identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CS","name":"Condition of sale document number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CST","name":"Team assignment number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CT","name":"Contract number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CU","name":"Consignment identifier, consignor assigned","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CV","name":"Container operators reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CW","name":"Package number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"CZ","name":"Cooperation contract number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DA","name":"Deferment approval number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DAN","name":"Debit account number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DB","name":"Buyer's debtor number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DI","name":"Distributor invoice number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DL","name":"Debit note number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DM","name":"Document identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DQ","name":"Delivery note number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"DR","name":"Dock receipt number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"EA","name":"Ending meter reading actual","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"EB","name":"Embargo permit number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ED","name":"Export declaration","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"EE","name":"Ending meter reading estimated","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"EEP","name":"Electrical and electronic equipment producer registration","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"EI","name":"Employer's identification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"EN","name":"Embargo number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"EQ","name":"Equipment number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ER","name":"Container/equipment receipt number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ERN","name":"Exporter's reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ET","name":"Excess transportation number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"EX","name":"Export permit identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FC","name":"Fiscal number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FF","name":"Consignment identifier, freight forwarder assigned","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FI","name":"File line identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FLW","name":"Flow reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FN","name":"Freight bill number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FO","name":"Foreign exchange","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FS","name":"Final sequence number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FT","name":"Free zone identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FV","name":"File version number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"FX","name":"Foreign exchange contract number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GA","name":"Standard's number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GC","name":"Government contract number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GD","name":"Standard's code number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GDN","name":"General declaration number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"GN","name":"Government reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"HS","name":"Harmonised system number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"HWB","name":"House waybill number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IA","name":"Internal vendor number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IB","name":"In bond number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ICA","name":"IATA cargo agent code number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ICE","name":"Insurance certificate reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ICO","name":"Insurance contract reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"II","name":"Initial sample inspection report number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IL","name":"Internal order number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"INB","name":"Intermediary broker","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"INN","name":"Interchange number new","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"INO","name":"Interchange number old","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IP","name":"Import permit identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IS","name":"Invoice number suffix","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IT","name":"Internal customer number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"IV","name":"Invoice document identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"JB","name":"Job number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"JE","name":"Ending job sequence number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LA","name":"Shipping label serial number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LAN","name":"Loading authorisation identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LAR","name":"Lower number in range","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LB","name":"Lockbox","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LC","name":"Letter of credit number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LI","name":"Document line identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LO","name":"Load planning number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LRC","name":"Reservation office identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"LS","name":"Bar coded label serial number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MA","name":"Ship notice/manifest number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MB","name":"Master bill of lading number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MF","name":"Manufacturer's part number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MG","name":"Meter unit number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MH","name":"Manufacturing order number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MR","name":"Message recipient","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MRN","name":"Mailing reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MS","name":"Message sender","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MSS","name":"Manufacturer's material safety data sheet number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"MWB","name":"Master air waybill number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"NA","name":"North American hazardous goods classification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"NF","name":"Nota Fiscal","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"OH","name":"Current invoice number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"OI","name":"Previous invoice number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ON","name":"Order document identifier, buyer assigned","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"OP","name":"Original purchase order","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"OR","name":"General order number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PB","name":"Payer's financial institution account number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PC","name":"Production code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PD","name":"Promotion deal number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PE","name":"Plant number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PF","name":"Prime contractor contract number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PI","name":"Price list version number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PK","name":"Packing list number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PL","name":"Price list number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"POR","name":"Purchase order response number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PP","name":"Purchase order change number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PQ","name":"Payment reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PR","name":"Price quote number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PS","name":"Purchase order number suffix","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PW","name":"Prior purchase order number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"PY","name":"Payee's financial institution account number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RA","name":"Remittance advice number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RC","name":"Rail/road routing code","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RCN","name":"Railway consignment note number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RE","name":"Release number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"REN","name":"Consignment receipt identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RF","name":"Export reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RR","name":"Payer's financial institution transit routing No.(ACH","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"RT","name":"Payee's financial institution transit routing No.","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SA","name":"Sales person number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SB","name":"Sales region number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SD","name":"Sales department number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SE","name":"Serial number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SEA","name":"Allocated seat","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SF","name":"Ship from","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SH","name":"Previous highest schedule number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SI","name":"SID (Shipper's identifying number for shipment)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SM","name":"Sales office number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SN","name":"Transport equipment seal identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SP","name":"Scan line","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SQ","name":"Equipment sequence number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SRN","name":"Shipment reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SS","name":"Sellers reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"STA","name":"Station reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SW","name":"Swap order number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"SZ","name":"Specification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TB","name":"Trucker's bill of lading","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TCR","name":"Terminal operator's consignment reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TE","name":"Telex message number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TF","name":"Transfer number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TI","name":"TIR carnet number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TIN","name":"Transport instruction number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TL","name":"Tax exemption licence number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TN","name":"Transaction reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"TP","name":"Test report number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"UAR","name":"Upper number of range","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"UC","name":"Ultimate customer's reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"UCN","name":"Unique consignment reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"UN","name":"United Nations Dangerous Goods identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"UO","name":"Ultimate customer's order number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"URI","name":"Uniform Resource Identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VA","name":"VAT registration number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VC","name":"Vendor contract number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VGR","name":"Transport equipment gross mass verification reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VM","name":"Vessel identifier","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VN","name":"Order number (vendor)","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VON","name":"Voyage number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VOR","name":"Transport equipment gross mass verification order reference","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VP","name":"Vendor product number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VR","name":"Vendor ID number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VS","name":"Vendor order number suffix","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VT","name":"Motor vehicle identification number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"VV","name":"Voucher number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"WE","name":"Warehouse entry number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"WM","name":"Weight agreement number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"WN","name":"Well number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"WR","name":"Warehouse receipt number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"WS","name":"Warehouse storage location number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"WY","name":"Rail waybill number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XA","name":"Company/place registration number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XC","name":"Cargo control number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"XP","name":"Previous cargo control number","remark":null,"valid_from":"2021-05-17","valid_to":null}
+{"code":"ZZZ","name":"Mutually defined reference number","remark":null,"valid_from":"2021-05-17","valid_to":null}
