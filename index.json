@@ -44,6 +44,74 @@
       ]
     },
     {
+      "name": "countries",
+      "title": "Countries and territories",
+      "description": "Countries and territories with their ISO 3166-1 codes, their names in Romanian and English, whether they are a member state of the European Union today, and whether they are in the European Union for VAT, with their VAT prefix. Northern Ireland has the VAT prefix XI but is not a country, so it is not here. Withdrawn entries stay, with their last day of use, so an alpha-2 code can appear on a withdrawn entry and on a current one; the alpha-3 code is unique. Kosovo is not in ISO 3166-1 and is listed with the user-assigned codes XK and XKX. Names are the short names the European Union institutions use, with Romanian letters written with the comma below and without the asterisk the source puts on Kosovo. A name does not state a position on the status of a territory.",
+      "source": {
+        "name": "Publications Office of the European Union, Countries and territories authority table; VAT prefixes from the VIES service of the European Commission (https://ec.europa.eu/taxation_customs/vies/rest-api/check-status)",
+        "url": "https://publications.europa.eu/resource/distribution/country/rdf/skos_core/countries-skos.rdf",
+        "licence": "European Commission reuse notice (Decision 2011/833/EU): reuse allowed with the source acknowledged"
+      },
+      "frequency": "manual",
+      "update": "When the Publications Office changes the table: a new or withdrawn country, a changed name, a change in the European Union",
+      "revision": 2,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/countries/countries.jsonl",
+          "sha256": "d4bc900cf92e574f9309999355e8f477f299391cb3cfbd8e5f09a97098617cb2",
+          "bytes": 56316,
+          "records": 282,
+          "fields": [
+            {
+              "name": "alpha2",
+              "description": "ISO 3166-1 alpha-2 code; for Kosovo the user-assigned XK"
+            },
+            {
+              "name": "alpha3",
+              "description": "ISO 3166-1 alpha-3 code, unique in the file; for Kosovo the user-assigned XKX"
+            },
+            {
+              "name": "numeric",
+              "description": "ISO 3166-1 numeric code, three digits, or null when the source gives none"
+            },
+            {
+              "name": "name_ro",
+              "description": "Short name in Romanian"
+            },
+            {
+              "name": "name_en",
+              "description": "Short name in English"
+            },
+            {
+              "name": "eu_member",
+              "description": "True for a member state of the European Union at the time of the build"
+            },
+            {
+              "name": "eu_vat",
+              "description": "True for a country whose VAT numbers the VIES service of the European Commission answers for"
+            },
+            {
+              "name": "vat_prefix",
+              "description": "The prefix of its VAT numbers when eu_vat is true, otherwise null. Greece is EL, not GR"
+            },
+            {
+              "name": "iso",
+              "description": "False for an entry ISO 3166-1 does not list"
+            },
+            {
+              "name": "valid_from",
+              "description": "The first day of use the source gives, as YYYY-MM-DD. Many old entries carry 1950-05-09, the first day of the table"
+            },
+            {
+              "name": "valid_to",
+              "description": "The last day of use of a withdrawn entry, as YYYY-MM-DD, or null for a current one"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "public-holidays",
       "title": "Public holidays of Romania",
       "description": "The days on which no work is done by law, as rules that give the days of any year: a fixed month and day, or a number of days from Orthodox Easter Sunday. Orthodox Easter Sunday is the Julian computus moved to the civil calendar. A day can come from two rules, such as the second day of Pentecost on 1 June. Days declared free by a Government decision for one year only are not included. The two days each of three yearly feasts of other legal religions have no fixed date and are not included.",
