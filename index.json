@@ -628,6 +628,62 @@
       ]
     },
     {
+      "name": "combined-nomenclature",
+      "title": "Combined Nomenclature of goods (NC8), by year",
+      "description": "The Combined Nomenclature of the European Union, as the National Institute of Statistics publishes it each year for Intrastat declarations: sections, chapters, headings and subheadings, the levels the nomenclature marks only with dashes, and the eight digit codes that goods are declared under, which SAF-T (D406) also asks for in ProductCommodityCode. Each line has its year, its parent, its names in Romanian (without diacritics, as INS writes them) and English, and the supplementary unit where there is one. A code is valid for its year only; the years are kept. Years held: 2026. The codes SAF-T adds for its own use (99500000, 99999999) are not in the nomenclature and not here.",
+      "source": {
+        "name": "National Institute of Statistics, Intrastat, the files CN_<year>.xml (http://www.intrastat.ro/di2.php)",
+        "url": "http://www.intrastat.ro/di2.php",
+        "licence": "The Combined Nomenclature is Annex I to Council Regulation (EEC) 2658/87, legislation not subject to copyright (Law 8/1996, article 9); INS states no licence for its files"
+      },
+      "frequency": "monthly",
+      "update": "Once a year, when INS publishes the nomenclature of the next year and a person adds it",
+      "revision": 1,
+      "changed": "2026-11-18",
+      "files": [
+        {
+          "path": "datasets/combined-nomenclature/items.jsonl",
+          "sha256": "0888d92afbd83337b87b18c99938178e9725f9ba02349bf2c0796e51e0c3a4d2",
+          "bytes": 3182588,
+          "records": 15080,
+          "fields": [
+            {
+              "name": "year",
+              "description": "The year the nomenclature is for. With code it is unique in the file"
+            },
+            {
+              "name": "code",
+              "description": "The code: a Roman number for a section, two digits for a chapter, four for a heading, six for a subheading, eight for a declarable code, @ and a number for a level of dashes"
+            },
+            {
+              "name": "level",
+              "description": "The level of the line in the tree, as INS gives it, from 1 for a section"
+            },
+            {
+              "name": "parent",
+              "description": "The code of the line above, or null for a section"
+            },
+            {
+              "name": "name_ro",
+              "description": "The name in Romanian, as INS writes it"
+            },
+            {
+              "name": "name_en",
+              "description": "The name in English"
+            },
+            {
+              "name": "supplementary_unit",
+              "description": "The supplementary unit, as p/st, m2 or l, or null"
+            },
+            {
+              "name": "declarable",
+              "description": "True for an eight digit code, which goods are declared under"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "countries",
       "title": "Countries and territories",
       "description": "Countries and territories with their ISO 3166-1 codes, their names in Romanian and English, whether they are a member state of the European Union today, whether they are in the European Union for VAT, with their VAT prefix, and the code with which an electronic invoice under EN 16931, as e-Factura, names them. Northern Ireland is not a country, but invoices name it XI and VIES answers for the prefix XI, so it is here as an entry only for invoices, with no alpha-3 code. Withdrawn entries stay, with their last day of use, so an alpha-2 code can appear on a withdrawn entry and on a current one; the alpha-3 code is unique where there is one. Kosovo is not in ISO 3166-1 and is listed with the user-assigned codes XK and XKX. Names are the short names the European Union institutions use, with Romanian letters written with the comma below and without the asterisk the source puts on Kosovo. A name does not state a position on the status of a territory.",

@@ -33,6 +33,7 @@ import (
 	"github.com/pidginhost/romanian-datasets/internal/fixedassets"
 	"github.com/pidginhost/romanian-datasets/internal/holidays"
 	"github.com/pidginhost/romanian-datasets/internal/mfp"
+	"github.com/pidginhost/romanian-datasets/internal/nc8"
 	"github.com/pidginhost/romanian-datasets/internal/reges"
 	"github.com/pidginhost/romanian-datasets/internal/saft"
 	"github.com/pidginhost/romanian-datasets/internal/singleentry"
@@ -103,6 +104,21 @@ var builders = []builder{
 	{"chart-of-accounts", dataset.Monthly, chartBuilder(chart.Companies)},
 	{"chart-of-accounts-nonprofit", dataset.Monthly, chartBuilder(chart.Nonprofit)},
 	{"chart-of-accounts-public", dataset.Monthly, chartBuilder(chart.Public)},
+	{"combined-nomenclature", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
+		keys := map[string]bool{}
+		file, err := published(root, "combined-nomenclature", "items.jsonl")
+		if err != nil {
+			return dataset.Dataset{}, err
+		}
+		if file != nil {
+			keys, err = nc8.Published(file)
+			file.Close()
+			if err != nil {
+				return dataset.Dataset{}, err
+			}
+		}
+		return nc8.Dataset(nc8.FromSite(&http.Client{Timeout: 5 * time.Minute}), keys)
+	}},
 	{"countries", dataset.Manual, func(time.Time, string) (dataset.Dataset, error) {
 		client := &http.Client{Timeout: 2 * time.Minute}
 		invoice, err := en16931.NewestCountries(en16931.FromSite(client))
