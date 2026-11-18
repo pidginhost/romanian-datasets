@@ -2848,6 +2848,94 @@
       ]
     },
     {
+      "name": "statement-forms",
+      "title": "Forms 30 and 40 of the annual financial statements, by year",
+      "description": "The forms that go with the annual financial statements and the annual accounting reports at 31 December, as the order of the Ministry of Finance for each financial year sets them: \"Date informative\" (form 30) for the entities with a full balance sheet (informative-data), form 30 for the small entities, the micro-entities and the entities with annual accounting reports (informative-data-small), and \"Situația activelor imobilizate\" (form 40) for all of them (fixed-assets), in three sections: gross values, depreciation and impairment adjustments. Each row has its number, which the ANAF forms use, its section, its name, the accounts and rows it is computed from as the form writes them, and the accounts split into terms. The forms of entities that apply IFRS (annex 3 of the order) are not here. A year is added when its order is published; an order amended later gives the day the change applies from and the act.",
+      "source": {
+        "name": "Legislative Portal, the yearly order on the annual financial statements: 2025: OMF 2036/2025 (https://legislatie.just.ro/Public/DetaliiDocument/306521)",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/306521",
+        "licence": "Legislation, not subject to copyright (Law 8/1996, article 9)"
+      },
+      "frequency": "monthly",
+      "update": "When the order of a new year is added or an order is amended",
+      "revision": 1,
+      "changed": "2026-11-17",
+      "files": [
+        {
+          "path": "datasets/statement-forms/lines.jsonl",
+          "sha256": "7fea1a5d6e119352f2e6934e8876e34442483b3edfa1b6fe8c63d6d568d25369",
+          "bytes": 289113,
+          "records": 526,
+          "fields": [
+            {
+              "name": "year",
+              "description": "The financial year the form is for"
+            },
+            {
+              "name": "set_by",
+              "description": "The order that sets the form, as OMF 2036/2025"
+            },
+            {
+              "name": "form",
+              "description": "informative-data, informative-data-small or fixed-assets"
+            },
+            {
+              "name": "code",
+              "description": "The code of the form at ANAF: 30 or 40"
+            },
+            {
+              "name": "entities",
+              "description": "The entities the order says the form is for, as it writes them"
+            },
+            {
+              "name": "order",
+              "description": "The place of the line in its form, from 1"
+            },
+            {
+              "name": "section",
+              "description": "The part of the form the line is in, as the form writes it, or null before the first"
+            },
+            {
+              "name": "row",
+              "description": "The number of the row, as 01, or null for a heading. With year, form and valid_from it is unique in the file"
+            },
+            {
+              "name": "name",
+              "description": "The name as the form writes it, without its formulas"
+            },
+            {
+              "name": "side",
+              "description": "Sold C or Sold D for a row of a pair, or null"
+            },
+            {
+              "name": "accounts",
+              "description": "The formula of accounts as the form writes it, or null"
+            },
+            {
+              "name": "account_terms",
+              "description": "The accounts of the formula, each with sign (+, - or +/-), account, part (true for \"din ct.\") and mark, or null"
+            },
+            {
+              "name": "rows",
+              "description": "The formula of rows as the form writes it, or null"
+            },
+            {
+              "name": "valid_from",
+              "description": "The day the line applies from, YYYY-MM-DD, or null for a line as the order first set it"
+            },
+            {
+              "name": "valid_to",
+              "description": "The last day the line applies, or null while it does"
+            },
+            {
+              "name": "act",
+              "description": "The act that changed the line, or null for a line as the order first set it"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "tax-offices",
       "title": "ANAF fiscal units and the localities they serve",
       "description": "The regional directorates of public finance, the county administrations and the fiscal units of ANAF, with their contact, and for each locality of SIRUTA that ANAF names the unit that serves it, under the territorial competence set by Order ANAF 3631/2015. A locality is mostly an administrative unit; ANAF names some villages and the sectors of Bucharest, and uat gives the administrative unit each is in. To find the unit of an address, look up its village first, then its administrative unit. Large taxpayers are served by the Directorate General for Large Taxpayers (DGAMC), which the page does not list; medium taxpayers and non-residents have units of their own, which serve no locality here. Names and contacts are as ANAF writes them.",
