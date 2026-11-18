@@ -1,0 +1,1263 @@
+{"chart":"companies","account":"1","name_ro":"Clasa 1 – Conturi de capitaluri","name_en":"Class 1 – Capital accounts"}
+{"chart":"companies","account":"10","name_ro":"Capital şi rezerve","name_en":"Capital and reserves"}
+{"chart":"companies","account":"101","name_ro":"Capital","name_en":"Capital"}
+{"chart":"companies","account":"1011","name_ro":"Capital subscris nevărsat","name_en":"Subscribed capital not paid"}
+{"chart":"companies","account":"1012","name_ro":"Capital subscris vărsat","name_en":"Subscribed capital paid"}
+{"chart":"companies","account":"1015","name_ro":"Patrimoniul regiei","name_en":"Patrimony (autonomous public sector entities)"}
+{"chart":"companies","account":"1016","name_ro":"Patrimoniul public","name_en":"Public patrimony"}
+{"chart":"companies","account":"1017","name_ro":"Patrimoniul privat","name_en":"Private patrimony"}
+{"chart":"companies","account":"1018","name_ro":"Patrimoniul institutelor naţionale de cercetare-dezvoltare","name_en":"National institutes of research and development patrimony"}
+{"chart":"companies","account":"103","name_ro":"Alte elemente de capitaluri proprii","name_en":"Other components of equity"}
+{"chart":"companies","account":"1031","name_ro":"Beneficii acordate angajaţilor sub forma instrumentelor de capitaluri proprii","name_en":"Benefits granted to employees as equity instruments"}
+{"chart":"companies","account":"1033","name_ro":"Diferenţe de curs valutar în relaţie cu investiţia netă într-o entitate străină","name_en":"Foreign exchange differences related to a net investment in a foreign operation"}
+{"chart":"companies","account":"1038","name_ro":"Diferenţe din modificarea valorii juste a activelor financiare disponibile în vederea vânzării şi alte elemente de capitaluri proprii","name_en":"Differences from changes in the fair value of available-for-sale financial assets and other equity elements"}
+{"chart":"companies","account":"104","name_ro":"Prime de capital","name_en":"Premium related to capital"}
+{"chart":"companies","account":"1041","name_ro":"Prime de emisiune","name_en":"Share premium"}
+{"chart":"companies","account":"1042","name_ro":"Prime de fuziune/divizare","name_en":"Merger premium"}
+{"chart":"companies","account":"1043","name_ro":"Prime de aport","name_en":"Share premium contribution in kind"}
+{"chart":"companies","account":"1044","name_ro":"Prime de conversie a obligaţiunilor în acţiuni","name_en":"Debenture conversion premium"}
+{"chart":"companies","account":"105","name_ro":"Rezerve din reevaluare","name_en":"Revaluation reserve"}
+{"chart":"companies","account":"106","name_ro":"Rezerve","name_en":"Reserves"}
+{"chart":"companies","account":"1061","name_ro":"Rezerve legale","name_en":"Legal reserve"}
+{"chart":"companies","account":"1063","name_ro":"Rezerve statutare sau contractuale","name_en":"Statutory or contractual capital reserve"}
+{"chart":"companies","account":"1068","name_ro":"Alte rezerve","name_en":"Other reserves"}
+{"chart":"companies","account":"107","name_ro":"Diferenţe de curs valutar din conversie","name_en":"Foreign exchange differences on translation"}
+{"chart":"companies","account":"108","name_ro":"Interese care nu controlează8","name_en":"Non-controlling interests8"}
+{"chart":"companies","account":"1081","name_ro":"Interese care nu controlează - rezultatul exerciţiului financiar","name_en":"Non-controlling interests - profit (loss) for the period"}
+{"chart":"companies","account":"1082","name_ro":"Interese care nu controlează - alte capitaluri proprii","name_en":"Non-controlling interests – other own capital"}
+{"chart":"companies","account":"109","name_ro":"Acţiuni proprii","name_en":"Own shares"}
+{"chart":"companies","account":"1091","name_ro":"Acţiuni proprii deţinute pe termen scurt","name_en":"Short-term own shares"}
+{"chart":"companies","account":"1092","name_ro":"Acţiuni proprii deţinute pe termen lung","name_en":"Long-term own shares"}
+{"chart":"companies","account":"1095","name_ro":"Acţiuni proprii reprezentând titluri deţinute de societatea absorbită la societatea absorbantă","name_en":"Shares of the absorbing entity owned by the entity absorbed"}
+{"chart":"companies","account":"11","name_ro":"Rezultatul reportat","name_en":"Retained earnings"}
+{"chart":"companies","account":"117","name_ro":"Rezultatul reportat","name_en":"Retained earnings"}
+{"chart":"companies","account":"1171","name_ro":"Rezultatul reportat reprezentând profitul nerepartizat sau pierderea neacoperită","name_en":"Profit/loss carried forward"}
+{"chart":"companies","account":"1172","name_ro":"Rezultatul reportat provenit din adoptarea pentru prima dată a IAS, mai puţin IAS 299","name_en":"Retained earnings due to the adoption of IAS for the first time, with the exception of IAS 299"}
+{"chart":"companies","account":"1173","name_ro":"Rezultatul reportat provenit din modificările politicilor contabile","name_en":"Retained earnings resulting from changes in accounting policies"}
+{"chart":"companies","account":"1174","name_ro":"Rezultatul reportat provenit din corectarea erorilor contabile","name_en":"Retained earnings resulting from the correction of accounting errors"}
+{"chart":"companies","account":"1175","name_ro":"Rezultatul reportat reprezentând surplusul realizat din rezerve din reevaluare","name_en":"Retained earnings representing the realized revaluation reserve surplus"}
+{"chart":"companies","account":"1176","name_ro":"Rezultatul reportat provenit din trecerea la aplicarea reglementărilor contabile conforme cu directivele europene","name_en":"Retained earnings arising from the transition to accounting regulations conforming to European Directives"}
+{"chart":"companies","account":"12","name_ro":"Rezultatul exerciţiului financiar","name_en":"Profit (loss) for the period"}
+{"chart":"companies","account":"121","name_ro":"Profit sau pierdere","name_en":"Profit (loss) for the period"}
+{"chart":"companies","account":"129","name_ro":"Repartizarea profitului","name_en":"Profit appropriation"}
+{"chart":"companies","account":"14","name_ro":"Câştiguri sau pierderi legate de emiterea, răscumpărarea, vânzarea, cedarea cu titlu gratuit sau anularea instrumentelor de capitaluri proprii","name_en":"Gains or losses in respect of issuance, redemption, sale, free transfer or cancellation of own equity instruments"}
+{"chart":"companies","account":"141","name_ro":"Câștiguri legate de vânzarea sau anularea instrumentelor de capitaluri proprii","name_en":"Gains in respect of sales or cancellation of own equity instruments"}
+{"chart":"companies","account":"1411","name_ro":"Câştiguri legate de vânzarea instrumentelor de capitaluri proprii","name_en":"Gains in respect of sales of own equity instruments"}
+{"chart":"companies","account":"1412","name_ro":"Câştiguri legate de anularea instrumentelor de capitaluri proprii","name_en":"Gains in respect of cancellation of own equity instruments"}
+{"chart":"companies","account":"149","name_ro":"Pierderi legate de emiterea, răscumpărarea, vânzarea, cedarea cu titlu gratuit sau anularea instrumentelor de capitaluri proprii","name_en":"Losses in respect of issuance, redemption, sale, free transfer or cancellation of own equity instruments"}
+{"chart":"companies","account":"1491","name_ro":"Pierderi rezultate din vânzarea instrumentelor de capitaluri proprii","name_en":"Losses in respect of sales from own equity instruments"}
+{"chart":"companies","account":"1495","name_ro":"Pierderi rezultate din reorganizări, care sunt determinate de anularea titlurilor deţinute","name_en":"Losses arising from reorganizations, caused by cancellation of equity instruments held"}
+{"chart":"companies","account":"1496","name_ro":"Pierderi rezultate din reorganizari de societati, corespunzatoare activului net negativ al societatii absorbite","name_en":"Losses resulting from company reorganizations, corresponding to the negative net asset of the absorbed company"}
+{"chart":"companies","account":"1498","name_ro":"Alte pierderi legate de instrumentele de capitaluri proprii","name_en":"Other losses from own equity instruments"}
+{"chart":"companies","account":"15","name_ro":"Provizioane","name_en":"Provisions"}
+{"chart":"companies","account":"151","name_ro":"Provizioane","name_en":"Provisions"}
+{"chart":"companies","account":"1511","name_ro":"Provizioane pentru litigii","name_en":"Provisions for litigation"}
+{"chart":"companies","account":"1512","name_ro":"Provizioane pentru garanţii acordate clienţilor","name_en":"Provisions for guarantees to customers"}
+{"chart":"companies","account":"1513","name_ro":"Provizioane pentru dezafectare imobilizări corporale şi alte acţiuni similare legate de acestea","name_en":"Provisions for the decommissioning of tangible non-current assets and other similar actions"}
+{"chart":"companies","account":"1514","name_ro":"Provizioane pentru restructurare","name_en":"Provisions for restructuring costs"}
+{"chart":"companies","account":"1515","name_ro":"Provizioane pentru pensii şi obligaţii similare","name_en":"Provisions for pensions and similar obligations"}
+{"chart":"companies","account":"1516","name_ro":"Provizioane pentru impozite","name_en":"Provisions for taxes"}
+{"chart":"companies","account":"1517","name_ro":"Provizioane pentru terminarea contractului de muncă","name_en":"Provisions for termination of employment contract"}
+{"chart":"companies","account":"1518","name_ro":"Alte provizioane","name_en":"Other provisions"}
+{"chart":"companies","account":"16","name_ro":"Împrumuturi și datorii asimilate","name_en":"Loans and similar debts"}
+{"chart":"companies","account":"161","name_ro":"Împrumuturi din emisiuni de obligaţiuni","name_en":"Debenture loans"}
+{"chart":"companies","account":"1614","name_ro":"Împrumuturi externe din emisiuni de obligaţiuni garantate de stat","name_en":"Foreign debenture loans guaranteed by the State"}
+{"chart":"companies","account":"1615","name_ro":"Împrumuturi externe din emisiuni de obligaţiuni garantate de bănci","name_en":"Foreign debenture loans guaranteed by banks"}
+{"chart":"companies","account":"1617","name_ro":"Împrumuturi interne din emisiuni de obligaţiuni garantate de stat","name_en":"Domestic debenture loans guaranteed by the State"}
+{"chart":"companies","account":"1618","name_ro":"Alte împrumuturi din emisiuni de obligaţiuni","name_en":"Other debenture loans"}
+{"chart":"companies","account":"162","name_ro":"Credite bancare pe termen lung","name_en":"Long-term bank loans"}
+{"chart":"companies","account":"1621","name_ro":"Credite bancare pe termen lung","name_en":"Long-term bank loans"}
+{"chart":"companies","account":"1622","name_ro":"Credite bancare pe termen lung nerambursate la scadenţă","name_en":"Long-term bank loans in arrears"}
+{"chart":"companies","account":"1623","name_ro":"Credite externe guvernamentale","name_en":"Foreign Government loans"}
+{"chart":"companies","account":"1624","name_ro":"Credite bancare externe garantate de stat","name_en":"Foreign loans guaranteed by the State"}
+{"chart":"companies","account":"1625","name_ro":"Credite bancare externe garantate de bănci","name_en":"Foreign loans guaranteed by banks"}
+{"chart":"companies","account":"1626","name_ro":"Credite de la trezoreria statului","name_en":"State Treasury loans"}
+{"chart":"companies","account":"1627","name_ro":"Credite bancare interne garantate de stat","name_en":"Domestic loans guaranteed by the State"}
+{"chart":"companies","account":"166","name_ro":"Datorii care privesc imobilizările financiare","name_en":"Debts relating to financial assets"}
+{"chart":"companies","account":"1661","name_ro":"Datorii faţă de entităţile afiliate","name_en":"Debts towards affiliated entities"}
+{"chart":"companies","account":"1663","name_ro":"Datorii faţă de entităţile asociate şi entităţile controlate în comun","name_en":"Debts towards associates and jointly controlled entities"}
+{"chart":"companies","account":"167","name_ro":"Alte împrumuturi şi datorii asimilate","name_en":"Other loans and similar debts"}
+{"chart":"companies","account":"168","name_ro":"Dobânzi aferente împrumuturilor şi datoriilor asimilate","name_en":"Accrued interest on loans and similar debts"}
+{"chart":"companies","account":"1681","name_ro":"Dobânzi aferente împrumuturilor din emisiuni de obligaţiuni","name_en":"Accrued interest on debenture loans"}
+{"chart":"companies","account":"1682","name_ro":"Dobânzi aferente creditelor bancare pe termen lung","name_en":"Accrued interest on long-term bank loans"}
+{"chart":"companies","account":"1685","name_ro":"Dobânzi aferente datoriilor faţă de entităţile afiliate","name_en":"Accrued interest on debts towards affiliated entities"}
+{"chart":"companies","account":"1686","name_ro":"Dobânzi aferente datoriilor faţă de entităţile asociate şi entităţile controlate în comun","name_en":"Accrued interest on debts towards associates and jointly controlled entities"}
+{"chart":"companies","account":"1687","name_ro":"Dobânzi aferente altor împrumuturi şi datorii asimilate","name_en":"Accrued interest on other loans and similar debts"}
+{"chart":"companies","account":"169","name_ro":"Prime privind rambursarea obligațiunilor și a altor datorii","name_en":"Premiums for reimbursement of bonds and other debts"}
+{"chart":"companies","account":"1691","name_ro":"Prime privind rambursarea obligaţiunilor","name_en":"Premium from reimbursement of bonds"}
+{"chart":"companies","account":"1692","name_ro":"Prime privind rambursarea altor datorii","name_en":"Premium from reimbursement of other debts"}
+{"chart":"companies","account":"2","name_ro":"Clasa 2 – Conturi de imobilizări","name_en":"Class 2 – Non-current assets"}
+{"chart":"companies","account":"20","name_ro":"Imobilizări necorporale","name_en":"Intangible assets"}
+{"chart":"companies","account":"201","name_ro":"Cheltuieli de constituire","name_en":"Set-up costs"}
+{"chart":"companies","account":"203","name_ro":"Cheltuieli de dezvoltare","name_en":"Development costs"}
+{"chart":"companies","account":"205","name_ro":"Concesiuni, brevete, licenţe, mărci comerciale, drepturi şi active similare","name_en":"Concessions, patents, licences, trademarks and similar rights and assets"}
+{"chart":"companies","account":"206","name_ro":"Active necorporale de explorare şi evaluare a resurselor minerale","name_en":"Intangible assets related to exploration for and evaluation of mineral resources"}
+{"chart":"companies","account":"207","name_ro":"Fond comercial","name_en":"Goodwill"}
+{"chart":"companies","account":"2071","name_ro":"Fond comercial pozitiv","name_en":"Positive goodwill"}
+{"chart":"companies","account":"2075","name_ro":"Fond comercial negativ","name_en":"Gain on a bargain purchase"}
+{"chart":"companies","account":"208","name_ro":"Alte imobilizări necorporale","name_en":"Other intangible assets"}
+{"chart":"companies","account":"21","name_ro":"Imobilizări corporale","name_en":"Tangible assets"}
+{"chart":"companies","account":"211","name_ro":"Terenuri şi amenajări de terenuri","name_en":"Freehold land and land improvements"}
+{"chart":"companies","account":"2111","name_ro":"Terenuri","name_en":"Freehold land"}
+{"chart":"companies","account":"2112","name_ro":"Amenajări de terenuri","name_en":"Land improvements"}
+{"chart":"companies","account":"212","name_ro":"Construcţii","name_en":"Buildings"}
+{"chart":"companies","account":"213","name_ro":"Instalaţii tehnice şi mijloace de transport","name_en":"Plant, machinery and motor vehicles"}
+{"chart":"companies","account":"2131","name_ro":"Echipamente tehnologice (maşini, utilaje şi instalaţii de lucru)","name_en":"Plant and machinery"}
+{"chart":"companies","account":"2132","name_ro":"Aparate şi instalaţii de măsurare, control şi reglare","name_en":"Measurement, control and adjustment devices"}
+{"chart":"companies","account":"2133","name_ro":"Mijloace de transport","name_en":"Motor vehicles"}
+{"chart":"companies","account":"214","name_ro":"Mobilier, aparatură birotică, echipamente de protecţie a valorilor umane şi materiale şi alte active corporale","name_en":"Fixtures and fittings"}
+{"chart":"companies","account":"215","name_ro":"Investiţii imobiliare","name_en":"Investment property"}
+{"chart":"companies","account":"216","name_ro":"Active corporale de explorare şi evaluare a resurselor minerale","name_en":"Tangible assets related to exploration for and evaluation of mineral resources"}
+{"chart":"companies","account":"217","name_ro":"Active biologice productive","name_en":"Bearer biological assets"}
+{"chart":"companies","account":"22","name_ro":"Imobilizări corporale în curs de aprovizionare","name_en":"Tangible assets in transit"}
+{"chart":"companies","account":"223","name_ro":"Instalații tehnice şi mijloace de transport în curs de aprovizionare","name_en":"Plant, machinery and motor vehicles in transit"}
+{"chart":"companies","account":"224","name_ro":"Mobilier, aparatură birotică, echipamente de protecție a valorilor umane și materiale și alte active corporale în curs de aprovizionare","name_en":"Fixtures and fittings in transit"}
+{"chart":"companies","account":"227","name_ro":"Active biologice productive în curs de aprovizionare","name_en":"Bearer biological assets in transit"}
+{"chart":"companies","account":"23","name_ro":"Imobilizări în curs","name_en":"Non-current assets in progress"}
+{"chart":"companies","account":"231","name_ro":"Imobilizări corporale în curs de execuţie","name_en":"Tangible assets in progress"}
+{"chart":"companies","account":"235","name_ro":"Investiţii imobiliare în curs de execuţie","name_en":"Investment property in progress"}
+{"chart":"companies","account":"26","name_ro":"Imobilizări financiare","name_en":"Financial assets"}
+{"chart":"companies","account":"261","name_ro":"Acţiuni deţinute la entităţile afiliate","name_en":"Shares in affiliated entities"}
+{"chart":"companies","account":"262","name_ro":"Acţiuni deţinute la entităţi asociate","name_en":"Shares in associates"}
+{"chart":"companies","account":"263","name_ro":"Acţiuni deţinute la entităţi controlate în comun","name_en":"Shares in jointly controlled entities"}
+{"chart":"companies","account":"264","name_ro":"Titluri puse în echivalenţă","name_en":"Investments accounted for using the equity method"}
+{"chart":"companies","account":"265","name_ro":"Alte titluri imobilizate","name_en":"Other long term investments"}
+{"chart":"companies","account":"266","name_ro":"Certificate verzi amânate","name_en":"Deferred green certificates"}
+{"chart":"companies","account":"267","name_ro":"Creanţe imobilizate","name_en":"Long term receivables"}
+{"chart":"companies","account":"2671","name_ro":"Sume de încasat de la entităţile afiliate","name_en":"Amounts to be collected from affiliated entities"}
+{"chart":"companies","account":"2672","name_ro":"Dobânda aferentă sumelor de încasat de la entităţile afiliate","name_en":"Accrued interest on amounts to be collected from affiliated entities"}
+{"chart":"companies","account":"2673","name_ro":"Creanţe faţă de entităţile asociate şi entităţile controlate în comun","name_en":"Receivables from associated and jointly controlled entities"}
+{"chart":"companies","account":"2674","name_ro":"Dobânda aferentă creanţelor faţă de entităţile asociate şi entităţile controlate în comun","name_en":"Accrued interest on receivables from associated and jointly controlled entities"}
+{"chart":"companies","account":"2675","name_ro":"Împrumuturi acordate pe termen lung","name_en":"Long term loans"}
+{"chart":"companies","account":"2676","name_ro":"Dobânda aferentă împrumuturilor acordate pe termen lung","name_en":"Accrued interest on long term loans"}
+{"chart":"companies","account":"2677","name_ro":"Obligaţiuni achiziţionate cu ocazia emisiunilor efectuate de terți","name_en":"Bonds acquired on third party issuances"}
+{"chart":"companies","account":"2678","name_ro":"Alte creanţe imobilizate","name_en":"Other long term receivables"}
+{"chart":"companies","account":"2679","name_ro":"Dobânzi aferente altor creanţe imobilizate","name_en":"Accrued interest on other long term receivables"}
+{"chart":"companies","account":"269","name_ro":"Vărsăminte de efectuat pentru imobilizări financiare","name_en":"Amounts payable in relation with financial non-current assets"}
+{"chart":"companies","account":"2691","name_ro":"Vărsăminte de efectuat privind acţiunile deţinute la entităţile afiliate","name_en":"Amounts payable in relation with investments in affiliated entities"}
+{"chart":"companies","account":"2692","name_ro":"Vărsăminte de efectuat privind acţiunile deţinute la entităţi asociate","name_en":"Amounts payable in relation with investments in associated entities"}
+{"chart":"companies","account":"2693","name_ro":"Vărsăminte de efectuat privind acţiunile deţinute la entităţi controlate în comun","name_en":"Amounts payable in relation with investments in jointly controlled entities"}
+{"chart":"companies","account":"2695","name_ro":"Vărsăminte de efectuat pentru alte imobilizări financiare","name_en":"Amounts payable in relation with other financial assets"}
+{"chart":"companies","account":"28","name_ro":"Amortizări privind imobilizările","name_en":"Depreciation of non-current assets"}
+{"chart":"companies","account":"280","name_ro":"Amortizări privind imobilizările necorporale","name_en":"Amortization of intangible assets"}
+{"chart":"companies","account":"2801","name_ro":"Amortizarea cheltuielilor de constituire","name_en":"Amortization of set-up costs"}
+{"chart":"companies","account":"2803","name_ro":"Amortizarea cheltuielilor de dezvoltare","name_en":"Amortization of development costs"}
+{"chart":"companies","account":"2805","name_ro":"Amortizarea concesiunilor, brevetelor, licenţelor, mărcilor comerciale, drepturilor şi activelor similare","name_en":"Amortization of concessions, patents, licences, trademarks and similar rights and assets"}
+{"chart":"companies","account":"2806","name_ro":"Amortizarea activelor necorporale de explorare şi evaluare a resurselor minerale","name_en":"Amortization of intangible assets related to exploration and evaluation of mineral resources"}
+{"chart":"companies","account":"2807","name_ro":"Amortizarea fondului comercial","name_en":"Amortization of goodwill"}
+{"chart":"companies","account":"2808","name_ro":"Amortizarea altor imobilizări necorporale","name_en":"Amortization of other intangible assets"}
+{"chart":"companies","account":"281","name_ro":"Amortizări privind imobilizările corporale","name_en":"Depreciation of tangible assets"}
+{"chart":"companies","account":"2811","name_ro":"Amortizarea amenajărilor de terenuri","name_en":"Depreciation of land improvements"}
+{"chart":"companies","account":"2812","name_ro":"Amortizarea construcţiilor","name_en":"Depreciation of buildings"}
+{"chart":"companies","account":"2813","name_ro":"Amortizarea instalaţiilor şi mijloacelor de transport","name_en":"Depreciation of plant, machinery and motor vehicles"}
+{"chart":"companies","account":"2814","name_ro":"Amortizarea altor imobilizări corporale","name_en":"Depreciation of other tangible assets"}
+{"chart":"companies","account":"2815","name_ro":"Amortizarea investiţiilor imobiliare","name_en":"Depreciation of investment property"}
+{"chart":"companies","account":"2816","name_ro":"Amortizarea activelor corporale de explorare şi evaluare a resurselor minerale","name_en":"Depreciation of tangible assets related to exploration for and evaluation of mineral resources"}
+{"chart":"companies","account":"2817","name_ro":"Amortizarea activelor biologice productive","name_en":"Depreciation of bearer biological assets"}
+{"chart":"companies","account":"29","name_ro":"Ajustări pentru deprecierea sau pierderea de valoare a imobilizărilor","name_en":"Impairment of non-current assets"}
+{"chart":"companies","account":"290","name_ro":"Ajustări pentru deprecierea imobilizărilor necorporale","name_en":"Impairment of intangible assets"}
+{"chart":"companies","account":"2903","name_ro":"Ajustări pentru deprecierea cheltuielilor de dezvoltare","name_en":"Impairment of development costs"}
+{"chart":"companies","account":"2905","name_ro":"Ajustări pentru deprecierea concesiunilor, brevetelor, licenţelor, mărcilor comerciale, drepturilor şi activelor similare","name_en":"Impairment of concessions, patents, licences, trademarks and similar rights and assets"}
+{"chart":"companies","account":"2906","name_ro":"Ajustări pentru deprecierea activelor necorporale de explorare şi evaluare a resurselor minerale","name_en":"Impaiment of intangible assets related to exploration for and evaluation of mineral resources"}
+{"chart":"companies","account":"2908","name_ro":"Ajustări pentru deprecierea altor imobilizări necorporale","name_en":"Impairment of other intangible assets"}
+{"chart":"companies","account":"291","name_ro":"Ajustări pentru deprecierea imobilizărilor corporale","name_en":"Impairment of tangible assets"}
+{"chart":"companies","account":"2911","name_ro":"Ajustări pentru deprecierea terenurilor şi amenajărilor de terenuri","name_en":"Impairment of land and land improvements"}
+{"chart":"companies","account":"2912","name_ro":"Ajustări pentru deprecierea construcţiilor","name_en":"Impairment of buildings"}
+{"chart":"companies","account":"2913","name_ro":"Ajustări pentru deprecierea instalaţiilor și mijloacelor de transport","name_en":"Impairment of plant, machinery and motor vehicles"}
+{"chart":"companies","account":"2914","name_ro":"Ajustări pentru deprecierea altor imobilizări corporale","name_en":"Impairment of other tangible assets"}
+{"chart":"companies","account":"2915","name_ro":"Ajustări pentru deprecierea investiţiilor imobiliare","name_en":"Impairment of investment property"}
+{"chart":"companies","account":"2916","name_ro":"Ajustări pentru deprecierea activelor corporale de explorare şi evaluare a resurselor minerale","name_en":"Impaiment of tangible assets related to exploration for and evaluation of mineral resources"}
+{"chart":"companies","account":"2917","name_ro":"Ajustări pentru deprecierea activelor biologice productive","name_en":"Impairment of bearer biological assets"}
+{"chart":"companies","account":"293","name_ro":"Ajustări pentru deprecierea imobilizărilor în curs de execuție","name_en":"Impairment of non-current assets in progress"}
+{"chart":"companies","account":"2931","name_ro":"Ajustări pentru deprecierea imobilizărilor corporale în curs de execuţie","name_en":"Impairment of tangible assets in progress"}
+{"chart":"companies","account":"2935","name_ro":"Ajustări pentru deprecierea investiţiilor imobiliare în curs de execuţie","name_en":"Impairment of investment property in progress"}
+{"chart":"companies","account":"296","name_ro":"Ajustări pentru pierderea de valoare a imobilizărilor financiare","name_en":"Impairment of financial assets"}
+{"chart":"companies","account":"2961","name_ro":"Ajustări pentru pierderea de valoare a acţiunilor deţinute la entităţile afiliate","name_en":"Impairment of investments in affiliated entities"}
+{"chart":"companies","account":"2962","name_ro":"Ajustări pentru pierderea de valoare a acţiunilor deţinute la entităţi asociate şi entităţi controlate în comun","name_en":"Impairment of investment in associated and jointly controlled entities"}
+{"chart":"companies","account":"2963","name_ro":"Ajustări pentru pierderea de valoare a altor titluri imobilizate","name_en":"Impairment of other long term investments"}
+{"chart":"companies","account":"2964","name_ro":"Ajustări pentru pierderea de valoare a sumelor de încasat de la entităţile afiliate","name_en":"Impairment of amounts to be collected from affiliated entities"}
+{"chart":"companies","account":"2965","name_ro":"Ajustări pentru pierderea de valoare a creanţelor faţă de entităţile asociate şi entităţile controlate în comun","name_en":"Impairment of receivables in relation with associated and jointly controlled entities"}
+{"chart":"companies","account":"2966","name_ro":"Ajustări pentru pierderea de valoare a împrumuturilor acordate pe termen lung","name_en":"Impairment of long term loans"}
+{"chart":"companies","account":"2968","name_ro":"Ajustări pentru pierderea de valoare a altor creanţe imobilizate","name_en":"Impairment of other receivables"}
+{"chart":"companies","account":"3","name_ro":"Clasa 3 - Conturi de stocuri şi producţie în curs de execuţie","name_en":"Class 3 - Inventories and work in progress"}
+{"chart":"companies","account":"30","name_ro":"Stocuri de materii prime şi materiale","name_en":"Raw materials and consumables"}
+{"chart":"companies","account":"301","name_ro":"Materii prime","name_en":"Raw materials"}
+{"chart":"companies","account":"302","name_ro":"Materiale consumabile","name_en":"Consumables"}
+{"chart":"companies","account":"3021","name_ro":"Materiale auxiliare","name_en":"Auxiliary materials"}
+{"chart":"companies","account":"3022","name_ro":"Combustibili","name_en":"Fuel"}
+{"chart":"companies","account":"3023","name_ro":"Materiale pentru ambalat","name_en":"Packaging materials"}
+{"chart":"companies","account":"3024","name_ro":"Piese de schimb","name_en":"Spare parts"}
+{"chart":"companies","account":"3025","name_ro":"Seminţe şi materiale de plantat","name_en":"Seeds and sapling"}
+{"chart":"companies","account":"3026","name_ro":"Furaje","name_en":"Fodder"}
+{"chart":"companies","account":"3028","name_ro":"Alte materiale consumabile","name_en":"Other consumables"}
+{"chart":"companies","account":"303","name_ro":"Materiale de natura obiectelor de inventar","name_en":"Materials in the form of small inventory"}
+{"chart":"companies","account":"308","name_ro":"Diferenţe de preţ la materii prime şi materiale","name_en":"Price differences on raw materials and consumables"}
+{"chart":"companies","account":"32","name_ro":"Stocuri în curs de aprovizionare","name_en":"Inventories in transit"}
+{"chart":"companies","account":"321","name_ro":"Materii prime în curs de aprovizionare","name_en":"Raw materials in transit"}
+{"chart":"companies","account":"322","name_ro":"Materiale consumabile în curs de aprovizionare","name_en":"Consumables in transit"}
+{"chart":"companies","account":"323","name_ro":"Materiale de natura obiectelor de inventar în curs de aprovizionare","name_en":"Materials in the form of small inventory in transit"}
+{"chart":"companies","account":"326","name_ro":"Active biologice de natura stocurilor în curs de aprovizionare","name_en":"Biological assets in the form of inventory in transit"}
+{"chart":"companies","account":"327","name_ro":"Mărfuri în curs de aprovizionare","name_en":"Goods purchased for resale in transit"}
+{"chart":"companies","account":"328","name_ro":"Ambalaje în curs de aprovizionare","name_en":"Packaging materials in transit"}
+{"chart":"companies","account":"33","name_ro":"Producţie în curs de execuţie","name_en":"Work in progress"}
+{"chart":"companies","account":"331","name_ro":"Produse în curs de execuţie","name_en":"Work in progress"}
+{"chart":"companies","account":"332","name_ro":"Servicii în curs de execuţie","name_en":"Services in progress"}
+{"chart":"companies","account":"34","name_ro":"Produse","name_en":"Goods"}
+{"chart":"companies","account":"341","name_ro":"Semifabricate","name_en":"Semi-finished goods"}
+{"chart":"companies","account":"345","name_ro":"Produse finite","name_en":"Finished goods"}
+{"chart":"companies","account":"346","name_ro":"Produse reziduale","name_en":"Residual products"}
+{"chart":"companies","account":"347","name_ro":"Produse agricole","name_en":"Agricultural products"}
+{"chart":"companies","account":"348","name_ro":"Diferenţe de preţ la produse","name_en":"Price differences on goods"}
+{"chart":"companies","account":"35","name_ro":"Stocuri aflate la terţi","name_en":"Inventories at third parties"}
+{"chart":"companies","account":"351","name_ro":"Materii şi materiale aflate la terţi","name_en":"Raw materials and consumables at third parties"}
+{"chart":"companies","account":"354","name_ro":"Produse aflate la terţi","name_en":"Goods at third parties"}
+{"chart":"companies","account":"356","name_ro":"Active biologice de natura stocurilor aflate la terţi","name_en":"Biological assets in the form of inventory at third parties"}
+{"chart":"companies","account":"357","name_ro":"Mărfuri aflate la terţi","name_en":"Goods for resale at third parties"}
+{"chart":"companies","account":"358","name_ro":"Ambalaje aflate la terţi","name_en":"Packaging materials at third parties"}
+{"chart":"companies","account":"36","name_ro":"Active biologice de natura stocurilor","name_en":"Biological assets in the form of inventory"}
+{"chart":"companies","account":"361","name_ro":"Active biologice de natura stocurilor","name_en":"Biological assets in the form of inventory"}
+{"chart":"companies","account":"368","name_ro":"Diferenţe de preţ la active biologice de natura stocurilor","name_en":"Price differences on biological assets in the form of inventory"}
+{"chart":"companies","account":"37","name_ro":"Mărfuri","name_en":"Goods purchased for resale"}
+{"chart":"companies","account":"371","name_ro":"Mărfuri","name_en":"Goods purchased for resale"}
+{"chart":"companies","account":"378","name_ro":"Diferenţe de preţ la mărfuri","name_en":"Price differences on goods purchased for resale"}
+{"chart":"companies","account":"38","name_ro":"Ambalaje","name_en":"Packaging"}
+{"chart":"companies","account":"381","name_ro":"Ambalaje","name_en":"Packaging materials"}
+{"chart":"companies","account":"388","name_ro":"Diferenţe de preţ la ambalaje","name_en":"Price differences on packaging"}
+{"chart":"companies","account":"39","name_ro":"Ajustări pentru deprecierea stocurilor şi producţiei în curs de execuţie","name_en":"Write-down of inventories and work in progress"}
+{"chart":"companies","account":"391","name_ro":"Ajustări pentru deprecierea materiilor prime","name_en":"Write-down of raw materials"}
+{"chart":"companies","account":"392","name_ro":"Ajustări pentru deprecierea materialelor","name_en":"Write-down of consumables"}
+{"chart":"companies","account":"3921","name_ro":"Ajustări pentru deprecierea materialelor consumabile","name_en":"Write-down of consumables"}
+{"chart":"companies","account":"3922","name_ro":"Ajustări pentru deprecierea materialelor de natura obiectelor de inventar","name_en":"Wrtite-down of materials in the form of small inventory"}
+{"chart":"companies","account":"393","name_ro":"Ajustări pentru deprecierea producţiei în curs de execuţie","name_en":"Write-down of work in progress"}
+{"chart":"companies","account":"394","name_ro":"Ajustări pentru deprecierea produselor","name_en":"Write-down of goods"}
+{"chart":"companies","account":"3941","name_ro":"Ajustări pentru deprecierea semifabricatelor","name_en":"Write-down of semi finished goods"}
+{"chart":"companies","account":"3945","name_ro":"Ajustări pentru deprecierea produselor finite","name_en":"Write-down of finished goods"}
+{"chart":"companies","account":"3946","name_ro":"Ajustări pentru deprecierea produselor reziduale","name_en":"Write-down of residual products"}
+{"chart":"companies","account":"3947","name_ro":"Ajustări pentru deprecierea produselor agricole","name_en":"Write-down of agricultural products"}
+{"chart":"companies","account":"395","name_ro":"Ajustări pentru deprecierea stocurilor aflate la terţi","name_en":"Write-down of inventories held at third parties"}
+{"chart":"companies","account":"3951","name_ro":"Ajustări pentru deprecierea materiilor şi materialelor aflate la terţi","name_en":"Write-down of raw materials and consumables at third parties"}
+{"chart":"companies","account":"3952","name_ro":"Ajustări pentru deprecierea semifabricatelor aflate la terţi","name_en":"Write-down of semi finished goods at third parties"}
+{"chart":"companies","account":"3953","name_ro":"Ajustări pentru deprecierea produselor finite aflate la terţi","name_en":"Write-down of finished goods at third parties"}
+{"chart":"companies","account":"3954","name_ro":"Ajustări pentru deprecierea produselor reziduale aflate la terţi","name_en":"Write-down of residual products at third parties"}
+{"chart":"companies","account":"3955","name_ro":"Ajustări pentru deprecierea produselor agricole aflate la terţi","name_en":"Write-down of agricultural products at third parties"}
+{"chart":"companies","account":"3956","name_ro":"Ajustări pentru deprecierea activelor biologice de natura stocurilor aflate la terţi","name_en":"Write-down of biological assets in the form of inventory at third parties"}
+{"chart":"companies","account":"3957","name_ro":"Ajustări pentru deprecierea mărfurilor aflate la terţi","name_en":"Write-down of goods for resale at third parties"}
+{"chart":"companies","account":"3958","name_ro":"Ajustări pentru deprecierea ambalajelor aflate la terţi","name_en":"Write-down of packaging materials at third Parties"}
+{"chart":"companies","account":"396","name_ro":"Ajustări pentru deprecierea activelor biologice de natura stocurilor","name_en":"Write-down of biological assets in the form of inventory"}
+{"chart":"companies","account":"397","name_ro":"Ajustări pentru deprecierea mărfurilor","name_en":"Write-down of goods purchased for resale"}
+{"chart":"companies","account":"398","name_ro":"Ajustări pentru deprecierea ambalajelor","name_en":"Write-down of packaging materials"}
+{"chart":"companies","account":"4","name_ro":"Clasa 4 - Conturi de terţi","name_en":"Class 4 - Third party accounts"}
+{"chart":"companies","account":"40","name_ro":"Furnizori şi conturi asimilate","name_en":"Suppliers and similar accounts"}
+{"chart":"companies","account":"401","name_ro":"Furnizori","name_en":"Suppliers"}
+{"chart":"companies","account":"403","name_ro":"Efecte de plătit","name_en":"Bills of exchange payable"}
+{"chart":"companies","account":"404","name_ro":"Furnizori de imobilizări","name_en":"Suppliers of non-current assets"}
+{"chart":"companies","account":"405","name_ro":"Efecte de plătit pentru imobilizări","name_en":"Bills of exchange payable to suppliers of non-current assets"}
+{"chart":"companies","account":"408","name_ro":"Furnizori - facturi nesosite","name_en":"Suppliers - invoices to be received"}
+{"chart":"companies","account":"409","name_ro":"Furnizori - debitori","name_en":"Advance payments to suppliers"}
+{"chart":"companies","account":"4091","name_ro":"Furnizori-debitori pentru cumpărări de bunuri de natura stocurilor","name_en":"Advance payments to suppliers for the purchase of inventories"}
+{"chart":"companies","account":"4092","name_ro":"Furnizori-debitori pentru prestări de servicii","name_en":"Advance payments to suppliers for the purchase of services"}
+{"chart":"companies","account":"4093","name_ro":"Avansuri acordate pentru imobilizări corporale","name_en":"Advance payments for the purchase of tangible assets"}
+{"chart":"companies","account":"4094","name_ro":"Avansuri acordate pentru imobilizări necorporale","name_en":"Advance payments for the purchase of intangible assets"}
+{"chart":"companies","account":"41","name_ro":"Clienţi şi conturi asimilate","name_en":"Customers and similar accounts"}
+{"chart":"companies","account":"411","name_ro":"Clienţi","name_en":"Customers"}
+{"chart":"companies","account":"4111","name_ro":"Clienţi","name_en":"Customers"}
+{"chart":"companies","account":"4118","name_ro":"Clienţi incerţi sau în litigiu","name_en":"Doubtful customers or customers involved in litigation"}
+{"chart":"companies","account":"413","name_ro":"Efecte de primit de la clienţi","name_en":"Bills of exchange receivable"}
+{"chart":"companies","account":"418","name_ro":"Clienţi - facturi de întocmit","name_en":"Customers - invoices to be issued"}
+{"chart":"companies","account":"419","name_ro":"Clienţi – creditori","name_en":"Advance payments from customers"}
+{"chart":"companies","account":"42","name_ro":"Personal şi conturi asimilate","name_en":"Payroll and similar accounts"}
+{"chart":"companies","account":"421","name_ro":"Personal - salarii datorate","name_en":"Employees - salaries payable"}
+{"chart":"companies","account":"423","name_ro":"Personal - ajutoare materiale datorate","name_en":"Other social benefits granted to employees"}
+{"chart":"companies","account":"424","name_ro":"Prime reprezentând participarea personalului la profit14","name_en":"Profit share payable to employees14"}
+{"chart":"companies","account":"425","name_ro":"Avansuri acordate personalului","name_en":"Advances to employees"}
+{"chart":"companies","account":"426","name_ro":"Drepturi de personal neridicate","name_en":"Employees’ rights not claimed"}
+{"chart":"companies","account":"427","name_ro":"Reţineri din salarii datorate terţilor","name_en":"Retentions from salaries payable to third parties"}
+{"chart":"companies","account":"428","name_ro":"Alte datorii şi creanţe în legătură cu personalul","name_en":"Other employee-related debts and claims"}
+{"chart":"companies","account":"4281","name_ro":"Alte datorii în legătură cu personalul","name_en":"Other employee-related debts"}
+{"chart":"companies","account":"4282","name_ro":"Alte creanţe în legătură cu personalul","name_en":"Other employee-related claims"}
+{"chart":"companies","account":"43","name_ro":"Asigurări sociale, protecţia socială şi conturi asimilate","name_en":"Social security and similar accounts"}
+{"chart":"companies","account":"431","name_ro":"Asigurări sociale","name_en":"Social security"}
+{"chart":"companies","account":"4311","name_ro":"Contribuţia unităţii la asigurările sociale","name_en":"Company’s contribution to social security"}
+{"chart":"companies","account":"4312","name_ro":"Contribuţia personalului la asigurările sociale","name_en":"Employees’ contribution to pension fund"}
+{"chart":"companies","account":"4313","name_ro":"Contribuţia angajatorului pentru asigurările sociale de sănătate","name_en":"Company’s contribution to health insurance"}
+{"chart":"companies","account":"4314","name_ro":"Contribuţia angajaţilor pentru asigurările sociale de sănătate","name_en":"Employees’ contribution to health insurance"}
+{"chart":"companies","account":"4315","name_ro":"Contribuţia de asigurări sociale","name_en":"Social insurance contribution"}
+{"chart":"companies","account":"4316","name_ro":"Contribuţia de asigurări sociale de sănătate","name_en":"Health social insurance contribution"}
+{"chart":"companies","account":"4318","name_ro":"Alte contribuţii pentru asigurările sociale de sănătate","name_en":"Other health social insurance contributions"}
+{"chart":"companies","account":"436","name_ro":"Contribuţia asiguratorie pentru muncă","name_en":"Labor asiguratory contribution"}
+{"chart":"companies","account":"437","name_ro":"Ajutor de şomaj","name_en":"Unemployment fund"}
+{"chart":"companies","account":"4371","name_ro":"Contribuţia unităţii la fondul de şomaj","name_en":"Company’s contribution to unemployment fund"}
+{"chart":"companies","account":"4372","name_ro":"Contribuţia personalului la fondul de şomaj","name_en":"Employees’ contribution to unemployment fund"}
+{"chart":"companies","account":"438","name_ro":"Alte datorii şi creanţe sociale","name_en":"Other personnel-related debts and claims"}
+{"chart":"companies","account":"4381","name_ro":"Alte datorii sociale","name_en":"Other personnel-related debts"}
+{"chart":"companies","account":"4382","name_ro":"Alte creanţe sociale","name_en":"Other personnel-related claims"}
+{"chart":"companies","account":"44","name_ro":"Bugetul statului, fonduri speciale şi conturi asimilate","name_en":"Amounts payable to the state budget, special funds and similar accounts"}
+{"chart":"companies","account":"441","name_ro":"Impozitul pe profit/venit","name_en":"Income tax"}
+{"chart":"companies","account":"4411","name_ro":"Impozitul pe profit","name_en":"Profit tax"}
+{"chart":"companies","account":"4415","name_ro":"Impozitul specific unor activităţi","name_en":"Specific tax on certain activities"}
+{"chart":"companies","account":"4417","name_ro":"Impozitul pe profit la nivelul impozitului minim pe cifra de afaceri","name_en":"Profit tax at the minimum turnover tax level"}
+{"chart":"companies","account":"4418","name_ro":"Impozitul pe venit","name_en":"Income tax"}
+{"chart":"companies","account":"442","name_ro":"Taxa pe valoarea adăugată","name_en":"Value added tax"}
+{"chart":"companies","account":"4423","name_ro":"TVA de plată","name_en":"VAT payable"}
+{"chart":"companies","account":"4424","name_ro":"TVA de recuperat","name_en":"VAT receivable"}
+{"chart":"companies","account":"4426","name_ro":"TVA deductibilă","name_en":"Input VAT"}
+{"chart":"companies","account":"4427","name_ro":"TVA colectată","name_en":"Output VAT"}
+{"chart":"companies","account":"4428","name_ro":"TVA neexigibilă","name_en":"VAT under settlement"}
+{"chart":"companies","account":"444","name_ro":"Impozitul pe venituri de natura salariilor","name_en":"Tax on salaries"}
+{"chart":"companies","account":"445","name_ro":"Subvenţii","name_en":"Subsidies"}
+{"chart":"companies","account":"4451","name_ro":"Subvenţii guvernamentale","name_en":"Government subsidies"}
+{"chart":"companies","account":"4452","name_ro":"Împrumuturi nerambursabile cu caracter de subvenţii","name_en":"Non-repayable loans in the form of grants"}
+{"chart":"companies","account":"4458","name_ro":"Alte sume primite cu caracter de subvenţii","name_en":"Other amounts received as subsidies"}
+{"chart":"companies","account":"446","name_ro":"Alte impozite, taxe şi vărsăminte asimilate","name_en":"Other taxes and similar liabilities"}
+{"chart":"companies","account":"447","name_ro":"Fonduri speciale - taxe şi vărsăminte asimilate","name_en":"Special funds - taxes and similar liabilities"}
+{"chart":"companies","account":"448","name_ro":"Alte datorii şi creanţe cu bugetul statului","name_en":"Other debts and claims with the Treasury"}
+{"chart":"companies","account":"4481","name_ro":"Alte datorii faţă de bugetul statului","name_en":"Other debts payable to the Treasury"}
+{"chart":"companies","account":"4482","name_ro":"Alte creanţe privind bugetul statului","name_en":"Other claims receivable from the Treasury"}
+{"chart":"companies","account":"45","name_ro":"Grup şi actionari / asociaţi","name_en":"Group and shareholders / associates"}
+{"chart":"companies","account":"451","name_ro":"Decontări între entităţile afiliate","name_en":"Settlement between affiliated entities"}
+{"chart":"companies","account":"4511","name_ro":"Decontări între entităţile afiliate","name_en":"Settlement between affiliated entities"}
+{"chart":"companies","account":"4518","name_ro":"Dobânzi aferente decontărilor între entităţile afiliate","name_en":"Accrued interest for settlement between affiliated entities"}
+{"chart":"companies","account":"453","name_ro":"Decontări cu entitățile asociate și entitățile controlate în comun","name_en":"Settlement between associated and jointly controlled entities"}
+{"chart":"companies","account":"4531","name_ro":"Decontări cu entitățile asociate și entitățile controlate","name_en":"Settlement between associated and jointly controlled entities"}
+{"chart":"companies","account":"4538","name_ro":"Dobânzi aferente decontărilor cu entitățile asociate și entitățile controlate în comun","name_en":"Accrued interest for settlement between associated and jointly controlled entities"}
+{"chart":"companies","account":"455","name_ro":"Sume datorate acţionarilor/asociaţilor","name_en":"Amounts owed to shareholders"}
+{"chart":"companies","account":"4551","name_ro":"Acţionari/asociaţi – conturi curente","name_en":"Shareholders / associates – current accounts"}
+{"chart":"companies","account":"4558","name_ro":"Acţionari/asociaţi – dobânzi la conturi curente","name_en":"Accrued interest on shareholders’ – current accounts"}
+{"chart":"companies","account":"456","name_ro":"Decontări cu acţionarii/asociaţii privind capitalul","name_en":"Transactions with shareholders / associates related to capital"}
+{"chart":"companies","account":"457","name_ro":"Dividende de plată","name_en":"Dividends payable"}
+{"chart":"companies","account":"458","name_ro":"Decontări din operaţii în participaţie","name_en":"Transactions related to joint operations"}
+{"chart":"companies","account":"4581","name_ro":"Decontări din operaţii în participaţie - pasiv","name_en":"Transactions related to joint operations - liability"}
+{"chart":"companies","account":"4582","name_ro":"Decontări din operaţii în participaţie - activ","name_en":"Transactions related to joint operations - asset"}
+{"chart":"companies","account":"46","name_ro":"Debitori şi creditori diverşi","name_en":"Sundry debtors and creditors"}
+{"chart":"companies","account":"461","name_ro":"Debitori diverşi","name_en":"Sundry debtors"}
+{"chart":"companies","account":"462","name_ro":"Creditori diverşi","name_en":"Sundry creditors"}
+{"chart":"companies","account":"463","name_ro":"Creanţe reprezentând dividende repartizate în cursul exerciţiului financiar","name_en":"Receivables representing dividends distributed during the financial year"}
+{"chart":"companies","account":"466","name_ro":"Decontări din operaţiuni de fiducie","name_en":"Settlements from fiduciary operations"}
+{"chart":"companies","account":"4661","name_ro":"Datorii din operaţiuni de fiducie","name_en":"Debts from fiduciary operations"}
+{"chart":"companies","account":"4662","name_ro":"Creanţe din operaţiuni de fiducie","name_en":"Receivables from fiduciary operations"}
+{"chart":"companies","account":"467","name_ro":"Datorii aferente distribuirior interimare de dividende","name_en":"Debts related to dividend interim distribution"}
+{"chart":"companies","account":"47","name_ro":"Conturi de subvenţii, regularizare şi asimilate","name_en":"Accruals, subsidies and similar accounts"}
+{"chart":"companies","account":"471","name_ro":"Cheltuieli înregistrate în avans","name_en":"Deferred expenses"}
+{"chart":"companies","account":"472","name_ro":"Venituri înregistrate în avans","name_en":"Deferred income"}
+{"chart":"companies","account":"473","name_ro":"Decontări din operaţii în curs de clarificare","name_en":"Suspense account"}
+{"chart":"companies","account":"475","name_ro":"Subvenţii pentru investiţii","name_en":"Investment subsidies"}
+{"chart":"companies","account":"4751","name_ro":"Subvenţii guvernamentale pentru investiţii","name_en":"Governmental investment subsidiese"}
+{"chart":"companies","account":"4752","name_ro":"Împrumuturi nerambursabile cu caracter de subvenţii pentru investiţii","name_en":"Non-repayable loans in the form of investment subsidies"}
+{"chart":"companies","account":"4753","name_ro":"Donaţii pentru investiţii","name_en":"Investment donations"}
+{"chart":"companies","account":"4754","name_ro":"Plusuri de inventar de natura imobilizărilor","name_en":"Inventory surpluses in the form of non-current assets"}
+{"chart":"companies","account":"4758","name_ro":"Alte sume primite cu caracter de subvenţii pentru investiţii","name_en":"Other amounts received in the form of investment subsidies"}
+{"chart":"companies","account":"478","name_ro":"Venituri în avans aferente activelor primite prin transfer de la clienţi","name_en":"Deferred income related to assets received by transfer from customers"}
+{"chart":"companies","account":"48","name_ro":"Decontări în cadrul unităţii","name_en":"Internal transactions"}
+{"chart":"companies","account":"481","name_ro":"Decontări între unitate şi subunităţi","name_en":"Transactions between the entity and sub-units"}
+{"chart":"companies","account":"482","name_ro":"Decontări între subunităţi","name_en":"Transactions between sub-units"}
+{"chart":"companies","account":"49","name_ro":"Ajustări pentru deprecierea creanţelor","name_en":"Allowances for doubtful debts"}
+{"chart":"companies","account":"490","name_ro":"Ajustări pentru deprecierea creanţelor reprezentând avansuri acordate furnizorilor","name_en":"Allowances for depreciation of the receivables representing advances to suppliers"}
+{"chart":"companies","account":"4901","name_ro":"Ajustări pentru deprecierea creanţelor aferente cumpărărilor de bunuri de natura stocurilor","name_en":"Allowances for depreciation of the receivables related to acquistions of inventories"}
+{"chart":"companies","account":"4902","name_ro":"Ajustări pentru deprecierea creanţelor aferente prestărilor de servicii","name_en":"Allowances for depreciation of the receivables related to provisions of services"}
+{"chart":"companies","account":"4903","name_ro":"Ajustări pentru deprecierea creanţelor aferente imobilizărilor corporale","name_en":"Allowances for depreciation of the receivables related to fixed assets"}
+{"chart":"companies","account":"4904","name_ro":"Ajustări pentru deprecierea creanţelor aferente imobilizărilor necorporale","name_en":"Allowances for depreciation of the receivables related to intangible assets"}
+{"chart":"companies","account":"491","name_ro":"Ajustări pentru deprecierea creanţelor - clienţi","name_en":"Allowances for doubtful customers"}
+{"chart":"companies","account":"495","name_ro":"Ajustări pentru deprecierea creanţelor – decontări în cadrul grupului şi cu acţionarii/asociaţii","name_en":"Allowances for doubtful debts from group companies and shareholders / associates"}
+{"chart":"companies","account":"496","name_ro":"Ajustări pentru deprecierea creanţelor - debitori diverşi","name_en":"Allowances for doubtful sundry debtors"}
+{"chart":"companies","account":"5","name_ro":"Clasa 5 - Conturi de trezorerie","name_en":"Class 5 - Treasury accounts"}
+{"chart":"companies","account":"50","name_ro":"Investiţii pe termen scurt","name_en":"Short term investments"}
+{"chart":"companies","account":"501","name_ro":"Acţiuni deţinute la entităţile afiliate","name_en":"Shares in affiliated entities"}
+{"chart":"companies","account":"505","name_ro":"Obligaţiuni emise şi răscumpărate","name_en":"Redeemed debentures"}
+{"chart":"companies","account":"506","name_ro":"Obligaţiuni","name_en":"Debentures"}
+{"chart":"companies","account":"507","name_ro":"Certificate verzi primite","name_en":"Green certificates received"}
+{"chart":"companies","account":"508","name_ro":"Alte investiţii pe termen scurt şi creanţe asimilate","name_en":"Other short term investments and related receivables"}
+{"chart":"companies","account":"5081","name_ro":"Alte titluri de plasament","name_en":"Other short term financial investments"}
+{"chart":"companies","account":"5088","name_ro":"Dobânzi la obligaţiuni şi titluri de plasament","name_en":"Accrued interest on debentures and short term investments"}
+{"chart":"companies","account":"509","name_ro":"Vărsăminte de efectuat pentru investiţiile pe termen scurt","name_en":"Amounts payable for short term financial investments"}
+{"chart":"companies","account":"5091","name_ro":"Vărsăminte de efectuat pentru acţiunile deţinute la entităţile afiliate","name_en":"Amounts payable for shares in affiliated entities"}
+{"chart":"companies","account":"5092","name_ro":"Vărsăminte de efectuat pentru alte investiţii pe termen scurt","name_en":"Amounts payable for other short term financial investments"}
+{"chart":"companies","account":"51","name_ro":"Conturi la bănci","name_en":"Bank accounts"}
+{"chart":"companies","account":"511","name_ro":"Valori de încasat","name_en":"Outstanding lodgements"}
+{"chart":"companies","account":"5112","name_ro":"Cecuri de încasat","name_en":"Cheques"}
+{"chart":"companies","account":"5113","name_ro":"Efecte de încasat","name_en":"Bills of exchange held to maturity"}
+{"chart":"companies","account":"5114","name_ro":"Efecte remise spre scontare","name_en":"Bills of exchange forwarded for discount"}
+{"chart":"companies","account":"512","name_ro":"Conturi curente la bănci","name_en":"Cash at bank"}
+{"chart":"companies","account":"5121","name_ro":"Conturi la bănci în lei","name_en":"Cash at bank in lei"}
+{"chart":"companies","account":"5124","name_ro":"Conturi la bănci în valută","name_en":"Cash at bank in foreign currencies"}
+{"chart":"companies","account":"5125","name_ro":"Sume în curs de decontare","name_en":"Amounts under settlement"}
+{"chart":"companies","account":"5126","name_ro":"Conturi la bănci în lei - TVA defalcat","name_en":"Cash at bank in lei - VAT paid separately"}
+{"chart":"companies","account":"5127","name_ro":"Conturi la bănci în valută - TVA defalcat","name_en":"Cash at bank in foreign currency - VAT paid separately"}
+{"chart":"companies","account":"518","name_ro":"Dobânzi","name_en":"Interest"}
+{"chart":"companies","account":"5186","name_ro":"Dobânzi de plătit","name_en":"Accrued interest payable"}
+{"chart":"companies","account":"5187","name_ro":"Dobânzi de încasat","name_en":"Accrued interest receivable"}
+{"chart":"companies","account":"519","name_ro":"Credite bancare pe termen scurt","name_en":"Short term bank loans"}
+{"chart":"companies","account":"5191","name_ro":"Credite bancare pe termen scurt","name_en":"Short term bank loans"}
+{"chart":"companies","account":"5192","name_ro":"Credite bancare pe termen scurt nerambursate la scadenţă","name_en":"Short term bank loans in arrears"}
+{"chart":"companies","account":"5193","name_ro":"Credite externe guvernamentale","name_en":"Foreign government loans"}
+{"chart":"companies","account":"5194","name_ro":"Credite externe garantate de stat","name_en":"Foreign loans guaranteed by the State"}
+{"chart":"companies","account":"5195","name_ro":"Credite externe garantate de bănci","name_en":"Foreign loans guaranteed by banks"}
+{"chart":"companies","account":"5196","name_ro":"Credite de la Trezoreria Statului","name_en":"State Treasury loans"}
+{"chart":"companies","account":"5197","name_ro":"Credite interne garantate de stat","name_en":"Domestic loans guaranteed by the State"}
+{"chart":"companies","account":"5198","name_ro":"Dobânzi aferente creditelor bancare pe termen scurt","name_en":"Accrued interest on short term loans"}
+{"chart":"companies","account":"53","name_ro":"Casa","name_en":"Petty cash"}
+{"chart":"companies","account":"531","name_ro":"Casa","name_en":"Petty cash"}
+{"chart":"companies","account":"5311","name_ro":"Casa în lei","name_en":"Petty cash in lei"}
+{"chart":"companies","account":"5314","name_ro":"Casa în valută","name_en":"Petty cash in foreign currencies"}
+{"chart":"companies","account":"532","name_ro":"Alte valori","name_en":"Cash equivalents"}
+{"chart":"companies","account":"5321","name_ro":"Timbre fiscale şi poştale","name_en":"Postage and fiscal stamps"}
+{"chart":"companies","account":"5322","name_ro":"Bilete de tratament şi odihnă","name_en":"Holiday vouchers"}
+{"chart":"companies","account":"5323","name_ro":"Tichete şi bilete de călătorie","name_en":"Transport tickets"}
+{"chart":"companies","account":"5328","name_ro":"Alte valori","name_en":"Other cash equivalents"}
+{"chart":"companies","account":"54","name_ro":"Acreditive","name_en":"Letters of credit"}
+{"chart":"companies","account":"541","name_ro":"Acreditive","name_en":"Letters of credit"}
+{"chart":"companies","account":"5411","name_ro":"Acreditive în lei","name_en":"Letters of credit in lei"}
+{"chart":"companies","account":"5414","name_ro":"Acreditive în valută","name_en":"Letters of credit in foreign currencies"}
+{"chart":"companies","account":"542","name_ro":"Avansuri de trezorerie16","name_en":"Cash advances16"}
+{"chart":"companies","account":"58","name_ro":"Viramente interne","name_en":"Internal transfers"}
+{"chart":"companies","account":"581","name_ro":"Viramente interne","name_en":"Internal transfers"}
+{"chart":"companies","account":"59","name_ro":"Ajustări pentru pierderea de valoare a conturilor de trezorerie","name_en":"Impairment of treasury accounts"}
+{"chart":"companies","account":"591","name_ro":"Ajustări pentru pierderea de valoare a acţiunilor deţinute la entităţile afiliate","name_en":"Impairment of shares in affiliated entities"}
+{"chart":"companies","account":"595","name_ro":"Ajustări pentru pierderea de valoare a obligaţiunilor emise şi răscumpărate","name_en":"Impairment of redeemed debentures"}
+{"chart":"companies","account":"596","name_ro":"Ajustări pentru pierderea de valoare a obligaţiunilor","name_en":"Impairment of debentures"}
+{"chart":"companies","account":"598","name_ro":"Ajustări pentru pierderea de valoare a altor investiţii pe termen scurt şi creanţe asimilate","name_en":"Impairment of other short-term financial investments and related receivables"}
+{"chart":"companies","account":"6","name_ro":"Clasa 6 – Conturi de cheltuieli","name_en":"Class 6 - Expense accounts"}
+{"chart":"companies","account":"60","name_ro":"Cheltuieli privind stocurile si alte consumuri","name_en":"Expenses related to inventories and other consumption"}
+{"chart":"companies","account":"601","name_ro":"Cheltuieli cu materiile prime","name_en":"Raw materials"}
+{"chart":"companies","account":"602","name_ro":"Cheltuieli cu materialele consumabile","name_en":"Consumables"}
+{"chart":"companies","account":"6021","name_ro":"Cheltuieli cu materialele auxiliare","name_en":"Auxiliary materials"}
+{"chart":"companies","account":"6022","name_ro":"Cheltuieli privind combustibilii","name_en":"Fuel"}
+{"chart":"companies","account":"6023","name_ro":"Cheltuieli privind materialele pentru ambalat","name_en":"Packaging materials"}
+{"chart":"companies","account":"6024","name_ro":"Cheltuieli privind piesele de schimb","name_en":"Spare parts"}
+{"chart":"companies","account":"6025","name_ro":"Cheltuieli privind seminţele şi materialele de plantat","name_en":"Seeds and sapling"}
+{"chart":"companies","account":"6026","name_ro":"Cheltuieli privind furajele","name_en":"Fodder"}
+{"chart":"companies","account":"6028","name_ro":"Cheltuieli privind alte materiale consumabile","name_en":"Other consumables"}
+{"chart":"companies","account":"603","name_ro":"Cheltuieli privind materialele de natura obiectelor de inventar","name_en":"Materials in the form of small inventory"}
+{"chart":"companies","account":"604","name_ro":"Cheltuieli privind materialele nestocate","name_en":"Materials not stored"}
+{"chart":"companies","account":"605","name_ro":"Cheltuieli privind utilitatile","name_en":"Expenses regarding utilities"}
+{"chart":"companies","account":"6051","name_ro":"Cheltuieli privind consumul de energie","name_en":"Expenses regarding energy consumption"}
+{"chart":"companies","account":"6052","name_ro":"Cheltuieli privind consumul de apă","name_en":"Expenses regarding water consumption"}
+{"chart":"companies","account":"6053","name_ro":"Cheltulieli privind consumul de gaze naturale","name_en":"Washing on the consumption of natural gas"}
+{"chart":"companies","account":"6058","name_ro":"Cheltuieli cu alte utilitati","name_en":"Expenses with other utilities"}
+{"chart":"companies","account":"606","name_ro":"Cheltuieli privind activele biologice de natura stocurilor","name_en":"Losses related to biological assets in the form of inventory"}
+{"chart":"companies","account":"607","name_ro":"Cheltuieli privind mărfurile","name_en":"Goods for resale"}
+{"chart":"companies","account":"608","name_ro":"Cheltuieli privind ambalajele","name_en":"Packaging costs"}
+{"chart":"companies","account":"609","name_ro":"Reduceri comerciale primite","name_en":"Trade discounts received"}
+{"chart":"companies","account":"61","name_ro":"Cheltuieli cu serviciile executate de terţi","name_en":"Third party services"}
+{"chart":"companies","account":"611","name_ro":"Cheltuieli cu întreţinerea şi reparaţiile","name_en":"Maintenance and repair expenses"}
+{"chart":"companies","account":"612","name_ro":"Cheltuieli cu redevenţele, locaţiile de gestiune şi chiriile","name_en":"Royalties and rental expenses"}
+{"chart":"companies","account":"6121","name_ro":"Cheltuieli cu redeventele","name_en":"Royalty expenses"}
+{"chart":"companies","account":"6122","name_ro":"Cheltuieli cu locatiile de gestiun","name_en":"Expenses with management locations"}
+{"chart":"companies","account":"6123","name_ro":"Cheltuieli cu chiriile","name_en":"Rent expenses"}
+{"chart":"companies","account":"613","name_ro":"Cheltuieli cu primele de asigurare","name_en":"Insurance premiums"}
+{"chart":"companies","account":"614","name_ro":"Cheltuieli cu studiile şi cercetările","name_en":"Research expenses"}
+{"chart":"companies","account":"615","name_ro":"Cheltuieli cu pregătirea personalului","name_en":"Staff training expenses"}
+{"chart":"companies","account":"616","name_ro":"Cheltuieli aferente drepturilor de proprietate intelectual","name_en":"Expenses related to intellectual property rights"}
+{"chart":"companies","account":"617","name_ro":"Cheltuieli de management","name_en":"Management expenses"}
+{"chart":"companies","account":"618","name_ro":"Cheltuieli de consultanta","name_en":"Consulting expenses"}
+{"chart":"companies","account":"62","name_ro":"Cheltuieli cu alte servicii executate de terţi","name_en":"Other third party services"}
+{"chart":"companies","account":"621","name_ro":"Cheltuieli cu colaboratorii","name_en":"Externally contracted manpower"}
+{"chart":"companies","account":"622","name_ro":"Cheltuieli privind comisioanele şi onorariile","name_en":"Commissions and fees"}
+{"chart":"companies","account":"623","name_ro":"Cheltuieli de protocol, reclamă şi publicitate","name_en":"Entertaining, promotion and advertising"}
+{"chart":"companies","account":"6231","name_ro":"Cheltuieli de protocol","name_en":"Protocol expenses"}
+{"chart":"companies","account":"6232","name_ro":"Cheltuieli de reclamă şi publicitate","name_en":"Advertising and publicity expenses"}
+{"chart":"companies","account":"624","name_ro":"Cheltuieli cu transportul de bunuri şi personal","name_en":"Transport of goods and personnel"}
+{"chart":"companies","account":"625","name_ro":"Cheltuieli cu deplasări, detaşări şi transferări","name_en":"Travel"}
+{"chart":"companies","account":"626","name_ro":"Cheltuieli poştale şi taxe de telecomunicaţii","name_en":"Postage and telecommunications"}
+{"chart":"companies","account":"627","name_ro":"Cheltuieli cu serviciile bancare şi asimilate","name_en":"Bank commissions and similar charges"}
+{"chart":"companies","account":"628","name_ro":"Alte cheltuieli cu serviciile executate de terţi","name_en":"Other third party services"}
+{"chart":"companies","account":"63","name_ro":"Cheltuieli cu alte impozite, taxe şi vărsăminte asimilate","name_en":"Other taxes, duties and similar expenses"}
+{"chart":"companies","account":"635","name_ro":"Cheltuieli cu alte impozite, taxe şi vărsăminte asimilate","name_en":"Other taxes, duties and similar expenses"}
+{"chart":"companies","account":"6351","name_ro":"Cheltuieli cu impozitul suplimentar pentru sectoarele de activitate specifice","name_en":"Expenditures with the additional tax for specific sectors of activity"}
+{"chart":"companies","account":"64","name_ro":"Cheltuieli cu personalul","name_en":"Personnel expenses"}
+{"chart":"companies","account":"641","name_ro":"Cheltuieli cu salariile personalului","name_en":"Salaries"}
+{"chart":"companies","account":"642","name_ro":"Cheltuieli cu avantajele în natură și tichetele acordate salariaţilor","name_en":"Expenses with benefits in kind and meal tickets"}
+{"chart":"companies","account":"6421","name_ro":"Cheltuieli cu avantajele în natură acordate salariaţilor","name_en":"Expenses with benefits in kind for employees"}
+{"chart":"companies","account":"6422","name_ro":"Cheltuieli cu tichetele acordate salariaților","name_en":"Expenses with meal tickets granted to employees"}
+{"chart":"companies","account":"643","name_ro":"Cheltuieli cu remunerarea în instrumente de capitaluri proprii","name_en":"Expenses with remunerations in the form of own equity instruments"}
+{"chart":"companies","account":"644","name_ro":"Cheltuieli cu primele reprezentând participarea personalului la profit","name_en":"Expenses with bonuses for employees from profit"}
+{"chart":"companies","account":"645","name_ro":"Cheltuieli privind asigurările şi protecţia socială","name_en":"Social security contributions"}
+{"chart":"companies","account":"6451","name_ro":"Cheltuieli privind contribuţia unităţii la asigurările sociale","name_en":"Expenses with company’s contribution to social security"}
+{"chart":"companies","account":"6452","name_ro":"Cheltuieli privind contribuţia unităţii pentru ajutorul de şomaj","name_en":"Expenses with company’s contribution to unemployment fund"}
+{"chart":"companies","account":"6453","name_ro":"Cheltuieli privind contribuţia angajatorului pentru asigurările sociale de sănătate","name_en":"Expenses with company’s contribution to health insurance"}
+{"chart":"companies","account":"6455","name_ro":"Cheltuieli privind contribuţia unităţii la asigurările de viaţă","name_en":"Expenses with company’s contribution to life insurance"}
+{"chart":"companies","account":"6456","name_ro":"Cheltuieli privind contribuţia unităţii la fondurile de pensii facultative","name_en":"Expenses with company’s contribution to optional pension funds"}
+{"chart":"companies","account":"6457","name_ro":"Cheltuieli privind contribuția societății la primele de asigurare voluntară de sănătate","name_en":"Expenses with company’s contribution to insurance premiums"}
+{"chart":"companies","account":"6458","name_ro":"Alte cheltuieli privind asigurările și protecția socială","name_en":"Other social security and welfare contributions"}
+{"chart":"companies","account":"646","name_ro":"Cheltuieli privind contribuţia asiguratorie pentru muncă","name_en":"Expenses regarding asiguratory labor contribution"}
+{"chart":"companies","account":"6461","name_ro":"Cheltuieli privind contribuţia asiguratorie pentru muncă corespunzătoare salariaţilor","name_en":"Expenses regarding asiguratory labor contribution corresponding to employees"}
+{"chart":"companies","account":"6462","name_ro":"Cheltuieli privind contribuţia asiguratorie pentru muncă corespunzătoare altor persoane, decât salariaţii","name_en":"Expenses regarding asiguratory labor contribution corresponding to persons, other than employees"}
+{"chart":"companies","account":"65","name_ro":"Alte cheltuieli de exploatare","name_en":"Other operating expenses"}
+{"chart":"companies","account":"651","name_ro":"Cheltuieli din operaţiuni de fiducie","name_en":"Expenses from fiduciary operations"}
+{"chart":"companies","account":"6511","name_ro":"Cheltuieli ocazionate de constituirea fiduciei","name_en":"Expenses arising from setting of the fiduciary agreement"}
+{"chart":"companies","account":"6512","name_ro":"Cheltuieli din derularea operaţiunilor de fiducie","name_en":"Expenses from fiduciary operations"}
+{"chart":"companies","account":"6513","name_ro":"Cheltuieli din lichidarea operaţiunilor de fiducie","name_en":"Expenses arising from fiduciary liquidating operations"}
+{"chart":"companies","account":"652","name_ro":"Cheltuieli cu protecţia mediului înconjurător","name_en":"Expenses with the environment protection"}
+{"chart":"companies","account":"654","name_ro":"Pierderi din creanţe şi debitori diverşi","name_en":"Bad debts written off"}
+{"chart":"companies","account":"655","name_ro":"Cheltuieli din reevaluarea imobilizărilor corporale","name_en":"Expenses from revaluation of tangible assets"}
+{"chart":"companies","account":"658","name_ro":"Alte cheltuieli de exploatare","name_en":"Other operating expenses"}
+{"chart":"companies","account":"6581","name_ro":"Despăgubiri, amenzi şi penalităţi","name_en":"Compensations, fines and penalties"}
+{"chart":"companies","account":"6582","name_ro":"Donaţii acordate","name_en":"Gifts and subsidies granted"}
+{"chart":"companies","account":"6583","name_ro":"Cheltuieli privind activele cedate şi alte operaţii de capital","name_en":"Net value of assets disposed of and other capital transactions"}
+{"chart":"companies","account":"6584","name_ro":"Cheltuieli cu sumele sau bunurile acordate ca sponsorizări","name_en":"Expenses with the amounts or goods granted as sponsorship"}
+{"chart":"companies","account":"6586","name_ro":"Cheltuieli reprezentând transferuri şi contribuţii datorate în baza unor acte normative speciale","name_en":"Expenses with transfers and contributions caused by special laws"}
+{"chart":"companies","account":"6587","name_ro":"Cheltuieli privind calamităţile şi alte evenimente similare","name_en":"Expenses with natural disasters and other similar events"}
+{"chart":"companies","account":"6588","name_ro":"Alte cheltuieli de exploatare","name_en":"Other operating expenses"}
+{"chart":"companies","account":"66","name_ro":"Cheltuieli financiare","name_en":"Financial expenses"}
+{"chart":"companies","account":"663","name_ro":"Pierderi din creanţe legate de participaţii","name_en":"Losses on amounts receivable in relation with long term financial investments"}
+{"chart":"companies","account":"664","name_ro":"Cheltuieli privind investiţiile financiare cedate","name_en":"Losses on disposal of financial investments"}
+{"chart":"companies","account":"6641","name_ro":"Cheltuieli privind imobilizările financiare cedate","name_en":"Losses on disposal of long term financial investments"}
+{"chart":"companies","account":"6642","name_ro":"Pierderi din investiţiile pe termen scurt cedate","name_en":"Losses on disposal of short term financial investments"}
+{"chart":"companies","account":"665","name_ro":"Cheltuieli din diferenţe de curs valutar","name_en":"Foreign exchange losses"}
+{"chart":"companies","account":"6651","name_ro":"Diferenţe nefavorabile de curs valutar legate de elementele monetare exprimate în valută","name_en":"Foreign exchange losses related to monetary items denominated in a foreign currency"}
+{"chart":"companies","account":"6652","name_ro":"Diferenţe nefavorabile de curs valutar din evaluarea elementelor monetare care fac parte din investiţia netă într-o entitate străină","name_en":"Foreign exchange losses from measuring of monetary items as part of a net investment in a foreign operation"}
+{"chart":"companies","account":"666","name_ro":"Cheltuieli privind dobânzile","name_en":"Interest expense"}
+{"chart":"companies","account":"667","name_ro":"Cheltuieli privind sconturile acordate","name_en":"Discounts granted"}
+{"chart":"companies","account":"668","name_ro":"Alte cheltuieli financiare","name_en":"Other financial expenses"}
+{"chart":"companies","account":"68","name_ro":"Cheltuieli cu amortizările, provizioanele şi ajustările pentru depreciere sau pierdere de valoare","name_en":"Depreciation and provisions; adjustments for impairment losses"}
+{"chart":"companies","account":"681","name_ro":"Cheltuieli de exploatare privind amortizările, provizioanele şi ajustările pentru depreciere","name_en":"Depreciation and provisions, adjustments for impairment losses - operating expenses"}
+{"chart":"companies","account":"6811","name_ro":"Cheltuieli de exploatare privind amortizarea imobilizărilor","name_en":"Depreciation of non current assets"}
+{"chart":"companies","account":"6812","name_ro":"Cheltuieli de exploatare privind provizioanele","name_en":"Provisions"}
+{"chart":"companies","account":"6813","name_ro":"Cheltuieli de exploatare privind ajustările pentru deprecierea imobilizărilor","name_en":"Impairment losses on non current assets"}
+{"chart":"companies","account":"6814","name_ro":"Cheltuieli de exploatare privind ajustările pentru deprecierea activelor circulante","name_en":"Impairment of current assets"}
+{"chart":"companies","account":"6817","name_ro":"Cheltuieli de exploatare privind ajustările pentru deprecierea fondului comercial","name_en":"Impairment losses on goodwill"}
+{"chart":"companies","account":"6818","name_ro":"Cheltuieli de exploatare privind ajustările pentru deprecierea creanţelor reprezentând avansuri acordate furnizorilor","name_en":"Operating expenses on adjustments for impairment of receivables representing advances to suppliers"}
+{"chart":"companies","account":"686","name_ro":"Cheltuieli financiare privind amortizările, provizioanele şi ajustările pentru pierdere de valoare","name_en":"Impairment losses, write down of financial assets and provisions"}
+{"chart":"companies","account":"6861","name_ro":"Cheltuieli privind actualizarea provizioanelor","name_en":"Expenses on unwinding of provisions"}
+{"chart":"companies","account":"6863","name_ro":"Cheltuieli financiare privind ajustările pentru pierderea de valoare a imobilizărilor financiare","name_en":"Impairment losses on financial non-current assets"}
+{"chart":"companies","account":"6864","name_ro":"Cheltuieli financiare privind ajustările pentru pierderea de valoare a activelor circulante","name_en":"Impairment losses on financial current assets"}
+{"chart":"companies","account":"6865","name_ro":"Cheltuieli financiare privind amortizarea diferenţelor aferente titlurilor de stat","name_en":"Amortisation of differences on government securities"}
+{"chart":"companies","account":"6868","name_ro":"Cheltuieli financiare privind amortizarea primelor de rambursare a obligaţiunilor şi a altor datorii","name_en":"Amortisation of premiums of redemption on debentures and other debts"}
+{"chart":"companies","account":"69","name_ro":"Cheltuieli cu impozitul pe profit şi alte impozite","name_en":"Income tax and other taxes"}
+{"chart":"companies","account":"691","name_ro":"Cheltuieli cu impozitul pe profit","name_en":"Income tax"}
+{"chart":"companies","account":"694","name_ro":"Cheltuieli cu impozitul pe profit rezultat din decontarile in cadrul grupului fiscal in domeniul impozitului pe profit","name_en":"Profit tax expenses resulting from settlements within the fiscal group in the field of profit tax"}
+{"chart":"companies","account":"695","name_ro":"Cheltuieli cu impozitul specific unor activităţi","name_en":"Activity-specific tax expenses"}
+{"chart":"companies","account":"697","name_ro":"Cheltuieli cu impozitul pe profit la nivelul impozitului minim pe cifra de afaceri","name_en":"Expenses with the profit tax at the level of the minimum turnover tax"}
+{"chart":"companies","account":"698","name_ro":"Cheltuieli cu impozitul pe venit şi cu alte impozite care nu apar în elementele de mai sus","name_en":"Other taxes not included above"}
+{"chart":"companies","account":"7","name_ro":"Clasa 7 – Conturi de venituri","name_en":"Class 7 - Revenue accounts"}
+{"chart":"companies","account":"70","name_ro":"Cifra de afaceri netă","name_en":"Net turnover"}
+{"chart":"companies","account":"701","name_ro":"Venituri din vânzarea produselor finite, produselor agricole şi a activelor biologice de natura stocurilor","name_en":"Sales of finished goods, agricultural products and biologicat assets in the form of inventory"}
+{"chart":"companies","account":"7015","name_ro":"Venituri din vânzarea produselor finite","name_en":"Sales of finished goods"}
+{"chart":"companies","account":"7017","name_ro":"Venituri din vânzarea produselor agricole","name_en":"Sales of agricultural products"}
+{"chart":"companies","account":"7018","name_ro":"Venituri din vânzarea activelor biologice de natura stocurilor","name_en":"Sales of biological assets in the form of inventory"}
+{"chart":"companies","account":"702","name_ro":"Venituri din vânzarea semifabricatelor","name_en":"Sales of semi-finished goods"}
+{"chart":"companies","account":"703","name_ro":"Venituri din vânzarea produselor reziduale","name_en":"Sales of residual products"}
+{"chart":"companies","account":"704","name_ro":"Venituri din servicii prestate","name_en":"Services rendered"}
+{"chart":"companies","account":"705","name_ro":"Venituri din studii şi cercetări","name_en":"Revenues from research studies"}
+{"chart":"companies","account":"706","name_ro":"Venituri din redevenţe, locaţii de gestiune şi chirii","name_en":"Rental and royalty income"}
+{"chart":"companies","account":"707","name_ro":"Venituri din vânzarea mărfurilor","name_en":"Sale of goods purchased for resale"}
+{"chart":"companies","account":"708","name_ro":"Venituri din activităţi diverse","name_en":"Revenues from sundry activities"}
+{"chart":"companies","account":"709","name_ro":"Reduceri comerciale acordate","name_en":"Trade discounts offered"}
+{"chart":"companies","account":"71","name_ro":"Venituri aferente costului de producţie în curs de execuţie","name_en":"Revenues associated to the production cost of the work in progress"}
+{"chart":"companies","account":"711","name_ro":"Venituri aferente costurilor stocurilor de produse","name_en":"Revenues associated with the costs of the completed production"}
+{"chart":"companies","account":"712","name_ro":"Venituri aferente costurilor serviciilor în curs de execuţie","name_en":"Revenues associated with the cost of services in progress"}
+{"chart":"companies","account":"72","name_ro":"Venituri din producţia de imobilizări","name_en":"Own work capitalised"}
+{"chart":"companies","account":"721","name_ro":"Venituri din producţia de imobilizări necorporale","name_en":"Capitalised costs of intangible non-current assets"}
+{"chart":"companies","account":"722","name_ro":"Venituri din producţia de imobilizări corporale","name_en":"Capitalised costs of tangible non-current assets"}
+{"chart":"companies","account":"725","name_ro":"Venituri din producţia de investiţii imobiliare","name_en":"Capitalised costs of investmet property"}
+{"chart":"companies","account":"74","name_ro":"Venituri din subvenţii de exploatare","name_en":"Subsidies for operating activities"}
+{"chart":"companies","account":"741","name_ro":"Venituri din subvenţii de exploatare","name_en":"Subsidies for operating activities"}
+{"chart":"companies","account":"7411","name_ro":"Venituri din subvenţii de exploatare aferente cifrei de afaceri20","name_en":"Subsidies related to the turnover20"}
+{"chart":"companies","account":"7412","name_ro":"Venituri din subvenţii de exploatare pentru materii prime şi materiale","name_en":"Subsidies for raw materials and consumables"}
+{"chart":"companies","account":"7413","name_ro":"Venituri din subvenţii de exploatare pentru alte cheltuieli externe","name_en":"Subsidies for other external costs"}
+{"chart":"companies","account":"7414","name_ro":"Venituri din subvenţii de exploatare pentru plata personalului","name_en":"Subsidies for wages and salaries"}
+{"chart":"companies","account":"7415","name_ro":"Venituri din subvenţii de exploatare pentru asigurări şi protecţie socială","name_en":"Subsidies for social security contributions"}
+{"chart":"companies","account":"7416","name_ro":"Venituri din subvenţii de exploatare pentru alte cheltuieli de exploatare","name_en":"Subsidies for other operating expenses"}
+{"chart":"companies","account":"7417","name_ro":"Venituri din subvenţii de exploatare în caz de calamităţi şi alte evenimente similare","name_en":"Subsidies for natural disasters and other similar events"}
+{"chart":"companies","account":"7418","name_ro":"Venituri din subvenţii de exploatare pentru dobânda datorată","name_en":"Subsidies related to interest payable"}
+{"chart":"companies","account":"7419","name_ro":"Venituri din subvenţii de exploatare aferente altor venituri","name_en":"Subsidies related to other income"}
+{"chart":"companies","account":"75","name_ro":"Alte venituri din exploatare","name_en":"Other operating revenues"}
+{"chart":"companies","account":"751","name_ro":"Venituri din operaţiuni de fiducie","name_en":"Revenues from fiduciary operations"}
+{"chart":"companies","account":"7511","name_ro":"Venituri ocazionate de constituirea fiduciei","name_en":"Revenues arising from setting of the fiduciary agreement"}
+{"chart":"companies","account":"7512","name_ro":"Venituri din derularea operaţiunilor de fiducie","name_en":"Revenues from fiduciary operations"}
+{"chart":"companies","account":"7513","name_ro":"Venituri din lichidarea operaţiunilor de fiducie","name_en":"Revenues arising from legal fiduciary liquidating operations"}
+{"chart":"companies","account":"754","name_ro":"Venituri din creanţe reactivate şi debitori diverşi","name_en":"Bad debts written off and subsequently collected"}
+{"chart":"companies","account":"755","name_ro":"Venituri din reevaluarea imobilizărilor corporale","name_en":"Revenues from revaluation of tangible assets"}
+{"chart":"companies","account":"758","name_ro":"Alte venituri din exploatare","name_en":"Other operating revenues"}
+{"chart":"companies","account":"7581","name_ro":"Venituri din despăgubiri, amenzi şi penalităţi","name_en":"Compensations, fines and penalties"}
+{"chart":"companies","account":"7582","name_ro":"Venituri din donaţii primite","name_en":"Gifts and subsidies received"}
+{"chart":"companies","account":"7583","name_ro":"Venituri din vânzarea activelor şi alte operaţiuni de capital","name_en":"Proceeds from disposal of assets and other capital transactions"}
+{"chart":"companies","account":"7584","name_ro":"Venituri din subvenţii pentru investiţii","name_en":"Amortisation of investment subsidies"}
+{"chart":"companies","account":"7586","name_ro":"Venituri reprezentând transferuri cuvenite în baza unor acte normative speciale","name_en":"Revenues representing due transfers based on special normative acts"}
+{"chart":"companies","account":"7588","name_ro":"Alte venituri din exploatare","name_en":"Other operating revenues"}
+{"chart":"companies","account":"76","name_ro":"Venituri financiare","name_en":"Financial revenues"}
+{"chart":"companies","account":"761","name_ro":"Venituri din imobilizări financiare","name_en":"Revenues from long term financial investments"}
+{"chart":"companies","account":"7611","name_ro":"Venituri din acţiuni deţinute la entităţile afiliate","name_en":"Revenues from shares in affiliated entities"}
+{"chart":"companies","account":"7612","name_ro":"Venituri din acţiuni deţinute la entităţi asociate","name_en":"Revenues from shares on associated entities"}
+{"chart":"companies","account":"7613","name_ro":"Venituri din acţiuni deţinute la entităţi controlate în comun","name_en":"Revenues from shares on jointly controlled entities"}
+{"chart":"companies","account":"7615","name_ro":"Venituri din alte imobilizări financiare","name_en":"Revenues from other long term financial assets"}
+{"chart":"companies","account":"762","name_ro":"Venituri din investiţii financiare pe termen scurt","name_en":"Revenues from short term financial investments"}
+{"chart":"companies","account":"764","name_ro":"Venituri din investiţii financiare cedate","name_en":"Revenues on disposal of financial investments"}
+{"chart":"companies","account":"7641","name_ro":"Venituri din imobilizări financiare cedate","name_en":"Revenues on disposal of long term financial investments"}
+{"chart":"companies","account":"7642","name_ro":"Câştiguri din investiţii pe termen scurt cedate","name_en":"Gains on disposal of short term financial investments"}
+{"chart":"companies","account":"765","name_ro":"Venituri din diferenţe de curs valutar","name_en":"Foreign exchange gains"}
+{"chart":"companies","account":"7651","name_ro":"Diferenţe favorabile de curs valutar legate de elementele monetare exprimate în valută","name_en":"Foreign exchange gains related to monetary items denominated in a foreign currency"}
+{"chart":"companies","account":"7652","name_ro":"Diferenţe favorabile de curs valutar din evaluarea elementelor monetare care fac parte din investiţia netă într-o entitate străină","name_en":"Foreign exchange gains from measuring of monetary items as part of a net investment in a foreign entity"}
+{"chart":"companies","account":"766","name_ro":"Venituri din dobânzi","name_en":"Interest income"}
+{"chart":"companies","account":"767","name_ro":"Venituri din sconturi obţinute","name_en":"Discounts received"}
+{"chart":"companies","account":"768","name_ro":"Alte venituri financiare","name_en":"Other financial revenues"}
+{"chart":"companies","account":"78","name_ro":"Venituri din provizioane, amortizări şi ajustări pentru depreciere sau pierdere de valoare","name_en":"Write back of provisions, amortization and adjustments for depreciation or impairment losses"}
+{"chart":"companies","account":"781","name_ro":"Venituri din provizioane şi ajustări pentru depreciere privind activitatea de exploatare","name_en":"Write back of provisions and adjustments for operating impairment losses"}
+{"chart":"companies","account":"7812","name_ro":"Venituri din provizioane","name_en":"Write back of provisions"}
+{"chart":"companies","account":"7813","name_ro":"Venituri din ajustări pentru deprecierea imobilizărilor","name_en":"Reversal of impairment losses on non-current assets"}
+{"chart":"companies","account":"7814","name_ro":"Venituri din ajustări pentru deprecierea activelor circulante","name_en":"Reversal of write-down of current assets"}
+{"chart":"companies","account":"7815","name_ro":"Venituri din fondul comercial negativ","name_en":"Revenues from negative goodwill"}
+{"chart":"companies","account":"7818","name_ro":"Venituri din ajustări pentru deprecierea creanţelor reprezentând avansuri acordate furnizorilor","name_en":"Revenue from adjustments for impairment of receivables representing advances to suppliers"}
+{"chart":"companies","account":"786","name_ro":"Venituri financiare din amortizări şi ajustări pentru pierdere de valoare","name_en":"Reversal of adjustments for amortization and impairment losses"}
+{"chart":"companies","account":"7863","name_ro":"Venituri financiare din ajustări pentru pierderea de valoare a imobilizărilor financiare","name_en":"Reversal of impairment losses on financial non-current assets"}
+{"chart":"companies","account":"7864","name_ro":"Venituri financiare din ajustări pentru pierderea de valoare a activelor circulante","name_en":"Reversal of write-down of financial current assets"}
+{"chart":"companies","account":"7865","name_ro":"Venituri financiare din amortizarea diferenţelor aferente titlurilor de stat","name_en":"Financial income from amortization of differences related to government securities"}
+{"chart":"companies","account":"79","name_ro":"Venituri din impozitul pe profit","name_en":"Income from the profit tax"}
+{"chart":"companies","account":"794","name_ro":"Venituri din impozitul pe profit rezultat din decontarile in cadrul grupului fiscal in domeniul impozitului pe profit","name_en":"Income from the profit tax resulting from the settlements within the fiscal group in the field of profit tax"}
+{"chart":"companies","account":"8","name_ro":"Clasa 8 – Conturi speciale","name_en":"Class 8 - Special accounts"}
+{"chart":"companies","account":"80","name_ro":"Conturi în afara bilanţului","name_en":"Off-balance sheet accounts"}
+{"chart":"companies","account":"801","name_ro":"Angajamente acordate","name_en":"Commitments"}
+{"chart":"companies","account":"8011","name_ro":"Giruri şi garanţii acordate","name_en":"Guarantees and endorsements"}
+{"chart":"companies","account":"8018","name_ro":"Alte angajamente acordate","name_en":"Other commitments"}
+{"chart":"companies","account":"802","name_ro":"Angajamente primite","name_en":"Commitments received"}
+{"chart":"companies","account":"8021","name_ro":"Giruri şi garanţii primite","name_en":"Guarantees and endorsements"}
+{"chart":"companies","account":"8028","name_ro":"Alte angajamente primite","name_en":"Other commitments received"}
+{"chart":"companies","account":"803","name_ro":"Alte conturi în afara bilanţului","name_en":"Other off-balance sheet accounts"}
+{"chart":"companies","account":"8031","name_ro":"Imobilizări corporale luate cu chirie","name_en":"Leased tangible assets"}
+{"chart":"companies","account":"8032","name_ro":"Valori materiale primite spre prelucrare sau reparare","name_en":"Assets held for processing or repair"}
+{"chart":"companies","account":"8033","name_ro":"Valori materiale primite în păstrare sau custodie","name_en":"Assets held in custody"}
+{"chart":"companies","account":"8034","name_ro":"Debitori scoşi din activ, urmăriţi în continuare","name_en":"Receivables written off but still followed up"}
+{"chart":"companies","account":"8035","name_ro":"Stocuri de natura obiectelor de inventar date în folosinţă","name_en":"Inventory under the form of used small inventory"}
+{"chart":"companies","account":"8036","name_ro":"Redevenţe, locaţii de gestiune, chirii şi alte datorii asimilate","name_en":"Royalties, rents and similar debts"}
+{"chart":"companies","account":"8037","name_ro":"Efecte scontate neajunse la scadenţă","name_en":"Bills of exchange discounted before maturity"}
+{"chart":"companies","account":"8038","name_ro":"Bunuri primite în administrare, concesiune şi cu chirie","name_en":"Patrimony received for administration, concession and rented"}
+{"chart":"companies","account":"8039","name_ro":"Alte valori în afara bilanţului","name_en":"Other off-balance sheet items"}
+{"chart":"companies","account":"804","name_ro":"Certificate verzi","name_en":"Green certificates"}
+{"chart":"companies","account":"805","name_ro":"Dobânzi aferente contractelor de leasing şi altor contracte asimilate, neajunse la scadenţă","name_en":"Interest for the leasing and other assimilated contracts not held till maturity"}
+{"chart":"companies","account":"8051","name_ro":"Dobânzi de plătit","name_en":"Interest payable"}
+{"chart":"companies","account":"8052","name_ro":"Dobânzi de încasat","name_en":"Interest receivable"}
+{"chart":"companies","account":"806","name_ro":"Certificate de emisii de gaze cu efect de seră","name_en":"Certificates for green house gases emissions"}
+{"chart":"companies","account":"807","name_ro":"Active contingente","name_en":"Contingent assets"}
+{"chart":"companies","account":"808","name_ro":"Datorii contingente","name_en":"Contingent liabilities"}
+{"chart":"companies","account":"809","name_ro":"Creanţe preluate prin cesionare","name_en":"Assignment of receivables"}
+{"chart":"companies","account":"89","name_ro":"Bilanţ","name_en":"Balance sheet"}
+{"chart":"companies","account":"891","name_ro":"Bilanţ de deschidere","name_en":"Opening balance sheet"}
+{"chart":"companies","account":"892","name_ro":"Bilanţ de închidere","name_en":"Closing balance sheet"}
+{"chart":"companies","account":"9","name_ro":"Clasa 9 – Conturi de gestiune","name_en":"Class 9 – Management accounts"}
+{"chart":"companies","account":"90","name_ro":"Decontări interne","name_en":"Internal transactions"}
+{"chart":"companies","account":"901","name_ro":"Decontări interne privind cheltuielile","name_en":"Internal transactions relating to expenses"}
+{"chart":"companies","account":"902","name_ro":"Decontări interne privind producţia obţinută","name_en":"Internal transactions related to costs of conversion"}
+{"chart":"companies","account":"903","name_ro":"Decontări interne privind diferenţele de preţ","name_en":"Internal transactions relating to price differences"}
+{"chart":"companies","account":"92","name_ro":"Conturi de calculaţie","name_en":"Cost accounts"}
+{"chart":"companies","account":"921","name_ro":"Cheltuielile activităţii de bază","name_en":"Costs related to the core business"}
+{"chart":"companies","account":"922","name_ro":"Cheltuielile activităţilor auxiliare","name_en":"Costs related to auxiliary activities"}
+{"chart":"companies","account":"923","name_ro":"Cheltuieli indirecte de producţie","name_en":"Production overheads"}
+{"chart":"companies","account":"924","name_ro":"Cheltuieli generale de administraţie","name_en":"Administrative overheads"}
+{"chart":"companies","account":"925","name_ro":"Cheltuieli de desfacere","name_en":"Distribution costs"}
+{"chart":"companies","account":"93","name_ro":"Costul producţiei","name_en":"Production cost"}
+{"chart":"companies","account":"931","name_ro":"Costul producţiei obţinute","name_en":"Cost of output"}
+{"chart":"companies","account":"933","name_ro":"Costul producţiei în curs de execuţie","name_en":"Cost of work in progress"}
+{"chart":"nonprofit","account":"1","name_ro":"CONTURI DE CAPITALURI, PROVIZIOANE, ÎMPRUMUTURI ŞI DATORII ASIMILATE","name_en":null}
+{"chart":"nonprofit","account":"10","name_ro":"CAPITAL ŞI REZERVE","name_en":null}
+{"chart":"nonprofit","account":"101","name_ro":"Capital (P)","name_en":null}
+{"chart":"nonprofit","account":"105","name_ro":"Rezerve din reevaluare","name_en":null}
+{"chart":"nonprofit","account":"106","name_ro":"Rezerve","name_en":null}
+{"chart":"nonprofit","account":"1061","name_ro":"Rezerve legale (P)","name_en":null}
+{"chart":"nonprofit","account":"1063","name_ro":"Rezerve statutare sau contractuale (P)","name_en":null}
+{"chart":"nonprofit","account":"1068","name_ro":"Alte rezerve (P)","name_en":null}
+{"chart":"nonprofit","account":"107","name_ro":"Patrimoniul privat2 (P)","name_en":null}
+{"chart":"nonprofit","account":"11","name_ro":"FONDURI PRIVIND ACTIVITĂŢILE FĂRĂ SCOP PATRIMONIAL ŞI REZULTATUL REPORTAT","name_en":null}
+{"chart":"nonprofit","account":"113","name_ro":"Fondul social al membrilor Caselor de Ajutor Reciproc (C.A.R.) (P)","name_en":null}
+{"chart":"nonprofit","account":"114","name_ro":"Fondul pentru ajutor în caz de deces al membrilor Caselor de Ajutor Reciproc (C.A.R.) (P)","name_en":null}
+{"chart":"nonprofit","account":"115","name_ro":"Fondul de rulment al membrilor asociaţiilor de proprietari (P)","name_en":null}
+{"chart":"nonprofit","account":"116","name_ro":"Alte fonduri privind activităţile fără scop patrimonial (P)","name_en":null}
+{"chart":"nonprofit","account":"117","name_ro":"Rezultatul reportat","name_en":null}
+{"chart":"nonprofit","account":"1171","name_ro":"Rezultatul reportat reprezentând excedentul nerepartizat sau deficitul neacoperit privind activităţile fără scop patrimonial şi cu destinaţie specială (A/P)##","name_en":null}
+{"chart":"nonprofit","account":"1172","name_ro":"Rezultatul reportat reprezentând profitul nerepartizat sau pierderea neacoperită privind activităţile economice (A/P)","name_en":null}
+{"chart":"nonprofit","account":"1173","name_ro":"Rezultatul reportat provenit din modificările politicilor contabile (A/P)","name_en":null}
+{"chart":"nonprofit","account":"1174","name_ro":"Rezultatul reportat provenit din corectarea erorilor contabile (A/P)","name_en":null}
+{"chart":"nonprofit","account":"1175","name_ro":"Rezultatul reportat reprezentând surplusul realizat din rezerve din reevaluare (P)","name_en":null}
+{"chart":"nonprofit","account":"1176","name_ro":"Rezultatul reportat provenit din trecerea la aplicarea reglementărilor contabile pentru persoanele juridice fără scop patrimonial (A/P)","name_en":null}
+{"chart":"nonprofit","account":"12","name_ro":"REZULTATUL EXERCIŢIULUI FINANCIAR","name_en":null}
+{"chart":"nonprofit","account":"121","name_ro":"Excedent/profit sau deficit/pierdere","name_en":null}
+{"chart":"nonprofit","account":"1211","name_ro":"Excedent sau deficit privind activităţile fără scop patrimonial (A/P)","name_en":null}
+{"chart":"nonprofit","account":"1212","name_ro":"Excedent sau deficit privind activităţile cu destinaţie specială (A/P)","name_en":null}
+{"chart":"nonprofit","account":"1213","name_ro":"Profit sau pierdere privind activităţile economice (A/P)","name_en":null}
+{"chart":"nonprofit","account":"129","name_ro":"Repartizarea excedentului/profitului","name_en":null}
+{"chart":"nonprofit","account":"1291","name_ro":"Repartizarea excedentului privind activităţile fără scop patrimonial (A)","name_en":null}
+{"chart":"nonprofit","account":"1292","name_ro":"Repartizarea profitului privind activităţile economice (A)","name_en":null}
+{"chart":"nonprofit","account":"15","name_ro":"PROVIZIOANE","name_en":null}
+{"chart":"nonprofit","account":"151","name_ro":"Provizioane","name_en":null}
+{"chart":"nonprofit","account":"1511","name_ro":"Provizioane pentru litigii (P)","name_en":null}
+{"chart":"nonprofit","account":"1512","name_ro":"Provizioane pentru garanţii acordate clienţilor (P)","name_en":null}
+{"chart":"nonprofit","account":"1514","name_ro":"Provizioane pentru restructurare (P)","name_en":null}
+{"chart":"nonprofit","account":"1515","name_ro":"Provizioane pentru pensii şi obligaţii similare (P)","name_en":null}
+{"chart":"nonprofit","account":"1516","name_ro":"Provizioane pentru impozite (P)","name_en":null}
+{"chart":"nonprofit","account":"1518","name_ro":"Alte provizioane (P)","name_en":null}
+{"chart":"nonprofit","account":"16","name_ro":"ÎMPRUMUTURI ŞI DATORII ASIMILATE","name_en":null}
+{"chart":"nonprofit","account":"162","name_ro":"Credite bancare pe termen lung","name_en":null}
+{"chart":"nonprofit","account":"1621","name_ro":"Credite bancare pe termen lung (P)","name_en":null}
+{"chart":"nonprofit","account":"1622","name_ro":"Credite bancare pe termen lung nerambursate la scadenţă (P)","name_en":null}
+{"chart":"nonprofit","account":"1623","name_ro":"Credite externe guvernamentale (P)","name_en":null}
+{"chart":"nonprofit","account":"1624","name_ro":"Credite bancare externe garantate de stat (P)","name_en":null}
+{"chart":"nonprofit","account":"1625","name_ro":"Credite bancare externe garantate de bănci (P)","name_en":null}
+{"chart":"nonprofit","account":"1626","name_ro":"Credite de la Trezoreria Statului (P)","name_en":null}
+{"chart":"nonprofit","account":"1627","name_ro":"Credite bancare interne garantate de stat (P)","name_en":null}
+{"chart":"nonprofit","account":"166","name_ro":"Datorii care privesc imobilizările financiare","name_en":null}
+{"chart":"nonprofit","account":"1661","name_ro":"Datorii faţă de entităţile afiliate (P)","name_en":null}
+{"chart":"nonprofit","account":"1662","name_ro":"Datorii faţă de entităţile asociate şi alte entităţi legate prin interese de participare (P)","name_en":null}
+{"chart":"nonprofit","account":"167","name_ro":"Alte împrumuturi şi datorii asimilate (P)","name_en":null}
+{"chart":"nonprofit","account":"168","name_ro":"Dobânzi aferente împrumuturilor şi datoriilor asimilate","name_en":null}
+{"chart":"nonprofit","account":"1682","name_ro":"Dobânzi aferente creditelor bancare pe termen lung (P)","name_en":null}
+{"chart":"nonprofit","account":"1685","name_ro":"Dobânzi aferente datoriilor faţă de entităţile afiliate (P)","name_en":null}
+{"chart":"nonprofit","account":"1686","name_ro":"Dobânzi aferente datoriilor faţă de entităţile asociate şi alte entităţi legate prin interese de participare (P)","name_en":null}
+{"chart":"nonprofit","account":"1687","name_ro":"Dobânzi aferente altor împrumuturi şi datorii asimilate (P)","name_en":null}
+{"chart":"nonprofit","account":"169","name_ro":"Prime privind rambursarea altor datorii (A)","name_en":null}
+{"chart":"nonprofit","account":"2","name_ro":"CONTURI DE IMOBILIZĂRI","name_en":null}
+{"chart":"nonprofit","account":"20","name_ro":"IMOBILIZĂRI NECORPORALE","name_en":null}
+{"chart":"nonprofit","account":"201","name_ro":"Cheltuieli de constituire (A)","name_en":null}
+{"chart":"nonprofit","account":"203","name_ro":"Cheltuieli de dezvoltare (A)","name_en":null}
+{"chart":"nonprofit","account":"205","name_ro":"Concesiuni, brevete, licenţe, mărci comerciale, drepturi şi active similare (A)","name_en":null}
+{"chart":"nonprofit","account":"207","name_ro":"Fond comercial (A)","name_en":null}
+{"chart":"nonprofit","account":"208","name_ro":"Alte imobilizări necorporale (A)","name_en":null}
+{"chart":"nonprofit","account":"21","name_ro":"IMOBILIZĂRI CORPORALE","name_en":null}
+{"chart":"nonprofit","account":"211","name_ro":"Terenuri şi amenajări de terenuri","name_en":null}
+{"chart":"nonprofit","account":"2111","name_ro":"Terenuri (A)","name_en":null}
+{"chart":"nonprofit","account":"2112","name_ro":"Amenajări de terenuri (A)","name_en":null}
+{"chart":"nonprofit","account":"212","name_ro":"Construcţii (A)","name_en":null}
+{"chart":"nonprofit","account":"213","name_ro":"Instalaţii tehnice şi mijloace de transport","name_en":null}
+{"chart":"nonprofit","account":"2131","name_ro":"Echipamente tehnologice (maşini, utilaje şi instalaţii de lucru) (A)","name_en":null}
+{"chart":"nonprofit","account":"2132","name_ro":"Aparate şi instalaţii de măsurare, control şi reglare (A)","name_en":null}
+{"chart":"nonprofit","account":"2133","name_ro":"Mijloace de transport (A)","name_en":null}
+{"chart":"nonprofit","account":"214","name_ro":"Mobilier, aparatură birotică, echipamente de protecţie a valorilor umane şi materiale şi alte active corporale (A)","name_en":null}
+{"chart":"nonprofit","account":"215","name_ro":"Investiţii imobiliare (A)","name_en":null}
+{"chart":"nonprofit","account":"217","name_ro":"Active biologice productive (A)","name_en":null}
+{"chart":"nonprofit","account":"22","name_ro":"IMOBILIZĂRI CORPORALE ÎN CURS DE APROVIZIONARE","name_en":null}
+{"chart":"nonprofit","account":"223","name_ro":"Instalaţii tehnice şi mijloace de transport în curs de aprovizionare (A)","name_en":null}
+{"chart":"nonprofit","account":"224","name_ro":"Mobilier, aparatură birotică, echipamente de protecţie a valorilor umane şi materiale şi alte active corporale în curs de aprovizionare (A)","name_en":null}
+{"chart":"nonprofit","account":"227","name_ro":"Active biologice productive în curs de aprovizionare (A)","name_en":null}
+{"chart":"nonprofit","account":"23","name_ro":"IMOBILIZĂRI ÎN CURS","name_en":null}
+{"chart":"nonprofit","account":"231","name_ro":"Imobilizări corporale în curs de execuţie (A)","name_en":null}
+{"chart":"nonprofit","account":"26","name_ro":"IMOBILIZĂRI FINANCIARE","name_en":null}
+{"chart":"nonprofit","account":"261","name_ro":"Acţiuni deţinute la entităţile afiliate (A)","name_en":null}
+{"chart":"nonprofit","account":"262","name_ro":"Acţiuni deţinute la entităţi asociate şi alte entităţi legate prin interese de participare (A)","name_en":null}
+{"chart":"nonprofit","account":"265","name_ro":"Alte titluri imobilizate (A)","name_en":null}
+{"chart":"nonprofit","account":"267","name_ro":"Creanţe imobilizate","name_en":null}
+{"chart":"nonprofit","account":"2671","name_ro":"Sume de încasat de la entităţile afiliate (A)","name_en":null}
+{"chart":"nonprofit","account":"2672","name_ro":"Dobânda aferentă sumelor de încasat de la entităţile afiliate (A)","name_en":null}
+{"chart":"nonprofit","account":"2673","name_ro":"Creanţe faţă de entităţile asociate şi alte entităţi legate prin interese de participare (A)","name_en":null}
+{"chart":"nonprofit","account":"2674","name_ro":"Dobânda aferentă creanţelor faţă de entităţile asociate şi alte entităţi legate prin interese de participare (A)","name_en":null}
+{"chart":"nonprofit","account":"2675","name_ro":"Împrumuturi acordate pe termen lung (A)","name_en":null}
+{"chart":"nonprofit","account":"2676","name_ro":"Dobânda aferentă împrumuturilor acordate pe termen lung (A)","name_en":null}
+{"chart":"nonprofit","account":"2677","name_ro":"Obligaţiuni achiziţionate cu ocazia emisiunilor efectuate de terţi (A)","name_en":null}
+{"chart":"nonprofit","account":"2678","name_ro":"Alte creanţe imobilizate (A)","name_en":null}
+{"chart":"nonprofit","account":"2679","name_ro":"Dobânzi aferente altor creanţe imobilizate (A)","name_en":null}
+{"chart":"nonprofit","account":"269","name_ro":"Vărsăminte de efectuat pentru imobilizări financiare","name_en":null}
+{"chart":"nonprofit","account":"2691","name_ro":"Vărsăminte de efectuat privind acţiunile deţinute la entităţile afiliate (P)","name_en":null}
+{"chart":"nonprofit","account":"2692","name_ro":"Vărsăminte de efectuat privind acţiunile deţinute la entităţi asociate şi alte entităţi legate prin interese de participare (P)","name_en":null}
+{"chart":"nonprofit","account":"2695","name_ro":"Vărsăminte de efectuat pentru alte imobilizări financiare (P)","name_en":null}
+{"chart":"nonprofit","account":"28","name_ro":"AMORTIZĂRI PRIVIND IMOBILIZĂRILE","name_en":null}
+{"chart":"nonprofit","account":"280","name_ro":"Amortizări privind imobilizările necorporale","name_en":null}
+{"chart":"nonprofit","account":"2801","name_ro":"Amortizarea cheltuielilor de constituire (P)","name_en":null}
+{"chart":"nonprofit","account":"2803","name_ro":"Amortizarea cheltuielilor de dezvoltare (P)","name_en":null}
+{"chart":"nonprofit","account":"2805","name_ro":"Amortizarea concesiunilor, brevetelor, licenţelor, mărcilor comerciale, drepturilor şi activelor similare (P)","name_en":null}
+{"chart":"nonprofit","account":"2807","name_ro":"Amortizarea fondului comercial (P)","name_en":null}
+{"chart":"nonprofit","account":"2808","name_ro":"Amortizarea altor imobilizări necorporale (P)","name_en":null}
+{"chart":"nonprofit","account":"281","name_ro":"Amortizări privind imobilizările corporale","name_en":null}
+{"chart":"nonprofit","account":"2811","name_ro":"Amortizarea amenajărilor de terenuri (P)","name_en":null}
+{"chart":"nonprofit","account":"2812","name_ro":"Amortizarea construcţiilor (P)","name_en":null}
+{"chart":"nonprofit","account":"2813","name_ro":"Amortizarea instalaţiilor şi mijloacelor de transport (P)","name_en":null}
+{"chart":"nonprofit","account":"2814","name_ro":"Amortizarea altor imobilizări corporale (P)","name_en":null}
+{"chart":"nonprofit","account":"2815","name_ro":"Amortizarea investiţiilor imobiliare (P)","name_en":null}
+{"chart":"nonprofit","account":"2817","name_ro":"Amortizarea activelor biologice productive (P)","name_en":null}
+{"chart":"nonprofit","account":"29","name_ro":"AJUSTĂRI PENTRU DEPRECIEREA SAU PIERDEREA DE VALOARE A IMOBILIZĂRILOR","name_en":null}
+{"chart":"nonprofit","account":"290","name_ro":"Ajustări pentru deprecierea imobilizărilor necorporale","name_en":null}
+{"chart":"nonprofit","account":"2903","name_ro":"Ajustări pentru deprecierea cheltuielilor de dezvoltare (P)","name_en":null}
+{"chart":"nonprofit","account":"2905","name_ro":"Ajustări pentru deprecierea concesiunilor, brevetelor, licenţelor, mărcilor comerciale, drepturilor şi activelor similare (P)","name_en":null}
+{"chart":"nonprofit","account":"2908","name_ro":"Ajustări pentru deprecierea altor imobilizări necorporale (P)","name_en":null}
+{"chart":"nonprofit","account":"291","name_ro":"Ajustări pentru deprecierea imobilizărilor corporale","name_en":null}
+{"chart":"nonprofit","account":"2911","name_ro":"Ajustări pentru deprecierea terenurilor şi amenajărilor de terenuri (P)","name_en":null}
+{"chart":"nonprofit","account":"2912","name_ro":"Ajustări pentru deprecierea construcţiilor (P)","name_en":null}
+{"chart":"nonprofit","account":"2913","name_ro":"Ajustări pentru deprecierea instalaţiilor şi mijloacelor de transport (P)","name_en":null}
+{"chart":"nonprofit","account":"2914","name_ro":"Ajustări pentru deprecierea altor imobilizări corporale (P)","name_en":null}
+{"chart":"nonprofit","account":"2915","name_ro":"Ajustări pentru deprecierea investiţiilor imobiliare (P)","name_en":null}
+{"chart":"nonprofit","account":"2917","name_ro":"Ajustări pentru deprecierea activelor biologice productive (P)","name_en":null}
+{"chart":"nonprofit","account":"293","name_ro":"Ajustări pentru deprecierea imobilizărilor în curs de execuţie (P)","name_en":null}
+{"chart":"nonprofit","account":"296","name_ro":"Ajustări pentru pierderea de valoare a imobilizărilor financiare","name_en":null}
+{"chart":"nonprofit","account":"2961","name_ro":"Ajustări pentru pierderea de valoare a acţiunilor deţinute la entităţile afiliate (P)","name_en":null}
+{"chart":"nonprofit","account":"2962","name_ro":"Ajustări pentru pierderea de valoare a acţiunilor deţinute la entităţi asociate şi alte entităţi legate prin interese de participare (P)","name_en":null}
+{"chart":"nonprofit","account":"2963","name_ro":"Ajustări pentru pierderea de valoare a altor titluri imobilizate (P)","name_en":null}
+{"chart":"nonprofit","account":"2964","name_ro":"Ajustări pentru pierderea de valoare a sumelor de încasat de la entităţile afiliate (P)","name_en":null}
+{"chart":"nonprofit","account":"2965","name_ro":"Ajustări pentru pierderea de valoare a creanţelor faţă de entităţile asociate şi alte entităţi legate prin interese de participare (P)","name_en":null}
+{"chart":"nonprofit","account":"2966","name_ro":"Ajustări pentru pierderea de valoare a împrumuturilor acordate pe termen lung (P)","name_en":null}
+{"chart":"nonprofit","account":"2968","name_ro":"Ajustări pentru pierderea de valoare a altor creanţe imobilizate (P)","name_en":null}
+{"chart":"nonprofit","account":"3","name_ro":"CONTURI DE STOCURI ŞI PRODUCŢIE ÎN CURS DE EXECUŢIE","name_en":null}
+{"chart":"nonprofit","account":"30","name_ro":"STOCURI DE MATERII PRIME ŞI MATERIALE","name_en":null}
+{"chart":"nonprofit","account":"301","name_ro":"Materii prime (A)","name_en":null}
+{"chart":"nonprofit","account":"302","name_ro":"Materiale consumabile","name_en":null}
+{"chart":"nonprofit","account":"3021","name_ro":"Materiale auxiliare (A)","name_en":null}
+{"chart":"nonprofit","account":"3022","name_ro":"Combustibili (A)","name_en":null}
+{"chart":"nonprofit","account":"3023","name_ro":"Materiale pentru ambalat (A)","name_en":null}
+{"chart":"nonprofit","account":"3024","name_ro":"Piese de schimb (A)","name_en":null}
+{"chart":"nonprofit","account":"3025","name_ro":"Seminţe şi materiale de plantat (A)","name_en":null}
+{"chart":"nonprofit","account":"3026","name_ro":"Furaje (A)","name_en":null}
+{"chart":"nonprofit","account":"3028","name_ro":"Alte materiale consumabile (A)","name_en":null}
+{"chart":"nonprofit","account":"303","name_ro":"Materiale de natura obiectelor de inventar (A)","name_en":null}
+{"chart":"nonprofit","account":"308","name_ro":"Diferenţe de preţ la materii prime şi materiale (A/P)","name_en":null}
+{"chart":"nonprofit","account":"32","name_ro":"STOCURI ÎN CURS DE APROVIZIONARE","name_en":null}
+{"chart":"nonprofit","account":"321","name_ro":"Materii prime în curs de aprovizionare (A)","name_en":null}
+{"chart":"nonprofit","account":"322","name_ro":"Materiale consumabile în curs de aprovizionare (A)","name_en":null}
+{"chart":"nonprofit","account":"323","name_ro":"Materiale de natura obiectelor de inventar în curs de aprovizionare (A)","name_en":null}
+{"chart":"nonprofit","account":"326","name_ro":"Active biologice de natura stocurilor în curs de aprovizionare (A)","name_en":null}
+{"chart":"nonprofit","account":"327","name_ro":"Mărfuri în curs de aprovizionare (A)","name_en":null}
+{"chart":"nonprofit","account":"328","name_ro":"Ambalaje în curs de aprovizionare (A)","name_en":null}
+{"chart":"nonprofit","account":"33","name_ro":"PRODUCŢIA ÎN CURS DE EXECUŢIE","name_en":null}
+{"chart":"nonprofit","account":"331","name_ro":"Produse în curs de execuţie (A)","name_en":null}
+{"chart":"nonprofit","account":"332","name_ro":"Servicii în curs de execuţie (A)","name_en":null}
+{"chart":"nonprofit","account":"34","name_ro":"PRODUSE","name_en":null}
+{"chart":"nonprofit","account":"341","name_ro":"Semifabricate (A)","name_en":null}
+{"chart":"nonprofit","account":"345","name_ro":"Produse finite (A)","name_en":null}
+{"chart":"nonprofit","account":"346","name_ro":"Produse reziduale (A)","name_en":null}
+{"chart":"nonprofit","account":"347","name_ro":"Produse agricole (A)","name_en":null}
+{"chart":"nonprofit","account":"348","name_ro":"Diferenţe de preţ la produse (A/P)","name_en":null}
+{"chart":"nonprofit","account":"35","name_ro":"STOCURI AFLATE LA TERŢI","name_en":null}
+{"chart":"nonprofit","account":"351","name_ro":"Materii şi materiale aflate la terţi (A)","name_en":null}
+{"chart":"nonprofit","account":"354","name_ro":"Produse aflate la terţi (A)","name_en":null}
+{"chart":"nonprofit","account":"356","name_ro":"Active biologice de natura stocurilor aflate la terţi (A)","name_en":null}
+{"chart":"nonprofit","account":"357","name_ro":"Mărfuri aflate la terţi (A)","name_en":null}
+{"chart":"nonprofit","account":"358","name_ro":"Ambalaje aflate la terţi (A)","name_en":null}
+{"chart":"nonprofit","account":"36","name_ro":"ACTIVE BIOLOGICE DE NATURA STOCURILOR","name_en":null}
+{"chart":"nonprofit","account":"361","name_ro":"Active biologice de natura stocurilor (A)","name_en":null}
+{"chart":"nonprofit","account":"368","name_ro":"Diferenţe de preţ la active biologice de natura stocurilor (A/P)","name_en":null}
+{"chart":"nonprofit","account":"37","name_ro":"MĂRFURI","name_en":null}
+{"chart":"nonprofit","account":"371","name_ro":"Mărfuri (A)","name_en":null}
+{"chart":"nonprofit","account":"378","name_ro":"Diferenţe de preţ la mărfuri (A/P)","name_en":null}
+{"chart":"nonprofit","account":"38","name_ro":"AMBALAJE","name_en":null}
+{"chart":"nonprofit","account":"381","name_ro":"Ambalaje (A)","name_en":null}
+{"chart":"nonprofit","account":"388","name_ro":"Diferenţe de preţ la ambalaje (A/P)","name_en":null}
+{"chart":"nonprofit","account":"39","name_ro":"AJUSTĂRI PENTRU DEPRECIEREA STOCURILOR ŞI PRODUCŢIEI ÎN CURS DE EXECUŢIE","name_en":null}
+{"chart":"nonprofit","account":"391","name_ro":"Ajustări pentru deprecierea materiilor prime (P)","name_en":null}
+{"chart":"nonprofit","account":"392","name_ro":"Ajustări pentru deprecierea materialelor","name_en":null}
+{"chart":"nonprofit","account":"3921","name_ro":"Ajustări pentru deprecierea materialelor consumabile (P)","name_en":null}
+{"chart":"nonprofit","account":"3922","name_ro":"Ajustări pentru deprecierea materialelor de natura obiectelor de inventar (P)","name_en":null}
+{"chart":"nonprofit","account":"393","name_ro":"Ajustări pentru deprecierea producţiei în curs de execuţie (P)","name_en":null}
+{"chart":"nonprofit","account":"394","name_ro":"Ajustări pentru deprecierea produselor","name_en":null}
+{"chart":"nonprofit","account":"3941","name_ro":"Ajustări pentru deprecierea semifabricatelor (P)","name_en":null}
+{"chart":"nonprofit","account":"3945","name_ro":"Ajustări pentru deprecierea produselor finite (P)","name_en":null}
+{"chart":"nonprofit","account":"3946","name_ro":"Ajustări pentru deprecierea produselor reziduale (P)","name_en":null}
+{"chart":"nonprofit","account":"3947","name_ro":"Ajustări pentru deprecierea produselor agricole (P)","name_en":null}
+{"chart":"nonprofit","account":"395","name_ro":"Ajustări pentru deprecierea stocurilor aflate la terţi","name_en":null}
+{"chart":"nonprofit","account":"3951","name_ro":"Ajustări pentru deprecierea materiilor şi materialelor aflate la terţi (P)","name_en":null}
+{"chart":"nonprofit","account":"3952","name_ro":"Ajustări pentru deprecierea semifabricatelor aflate la terţi (P)","name_en":null}
+{"chart":"nonprofit","account":"3953","name_ro":"Ajustări pentru deprecierea produselor finite aflate la terţi (P)","name_en":null}
+{"chart":"nonprofit","account":"3954","name_ro":"Ajustări pentru deprecierea produselor reziduale aflate la terţi (P)","name_en":null}
+{"chart":"nonprofit","account":"3955","name_ro":"Ajustări pentru deprecierea produselor agricole aflate la terţi (P)","name_en":null}
+{"chart":"nonprofit","account":"3956","name_ro":"Ajustări pentru deprecierea activelor biologice de natura stocurilor aflate la terţi (P)","name_en":null}
+{"chart":"nonprofit","account":"3957","name_ro":"Ajustări pentru deprecierea mărfurilor aflate la terţi (P)","name_en":null}
+{"chart":"nonprofit","account":"3958","name_ro":"Ajustări pentru deprecierea ambalajelor aflate la terţi (P)","name_en":null}
+{"chart":"nonprofit","account":"396","name_ro":"Ajustări pentru deprecierea activelor biologice de natura stocurilor (P)","name_en":null}
+{"chart":"nonprofit","account":"397","name_ro":"Ajustări pentru deprecierea mărfurilor (P)","name_en":null}
+{"chart":"nonprofit","account":"398","name_ro":"Ajustări pentru deprecierea ambalajelor (P)","name_en":null}
+{"chart":"nonprofit","account":"4","name_ro":"CONTURI DE TERŢI","name_en":null}
+{"chart":"nonprofit","account":"40","name_ro":"FURNIZORI ŞI CONTURI ASIMILATE","name_en":null}
+{"chart":"nonprofit","account":"401","name_ro":"Furnizori (P)","name_en":null}
+{"chart":"nonprofit","account":"403","name_ro":"Efecte de plătit (P)","name_en":null}
+{"chart":"nonprofit","account":"404","name_ro":"Furnizori de imobilizări (P)","name_en":null}
+{"chart":"nonprofit","account":"405","name_ro":"Efecte de plătit pentru imobilizări (P)","name_en":null}
+{"chart":"nonprofit","account":"408","name_ro":"Furnizori - facturi nesosite (P)","name_en":null}
+{"chart":"nonprofit","account":"409","name_ro":"Furnizori - debitori","name_en":null}
+{"chart":"nonprofit","account":"4091","name_ro":"Furnizori - debitori pentru cumpărări de bunuri de natura stocurilor (A)","name_en":null}
+{"chart":"nonprofit","account":"4092","name_ro":"Furnizori - debitori pentru prestări de servicii (A)","name_en":null}
+{"chart":"nonprofit","account":"4093","name_ro":"Avansuri acordate pentru imobilizări corporale (A)","name_en":null}
+{"chart":"nonprofit","account":"4094","name_ro":"Avansuri acordate pentru imobilizări necorporale (A)","name_en":null}
+{"chart":"nonprofit","account":"41","name_ro":"CLIENŢI ŞI CONTURI ASIMILATE","name_en":null}
+{"chart":"nonprofit","account":"411","name_ro":"Clienţi","name_en":null}
+{"chart":"nonprofit","account":"4111","name_ro":"Clienţi (A)","name_en":null}
+{"chart":"nonprofit","account":"4118","name_ro":"Clienţi incerţi sau în litigiu (A)","name_en":null}
+{"chart":"nonprofit","account":"413","name_ro":"Efecte de primit de la clienţi (A)","name_en":null}
+{"chart":"nonprofit","account":"418","name_ro":"Clienţi - facturi de întocmit (A)","name_en":null}
+{"chart":"nonprofit","account":"419","name_ro":"Clienţi - creditori (P)","name_en":null}
+{"chart":"nonprofit","account":"42","name_ro":"PERSONAL ŞI CONTURI ASIMILATE","name_en":null}
+{"chart":"nonprofit","account":"421","name_ro":"Personal - salarii datorate (P)","name_en":null}
+{"chart":"nonprofit","account":"422","name_ro":"Pensionari - pensii datorate (P)","name_en":null}
+{"chart":"nonprofit","account":"423","name_ro":"Personal - ajutoare materiale datorate","name_en":null}
+{"chart":"nonprofit","account":"424","name_ro":"Prime reprezentând participarea personalului la profit (P)","name_en":null}
+{"chart":"nonprofit","account":"425","name_ro":"Avansuri acordate personalului (A)","name_en":null}
+{"chart":"nonprofit","account":"426","name_ro":"Drepturi de personal neridicate (P)","name_en":null}
+{"chart":"nonprofit","account":"427","name_ro":"Reţineri din salarii datorate terţilor (P)","name_en":null}
+{"chart":"nonprofit","account":"428","name_ro":"Alte datorii şi creanţe în legătură cu personalul","name_en":null}
+{"chart":"nonprofit","account":"4281","name_ro":"Alte datorii în legătură cu personalul (P)","name_en":null}
+{"chart":"nonprofit","account":"4282","name_ro":"Alte creanţe în legătură cu personalul (A)","name_en":null}
+{"chart":"nonprofit","account":"43","name_ro":"ASIGURĂRI SOCIALE, PROTECŢIA SOCIALĂ ŞI CONTURI ASIMILATE","name_en":null}
+{"chart":"nonprofit","account":"431","name_ro":"Asigurări sociale","name_en":null}
+{"chart":"nonprofit","account":"4311","name_ro":"Contribuţia unităţii la asigurările sociale (P)","name_en":null}
+{"chart":"nonprofit","account":"4312","name_ro":"Contribuţia personalului la asigurările sociale (P)","name_en":null}
+{"chart":"nonprofit","account":"4313","name_ro":"Contribuţia angajatorului pentru asigurările sociale de sănătate (P)","name_en":null}
+{"chart":"nonprofit","account":"4314","name_ro":"Contribuţia angajaţilor pentru asigurările sociale de sănătate (P)","name_en":null}
+{"chart":"nonprofit","account":"4315","name_ro":"Contribuţia de asigurări sociale (P)","name_en":null}
+{"chart":"nonprofit","account":"4316","name_ro":"Contribuţia de asigurări sociale de sănătate (P)","name_en":null}
+{"chart":"nonprofit","account":"4318","name_ro":"Alte contribuţii pentru asigurările sociale de sănătate","name_en":null}
+{"chart":"nonprofit","account":"436","name_ro":"Contribuţia asiguratorie pentru muncă (P)","name_en":null}
+{"chart":"nonprofit","account":"437","name_ro":"Ajutor de şomaj","name_en":null}
+{"chart":"nonprofit","account":"4371","name_ro":"Contribuţia unităţii la fondul de şomaj (P)","name_en":null}
+{"chart":"nonprofit","account":"4372","name_ro":"Contribuţia personalului la fondul de şomaj (P)","name_en":null}
+{"chart":"nonprofit","account":"438","name_ro":"Alte datorii şi creanţe sociale","name_en":null}
+{"chart":"nonprofit","account":"4381","name_ro":"Alte datorii sociale (P)","name_en":null}
+{"chart":"nonprofit","account":"4382","name_ro":"Alte creanţe sociale (A)","name_en":null}
+{"chart":"nonprofit","account":"44","name_ro":"BUGETUL STATULUI, FONDURI SPECIALE ŞI CONTURI ASIMILATE","name_en":null}
+{"chart":"nonprofit","account":"441","name_ro":"Impozitul pe profit şi alte impozite","name_en":null}
+{"chart":"nonprofit","account":"4411","name_ro":"Impozitul pe profit (P)","name_en":null}
+{"chart":"nonprofit","account":"4415","name_ro":"Impozitul specific unor activităţi (P)","name_en":null}
+{"chart":"nonprofit","account":"4418","name_ro":"Alte impozite (P)","name_en":null}
+{"chart":"nonprofit","account":"442","name_ro":"Taxa pe valoarea adăugată","name_en":null}
+{"chart":"nonprofit","account":"4423","name_ro":"TVA de plată (P)","name_en":null}
+{"chart":"nonprofit","account":"4424","name_ro":"TVA de recuperat (A)","name_en":null}
+{"chart":"nonprofit","account":"4426","name_ro":"TVA deductibilă (A)","name_en":null}
+{"chart":"nonprofit","account":"4427","name_ro":"TVA colectată (P)","name_en":null}
+{"chart":"nonprofit","account":"4428","name_ro":"TVA neexigibilă (A/P)","name_en":null}
+{"chart":"nonprofit","account":"444","name_ro":"Impozitul pe venituri de natura salariilor (P)","name_en":null}
+{"chart":"nonprofit","account":"445","name_ro":"Subvenţii","name_en":null}
+{"chart":"nonprofit","account":"4451","name_ro":"Subvenţii guvernamentale (A)","name_en":null}
+{"chart":"nonprofit","account":"4452","name_ro":"Împrumuturi nerambursabile cu caracter de subvenţii (A)","name_en":null}
+{"chart":"nonprofit","account":"4458","name_ro":"Alte sume primite cu caracter de subvenţii (A)","name_en":null}
+{"chart":"nonprofit","account":"446","name_ro":"Alte impozite, taxe şi vărsăminte asimilate (P)","name_en":null}
+{"chart":"nonprofit","account":"447","name_ro":"Fonduri speciale - taxe şi vărsăminte asimilate (P)","name_en":null}
+{"chart":"nonprofit","account":"448","name_ro":"Alte datorii şi creanţe cu bugetul statului","name_en":null}
+{"chart":"nonprofit","account":"4481","name_ro":"Alte datorii faţă de bugetul statului (P)","name_en":null}
+{"chart":"nonprofit","account":"4482","name_ro":"Alte creanţe privind bugetul statului (A)","name_en":null}
+{"chart":"nonprofit","account":"45","name_ro":"GRUP","name_en":null}
+{"chart":"nonprofit","account":"451","name_ro":"Decontări între entităţile afiliate","name_en":null}
+{"chart":"nonprofit","account":"4511","name_ro":"Decontări între entităţile afiliate (A/P)","name_en":null}
+{"chart":"nonprofit","account":"4518","name_ro":"Dobânzi aferente decontărilor între entităţile afiliate (A/P)","name_en":null}
+{"chart":"nonprofit","account":"453","name_ro":"Decontări cu entităţile asociate şi alte entităţi legate prin interese de participare","name_en":null}
+{"chart":"nonprofit","account":"4531","name_ro":"Decontări cu entităţile asociate şi alte entităţi legate prin interese de participare (A/P)","name_en":null}
+{"chart":"nonprofit","account":"4538","name_ro":"Dobânzi aferente decontărilor cu entităţile asociate şi alte entităţi legate prin interese de participare (A/P)","name_en":null}
+{"chart":"nonprofit","account":"458","name_ro":"Decontări din operaţiuni în participaţie","name_en":null}
+{"chart":"nonprofit","account":"4581","name_ro":"Decontări din operaţiuni în participaţie - pasiv (P)","name_en":null}
+{"chart":"nonprofit","account":"4582","name_ro":"Decontări din operaţiuni în participaţie - activ (A)","name_en":null}
+{"chart":"nonprofit","account":"46","name_ro":"DEBITORI ŞI CREDITORI DIVERŞI","name_en":null}
+{"chart":"nonprofit","account":"461","name_ro":"Debitori diverşi (A)","name_en":null}
+{"chart":"nonprofit","account":"462","name_ro":"Creditori diverşi (P)","name_en":null}
+{"chart":"nonprofit","account":"47","name_ro":"CONTURI DE SUBVENŢII, REGULARIZARE ŞI ASIMILATE","name_en":null}
+{"chart":"nonprofit","account":"471","name_ro":"Cheltuieli înregistrate în avans (A)","name_en":null}
+{"chart":"nonprofit","account":"472","name_ro":"Venituri înregistrate în avans (P)","name_en":null}
+{"chart":"nonprofit","account":"473","name_ro":"Decontări din operaţiuni în curs de clarificare (A/P)","name_en":null}
+{"chart":"nonprofit","account":"475","name_ro":"Subvenţii pentru investiţii","name_en":null}
+{"chart":"nonprofit","account":"4751","name_ro":"Subvenţii guvernamentale pentru investiţii (P)","name_en":null}
+{"chart":"nonprofit","account":"4752","name_ro":"Împrumuturi nerambursabile cu caracter de subvenţii pentru investiţii (P)","name_en":null}
+{"chart":"nonprofit","account":"4753","name_ro":"Donaţii pentru investiţii (P)","name_en":null}
+{"chart":"nonprofit","account":"4754","name_ro":"Plusuri de inventar de natura imobilizărilor (P)","name_en":null}
+{"chart":"nonprofit","account":"4758","name_ro":"Alte sume primite cu caracter de subvenţii pentru investiţii (P)","name_en":null}
+{"chart":"nonprofit","account":"48","name_ro":"DECONTĂRI ÎN CADRUL UNITĂŢII","name_en":null}
+{"chart":"nonprofit","account":"481","name_ro":"Decontări între unitate şi subunităţi (A/P)","name_en":null}
+{"chart":"nonprofit","account":"482","name_ro":"Decontări între subunităţi (A/P)","name_en":null}
+{"chart":"nonprofit","account":"485","name_ro":"Decontări între activităţile fără scop patrimonial şi activităţile economice (A/P)","name_en":null}
+{"chart":"nonprofit","account":"49","name_ro":"AJUSTĂRI PENTRU DEPRECIEREA CREANŢELOR","name_en":null}
+{"chart":"nonprofit","account":"490","name_ro":"Ajustări pentru deprecierea creanţelor reprezentând avansuri acordate furnizorilor","name_en":null}
+{"chart":"nonprofit","account":"4901","name_ro":"Ajustări pentru deprecierea creanţelor aferente cumpărărilor de bunuri de natura stocurilor (P)","name_en":null}
+{"chart":"nonprofit","account":"4902","name_ro":"Ajustări pentru deprecierea creanţelor aferente prestărilor de servicii (P)","name_en":null}
+{"chart":"nonprofit","account":"4903","name_ro":"Ajustări pentru deprecierea creanţelor aferente imobilizărilor corporale (P)","name_en":null}
+{"chart":"nonprofit","account":"4904","name_ro":"Ajustări pentru deprecierea creanţelor aferente imobilizărilor necorporale (P)","name_en":null}
+{"chart":"nonprofit","account":"491","name_ro":"Ajustări pentru deprecierea creanţelor - clienţi (P)","name_en":null}
+{"chart":"nonprofit","account":"495","name_ro":"Ajustări pentru deprecierea creanţelor - decontări în cadrul grupului şi cu asociaţii (P)","name_en":null}
+{"chart":"nonprofit","account":"496","name_ro":"Ajustări pentru deprecierea creanţelor - debitori diverşi (P)","name_en":null}
+{"chart":"nonprofit","account":"5","name_ro":"CONTURI DE TREZORERIE","name_en":null}
+{"chart":"nonprofit","account":"50","name_ro":"INVESTIŢII PE TERMEN SCURT","name_en":null}
+{"chart":"nonprofit","account":"501","name_ro":"Acţiuni deţinute la entităţile afiliate (A)","name_en":null}
+{"chart":"nonprofit","account":"506","name_ro":"Obligaţiuni (A)","name_en":null}
+{"chart":"nonprofit","account":"508","name_ro":"Alte investiţii pe termen scurt şi creanţe asimilate","name_en":null}
+{"chart":"nonprofit","account":"5081","name_ro":"Alte titluri de plasament (A)","name_en":null}
+{"chart":"nonprofit","account":"5088","name_ro":"Dobânzi la obligaţiuni şi titluri de plasament (A)","name_en":null}
+{"chart":"nonprofit","account":"509","name_ro":"Vărsăminte de efectuat pentru investiţiile pe termen scurt","name_en":null}
+{"chart":"nonprofit","account":"5091","name_ro":"Vărsăminte de efectuat pentru acţiunile deţinute la entităţile afiliate (P)","name_en":null}
+{"chart":"nonprofit","account":"5092","name_ro":"Vărsăminte de efectuat pentru alte investiţii pe termen scurt (P)","name_en":null}
+{"chart":"nonprofit","account":"51","name_ro":"CONTURI LA BĂNCI","name_en":null}
+{"chart":"nonprofit","account":"511","name_ro":"Valori de încasat","name_en":null}
+{"chart":"nonprofit","account":"5112","name_ro":"Cecuri de încasat (A)","name_en":null}
+{"chart":"nonprofit","account":"5113","name_ro":"Efecte de încasat (A)","name_en":null}
+{"chart":"nonprofit","account":"5114","name_ro":"Efecte remise spre scontare (A)","name_en":null}
+{"chart":"nonprofit","account":"512","name_ro":"Conturi curente la bănci","name_en":null}
+{"chart":"nonprofit","account":"5121","name_ro":"Conturi la bănci în lei (A)","name_en":null}
+{"chart":"nonprofit","account":"5124","name_ro":"Conturi la bănci în valută (A)","name_en":null}
+{"chart":"nonprofit","account":"5125","name_ro":"Sume în curs de decontare (A)","name_en":null}
+{"chart":"nonprofit","account":"518","name_ro":"Dobânzi","name_en":null}
+{"chart":"nonprofit","account":"5186","name_ro":"Dobânzi de plătit (P)","name_en":null}
+{"chart":"nonprofit","account":"5187","name_ro":"Dobânzi de încasat (A)","name_en":null}
+{"chart":"nonprofit","account":"519","name_ro":"Credite bancare pe termen scurt","name_en":null}
+{"chart":"nonprofit","account":"5191","name_ro":"Credite bancare pe termen scurt (P)","name_en":null}
+{"chart":"nonprofit","account":"5192","name_ro":"Credite bancare pe termen scurt nerambursate la scadenţă (P)","name_en":null}
+{"chart":"nonprofit","account":"5193","name_ro":"Credite externe guvernamentale (P)","name_en":null}
+{"chart":"nonprofit","account":"5194","name_ro":"Credite externe garantate de stat (P)","name_en":null}
+{"chart":"nonprofit","account":"5195","name_ro":"Credite externe garantate de bănci (P)","name_en":null}
+{"chart":"nonprofit","account":"5196","name_ro":"Credite de la Trezoreria Statului (P)","name_en":null}
+{"chart":"nonprofit","account":"5197","name_ro":"Credite interne garantate de stat (P)","name_en":null}
+{"chart":"nonprofit","account":"5198","name_ro":"Dobânzi aferente creditelor bancare pe termen scurt (P)","name_en":null}
+{"chart":"nonprofit","account":"53","name_ro":"CASA","name_en":null}
+{"chart":"nonprofit","account":"531","name_ro":"Casa","name_en":null}
+{"chart":"nonprofit","account":"5311","name_ro":"Casa în lei (A)","name_en":null}
+{"chart":"nonprofit","account":"5314","name_ro":"Casa în valută (A)","name_en":null}
+{"chart":"nonprofit","account":"532","name_ro":"Alte valori","name_en":null}
+{"chart":"nonprofit","account":"5321","name_ro":"Timbre fiscale şi poştale (A)","name_en":null}
+{"chart":"nonprofit","account":"5322","name_ro":"Bilete de tratament şi odihnă (A)","name_en":null}
+{"chart":"nonprofit","account":"5323","name_ro":"Tichete şi bilete de călătorie (A)","name_en":null}
+{"chart":"nonprofit","account":"5328","name_ro":"Alte valori (A)","name_en":null}
+{"chart":"nonprofit","account":"54","name_ro":"ACREDITIVE","name_en":null}
+{"chart":"nonprofit","account":"541","name_ro":"Acreditive","name_en":null}
+{"chart":"nonprofit","account":"5411","name_ro":"Acreditive în lei (A)","name_en":null}
+{"chart":"nonprofit","account":"5412","name_ro":"Acreditive în valută (A)","name_en":null}
+{"chart":"nonprofit","account":"542","name_ro":"Avansuri de trezorerie (A)","name_en":null}
+{"chart":"nonprofit","account":"55","name_ro":"DISPONIBIL CU DESTINAŢIE SPECIALĂ","name_en":null}
+{"chart":"nonprofit","account":"550","name_ro":"Disponibil cu destinaţie specială","name_en":null}
+{"chart":"nonprofit","account":"5501","name_ro":"Disponibil cu destinaţie specială din aplicarea timbrului literar, cinematografic, teatral, muzical, folcloric, al artelor plastice, al arhitecturii şi de divertisment (A)","name_en":null}
+{"chart":"nonprofit","account":"5508","name_ro":"Disponibil cu destinaţie specială din alte venituri cu destinaţie specială (A)","name_en":null}
+{"chart":"nonprofit","account":"58","name_ro":"VIRAMENTE INTERNE","name_en":null}
+{"chart":"nonprofit","account":"581","name_ro":"Viramente interne (A/P)","name_en":null}
+{"chart":"nonprofit","account":"59","name_ro":"AJUSTĂRI PENTRU PIERDEREA DE VALOARE A CONTURILOR DE TREZORERIE","name_en":null}
+{"chart":"nonprofit","account":"591","name_ro":"Ajustări pentru pierderea de valoare a acţiunilor deţinute la entităţile afiliate (P)","name_en":null}
+{"chart":"nonprofit","account":"596","name_ro":"Ajustări pentru pierderea de valoare a obligaţiunilor (P)","name_en":null}
+{"chart":"nonprofit","account":"598","name_ro":"Ajustări pentru pierderea de valoare a altor investiţii pe termen scurt şi creanţe asimilate (P)","name_en":null}
+{"chart":"nonprofit","account":"6","name_ro":"CONTURI DE CHELTUIELI","name_en":null}
+{"chart":"nonprofit","account":"60","name_ro":"CHELTUIELI PRIVIND STOCURILE ŞI ALTE COMSUMURI","name_en":null}
+{"chart":"nonprofit","account":"601","name_ro":"Cheltuieli cu materiile prime","name_en":null}
+{"chart":"nonprofit","account":"602","name_ro":"Cheltuieli cu materialele consumabile","name_en":null}
+{"chart":"nonprofit","account":"6021","name_ro":"Cheltuieli cu materialele auxiliare","name_en":null}
+{"chart":"nonprofit","account":"6022","name_ro":"Cheltuieli privind combustibilul","name_en":null}
+{"chart":"nonprofit","account":"6023","name_ro":"Cheltuieli privind materialele pentru ambalat","name_en":null}
+{"chart":"nonprofit","account":"6024","name_ro":"Cheltuielile privind piesele de schimb","name_en":null}
+{"chart":"nonprofit","account":"6025","name_ro":"Cheltuieli privind seminţele şi materialele de plantat","name_en":null}
+{"chart":"nonprofit","account":"6026","name_ro":"Cheltuieli privind furajele","name_en":null}
+{"chart":"nonprofit","account":"6028","name_ro":"Cheltuieli privind alte materiale consumabile","name_en":null}
+{"chart":"nonprofit","account":"603","name_ro":"Cheltuieli privind materialele de natura obiectelor de inventar","name_en":null}
+{"chart":"nonprofit","account":"604","name_ro":"Cheltuieli privind materialele nestocate","name_en":null}
+{"chart":"nonprofit","account":"605","name_ro":"Cheltuieli privind utilităţile","name_en":null}
+{"chart":"nonprofit","account":"6051","name_ro":"Cheltuieli privind consumul de energie","name_en":null}
+{"chart":"nonprofit","account":"6052","name_ro":"Cheltuieli privind consumul de apă","name_en":null}
+{"chart":"nonprofit","account":"6053","name_ro":"Cheltuieli privind consumul de gaze naturale","name_en":null}
+{"chart":"nonprofit","account":"6058","name_ro":"Cheltuieli cu alte utilităţi","name_en":null}
+{"chart":"nonprofit","account":"606","name_ro":"Cheltuieli privind activele biologice de natura stocurilor","name_en":null}
+{"chart":"nonprofit","account":"607","name_ro":"Cheltuieli privind mărfurile","name_en":null}
+{"chart":"nonprofit","account":"608","name_ro":"Cheltuieli privind ambalajele","name_en":null}
+{"chart":"nonprofit","account":"609","name_ro":"Reduceri comerciale primite","name_en":null}
+{"chart":"nonprofit","account":"61","name_ro":"CHELTUIELI CU SERVICIILE EXECUTATE DE TERŢI","name_en":null}
+{"chart":"nonprofit","account":"611","name_ro":"Cheltuieli cu întreţinerea şi reparaţiile","name_en":null}
+{"chart":"nonprofit","account":"612","name_ro":"Cheltuieli cu redevenţele, locaţiile de gestiune şi chiriile","name_en":null}
+{"chart":"nonprofit","account":"6121","name_ro":"Cheltuieli cu redeventele","name_en":null}
+{"chart":"nonprofit","account":"6122","name_ro":"Cheltuieli cu locatiile de gestiun","name_en":null}
+{"chart":"nonprofit","account":"6123","name_ro":"Cheltuieli cu chiriile","name_en":null}
+{"chart":"nonprofit","account":"613","name_ro":"Cheltuieli cu primele de asigurare","name_en":null}
+{"chart":"nonprofit","account":"614","name_ro":"Cheltuieli cu studiile şi cercetările","name_en":null}
+{"chart":"nonprofit","account":"615","name_ro":"Cheltuieli cu pregătirea personalului","name_en":null}
+{"chart":"nonprofit","account":"616","name_ro":"Cheltuieli aferente drepturilor de proprietate intelectual","name_en":null}
+{"chart":"nonprofit","account":"617","name_ro":"Cheltuieli de management","name_en":null}
+{"chart":"nonprofit","account":"618","name_ro":"Cheltuieli de consultanta","name_en":null}
+{"chart":"nonprofit","account":"62","name_ro":"CHELTUIELI CU ALTE SERVICII EXECUTATE DE TERŢI","name_en":null}
+{"chart":"nonprofit","account":"621","name_ro":"Cheltuieli cu colaboratorii","name_en":null}
+{"chart":"nonprofit","account":"622","name_ro":"Cheltuieli privind comisioanele şi onorariile","name_en":null}
+{"chart":"nonprofit","account":"623","name_ro":"Cheltuieli de protocol, reclamă şi publicitate","name_en":null}
+{"chart":"nonprofit","account":"6231","name_ro":"Cheltuieli de protocol","name_en":null}
+{"chart":"nonprofit","account":"6232","name_ro":"Cheltuieli de reclamă şi publicitate","name_en":null}
+{"chart":"nonprofit","account":"624","name_ro":"Cheltuieli cu transportul de bunuri şi personal","name_en":null}
+{"chart":"nonprofit","account":"625","name_ro":"Cheltuieli cu deplasări, detaşări şi transferări","name_en":null}
+{"chart":"nonprofit","account":"626","name_ro":"Cheltuieli poştale şi taxe de telecomunicaţii","name_en":null}
+{"chart":"nonprofit","account":"627","name_ro":"Cheltuieli cu serviciile bancare şi asimilate","name_en":null}
+{"chart":"nonprofit","account":"628","name_ro":"Alte cheltuieli cu serviciile executate de terţi","name_en":null}
+{"chart":"nonprofit","account":"63","name_ro":"CHELTUIELI CU ALTE IMPOZITE, TAXE ŞI VĂRSĂMINTE ASIMILATE","name_en":null}
+{"chart":"nonprofit","account":"635","name_ro":"Cheltuieli cu alte impozite, taxe şi vărsăminte asimilate","name_en":null}
+{"chart":"nonprofit","account":"64","name_ro":"CHELTUIELI CU PERSONALUL","name_en":null}
+{"chart":"nonprofit","account":"641","name_ro":"Cheltuieli cu salariile personalului","name_en":null}
+{"chart":"nonprofit","account":"642","name_ro":"Cheltuieli cu avantajele în natură şi tichetele acordate salariaţilor","name_en":null}
+{"chart":"nonprofit","account":"6421","name_ro":"Cheltuieli cu avantajele în natură acordate salariaţilor","name_en":null}
+{"chart":"nonprofit","account":"6422","name_ro":"Cheltuieli cu tichetele acordate salariaţilor","name_en":null}
+{"chart":"nonprofit","account":"644","name_ro":"Cheltuieli cu primele reprezentând participarea personalului la profit","name_en":null}
+{"chart":"nonprofit","account":"645","name_ro":"Cheltuieli privind asigurările şi protecţia socială","name_en":null}
+{"chart":"nonprofit","account":"6451","name_ro":"Cheltuieli privind contribuţia unităţii la asigurările sociale","name_en":null}
+{"chart":"nonprofit","account":"6452","name_ro":"Cheltuieli privind contribuţia unităţii pentru ajutorul de şomaj","name_en":null}
+{"chart":"nonprofit","account":"6453","name_ro":"Cheltuieli privind contribuţia angajatorului pentru asigurările sociale de sănătate","name_en":null}
+{"chart":"nonprofit","account":"6455","name_ro":"Cheltuieli privind contribuţia unităţii la asigurările de viaţă","name_en":null}
+{"chart":"nonprofit","account":"6456","name_ro":"Cheltuieli privind contribuţia unităţii la fondurile de pensii facultative","name_en":null}
+{"chart":"nonprofit","account":"6457","name_ro":"Cheltuieli privind contribuţia unităţii la primele de asigurare voluntară de sănătate","name_en":null}
+{"chart":"nonprofit","account":"6458","name_ro":"Alte cheltuieli privind asigurările şi protecţia socială","name_en":null}
+{"chart":"nonprofit","account":"646","name_ro":"Cheltuieli privind contribuţia asiguratorie pentru muncă","name_en":null}
+{"chart":"nonprofit","account":"6461","name_ro":"Cheltuieli privind contribuţia asiguratorie pentru muncă corespunzătoare salariaţilor","name_en":null}
+{"chart":"nonprofit","account":"6462","name_ro":"Cheltuieli privind contribuţia asiguratorie pentru muncă corespunzătoare altor persoane, decât salariaţii","name_en":null}
+{"chart":"nonprofit","account":"65","name_ro":"ALTE CHELTUIELI DE EXPLOATARE","name_en":null}
+{"chart":"nonprofit","account":"652","name_ro":"Cheltuieli cu protecţia mediului înconjurător","name_en":null}
+{"chart":"nonprofit","account":"653","name_ro":"Cotizaţii şi contribuţii datorate de persoana juridică fără scop patrimonial","name_en":null}
+{"chart":"nonprofit","account":"6531","name_ro":"Cotizaţii şi contribuţii la organisme din ţară","name_en":null}
+{"chart":"nonprofit","account":"6532","name_ro":"Cotizaţii şi contribuţii la organisme internaţionale","name_en":null}
+{"chart":"nonprofit","account":"654","name_ro":"Pierderi din creanţe şi debitori diverşi","name_en":null}
+{"chart":"nonprofit","account":"655","name_ro":"Cheltuieli din reevaluarea imobilizărilor corporale","name_en":null}
+{"chart":"nonprofit","account":"656","name_ro":"Cheltuieli privind cote-părţi datorate potrivit statutului","name_en":null}
+{"chart":"nonprofit","account":"657","name_ro":"Ajutoare şi împrumuturi nerambursabile transferate altor persoane juridice fără scop patrimonial","name_en":null}
+{"chart":"nonprofit","account":"6571","name_ro":"Ajutoare şi împrumuturi nerambursabile din ţară transferate altor persoane juridice fără scop patrimonial","name_en":null}
+{"chart":"nonprofit","account":"6572","name_ro":"Ajutoare şi împrumuturi nerambursabile din străinătate transferate altor persoane juridice fără scop patrimonial","name_en":null}
+{"chart":"nonprofit","account":"658","name_ro":"Alte cheltuieli de exploatare","name_en":null}
+{"chart":"nonprofit","account":"6581","name_ro":"Despăgubiri, amenzi şi penalităţi","name_en":null}
+{"chart":"nonprofit","account":"6582","name_ro":"Donaţii acordate","name_en":null}
+{"chart":"nonprofit","account":"6583","name_ro":"Cheltuieli privind activele cedate şi alte operaţiuni de capital","name_en":null}
+{"chart":"nonprofit","account":"6586","name_ro":"Cheltuieli reprezentând transferuri şi contribuţii datorate în baza unor acte normative speciale","name_en":null}
+{"chart":"nonprofit","account":"6587","name_ro":"Cheltuieli privind calamităţile şi alte evenimente similare","name_en":null}
+{"chart":"nonprofit","account":"6588","name_ro":"Alte cheltuieli de exploatare","name_en":null}
+{"chart":"nonprofit","account":"66","name_ro":"CHELTUIELI FINANCIARE","name_en":null}
+{"chart":"nonprofit","account":"663","name_ro":"Pierderi din creanţe legate de participaţii","name_en":null}
+{"chart":"nonprofit","account":"664","name_ro":"Cheltuieli privind investiţiile financiare cedate","name_en":null}
+{"chart":"nonprofit","account":"6641","name_ro":"Cheltuieli privind imobilizările financiare cedate","name_en":null}
+{"chart":"nonprofit","account":"6642","name_ro":"Pierderi din investiţiile pe termen scurt cedate","name_en":null}
+{"chart":"nonprofit","account":"665","name_ro":"Cheltuieli din diferenţe de curs valutar","name_en":null}
+{"chart":"nonprofit","account":"666","name_ro":"Cheltuieli privind dobânzile","name_en":null}
+{"chart":"nonprofit","account":"667","name_ro":"Cheltuieli privind sconturile acordate","name_en":null}
+{"chart":"nonprofit","account":"668","name_ro":"Alte cheltuieli financiare","name_en":null}
+{"chart":"nonprofit","account":"68","name_ro":"CHELTUIELI CU AMORTIZĂRILE, PROVIZIOANELE ŞI AJUSTĂRILE PENTRU DEPRECIERE SAU PIERDERE DE VALOARE","name_en":null}
+{"chart":"nonprofit","account":"681","name_ro":"Cheltuieli de exploatare privind amortizările, provizioanele şi ajustările pentru depreciere","name_en":null}
+{"chart":"nonprofit","account":"6811","name_ro":"Cheltuieli de exploatare privind amortizarea imobilizărilor","name_en":null}
+{"chart":"nonprofit","account":"6812","name_ro":"Cheltuieli de exploatare privind provizioanele","name_en":null}
+{"chart":"nonprofit","account":"6813","name_ro":"Cheltuieli de exploatare privind ajustările pentru deprecierea imobilizărilor","name_en":null}
+{"chart":"nonprofit","account":"6814","name_ro":"Cheltuieli de exploatare privind ajustările pentru deprecierea activelor circulante","name_en":null}
+{"chart":"nonprofit","account":"6817","name_ro":"Cheltuieli de exploatare privind ajustările pentru deprecierea fondului comercial","name_en":null}
+{"chart":"nonprofit","account":"6818","name_ro":"Cheltuieli de exploatare privind ajustările pentru deprecierea creanţelor reprezentând avansuri acordate furnizorilor","name_en":null}
+{"chart":"nonprofit","account":"686","name_ro":"Cheltuieli financiare privind amortizările şi ajustările pentru pierdere de valoare","name_en":null}
+{"chart":"nonprofit","account":"6863","name_ro":"Cheltuieli financiare privind ajustările pentru pierderea de valoare a imobilizărilor financiare","name_en":null}
+{"chart":"nonprofit","account":"6864","name_ro":"Cheltuieli financiare privind ajustările pentru pierderea de valoare a activelor circulante","name_en":null}
+{"chart":"nonprofit","account":"6868","name_ro":"Cheltuieli financiare privind amortizarea primelor de rambursare a altor datorii","name_en":null}
+{"chart":"nonprofit","account":"69","name_ro":"CHELTUIELI CU IMPOZITUL PE PROFIT ŞI ALTE IMPOZITE","name_en":null}
+{"chart":"nonprofit","account":"691","name_ro":"Cheltuieli cu impozitul pe profit","name_en":null}
+{"chart":"nonprofit","account":"695","name_ro":"Cheltuieli cu impozitul specific unor activităţi","name_en":null}
+{"chart":"nonprofit","account":"698","name_ro":"Cheltuieli cu alte impozite care nu apar în elementele de mai sus","name_en":null}
+{"chart":"nonprofit","account":"7","name_ro":"CONTURI DE VENITURI","name_en":null}
+{"chart":"nonprofit","account":"70","name_ro":"CIFRA DE AFACERI NETĂ","name_en":null}
+{"chart":"nonprofit","account":"701","name_ro":"Venituri din vânzarea produselor finite, produselor agricole şi a activelor biologice de natura stocurilor","name_en":null}
+{"chart":"nonprofit","account":"7015","name_ro":"Venituri din vânzarea produselor finite","name_en":null}
+{"chart":"nonprofit","account":"7017","name_ro":"Venituri din vânzarea produselor agricole","name_en":null}
+{"chart":"nonprofit","account":"7018","name_ro":"Venituri din vânzarea activelor biologice de natura stocurilor","name_en":null}
+{"chart":"nonprofit","account":"702","name_ro":"Venituri din vânzarea semifabricatelor","name_en":null}
+{"chart":"nonprofit","account":"703","name_ro":"Venituri din vânzarea produselor reziduale","name_en":null}
+{"chart":"nonprofit","account":"704","name_ro":"Venituri din servicii prestate","name_en":null}
+{"chart":"nonprofit","account":"705","name_ro":"Venituri din studii şi cercetări","name_en":null}
+{"chart":"nonprofit","account":"706","name_ro":"Venituri din redevenţe, locaţii de gestiune şi chirii","name_en":null}
+{"chart":"nonprofit","account":"707","name_ro":"Venituri din vânzarea mărfurilor","name_en":null}
+{"chart":"nonprofit","account":"708","name_ro":"Venituri din activităţi diverse","name_en":null}
+{"chart":"nonprofit","account":"709","name_ro":"Reduceri comerciale acordate","name_en":null}
+{"chart":"nonprofit","account":"71","name_ro":"VENITURI AFERENTE COSTULUI PRODUCŢIEI ÎN CURS DE EXECUŢIE","name_en":null}
+{"chart":"nonprofit","account":"711","name_ro":"Venituri aferente costurilor stocurilor de produse","name_en":null}
+{"chart":"nonprofit","account":"712","name_ro":"Venituri aferente costurilor serviciilor în curs de execuţie","name_en":null}
+{"chart":"nonprofit","account":"72","name_ro":"VENITURI DIN PRODUCŢIA DE IMOBILIZĂRI","name_en":null}
+{"chart":"nonprofit","account":"721","name_ro":"Venituri din producţia de imobilizări necorporale","name_en":null}
+{"chart":"nonprofit","account":"722","name_ro":"Venituri din producţia de imobilizări corporale","name_en":null}
+{"chart":"nonprofit","account":"73","name_ro":"VENITURI DIN ACTIVITĂŢILE FĂRĂ SCOP PATRIMONIAL","name_en":null}
+{"chart":"nonprofit","account":"731","name_ro":"Venituri din cotizaţiile membrilor, contribuţiile băneşti sau în natură ale membrilor şi simpatizanţilor, din cote-părţi primite potrivit statutului","name_en":null}
+{"chart":"nonprofit","account":"7311","name_ro":"Venituri din cotizaţiile şi taxele de înscriere ale membrilor","name_en":null}
+{"chart":"nonprofit","account":"7312","name_ro":"Venituri din contribuţiile băneşti sau în natură ale membrilor şi simpatizanţilor","name_en":null}
+{"chart":"nonprofit","account":"7313","name_ro":"Venituri din cote-părţi primite potrivit statutului","name_en":null}
+{"chart":"nonprofit","account":"732","name_ro":"Venituri din taxele de înregistrare stabilite potrivit legislaţiei în vigoare","name_en":null}
+{"chart":"nonprofit","account":"733","name_ro":"Venituri din donaţii, sume sau bunuri primite prin sponsorizare şi ajutoare","name_en":null}
+{"chart":"nonprofit","account":"7331","name_ro":"Venituri din donaţii","name_en":null}
+{"chart":"nonprofit","account":"7332","name_ro":"Venituri din sumele sau bunurile primite prin sponsorizare","name_en":null}
+{"chart":"nonprofit","account":"7333","name_ro":"Venituri din ajutoare","name_en":null}
+{"chart":"nonprofit","account":"734","name_ro":"Venituri financiare rezultate din activităţile fără scop patrimonial","name_en":null}
+{"chart":"nonprofit","account":"7341","name_ro":"Venituri din dobânzile obţinute din plasarea disponibilităţilor rezultate din activităţile fără scop patrimonial","name_en":null}
+{"chart":"nonprofit","account":"7342","name_ro":"Venituri din dividendele obţinute din plasarea disponibilităţilor rezultate din activităţile fără scop patrimonial","name_en":null}
+{"chart":"nonprofit","account":"7343","name_ro":"Venituri din diferenţe de curs valutar rezultate din activităţile fără scop patrimonial","name_en":null}
+{"chart":"nonprofit","account":"7344","name_ro":"Venituri financiare din ajustări pentru pierdere de valoare","name_en":null}
+{"chart":"nonprofit","account":"7348","name_ro":"Alte venituri de natură financiară","name_en":null}
+{"chart":"nonprofit","account":"735","name_ro":"Venituri pentru care se datorează impozit pe spectacole","name_en":null}
+{"chart":"nonprofit","account":"736","name_ro":"Venituri din subvenţii de exploatare","name_en":null}
+{"chart":"nonprofit","account":"7362","name_ro":"Venituri din subvenţii pentru venituri pentru materii prime şi materiale","name_en":null}
+{"chart":"nonprofit","account":"7363","name_ro":"Venituri din subvenţii pentru venituri pentru alte cheltuieli externe","name_en":null}
+{"chart":"nonprofit","account":"7364","name_ro":"Venituri din subvenţii pentru venituri pentru plata personalului","name_en":null}
+{"chart":"nonprofit","account":"7365","name_ro":"Venituri din subvenţii pentru venituri pentru asigurări şi protecţie socială","name_en":null}
+{"chart":"nonprofit","account":"7366","name_ro":"Venituri din subvenţii pentru venituri pentru alte cheltuieli de exploatare","name_en":null}
+{"chart":"nonprofit","account":"7367","name_ro":"Venituri din subvenţii pentru venituri în caz de calamităţi şi alte evenimente similare","name_en":null}
+{"chart":"nonprofit","account":"7368","name_ro":"Venituri din subvenţii pentru venituri pentru dobânda datorată","name_en":null}
+{"chart":"nonprofit","account":"7369","name_ro":"Venituri din subvenţii de exploatare aferente altor venituri","name_en":null}
+{"chart":"nonprofit","account":"737","name_ro":"Venituri din acţiuni ocazionale, utilizate în scop social sau profesional, potrivit statutului de organizare şi funcţionare","name_en":null}
+{"chart":"nonprofit","account":"738","name_ro":"Alte venituri din activităţile fără scop patrimonial","name_en":null}
+{"chart":"nonprofit","account":"7381","name_ro":"Venituri din despăgubiri","name_en":null}
+{"chart":"nonprofit","account":"7382","name_ro":"Venituri din subvenţii pentru investiţii","name_en":null}
+{"chart":"nonprofit","account":"7383","name_ro":"Venituri rezultate din vânzarea activelor corporale/necorporale","name_en":null}
+{"chart":"nonprofit","account":"7384","name_ro":"Venituri din provizioane şi ajustări pentru depreciere privind activitatea de exploatare","name_en":null}
+{"chart":"nonprofit","account":"7385","name_ro":"Venituri din reevaluarea imobilizărilor corporale","name_en":null}
+{"chart":"nonprofit","account":"7386","name_ro":"Venituri obţinute din vize, taxe şi penalităţi sportive sau din participarea la competiţii şi demonstraţii sportive","name_en":null}
+{"chart":"nonprofit","account":"7387","name_ro":"Venituri obţinute din reclamă şi publicitate, potrivit legislaţiei în vigoare","name_en":null}
+{"chart":"nonprofit","account":"7388","name_ro":"Alte venituri din activităţile fără scop patrimonial","name_en":null}
+{"chart":"nonprofit","account":"74","name_ro":"VENITURI DIN SUBVENŢII DE EXPLOATARE","name_en":null}
+{"chart":"nonprofit","account":"741","name_ro":"Venituri din subvenţii de exploatare","name_en":null}
+{"chart":"nonprofit","account":"7411","name_ro":"Venituri din subvenţii de exploatare aferente cifrei de afaceri","name_en":null}
+{"chart":"nonprofit","account":"7412","name_ro":"Venituri din subvenţii de exploatare pentru materii prime şi materiale","name_en":null}
+{"chart":"nonprofit","account":"7413","name_ro":"Venituri din subvenţii de exploatare pentru alte cheltuieli externe","name_en":null}
+{"chart":"nonprofit","account":"7414","name_ro":"Venituri din subvenţii de exploatare pentru plata personalului","name_en":null}
+{"chart":"nonprofit","account":"7415","name_ro":"Venituri din subvenţii de exploatare pentru asigurări şi protecţia socială","name_en":null}
+{"chart":"nonprofit","account":"7416","name_ro":"Venituri din subvenţii de exploatare pentru alte cheltuieli de exploatare","name_en":null}
+{"chart":"nonprofit","account":"7417","name_ro":"Venituri din subvenţii de exploatare în caz de calamităţi şi alte evenimente similare","name_en":null}
+{"chart":"nonprofit","account":"7418","name_ro":"Venituri din subvenţii de exploatare pentru dobânda datorată","name_en":null}
+{"chart":"nonprofit","account":"7419","name_ro":"Venituri din subvenţii de exploatare aferente altor venituri","name_en":null}
+{"chart":"nonprofit","account":"75","name_ro":"ALTE VENITURI DIN EXPLOATARE","name_en":null}
+{"chart":"nonprofit","account":"754","name_ro":"Venituri din creanţe reactivate şi debitori diverşi","name_en":null}
+{"chart":"nonprofit","account":"755","name_ro":"Venituri din reevaluarea imobilizărilor corporale","name_en":null}
+{"chart":"nonprofit","account":"758","name_ro":"Alte venituri din exploatare","name_en":null}
+{"chart":"nonprofit","account":"7581","name_ro":"Venituri din despăgubiri, amenzi şi penalităţi","name_en":null}
+{"chart":"nonprofit","account":"7582","name_ro":"Venituri din donaţii primite","name_en":null}
+{"chart":"nonprofit","account":"7583","name_ro":"Venituri din vânzarea activelor şi alte operaţiuni de capital","name_en":null}
+{"chart":"nonprofit","account":"7584","name_ro":"Venituri din subvenţii pentru investiţii","name_en":null}
+{"chart":"nonprofit","account":"7588","name_ro":"Alte venituri din exploatare","name_en":null}
+{"chart":"nonprofit","account":"76","name_ro":"VENITURI FINANCIARE","name_en":null}
+{"chart":"nonprofit","account":"761","name_ro":"Venituri din imobilizări financiare","name_en":null}
+{"chart":"nonprofit","account":"7611","name_ro":"Venituri din acţiuni deţinute la entităţile afiliate","name_en":null}
+{"chart":"nonprofit","account":"7612","name_ro":"Venituri din acţiuni deţinute la entităţi asociate şi alte entităţi legate prin interese de participare","name_en":null}
+{"chart":"nonprofit","account":"7615","name_ro":"Venituri din alte imobilizări financiare","name_en":null}
+{"chart":"nonprofit","account":"762","name_ro":"Venituri din investiţii financiare pe termen scurt","name_en":null}
+{"chart":"nonprofit","account":"764","name_ro":"Venituri din investiţii financiare cedate","name_en":null}
+{"chart":"nonprofit","account":"7641","name_ro":"Venituri din imobilizări financiare cedate","name_en":null}
+{"chart":"nonprofit","account":"7642","name_ro":"Câştiguri din investiţii pe termen scurt cedate","name_en":null}
+{"chart":"nonprofit","account":"765","name_ro":"Venituri din diferenţe de curs valutar","name_en":null}
+{"chart":"nonprofit","account":"766","name_ro":"Venituri din dobânzi","name_en":null}
+{"chart":"nonprofit","account":"767","name_ro":"Venituri din sconturi obţinute","name_en":null}
+{"chart":"nonprofit","account":"768","name_ro":"Alte venituri financiare","name_en":null}
+{"chart":"nonprofit","account":"78","name_ro":"VENITURI DIN PROVIZIOANE ŞI AJUSTĂRI PENTRU DEPRECIERE SAU PIERDERE DE VALOARE","name_en":null}
+{"chart":"nonprofit","account":"781","name_ro":"Venituri din provizioane şi ajustări pentru depreciere privind activitatea de exploatare","name_en":null}
+{"chart":"nonprofit","account":"7812","name_ro":"Venituri din provizioane","name_en":null}
+{"chart":"nonprofit","account":"7813","name_ro":"Venituri din ajustări pentru deprecierea imobilizărilor","name_en":null}
+{"chart":"nonprofit","account":"7814","name_ro":"Venituri din ajustări pentru deprecierea activelor circulante","name_en":null}
+{"chart":"nonprofit","account":"7818","name_ro":"Venituri din ajustări pentru deprecierea creanţelor reprezentând avansuri acordate furnizorilor","name_en":null}
+{"chart":"nonprofit","account":"786","name_ro":"Venituri financiare din ajustări pentru pierdere de valoare","name_en":null}
+{"chart":"nonprofit","account":"7863","name_ro":"Venituri financiare din ajustări pentru pierderea de valoare a imobilizărilor financiare","name_en":null}
+{"chart":"nonprofit","account":"7864","name_ro":"Venituri financiare din ajustări pentru pierderea de valoare a activelor circulante","name_en":null}
+{"chart":"nonprofit","account":"79","name_ro":"VENITURI CU DESTINAŢIE SPECIALĂ","name_en":null}
+{"chart":"nonprofit","account":"791","name_ro":"Venituri cu destinaţie specială din aplicarea timbrului literar, cinematografic, teatral, muzical, folcloric, al artelor plastice, al arhitecturii şi de divertisment","name_en":null}
+{"chart":"nonprofit","account":"7911","name_ro":"Venituri cu destinaţie specială din aplicarea timbrului literar","name_en":null}
+{"chart":"nonprofit","account":"7912","name_ro":"Venituri cu destinaţie specială din aplicarea timbrului cinematografic","name_en":null}
+{"chart":"nonprofit","account":"7913","name_ro":"Venituri cu destinaţie specială din aplicarea timbrului teatral","name_en":null}
+{"chart":"nonprofit","account":"7914","name_ro":"Venituri cu destinaţie specială din aplicarea timbrului muzical","name_en":null}
+{"chart":"nonprofit","account":"7915","name_ro":"Venituri cu destinaţie specială din aplicarea timbrului folcloric","name_en":null}
+{"chart":"nonprofit","account":"7916","name_ro":"Venituri cu destinaţie specială din aplicarea timbrului artelor plastice","name_en":null}
+{"chart":"nonprofit","account":"7917","name_ro":"Venituri cu destinaţie specială din aplicarea timbrului arhitecturii","name_en":null}
+{"chart":"nonprofit","account":"7918","name_ro":"Venituri cu destinaţie specială din aplicarea timbrului de divertisment","name_en":null}
+{"chart":"nonprofit","account":"798","name_ro":"Alte venituri cu destinaţie specială","name_en":null}
+{"chart":"nonprofit","account":"8","name_ro":"CONTURI SPECIALE","name_en":null}
+{"chart":"nonprofit","account":"80","name_ro":"CONTURI ÎN AFARA BILANŢULUI","name_en":null}
+{"chart":"nonprofit","account":"801","name_ro":"Angajamente acordate","name_en":null}
+{"chart":"nonprofit","account":"8011","name_ro":"Giruri şi garanţii acordate","name_en":null}
+{"chart":"nonprofit","account":"8018","name_ro":"Alte angajamente acordate","name_en":null}
+{"chart":"nonprofit","account":"802","name_ro":"Angajamente primite","name_en":null}
+{"chart":"nonprofit","account":"8021","name_ro":"Giruri şi garanţii primite","name_en":null}
+{"chart":"nonprofit","account":"8028","name_ro":"Alte angajamente primite","name_en":null}
+{"chart":"nonprofit","account":"803","name_ro":"Alte conturi în afara bilanţului","name_en":null}
+{"chart":"nonprofit","account":"8031","name_ro":"Imobilizări corporale primite cu chirie sau în baza altor contracte similare","name_en":null}
+{"chart":"nonprofit","account":"8032","name_ro":"Valori materiale primite spre prelucrare sau reparare","name_en":null}
+{"chart":"nonprofit","account":"8033","name_ro":"Valori materiale primite în păstrare sau custodie","name_en":null}
+{"chart":"nonprofit","account":"8034","name_ro":"Debitori scoşi din activ, urmăriţi în continuare","name_en":null}
+{"chart":"nonprofit","account":"8035","name_ro":"Stocuri de natura obiectelor de inventar date în folosinţă","name_en":null}
+{"chart":"nonprofit","account":"8036","name_ro":"Redevenţe, locaţii de gestiune, chirii şi alte datorii asimilate","name_en":null}
+{"chart":"nonprofit","account":"8037","name_ro":"Efecte scontate neajunse la scadenţă","name_en":null}
+{"chart":"nonprofit","account":"8038","name_ro":"Bunuri primite în administrare, concesiune, cu chirie şi alte bunuri similare","name_en":null}
+{"chart":"nonprofit","account":"8039","name_ro":"Alte valori în afara bilanţului","name_en":null}
+{"chart":"nonprofit","account":"805","name_ro":"Dobânzi aferente contractelor de leasing şi altor contracte asimilate, neajunse la scadenţă","name_en":null}
+{"chart":"nonprofit","account":"8051","name_ro":"Dobânzi de plătit","name_en":null}
+{"chart":"nonprofit","account":"8052","name_ro":"Dobânzi de încasat","name_en":null}
+{"chart":"nonprofit","account":"807","name_ro":"Active contingente","name_en":null}
+{"chart":"nonprofit","account":"808","name_ro":"Datorii contingente","name_en":null}
+{"chart":"nonprofit","account":"89","name_ro":"BILANŢ","name_en":null}
+{"chart":"nonprofit","account":"891","name_ro":"Bilanţ de deschidere","name_en":null}
+{"chart":"nonprofit","account":"892","name_ro":"Bilanţ de închidere","name_en":null}
+{"chart":"nonprofit","account":"9","name_ro":"CONTURI DE GESTIUNE","name_en":null}
+{"chart":"nonprofit","account":"90","name_ro":"DECONTĂRI INTERNE","name_en":null}
+{"chart":"nonprofit","account":"901","name_ro":"Decontări interne privind cheltuielile","name_en":null}
+{"chart":"nonprofit","account":"902","name_ro":"Decontări interne privind producţia obţinută","name_en":null}
+{"chart":"nonprofit","account":"903","name_ro":"Decontări interne privind diferenţele de preţ","name_en":null}
+{"chart":"nonprofit","account":"92","name_ro":"CONTURI DE CALCULAŢIE","name_en":null}
+{"chart":"nonprofit","account":"921","name_ro":"Cheltuielile activităţii de bază","name_en":null}
+{"chart":"nonprofit","account":"922","name_ro":"Cheltuielile activităţilor auxiliare","name_en":null}
+{"chart":"nonprofit","account":"923","name_ro":"Cheltuieli indirecte de producţie","name_en":null}
+{"chart":"nonprofit","account":"924","name_ro":"Cheltuieli generale de administraţie","name_en":null}
+{"chart":"nonprofit","account":"925","name_ro":"Cheltuieli de desfacere","name_en":null}
+{"chart":"nonprofit","account":"93","name_ro":"COSTUL PRODUCŢIEI","name_en":null}
+{"chart":"nonprofit","account":"931","name_ro":"Costul producţiei obţinute","name_en":null}
+{"chart":"nonprofit","account":"933","name_ro":"Costul producţiei în curs de execuţie","name_en":null}

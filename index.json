@@ -2656,6 +2656,386 @@
       ]
     },
     {
+      "name": "saft",
+      "title": "Nomenclatures of the SAF-T file (D406)",
+      "description": "The nomenclatures ANAF publishes in its workbook of schema definitions and codes for D406, the SAF-T file: the VAT tax codes with the rows of D300, D301, D394, D311 and D398 they go to, the taxes and the categories of budgets, the tax codes of taxes withheld at source and the types of income of D207, the movement codes of stock and of assets, the tax regimes, the characteristics of excise goods, the types of invoices, the payment mechanisms, and the charts of accounts of companies and of non-profit entities as SAF-T takes them. The newest workbook the page of D406 links is read. Names are as the workbook writes them. Lists the dataset already has elsewhere (countries, currencies, units, the catalogue of fixed assets) and the combined nomenclature are left out.",
+      "source": {
+        "name": "ANAF, workbook of SAF-T schema definitions and codes (https://static.anaf.ro/static/10/Anaf/Declaratii_R/AplicatiiDec/RO_SAFT_SchemaDefCod_05.02.2026.xlsx)",
+        "url": "https://static.anaf.ro/static/10/Anaf/Declaratii_R/AplicatiiDec/RO_SAFT_SchemaDefCod_05.02.2026.xlsx",
+        "licence": "Official administrative text of ANAF, the nomenclatures of declaration D406, not subject to copyright (Law 8/1996, article 9). ANAF states no licence"
+      },
+      "frequency": "monthly",
+      "update": "When ANAF publishes a new workbook of codes",
+      "revision": 1,
+      "changed": "2026-11-18",
+      "files": [
+        {
+          "path": "datasets/saft/accounts.jsonl",
+          "sha256": "71a9dd9f595e0d542f78cfd3818228405ca3cc7aa5f4f9c6516df3006c845f99",
+          "bytes": 167271,
+          "records": 1263,
+          "fields": [
+            {
+              "name": "chart",
+              "description": "companies (sheet PlanConturiBalSocCom) or nonprofit (sheet PlanConturiONG)"
+            },
+            {
+              "name": "account",
+              "description": "The account, from the class (one digit) to the analytic account (four digits). With chart it is unique in the file"
+            },
+            {
+              "name": "name_ro",
+              "description": "The name in Romanian, without the number the workbook writes before it"
+            },
+            {
+              "name": "name_en",
+              "description": "The name in English, or null where the chart has none"
+            }
+          ]
+        },
+        {
+          "path": "datasets/saft/asset-movements.jsonl",
+          "sha256": "4ad9548c5289ee18b7851a4c8da7532019f2392161b2f34db1359e0da74394be",
+          "bytes": 1082,
+          "records": 13,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code to report"
+            },
+            {
+              "name": "name_ro",
+              "description": "The name in Romanian, as the workbook writes it"
+            },
+            {
+              "name": "name_en",
+              "description": "The name in English, as the workbook writes it, or null"
+            }
+          ]
+        },
+        {
+          "path": "datasets/saft/budgets.jsonl",
+          "sha256": "50342a51eff043519ca828e7b7b635c2e1abfef876095c4af9be1b8f233b37bb",
+          "bytes": 473,
+          "records": 7,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The category of budgets"
+            },
+            {
+              "name": "name",
+              "description": "Its name, as the workbook writes it"
+            }
+          ]
+        },
+        {
+          "path": "datasets/saft/income-types.jsonl",
+          "sha256": "d1d95ee31dda3f30bfc0be4a9ab6346bbc7a8fed9afccdbf2524d9d720f323cc",
+          "bytes": 8412,
+          "records": 24,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The type of income of declaration D207"
+            },
+            {
+              "name": "name",
+              "description": "Its name, as the workbook writes it"
+            },
+            {
+              "name": "group",
+              "description": "The group of the type: incomes taxed at source, or exempt"
+            }
+          ]
+        },
+        {
+          "path": "datasets/saft/invoice-types.jsonl",
+          "sha256": "cc04ed196125ab44534db8e6261bacdca45cb0f4df7e77f479322e20dc7d18eb",
+          "bytes": 7078,
+          "records": 43,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The type of invoice, from the list of EN 16931"
+            },
+            {
+              "name": "name_en",
+              "description": "The name in English"
+            },
+            {
+              "name": "en16931_kind_en",
+              "description": "What EN 16931 takes it for, Invoice or Credit Note"
+            },
+            {
+              "name": "name_ro",
+              "description": "The name in Romanian"
+            },
+            {
+              "name": "en16931_kind_ro",
+              "description": "What EN 16931 takes it for, in Romanian"
+            },
+            {
+              "name": "saft",
+              "description": "True for the types the instructions of the sheet tell to report in InvoiceType"
+            }
+          ]
+        },
+        {
+          "path": "datasets/saft/payment-mechanisms.jsonl",
+          "sha256": "b6036dd3aa591421d43bf8df24cbbe02cc11282520a614c38c528dd2c80bfaf7",
+          "bytes": 22297,
+          "records": 83,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code of PaymentMechanism"
+            },
+            {
+              "name": "payment_method",
+              "description": "The code of PaymentMethod the mechanism falls under: 01 cash, 02 offset, 03 non-cash, 98 mutually defined, 99 not defined"
+            },
+            {
+              "name": "payment_method_en",
+              "description": "The name of the payment method in English"
+            },
+            {
+              "name": "payment_method_ro",
+              "description": "The name of the payment method in Romanian"
+            },
+            {
+              "name": "name_en",
+              "description": "The name of the mechanism in English"
+            },
+            {
+              "name": "name_ro",
+              "description": "The name of the mechanism in Romanian"
+            },
+            {
+              "name": "en16931_use_en",
+              "description": "How EN 16931 uses it, in English, or null"
+            },
+            {
+              "name": "en16931_use_ro",
+              "description": "How EN 16931 uses it, in Romanian, or null"
+            },
+            {
+              "name": "preferred",
+              "description": "True for the mechanisms the instructions of the sheet tell to use first"
+            }
+          ]
+        },
+        {
+          "path": "datasets/saft/stock-characteristics.jsonl",
+          "sha256": "94bd669d402045de2898eabd15e6d45bb9162504d14a9456b68d8cf8d6c71ebc",
+          "bytes": 1085,
+          "records": 3,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code to report"
+            },
+            {
+              "name": "name_ro",
+              "description": "The name in Romanian, as the workbook writes it"
+            },
+            {
+              "name": "name_en",
+              "description": "The name in English, as the workbook writes it, or null"
+            }
+          ]
+        },
+        {
+          "path": "datasets/saft/stock-movements.jsonl",
+          "sha256": "4fec1170bdc6e5a3bdd8eb71c4b4945f1038d348e9af722ac7f35224763cb40c",
+          "bytes": 1639,
+          "records": 19,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code to report"
+            },
+            {
+              "name": "name_ro",
+              "description": "The name in Romanian, as the workbook writes it"
+            },
+            {
+              "name": "name_en",
+              "description": "The name in English, as the workbook writes it, or null"
+            }
+          ]
+        },
+        {
+          "path": "datasets/saft/tax-regimes.jsonl",
+          "sha256": "8fd0129fe0078790a436676a67ddd89f4bbb9ce663209b6977a1758e426a7e9b",
+          "bytes": 946,
+          "records": 5,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The code to report"
+            },
+            {
+              "name": "name_ro",
+              "description": "The name in Romanian, as the workbook writes it"
+            },
+            {
+              "name": "name_en",
+              "description": "The name in English, as the workbook writes it, or null"
+            }
+          ]
+        },
+        {
+          "path": "datasets/saft/taxes.jsonl",
+          "sha256": "bdaa38fad6d88299232e9a73f2b0f90d1b34013e7764bd2bc8139170085f58d1",
+          "bytes": 80326,
+          "records": 354,
+          "fields": [
+            {
+              "name": "code",
+              "description": "The tax, three digits, which TaxType takes"
+            },
+            {
+              "name": "name_ro",
+              "description": "The name in Romanian, as the workbook writes it"
+            },
+            {
+              "name": "name_en",
+              "description": "The name in English, or null"
+            },
+            {
+              "name": "budget",
+              "description": "The category of budgets in budgets.jsonl, or null"
+            }
+          ]
+        },
+        {
+          "path": "datasets/saft/vat-codes.jsonl",
+          "sha256": "d495d07d4aad79727567ca98156d18915a2a1e1a6aeb6a2cb0b597c16407a984",
+          "bytes": 516880,
+          "records": 969,
+          "fields": [
+            {
+              "name": "tax_code",
+              "description": "The VAT tax code to report in TaxCode, six digits"
+            },
+            {
+              "name": "sheet",
+              "description": "The sheet of the workbook, which says the kind of operation: Livrari for sales, Achizitii and the share of VAT deducted for purchases, TVA_NoteContabile for ledger entries without a source document"
+            },
+            {
+              "name": "label",
+              "description": "The short label of the workbook, as L1 or A1_100, or null"
+            },
+            {
+              "name": "name_ro",
+              "description": "The name in Romanian"
+            },
+            {
+              "name": "name_en",
+              "description": "The name in English, or null"
+            },
+            {
+              "name": "rate",
+              "description": "The VAT rate in percent as the workbook writes it, as 21 or 0, or its words where it depends on another state; null where it gives none"
+            },
+            {
+              "name": "active",
+              "description": "False for a code the workbook marks inactive"
+            },
+            {
+              "name": "out_of_scope",
+              "description": "True for an operation the workbook marks as outside the scope of VAT"
+            },
+            {
+              "name": "d300_row",
+              "description": "The rows of the D300 form in force from 2025-08-01 the code goes to, as the workbook writes them, or null"
+            },
+            {
+              "name": "d300_row_previous",
+              "description": "The rows of the D300 form in force until 2025-07-31, or null"
+            },
+            {
+              "name": "d301_section",
+              "description": "The section of D301, or null"
+            },
+            {
+              "name": "d394_section",
+              "description": "The section of D394, or null"
+            },
+            {
+              "name": "d311_row",
+              "description": "The row of D311, or null"
+            },
+            {
+              "name": "d398_row",
+              "description": "The row of D398, or null"
+            },
+            {
+              "name": "legal_basis",
+              "description": "The legal basis the workbook gives, or null"
+            },
+            {
+              "name": "start_date",
+              "description": "The start date the workbook gives, or null"
+            },
+            {
+              "name": "end_date",
+              "description": "The end date the workbook gives, or null"
+            },
+            {
+              "name": "comments",
+              "description": "The comment of the workbook, as \"Activ cu 01.08.2025\", or null"
+            }
+          ]
+        },
+        {
+          "path": "datasets/saft/withholding-codes.jsonl",
+          "sha256": "00a35c948d444fc8068f7170c3bfe9fbeed1c26228613c2290f4d69f1c3838f5",
+          "bytes": 75532,
+          "records": 123,
+          "fields": [
+            {
+              "name": "tax_code",
+              "description": "The tax code to report in TaxCode for a tax withheld at source"
+            },
+            {
+              "name": "tax_type",
+              "description": "The tax it belongs to, in taxes.jsonl"
+            },
+            {
+              "name": "tax_type_note",
+              "description": "What the workbook writes after the tax type, as \"Valabil din 02.2017\", or null"
+            },
+            {
+              "name": "name_ro",
+              "description": "The name in Romanian"
+            },
+            {
+              "name": "name_en",
+              "description": "The name in English, or null"
+            },
+            {
+              "name": "legal_basis",
+              "description": "The legal basis, or null"
+            },
+            {
+              "name": "declarations",
+              "description": "Where the tax is declared, D100 or D207, as the workbook writes it, or null"
+            },
+            {
+              "name": "rate",
+              "description": "The rate as a fraction, as 0.1 for 10 percent, or null"
+            },
+            {
+              "name": "income_type",
+              "description": "The kind of income, or null"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "single-entry-categories",
       "title": "Income and expense categories of single-entry bookkeeping",
       "description": "The categories of income and expense of independent activities whose net income is set in the real system, on the basis of single-entry bookkeeping: the letters of article 68 of the Fiscal Code (Law 227/2015) on gross income (income), what is not gross income (not-income), the conditions and kinds of deductible expenses (deductible), the expenses deductible within limits (limited) and the non-deductible expenses (non-deductible). OMFP 170/2015 sets the registers of single entry, not a chart: these categories are what the law gives to sort its entries. text is the letter as the code writes it; notes are the notes of the portal on how a change applies, for instance to the income of a whole year. The categories are those in force on 2026-01-01, the first day the dataset covers; a later change gives the day it took effect and the act, as the portal notes them.",

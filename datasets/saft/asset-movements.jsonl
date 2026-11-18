@@ -1,0 +1,13 @@
+{"code":"10","name_ro":"Achiziție","name_en":"Purchase"}
+{"code":"20","name_ro":"Vânzare","name_en":"Sale of assets"}
+{"code":"30","name_ro":"Amortizare","name_en":"Depreciation"}
+{"code":"40","name_ro":"Transfer intern","name_en":"Internal Transfer"}
+{"code":"50","name_ro":"Casare mijloace fixe","name_en":"Fixed assets scraped"}
+{"code":"60","name_ro":"Reevaluare negativă","name_en":"Negative revaluation"}
+{"code":"70","name_ro":"Reevaluare pozitivă","name_en":"Pozitive revaluation"}
+{"code":"80","name_ro":"Plus de inventar","name_en":"Inventory count positive adjustment"}
+{"code":"90","name_ro":"Minus de inventar","name_en":"Inventory count negative adjustment"}
+{"code":"100","name_ro":"Ajustare de valoare negativă","name_en":"Impairment adjustment for fixed assets"}
+{"code":"110","name_ro":"Reversare ajustare de valoare","name_en":"Reversal of impairment adjustments for fixed assets"}
+{"code":"120","name_ro":"Bunuri acordate cu titlu gratuit","name_en":"Goods granted free of charge"}
+{"code":"130","name_ro":"Alte tranzacții","name_en":"Other transactions"}

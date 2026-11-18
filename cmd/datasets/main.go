@@ -34,6 +34,7 @@ import (
 	"github.com/pidginhost/romanian-datasets/internal/holidays"
 	"github.com/pidginhost/romanian-datasets/internal/mfp"
 	"github.com/pidginhost/romanian-datasets/internal/reges"
+	"github.com/pidginhost/romanian-datasets/internal/saft"
 	"github.com/pidginhost/romanian-datasets/internal/singleentry"
 	"github.com/pidginhost/romanian-datasets/internal/siruta"
 	"github.com/pidginhost/romanian-datasets/internal/statements"
@@ -149,6 +150,24 @@ var builders = []builder{
 			}
 		}
 		return statements.YearDataset(statements.FromSite(&http.Client{Timeout: 5 * time.Minute}), rows)
+	}},
+	{"saft", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
+		keys := saft.Published{}
+		for _, name := range saft.Files() {
+			file, err := published(root, "saft", name)
+			if err != nil {
+				return dataset.Dataset{}, err
+			}
+			if file == nil {
+				continue
+			}
+			keys[name], err = saft.ReadPublished(name, file)
+			file.Close()
+			if err != nil {
+				return dataset.Dataset{}, err
+			}
+		}
+		return saft.Dataset(saft.FromSite(&http.Client{Timeout: 5 * time.Minute}), keys)
 	}},
 	{"fixed-assets", dataset.Monthly, func(_ time.Time, root string) (dataset.Dataset, error) {
 		var rows []fixedassets.Asset
