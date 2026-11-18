@@ -16,6 +16,7 @@ The public copy is https://github.com/pidginhost/romanian-datasets.
 | `chart-of-accounts` | The general chart of accounts for double-entry bookkeeping of companies (OMFP 1802/2014): classes, groups, accounts and subaccounts with their function and closing role, from 1 January 2026 | Legislative Portal, consolidated OMFP 1802/2014 | Monthly |
 | `chart-of-accounts-nonprofit` | The chart of accounts for associations, foundations and other non-profit legal persons (OMFP 3103/2017), from 1 January 2026 | Legislative Portal, consolidated OMFP 3103/2017 | Monthly |
 | `chart-of-accounts-public` | The chart of accounts for public institutions (OMFP 1917/2005): synthetic accounts of the first, second and third degree, from 1 January 2026 | Legislative Portal, consolidated OMFP 1917/2005 | Monthly |
+| `combined-nomenclature` | The Combined Nomenclature of goods (NC8) by year, with its tree, names in Romanian and English and supplementary units | INS, Intrastat | Monthly |
 | `countries` | Countries and territories with their ISO 3166-1 codes, names in Romanian and English, whether they are in the European Union, and the code an electronic invoice uses for them | Publications Office of the European Union | By hand, when the table changes |
 | `efactura` | The codes the e-Factura system of ANAF accepts for each check of a code list, the CIUS-RO limits on invoice types and VAT point date codes, and the county and sector codes of a Romanian address | Ministry of Finance, e-Factura validation package | Monthly |
 | `en16931-codes` | The code lists of the European standard on e-invoicing: units, currencies, VAT categories and exemption reasons, payment means, document types, address schemes and the others, with the period of each code; the countries are in `countries` | European Commission, EN 16931 genericode archives | Monthly |
@@ -72,6 +73,8 @@ datasets/
     accounts.jsonl
   chart-of-accounts-public/
     accounts.jsonl
+  combined-nomenclature/
+    items.jsonl
   countries/
     countries.jsonl
   efactura/
