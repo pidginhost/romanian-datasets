@@ -1,0 +1,43 @@
+{"code":"80","name_en":"Debit note related to goods or services","en16931_kind_en":"Invoice","name_ro":"Notă de debit referitoare la bunuri sau servicii","en16931_kind_ro":"Factură","saft":false}
+{"code":"81","name_en":"Credit note related to goods or services","en16931_kind_en":"Credit Note","name_ro":"Notă de credit pentru bunuri sau servicii","en16931_kind_ro":"Notă de credit","saft":false}
+{"code":"82","name_en":"Metered services invoice","en16931_kind_en":"Invoice","name_ro":"Factura pentru servicii contorizate","en16931_kind_ro":"Factură","saft":false}
+{"code":"83","name_en":"Credit note related to financial adjustments","en16931_kind_en":"Credit Note","name_ro":"Notă de credit aferentă ajustărilor financiare","en16931_kind_ro":"Notă de credit","saft":false}
+{"code":"84","name_en":"Debit note related to financial adjustments","en16931_kind_en":"Invoice","name_ro":"Notă de debit aferentă ajustărilor financiare","en16931_kind_ro":"Factură","saft":false}
+{"code":"130","name_en":"Invoicing data sheet","en16931_kind_en":"Invoice","name_ro":"Fișa tehnică de facturare","en16931_kind_ro":"Factură","saft":false}
+{"code":"202","name_en":"Direct payment valuation","en16931_kind_en":"Invoice","name_ro":"Evaluarea plăților directe","en16931_kind_ro":"Factură","saft":false}
+{"code":"203","name_en":"Provisional payment valuation","en16931_kind_en":"Invoice","name_ro":"Evaluarea plăților provizorii","en16931_kind_ro":"Factură","saft":false}
+{"code":"204","name_en":"Payment valuation","en16931_kind_en":"Invoice","name_ro":"Evaluarea plății","en16931_kind_ro":"Factură","saft":false}
+{"code":"211","name_en":"Interim application for payment","en16931_kind_en":"Invoice","name_ro":"Cerere intermediară de plată","en16931_kind_ro":"Factură","saft":false}
+{"code":"261","name_en":"Self billed credit note","en16931_kind_en":"Credit Note","name_ro":"Notă de credit - Autofacturare","en16931_kind_ro":"Notă de credit","saft":false}
+{"code":"262","name_en":"Consolidated credit note - goods and services","en16931_kind_en":"Credit Note","name_ro":"Notă de credit consolidată – bunuri și servicii","en16931_kind_ro":"Notă de credit","saft":false}
+{"code":"295","name_en":"Price variation invoice","en16931_kind_en":"Invoice","name_ro":"Factura de variație a prețurilor","en16931_kind_ro":"Factură","saft":false}
+{"code":"296","name_en":"Credit note for price variation","en16931_kind_en":"Credit Note","name_ro":"Notă de credit pentru variația prețurilor","en16931_kind_ro":"Notă de credit","saft":false}
+{"code":"308","name_en":"Delcredere credit note","en16931_kind_en":"Credit Note","name_ro":"Notă de credit delcredere","en16931_kind_ro":"Notă de credit","saft":false}
+{"code":"325","name_en":"Proforma invoice","en16931_kind_en":"Invoice","name_ro":"Factură proformă","en16931_kind_ro":"Factură","saft":false}
+{"code":"326","name_en":"Partial invoice","en16931_kind_en":"Invoice","name_ro":"Factură parțială","en16931_kind_ro":"Factură","saft":false}
+{"code":"380","name_en":"Commercial invoice","en16931_kind_en":"Invoice","name_ro":"Factură","en16931_kind_ro":"Factură","saft":true}
+{"code":"381","name_en":"Credit note","en16931_kind_en":"Credit Note","name_ro":"Notă de credit","en16931_kind_ro":"Notă de credit","saft":true}
+{"code":"383","name_en":"Debit note","en16931_kind_en":"Invoice","name_ro":"Notă de debit","en16931_kind_ro":"Factură","saft":false}
+{"code":"384","name_en":"Corrected invoice","en16931_kind_en":"Invoice","name_ro":"Factura corectată","en16931_kind_ro":"Factură","saft":true}
+{"code":"385","name_en":"Consolidated invoice","en16931_kind_en":"Invoice","name_ro":"Factura consolidată","en16931_kind_ro":"Factură","saft":false}
+{"code":"386","name_en":"Prepayment invoice","en16931_kind_en":"Invoice","name_ro":"Factura de plată în avans","en16931_kind_ro":"Factură","saft":false}
+{"code":"387","name_en":"Hire invoice","en16931_kind_en":"Invoice","name_ro":"Factura de închiriere","en16931_kind_ro":"Factură","saft":false}
+{"code":"388","name_en":"Tax/ Fiscal invoice","en16931_kind_en":"Invoice","name_ro":"Factura fiscală","en16931_kind_ro":"Factură","saft":false}
+{"code":"389","name_en":"Self-billed invoice","en16931_kind_en":"Invoice","name_ro":"Autofactură","en16931_kind_ro":"Factură","saft":true}
+{"code":"390","name_en":"Delcredere invoice","en16931_kind_en":"Invoice","name_ro":"Factura delcredere","en16931_kind_ro":"Factură","saft":false}
+{"code":"393","name_en":"Factored invoice","en16931_kind_en":"Invoice","name_ro":"Factură ”factored”","en16931_kind_ro":"Factură","saft":false}
+{"code":"394","name_en":"Lease invoice","en16931_kind_en":"Invoice","name_ro":"Factura de leasing","en16931_kind_ro":"Factură","saft":false}
+{"code":"395","name_en":"Consignment invoice","en16931_kind_en":"Invoice","name_ro":"Factura de transport","en16931_kind_ro":"Factură","saft":false}
+{"code":"396","name_en":"Factored credit note","en16931_kind_en":"Credit Note","name_ro":"Notă de credit factored","en16931_kind_ro":"Notă de credit","saft":false}
+{"code":"420","name_en":"Optical Character Reading (OCR) payment credit note","en16931_kind_en":"Credit Note","name_ro":"Notă de plată de citire optică a caracterelor (OCR)","en16931_kind_ro":"Notă de credit","saft":false}
+{"code":"456","name_en":"Debit advice","en16931_kind_en":"Invoice","name_ro":"Consultanță de debitare","en16931_kind_ro":"Factură","saft":false}
+{"code":"457","name_en":"Reversal of debit","en16931_kind_en":"Invoice","name_ro":"Reversare notă de debit","en16931_kind_ro":"Factură","saft":false}
+{"code":"458","name_en":"Reversal of credit","en16931_kind_en":"Credit Note","name_ro":"Reversare notă de credit","en16931_kind_ro":"Notă de credit","saft":false}
+{"code":"527","name_en":"Self billed debit note","en16931_kind_en":"Invoice","name_ro":"Notă de debit - Autofacturare","en16931_kind_ro":"Factură","saft":false}
+{"code":"532","name_en":"Forwarder's credit note","en16931_kind_en":"Credit Note","name_ro":"Nota de credit a expeditorului","en16931_kind_ro":"Notă de credit","saft":false}
+{"code":"575","name_en":"Insurer's invoice","en16931_kind_en":"Invoice","name_ro":"Factura asigurătorului","en16931_kind_ro":"Factură","saft":true}
+{"code":"623","name_en":"Forwarder's invoice","en16931_kind_en":"Invoice","name_ro":"Factura expeditorului","en16931_kind_ro":"Factură","saft":false}
+{"code":"633","name_en":"Port charges documents","en16931_kind_en":"Invoice","name_ro":"Documente privind taxele portuare","en16931_kind_ro":"Factură","saft":false}
+{"code":"751","name_en":"Invoice information for accounting purposes","en16931_kind_en":"Invoice","name_ro":"Factură - informații în scopuri contabile","en16931_kind_ro":"Factură","saft":true}
+{"code":"780","name_en":"Freight invoice","en16931_kind_en":"Invoice","name_ro":"Factura de transport de marfă","en16931_kind_ro":"Factură","saft":false}
+{"code":"935","name_en":"Customs invoice","en16931_kind_en":"Invoice","name_ro":"Factură pentru scopuri vamale","en16931_kind_ro":"Factură","saft":false}

@@ -1,0 +1,19 @@
+{"code":"10","name_ro":"Achiziție","name_en":"Purchase"}
+{"code":"20","name_ro":"Producție","name_en":"Production"}
+{"code":"30","name_ro":"Vânzare","name_en":"Sale of stock"}
+{"code":"40","name_ro":"Retur produse vândute","name_en":"Return of sales"}
+{"code":"50","name_ro":"Retur produse achiziționate","name_en":"Return of purchase"}
+{"code":"60","name_ro":"Reduceri comerciale primite","name_en":"Discounts received"}
+{"code":"70","name_ro":"Consum","name_en":"Consumption"}
+{"code":"80","name_ro":"Transfer intern","name_en":"Internal Transfer"}
+{"code":"90","name_ro":"Cheltuieli ulterioare incluse în valoarea de intrare","name_en":"Subsequent costs capitalized in the value of the goods"}
+{"code":"100","name_ro":"Diferențe de preț pozitive","name_en":"Positive price difference"}
+{"code":"101","name_ro":"Diferențe de preț negative","name_en":"Negative price difference"}
+{"code":"110","name_ro":"Plus de inventar","name_en":"Inventory count positive adjustment"}
+{"code":"120","name_ro":"Minus de inventar","name_en":"Inventory count negative adjustment"}
+{"code":"130","name_ro":"Ajustări pentru deprecierea stocurilor","name_en":"Impairment adjustments for goods"}
+{"code":"140","name_ro":"Reluări de ajustări pentru deprecierea stocurilor","name_en":"Reversal of impairment adjustments for goods"}
+{"code":"150","name_ro":"Bunuri acordate cu titlu gratuit","name_en":"Goods granted free of charge"}
+{"code":"160","name_ro":"Bunuri degradate","name_en":"Damaged goods"}
+{"code":"170","name_ro":"Bunuri expirate","name_en":"Expired goods"}
+{"code":"180","name_ro":"Alte tranzacții","name_en":"Other transactions"}
